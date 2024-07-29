@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    background-color: #1C2B52;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: "Comfortaa";
+    font-size: 18px;
+
+}
+
+.section {
+    display: inline;
+    color: #FFFF;
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+.section a{
+    text-decoration: none;
+    color: #FFFF;
+    gap: 10px;
+
+}
+
+#aviso {
+    padding-right: 30px;
+}
+
+#acces {
+padding-left: 30px;
+} 
+
+#copyright {
+    
+    align-items: center;
+    padding-left: 150px;
+    
+}
+
+.sectionredes {
+    display: flex;
+    flex-grow: 1;
+    width: 25px;
+    height: 25px;
+    padding-left: 30px;
+}

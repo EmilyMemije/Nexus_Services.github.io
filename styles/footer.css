@@ -1,47 +1,112 @@
 footer {
-    display: flex;
     background-color: #1C2B52;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
     margin: 0;
-    align-items: center;
-    justify-content: center;
     font-family: "Comfortaa";
     font-size: 18px;
-
 }
 
-.section {
+.section-redes{
     display: inline;
-    color: #FFFF;
-    margin-top: 50px;
-    flex-grow: 1;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.img-redes{
+    width: 35px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    padding: 6px;
+    margin-left: 10px;
+    opacity: 50%;
+}
+
+#IG:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#Twitter:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#Face:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+.section{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 30px;
+    font-family: "Comfortaa";
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .section a{
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
     text-decoration: none;
-    color: #FFFF;
-    gap: 10px;
-
+    opacity: 50%;
 }
 
-#aviso {
-    padding-right: 30px;
+
+#aviso:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
 }
 
-#acces {
-padding-left: 30px;
+#terminos:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
 } 
 
-#copyright {
-    
-    align-items: center;
-    padding-left: 150px;
-    
+#acces:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
 }
 
-.sectionredes {
-    display: flex;
-    flex-grow: 1;
-    width: 25px;
-    height: 25px;
-    padding-left: 30px;
+.derechos-copi{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 0px;
+    font-size: 12px;
+    opacity: 50%;
+    color: white;
 }

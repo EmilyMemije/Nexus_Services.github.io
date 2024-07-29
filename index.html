@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Services</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="./assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <title>Nexus Services</title>
+
+    <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
@@ -17,45 +23,63 @@
     <!-- Navbar -->
     <header>
     <nav class="nav--container">
-        <div class="nav--logo"><img src="./assets/NS.png" alt="LogoNS"> </div>
-        <div class="centro"><h2 class="nav--title">Nexus Services</h2>
-
+        <div class="nav--logo">
+            <a href="">
+                <img src="./assets/NS.png" alt="LogoNS">
+            </a>
+        </div>
+        <div class="centro">
+            <a href="" id="NS--title">
+                <h1 id="nav--title">Nexus Services</h1>
+            </a>
             <div class="nav--search">
-            <input class="search--imput"  type="text" name="search"
-            placeholder="Buscar...">
-            <button class="botton"></button>
+                <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
+                <a href="" target="_blank">
+                    <button class="botton">
+                        <img src="./assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                    </button>
+                </a>
             </div> 
-        <div class="nav--menu">
-            <a href="">Blog</a>
-            <a href="">Servicios</a>
-            <a href="">Asociados</a>
-            <a href="">Donaciones</a>
+            <div class="nav--menu">
+                <a href="">Blog</a>
+                <a href="">Servicios</a>
+                <a href="">Asociados</a>
+                <a href="">Donaciones</a>
+            </div>
         </div>
+        <div class="nav--ingresar">
+            <a href="" target="_blank">
+                <img src="./assets/sos.png" alt="SOS" id="SOS-image">
+            </a>
+            <a href="http://" target="_blank">
+                <img src="./assets/User_01.png" alt="ingresar">
+            </a>
         </div>
-        <div class="nav--ingresar"><img src="./assets/User_01.jpg" alt="ingresar"></div>
     </nav>
     </header>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
     <!--Footer-->
     <footer>
-        <div class="sectionredes">
-            <img src="./assets/IG.png" alt="IG">
-            <img src="./assets/X.png" alt="X">
-            <img src="./assets/FB.png" alt="FB">
+        <div class="section-redes">
+            <a href="">
+            <img class="img-redes" id="IG" src="./assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="./assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="./assets/FB.png" alt="Facebook">
+            </a>
         </div>
-            <div class="section">
-                <a href="" id="aviso">Aviso de privacidad</a>
-                <a href="" id="terminos">Términos y condiciones</a>
-                <a href="" id="acces">Accesibilidad</a>
-            <div id="copyright">
+        <div class="section">
+            <a href="" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
             <br>
-            <p>&copy; Derechos reservados. 2024</p>
-            </div>
         </div>
-        <div></div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
     </footer>
 </body>
 </html>

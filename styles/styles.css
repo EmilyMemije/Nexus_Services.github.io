@@ -5,129 +5,111 @@ body {
 
 }
 
+/*      Barra de navegación     */
 .nav--container{
-    color: #FFFFFF;
-    height: 178px;
     background: linear-gradient(279deg, rgba(255, 255, 255, 0.80) 11.65%, rgba(30, 144, 255, 0.80) 66.35%, rgba(92, 183, 221, 0.80) 109.43%);
     position: sticky;
     display: flex;
     top: 0;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.centro {
-    display: flex;
-
-}
-
+/*      logo Imagen     */
 .nav--logo img{
     width: 157px;
     height: 157px;
 }
 
-.nav--ingresar {
-    margin-right: 60px;
-}
-
+/*      Centro del navvar       */
 .centro {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.nav--title {
+/*--Titulo Nexus Services--*/
+#NS--title{
+    text-decoration: none;
+}
+
+#nav--title {
     display: flex;
     justify-content: center;
     color: #1C2B52;
     font-family: "Lato";
-    font-size: 40px;
-    font-style: normal;
-    line-height: normal;
-    margin-top: 15px; margin-bottom: 10px;
+    font-size: 45px;
+    text-shadow: 8px 8px 10px #ffffff;
+    margin-top: 10px; margin-bottom: 10px;
 }
 
-.nav--menu {
-    display: inline;
-    gap: 35px;
-    font-family: "Lato";
-    font-size: 30px;
-    padding-top: 15px;
-    
-}
-.nav--menu a {
-    text-decoration: none;
-    color: #1C2B52;
-    text-align: center;
-    padding: 1px 10px;
-    margin-top: 10px;
-}
-.nav--menu a:hover {
-    border-radius: 25px 25px 0px 0px;
-background: linear-gradient(0deg, rgba(255, 255, 255, 0.90) 14.75%, rgba(30, 144, 255, 0.45) 62.3%, rgba(30, 144, 255, 0.90) 101.64%);
-}
-/*.nav--menu{
-    display: flex;
-    gap: 35px;
-    font-family: "Lato";
-    font-size: 30px;
-    align-items: flex-end;
-    
-
-}
-.nav--menu a {
-    text-decoration: none;
-    color: #1C2B52;
-    align-items: end;
-    justify-content: center;
-}*/
-
+/*--Barra de búsqueda--*/
 .nav--search {
     display: flex;
-    max-width: 230px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    margin-top: 10px;
+    max-width: 280px;
     border-radius: 50px;
-background: linear-gradient(82deg, rgba(255, 255, 255, 0.85) 28.66%, rgba(134, 192, 234, 0.81) 101.15%, rgba(0, 122, 255, 0.85) 131.58%);
+    background: linear-gradient(82deg, rgba(255, 255, 255, 0.85) 25.66%, rgba(134, 192, 234, 0.81) 101.15%, rgba(0, 122, 255, 0.85) 131.58%);
     position: relative;
-    
 }
 
 .search--imput{
     border: none;
     background: none;
-    outline: none;
     color: black;
-    font-size: 15px;
-    padding: 7px 9px 7px 47px; 
+    font-size: 12px;
+    padding: 7px 9px 7px 15px; 
 }
 
+/*--Boton y lupa--*/
 .botton {
     color: white;
     position: absolute;
-    right: 7px;
+    right: 0px;
     width: 29px;
     height: 29px;
     border-radius: 50%;
     background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-    border: 0;
+    border: none;
     display: inline-block;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    opacity: 80%;
 }
 
 .botton:hover {
-    color: #fff;
-    background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
     transform: translateY(-3px);
+    opacity: 120%;
+    cursor: pointer;
 }
 
-button:active {
-    box-shadow: none;
-    transform: translateY(0);
+/*--Menú de servicios--*/
+.nav--menu {
+    display: inline;
+    font-family: "Lato";
+    font-size: 25px;
+    padding-top: 15px;
 }
 
-/*.botton {
-    background-image: url('../assets/lupa.png');
-}*/
+.nav--menu a {
+    text-decoration: none;
+    color: #1C2B52;
+    text-align: center;
+    padding:0px 15px;
+}
+
+.nav--menu a:hover {
+    border-radius: 25px 25px 0px 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 14.75%, rgba(30, 144, 255, 0.45) 62.3%, rgba(30, 144, 255, 0.90) 101.64%);
+    transition: 0.1s;
+}
+
+/*      Imagen SOS e Icono      */
+
+#SOS-image{
+    width: 60px;
+    padding: 10px;
+}
+
+.nav--ingresar {
+    margin-right: 60px;
+}

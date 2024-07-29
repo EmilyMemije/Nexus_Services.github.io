@@ -1,4 +1,4 @@
-# Entoro de desarrollo del proyecto Nexus Services.
+# Entornoo de desarrollo del proyecto Nexus Services.
 
 ## Se crean los archivos con los cuales se empezará a trabajar, los cuales son index.html, footer.css, styles.css y la carpeta assets.
 
@@ -52,6 +52,11 @@ Realizar los cambios en los archivos (tareas asignadas)
 
 
 # *Antes de subir cualquier cambio favor de revisar la rama en la que se encuentran para no afectar el progreso del proyecto.*
+
+
+#sasasa
+
+
 
 ## Saludos :D
 

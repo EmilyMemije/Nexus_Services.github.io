@@ -13,12 +13,23 @@ Crearemos una rama con nuestro nombre ej. *DavidH*
 ```
 *Nos crea la rama y nos introduce en ella*
 
+o puedes usar este comando tambien:
+```Bash
+    git checkout -b DavidH
+```
+
 ## 2.-
 Para descargar el repositorio actual en nuestra computadora se utilizará el comando git clone y la siguiente URL https://github.com/EmilyMemije/Nexus_Services.git
 de la siguiente manera:
 
 ```Bash
     git clone https://github.com/EmilyMemije/Nexus_Services.git
+```
+
+o tambien puedes usar este comando:
+
+```Bash
+    git pull https://github.com/EmilyMemije/Nexus_Services.git main
 ```
 
 ## 2.- 

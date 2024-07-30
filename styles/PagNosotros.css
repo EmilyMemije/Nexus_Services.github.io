@@ -1,0 +1,107 @@
+#Conteiner-principal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+    margin: 2% 0%;
+}
+
+/*Botones de la pag*/
+
+#botones button
+{
+    border-radius: 2em;
+    padding: 10px 50px;
+    margin: 3%;
+    background-color: #BAD895;
+    color: white;
+    
+    
+}
+
+/*contenedor de los botones*/
+#botones{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 500px;
+    width: 15%;
+    background-color:#212A3E;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 2em;
+    padding-top: 30px;
+}
+/* contenedor de la informacion*/ 
+#info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #212A3E;
+    height: 500px;
+    width: 65%;
+    margin: 3% 0%;
+    border-radius: 2em;
+    color: white;
+}
+
+/*contenedor vision*/
+#container-vision
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 40%;
+    gap: 0%;
+    
+    
+}
+
+/* contenedor valores*/
+#container--valores
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#container--valores h2 p
+{
+    text-align: center;
+}
+
+/*contenedor sobre nosotros*/
+#container-acercaDeNosotros
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F2F2EB;
+    height: 50%;
+    width: 40%;
+    
+}
+
+/*contenedor de mision*/
+#container-mision
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F2F2EB;
+    height: 50%;
+    width: 40%;
+
+    
+
+}

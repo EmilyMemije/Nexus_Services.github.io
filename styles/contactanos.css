@@ -1,0 +1,32 @@
+body {
+    font-family: 'lato';
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    margin: 0;
+}
+
+
+.formulario {
+    background-color: #212A3E;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    color: white;
+}
+
+
+.button--save {
+    display: block;
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B8C2D5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}

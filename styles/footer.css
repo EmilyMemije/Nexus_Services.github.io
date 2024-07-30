@@ -1,6 +1,18 @@
-footer {
+/* footer {
     background-color: #1C2B52;
     position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    font-family: "Comfortaa";
+    font-size: 18px;
+} */
+
+footer {
+    background-color: #1C2B52;
+    position: relative;
     display: inline-block;
     bottom: 0;
     width: 100%;

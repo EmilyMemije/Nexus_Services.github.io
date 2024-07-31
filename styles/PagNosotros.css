@@ -68,10 +68,23 @@
 #container--valores
 {
     display: flex;
+    margin: 40px 70px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    color: #F2F2EB;
+    font-size:15px;
 }
 
-#container--valores h2 p
+#p1{
+    text-align: center;
+}
+
+#container--valores ul{
+    text-align: justify;
+}
+
+#container--valores h2
 {
     text-align: center;
 }

@@ -8,12 +8,7 @@ Se actualizaron los botones, el header, el footer y partes esenciales para el de
 ## Pasos Para el proyecto (descarga y carga)
 ## 1.-
 Crearemos una rama con nuestro nombre ej. *DavidH*
-```Bash
-    git push origin DavidH
-```
 *Nos crea la rama y nos introduce en ella*
-
-o puedes usar este comando tambien:
 ```Bash
     git checkout -b DavidH
 ```
@@ -60,3 +55,5 @@ Realizar los cambios en los archivos (tareas asignadas)
 # otra prueba CesarH
 
 # creando mi rama liceajj
+
+# prueba para Dev

@@ -17,8 +17,6 @@
     margin: 3%;
     background-color: #BAD895;
     color: white;
-    
-    
 }
 
 /*contenedor de los botones*/
@@ -34,7 +32,8 @@
     border-radius: 2em;
     padding-top: 30px;
 }
-/* contenedor de la informacion*/ 
+
+/* contenedor de la informacion*/
 #info
 {
     display: flex;
@@ -49,7 +48,19 @@
     color: white;
 }
 
-/*contenedor vision*/
+.logoback{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+#logo--back{
+    display: flex;
+    opacity: 15%;
+    width: 400px;
+}
+
+/*contenedor vision*/ 
 #container-vision
 {
     position: absolute;
@@ -60,8 +71,6 @@
     height: 50%;
     width: 40%;
     gap: 0%;
-    
-    
 }
 
 /* contenedor valores*/
@@ -114,7 +123,38 @@
     color: #F2F2EB;
     height: 50%;
     width: 40%;
+}
 
-    
+@media (max-width: 700px){
+    #logo--back{
+        opacity: 10%;
+        width: 350px;
+    }
+
+    #info{
+        width: 55%;
+    }
+
+    #botones button{
+        display: flex;
+        justify-content: center;
+        border-radius: 2em;
+        width: 60px;
+    }
+
+    #botones{
+        height: 510px;
+        width: 12%;
+        gap: 15px;
+        border-radius: 2em;
+    }
+}
+
+@media (max-width: 450px){
+    #logo--back{
+        display: flex;
+        opacity: 95%;
+        width: 350px;
+    }
 
 }

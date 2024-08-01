@@ -17,21 +17,91 @@ vission.style.visibility='hidden';
 valor.style.visibility='hidden';
 we.style.visibility='visible';
 
-//* asignacion de eventos
-Bmission.addEventListener('click',()=>{
-    mission.style.visibility='visible';
+//array donde se almacenaran todas las constantes
+
+const Global=[mission,vission,valor,we];
+let posicion=0;
+let intervalo;
+
+// funciones para mover los botones
+
+function Adelante()
+{
+    if (posicion>= Global.length -1)
+    {
+        posicion=0;
+    }
+    else
+    {
+        posicion++;
+    }
+
+    Mostrar (posicion);
+    
+}
+
+function Atras()
+{
+    if (posicion <= 0)
+        {
+            posicion= Global.length-1;
+        }
+        else
+        {
+            posicion--;
+        }
+
+        Mostrar(posicion);
+       
+
+}
+
+function Mostrar(Posicion)
+{
+    mission.style.visibility='hidden';
     vission.style.visibility='hidden';
     valor.style.visibility='hidden';
     we.style.visibility='hidden';
-})
 
-Bvission.addEventListener('click',()=>{
-    mission.style.visibility='hidden';
+    Global[posicion].style.visibility='visible'
+}
+
+function Autoplay()
+{
+  
+    intervalo=setInterval(Adelante,100000);
+    
+}
+
+Autoplay();
+
+
+
+
+
+
+
+//asignacion de vista de los contenedores
+/*mission.style.visibility='hidden';
+vission.style.visibility='hidden';
+valor.style.visibility='hidden';
+we.style.visibility='visible';*/
+
+//* asignacion de eventos
+Bmission.addEventListener('click',Adelante)/*()=>{
+   /* mission.style.visibility='visible';
+    vission.style.visibility='hidden';
+    valor.style.visibility='hidden';
+    we.style.visibility='hidden';
+})*/
+
+Bvission.addEventListener('click',Atras)/*()=>{
+   /* mission.style.visibility='hidden';
     vission.style.visibility='visible';
     valor.style.visibility='hidden';
     we.style.visibility='hidden';
-})
-
+})*/
+/*
 Bvalor.addEventListener('click',()=>{
     mission.style.visibility='hidden';
     vission.style.visibility='hidden';
@@ -45,4 +115,4 @@ Bwe.addEventListener('click',()=>{
     valor.style.visibility='hidden';
     we.style.visibility='visible';
 })
-
+*/

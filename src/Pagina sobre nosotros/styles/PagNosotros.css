@@ -10,28 +10,27 @@
 
 /*Botones de la pag*/
 
-#botones button
+ #Conteiner-principal button
 {
+   
+    color: black;
+    background: transparent;
+    border: none;
+    
+}
+/*Botones de la pag*/
+
+#botones button:hover{
+
     border-radius: 2em;
+    border: solid #296CD1 2px ;
+    box-shadow: 2px 5px 2px 2px #296CD1;
     padding: 10px 50px;
     margin: 3%;
-    background-color: #BAD895;
-    color: white;
+    background-color: #ffffff; 
+    color: #1C2B52;
 }
 
-/*contenedor de los botones*/
-#botones{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    height: 500px;
-    width: 15%;
-    background-color:#212A3E;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 2em;
-    padding-top: 30px;
-}
 
 /* contenedor de la informacion*/
 #info
@@ -41,6 +40,9 @@
     justify-content: center;
     flex-direction: column;
     background-color: #212A3E;
+    background-image: url(../../../assets/NS.png);
+    background-image;
+
     height: 500px;
     width: 65%;
     margin: 3% 0%;
@@ -68,6 +70,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     height: 50%;
     width: 40%;
     gap: 0%;
@@ -81,6 +84,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow:scroll;
+    text-align: justify;
+   
     color: #F2F2EB;
     font-size:15px;
 }
@@ -106,6 +112,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     color: #F2F2EB;
     height: 50%;
     width: 40%;
@@ -120,35 +127,26 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     color: #F2F2EB;
     height: 50%;
     width: 40%;
 }
-
-@media (max-width: 700px){
-    #logo--back{
-        opacity: 10%;
-        width: 350px;
+@media(max-width:700px){
+    .text--ACDH{
+        font-size:xx-small;
     }
+    .text--ACDp{
+        font-size:xx-small;
 
-    #info{
-        width: 55%;
     }
-
-    #botones button{
-        display: flex;
-        justify-content: center;
-        border-radius: 2em;
-        width: 60px;
-    }
-
-    #botones{
-        height: 510px;
-        width: 12%;
-        gap: 15px;
-        border-radius: 2em;
+    #Conteiner-principal{
+    flex-direction: column;
     }
 }
+    
+
+
 
 @media (max-width: 450px){
     #logo--back{

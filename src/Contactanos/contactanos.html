@@ -9,8 +9,7 @@
     <link rel="icon" href="../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/styles copy.css">
     <link rel="stylesheet" href="./styles/contactanos.css">
 
 
@@ -66,87 +65,55 @@
             </div>
         </nav>
     </header>
-
-    <!--Formulario de contacto-->
-    <!-- <section>
-        <form action="">
-            <div class="formulario de contacto">
+    <!--Formulario de contacto"-->
+<div class="conteinerfull">
+    <div class="conteiner-principal">
                 <div class="formulario">
-                    <h2>Formulario de Contacto</h2>
+                    <h1>Formulario de Contacto</h1>
                     <h2>Escríbenos</h2>
                     <p>
-                        <label for="Nombre" class="nombre">Nombre *</label>
-                        <input type="text" name="introducir nombre" id="nombre" required="Obligatorio"
+                        <label for="Nombre" class="colocarnombre">Nombre <span class="olicgatorio">*</span>
+                        </label>
+                            <input type="text" name="introducir nombre" id="nombre" required="obligatorio"
                             placeholder="Escribe tu nombre">
                     </p>
                     <p>
-                        <label for="Email" class="email">Email *</label>
+                        <label for="email" class="colocaremail">Email <span class="obligatorio">*</span></label>
                         <input type="email" name="introducir email" id="email" required="Obligatorio"
                             placeholder="Escribe tu email">
                     </p>
                     <p>
-                        <label for="Company" class="company">Compañía/Organización</label>
-                        <input type="text" name="introducir compañia" id="company"
-                            placeholder="Escribe tu compañía/organización">
+                        <label for="teléfono" class="colocarteléfono">Teléfono</label>
+                        <input type="text" name="introducir telefono" id="teléfono"
+                            placeholder="Escribe tu teléfono">
                     </p>
                     <p>
-                        <label for="Mensaje" class="mensaje">Mensaje *</label>
+                        <label for="asunto" class="colocarasunto">Asunto <span class="obligatorio">*</span></label>
+                        <input type="text" name="introducirasunto" id="email" required="Obligatorio"
+                            placeholder="Escribe un asunto">
+                    </p>
+                    <p>
+                        <label for="mensaje" class="colocarmensaje">Mensaje <span class="olicgatorio">*</span></label>
                         <textarea name="introducir mensaje" id="mensaje" required="Obligatorio"
-                            placeholder="Déjanos tu mensaje"></textarea>
+                            placeholder="Introduce tu mensaje aquí..."></textarea>
                     </p>
-                    <p>
-                        <button type="submit" class="button--save">Enviar</button>
-                    </p>
+                    
+                        <button type="submit" class="enviar"><p>Enviar</p></button>
+                    <p class="aviso"><span class="obligatorio">*</span>Los campos son obligatorios</p>
                 </div>
-            </div>
-        </form>
-    </section> -->
-    <div id="Conteiner-principal">
-        <section class="container--formulario">
-            <form action="">
-                <!-- <div class="formulario de contacto"> -->
-                <div class="formulario">
-                    <h2>Formulario de Contacto</h2>
-                    <h2>Escríbenos</h2>
-                    <p>
-                        <label for="Nombre" class="nombre">Nombre *</label>
-                        <input type="text" name="introducir nombre" id="nombre" required="Obligatorio"
-                            placeholder="Escribe tu nombre">
-                    </p>
-                    <p>
-                        <label for="Email" class="email">Email *</label>
-                        <input type="email" name="introducir email" id="email" required="Obligatorio"
-                            placeholder="Escribe tu email">
-                    </p>
-                    <p>
-                        <label for="Company" class="company">Compañía/Organización</label>
-                        <input type="text" name="introducir compañia" id="company"
-                            placeholder="Escribe tu compañía/organización">
-                    </p>
-                    <p>
-                        <label for="Mensaje" class="mensaje">Mensaje *</label>
-                        <textarea name="introducir mensaje" id="mensaje" required="Obligatorio"
-                            placeholder="Déjanos tu mensaje"></textarea>
-                    </p>
-                    <p>
-                        <button type="submit" class="button--save">Enviar</button>
-                    </p>
-                </div>
-                <!-- </div> -->
-            </form>
-        </section>
-        <section class="container--redesSociales">
+                <!-- Redes Sociales> -->
+    </div>
+        <div class="container--redesSociales">
             <div class="section-social">
-                <div class="correo">
-                    <a href="">
-                        <img src="../assets/correo.png" alt="">
-                    </a>
-                    <label for="" id="emai">josue.hernandez.c03@gmail.com</label>
+                <div id="correo">
+                        <img class="correo" src="../../assets/correo.png" alt="imagencorreo">
+                        <br>
+                    <div for="" id="emai"><p>josue.hernandez.c03@gmail.com</p></div>
                 </div>
-                <div class="telefono">
-                    <a href="">
-                        <img src="../assets/llamada.png" alt="">
+                <div id="telefono">
+                        <img class="telefono" src="../../assets/llamada.png" alt="">
                     </a>
+                    <br>
                     <label for="" id="tel">5589635412</label>
                 </div>
                 <a href="">
@@ -160,10 +127,9 @@
                     <img class="img-redes" id="facebook" src="../../assets/FB.png" alt="Facebook">
                 </a>
             </div>
+        </div>
     </div>
-    </section>
-
-    </div>
+</div>
 
     <!--Footer-->
     <footer>
@@ -189,5 +155,4 @@
         </div>
     </footer>
 </body>
-
 </html>

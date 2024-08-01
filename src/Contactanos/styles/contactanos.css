@@ -1,135 +1,162 @@
-#Conteiner-principal
-{
+
+.conteinerfull{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 10%;
-    margin: 2% 0%;
+    align-items: center;
 }
 
-.container--formulario {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    height: 500px;
-    width: 400px;
-    background-color:#212A3E;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 2em;
+
+.conteiner-principal {
+    width: 480px;
+    height: auto;
+    margin: 90px;
+    border-radius: 10px;
     padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #1C2B52;
+    padding-left: 30px;
+    font-family: "Lato";
+    font-size: 25px;
+    box-shadow: #296CD1;
+    color: #fbfbfb;
 }
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    text-align: left;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+p{
+    font-style: oblique;
+    
+}
+
+.conteiner-principal input {
+    background-color: #FFFF;
+    width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-family: "Lato";
+    font-size: 15px;
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-family: "Lato";
+    font-size: 15px;
+}
+
+label{
+    display: block; 
+    float: center; 	
+}
+
+.conteiner-principal button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #BAD895; 
+	border-color: white; 
+	border-style: solid; 
+	border-radius: 2em;	
+	width: 420px;   
+    cursor: pointer;
+    
+    
+}
+
+button p{
+    color: #1C2B52;
+    font-family: "Lato";
+    font-size: 16px;
+}
+span {
+    color: #296CD1;
+}
+
+.aviso {
+    font-family: "Comfortaa";
+    font-size: 12px;
+}
+
+
 
 .container--redesSociales{
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 500px;
-    width: 25%;
-    background-color:#212A3E;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 2em;
-    padding-top: 30px;
-}
-
-
-.formulario {
-    background-color: #212A3E;
-    padding: 5px 15px 05px 15px;
+    align-items: center;
+    width: 480px;
+    height: auto;
+    margin: 90px;
     border-radius: 10px;
-    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #1C2B52;
+    padding-left: 30px;
+    font-family: "Lato";
+    font-size: 25px;
+    color: #fbfbfb;
 }
 
-#nombre{
-    width: 350px;
-}
 
-#email{
-    width: 350px;
-}
-
-#company{
-    width: 350px;
-}
-
-#mensaje{
-    width: 350px;
-    height: 100px;
-}
-
-.button--save {
-    display: block;
-    width: 110px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #B8C2D5;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    
-}  
-
-#Conteiner-principal img{
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    padding: 10px 50px;
-    margin: 3%;
-}
-
-.img-social{
-    width: 35px;
+#telefono{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 10px;
-    padding: 6px;
-    margin-left: 10px;
-    opacity: 50%;
 }
 
 .telefono{
+    
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 100px;
 }
 
-.correo{
-    color: white;
-    display: flex;
+
+
+#correo{
+    display: flex ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
     
 }
 
-#tel{
-    background-color: #212A3E;
-    padding: 20px;
-    border-radius: 10px;
+.correo {
     color: white;
-}
-
-#emai{
-    background-color: #212A3E;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100px;
 }
 
 .redes-sociales{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 40px;
 }

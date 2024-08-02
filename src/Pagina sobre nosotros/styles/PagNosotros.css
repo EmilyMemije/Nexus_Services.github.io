@@ -13,40 +13,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 10%;
+    width: 100%;
     margin: 2% 0%;
 }
 
 /*Botones de la pag*/
 
-#botones button
+ #Conteiner-principal button
 {
-    border-radius: 2em;
-    padding: 10px 50px;
-    margin: 3%;
-    background-color: var(--green-tea);
-    color: var(--footer-blue);
-    font-weight: bold;
+   
+    color: black;
+    background: transparent;
+    border: none;
+    width: 3%;
+
     
 }
+/*Botones de la pag*/
 
+#botones button:hover{
 
-/*contenedor de los botones*/
-#botones{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    height: 500px;
-    width: 15%;
-    background-color:#212A3E;
-    flex-direction: column;
-    gap: 10px;
     border-radius: 2em;
-    padding-top: 30px;
+    border: solid #296CD1 2px ;
+    box-shadow: 2px 5px 2px 2px #296CD1;
+    padding: 10px 50px;
+    margin: 3%;
+    background-color: #ffffff; 
+    color: #1C2B52;
 }
 
+
 /* contenedor de la informacion*/
+
+
 #info
 {
     display: flex;
@@ -54,12 +53,15 @@
     justify-content: center;
     flex-direction: column;
     background-color: #212A3E;
+    background-repeat: no-repeat;
+    background-position: 50%;
     height: 500px;
     width: 65%;
     margin: 3% 0%;
     border-radius: 2em;
-    color: white;
 }
+
+
 
 .logoback{
     display: flex;
@@ -84,7 +86,7 @@
     text-align: justify;
     height: 50%;
     width: 40%;
-    gap: 0%;
+    color: white;
 }
 
 /* contenedor valores*/
@@ -92,12 +94,16 @@
 {
     display: flex;
     margin: 40px 70px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     text-align: justify;
     flex-direction: column;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    overflow-y:scroll;
+    text-align: justify;
+    height: 60%;
+    width: 50%;
+    padding-top: 15%;
+    padding-right: 5%;
     color: #F2F2EB;
     font-size:15px;
 }
@@ -132,35 +138,26 @@
     justify-content: center;
     text-align: justify;
     flex-direction: column;
+    text-align: justify;
     color: #F2F2EB;
     height: 50%;
     width: 40%;
 }
-
-@media (max-width: 700px){
-    #logo--back{
-        opacity: 10%;
-        width: 350px;
+@media(max-width:700px){
+    .text--ACDH{
+        font-size:xx-small;
     }
+    .text--ACDp{
+        font-size:xx-small;
 
-    #info{
-        width: 55%;
     }
-
-    #botones button{
-        display: flex;
-        justify-content: center;
-        border-radius: 2em;
-        width: 60px;
-    }
-
-    #botones{
-        height: 510px;
-        width: 12%;
-        gap: 15px;
-        border-radius: 2em;
+    #Conteiner-principal{
+    flex-direction: column;
     }
 }
+    
+
+
 
 @media (max-width: 450px){
     #logo--back{

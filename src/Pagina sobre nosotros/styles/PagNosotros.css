@@ -1,3 +1,13 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+    }
+
+
 #Conteiner-principal
 {
     display: flex;
@@ -15,9 +25,12 @@
     border-radius: 2em;
     padding: 10px 50px;
     margin: 3%;
-    background-color: #BAD895;
-    color: white;
+    background-color: var(--green-tea);
+    color: var(--footer-blue);
+    font-weight: bold;
+    
 }
+
 
 /*contenedor de los botones*/
 #botones{
@@ -68,6 +81,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     height: 50%;
     width: 40%;
     gap: 0%;
@@ -80,18 +94,14 @@
     margin: 40px 70px;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     color: #F2F2EB;
     font-size:15px;
 }
 
-#p1{
-    text-align: center;
-}
-
-#container--valores ul{
-    text-align: justify;
-}
 
 #container--valores h2
 {
@@ -106,6 +116,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
     color: #F2F2EB;
     height: 50%;
     width: 40%;
@@ -119,6 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     flex-direction: column;
     color: #F2F2EB;
     height: 50%;

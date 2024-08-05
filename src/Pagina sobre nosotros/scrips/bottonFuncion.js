@@ -68,6 +68,6 @@ function Mostrar(Posicion)
     
 }*/
 
-Autoplay();
+/*Autoplay()*/
 Bmission.addEventListener('click',Adelante)
 Bvission.addEventListener('click',Atras)

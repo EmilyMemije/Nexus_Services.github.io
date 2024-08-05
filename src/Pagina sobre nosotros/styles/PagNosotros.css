@@ -3,33 +3,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
-    margin: 2% 0%;
+    margin: 0% 0%;
+    gap: 0%; 
 }
 
 /*Botones de la pag*/
-
- #Conteiner-principal button
+#botones 
 {
-   
-    color: black;
-    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 2%;
+    padding: 0%;
+}
+#botones button
+{
+    background-color: transparent;
     border: none;
-    width: 3%;
-
+    width: 60px;
+    height: 60px;
+    color: #F2F2EB;
     
 }
-/*Botones de la pag*/
-
-#botones button:hover{
-
-    border-radius: 2em;
-    border: solid #296CD1 2px ;
-    box-shadow: 2px 5px 2px 2px #296CD1;
-    padding: 10px 50px;
-    margin: 3%;
-    background-color: #ffffff; 
-    color: #1C2B52;
+#botones button:hover
+{
+    cursor: pointer;
+    color: aquamarine;
+    animation: 0.6s;
 }
 
 
@@ -38,6 +41,7 @@
 
 #info
 {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,12 +50,20 @@
     background-repeat: no-repeat;
     background-position: 50%;
     height: 500px;
-    width: 65%;
+    width: 80%;
     margin: 3% 0%;
     border-radius: 2em;
+
 }
 
+/*Tanio de la fuente*/
+#info h2, p
+{
+    font-size: large;
 
+}
+
+/*imagen background*/
 
 .logoback{
     display: flex;
@@ -82,16 +94,17 @@
 /* contenedor valores*/
 #container--valores
 {
+    
     display: flex;
     margin: 40px 70px;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y:scroll;
+    overflow: auto;
     text-align: justify;
     height: 60%;
-    width: 50%;
-    padding-top: 15%;
+    width: 70%;
+    padding-top: 5%;
     padding-right: 5%;
     color: #F2F2EB;
     font-size:15px;
@@ -122,7 +135,6 @@
     color: #F2F2EB;
     height: 50%;
     width: 40%;
-
 }
 
 /*contenedor de mision*/
@@ -138,22 +150,133 @@
     height: 50%;
     width: 40%;
 }
-@media(max-width:700px){
-    .text--ACDH{
-        font-size:xx-small;
-    }
-    .text--ACDp{
-        font-size:xx-small;
 
-    }
+/*Seccion de integrantres*/
+#team
+{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#container-team
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.integrante
+{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #212A3E;
+    color: antiquewhite;
+    min-height: 600px;
+    width: 450px;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    padding: 2%;
+    gap: 20px;
+    padding: 1%;
+}
+.integrante img
+{
+    padding: 0%;
+    background-color: #F2F2EB;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    margin: 0%;
+}
+.integrante p
+{
+    text-align: center;
+}
+
+/*inicia media query con configuracion para iphon*/
+@media(max-width:700px){
+   
     #Conteiner-principal{
     flex-direction: column;
     }
+
+    #info
+    {
+        width: 90%;
+    }
+    /*tamanio de letra*/
+    #info h2, p, li
+    {
+        font-size: small;
+
+    }
+
+    /*modificacion del logo*/
+    #logo--back{
+        display: flex;
+        opacity: 5%;
+        width: 100px;
+    }
+    .logoback{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+       opacity: 15%;
+    }
+
+    /*modificacion de botones*/
+    #botones 
+    {
+      width: 100px;
+      width: auto;
+    }
+
+    /*adaptacion del div infp*/
+    #info{
+        margin-top: 10%;
+    }
+    /*adaptacion del contenedor grid*/
+    #container--valores
+    {
+        height: 80%;
+    }
+
+    #container-acercaDeNosotros
+    {
+        height: 90%;
+        width: 70%;
+    }
+
+    #container-mision
+    {
+        height: 90%;
+        width: 70%;
+    }
+
+    #container-vision
+    {
+        height: 90%;
+        width: 70%;
+    }
+
+    #container--valores
+    {
+        height: 90%;
+        width: 70%;
+        padding-top: 60%;
+    }
+
+    .integrante
+    {
+        padding: 10%;
+    }
+
 }
     
-
-
-
 @media (max-width: 450px){
     #logo--back{
         display: flex;

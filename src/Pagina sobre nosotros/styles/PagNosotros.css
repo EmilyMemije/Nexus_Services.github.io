@@ -51,7 +51,8 @@
 
 #info
 {
-    
+
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +71,6 @@
 #info h2, p
 {
     font-size: large;
-
 }
 
 /*imagen background*/
@@ -236,7 +236,7 @@
     /*modificacion de botones*/
     #botones 
     {
-      width: 100px;
+    
       width: auto;
     }
 

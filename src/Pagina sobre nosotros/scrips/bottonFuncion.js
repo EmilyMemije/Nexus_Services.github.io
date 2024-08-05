@@ -1,8 +1,6 @@
 // llamada de los botones
 const Bmission=document.getElementById('mis');
 const Bvission=document.getElementById('vis');
-const Bvalor=document.getElementById('val');
-const Bwe=document.getElementById('nosotros');
 
 
 // llamada de los contenedores
@@ -37,7 +35,6 @@ function Adelante()
     }
 
     Mostrar (posicion);
-    
 }
 
 function Atras()
@@ -52,8 +49,6 @@ function Atras()
         }
 
         Mostrar(posicion);
-       
-
 }
 
 function Mostrar(Posicion)
@@ -63,56 +58,16 @@ function Mostrar(Posicion)
     valor.style.visibility='hidden';
     we.style.visibility='hidden';
 
-    Global[posicion].style.visibility='visible'
+    Global[Posicion].style.visibility='visible'
 }
 
-function Autoplay()
+/*function Autoplay()
 {
   
-    intervalo=setInterval(Adelante,100000);
+    intervalo=setInterval(Adelante,5000);
     
-}
+}*/
 
 Autoplay();
-
-
-
-
-
-
-
-//asignacion de vista de los contenedores
-/*mission.style.visibility='hidden';
-vission.style.visibility='hidden';
-valor.style.visibility='hidden';
-we.style.visibility='visible';*/
-
-//* asignacion de eventos
-Bmission.addEventListener('click',Adelante)/*()=>{
-   /* mission.style.visibility='visible';
-    vission.style.visibility='hidden';
-    valor.style.visibility='hidden';
-    we.style.visibility='hidden';
-})*/
-
-Bvission.addEventListener('click',Atras)/*()=>{
-   /* mission.style.visibility='hidden';
-    vission.style.visibility='visible';
-    valor.style.visibility='hidden';
-    we.style.visibility='hidden';
-})*/
-/*
-Bvalor.addEventListener('click',()=>{
-    mission.style.visibility='hidden';
-    vission.style.visibility='hidden';
-    valor.style.visibility='visible';
-    we.style.visibility='hidden';
-})
-
-Bwe.addEventListener('click',()=>{
-    mission.style.visibility='hidden';
-    vission.style.visibility='hidden';
-    valor.style.visibility='hidden';
-    we.style.visibility='visible';
-})
-*/
+Bmission.addEventListener('click',Adelante)
+Bvission.addEventListener('click',Atras)

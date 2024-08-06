@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="../assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
+    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="./style/login.css">
+
+
+    <!--Conexcion a estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav--container">
+            <div class="nav--logo">
+                <a href="">
+                    <img src="../../assets/NS.png" alt="LogoNS">
+                </a>
+            </div>
+            <div class="centro">
+                <a href="" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <a href="" target="_blank">
+                        <button class="botton">
+                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                        </button>
+                    </a>
+                </div>
+                <div class="nav--menu">
+                    <a href="">Blog</a>
+                    <a href="">Servicios</a>
+                    <a href="">Asociados</a>
+                    <a href="">Donaciones</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a href="" target="_blank">
+                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a href="http://" target="_blank">
+                    <img src="../../assets/User_01.png" alt="ingresar">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Login"-->
+    <div class="container--login">
+        <h2 id="title-login">Inciar Sesión</h2>
+        <div class="container--inicioSocial">
+            <a href="">
+                <img id="logo--google" src="../../assets/google.png" alt="Google">
+            </a>
+            <a href="">
+                <img id="logo--facebook" src="../../assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="">
+                <img id="logo--mac" src="../../assets/mac.png" alt="Mac">
+            </a>
+        </div>
+        <div class="formulario--login">
+            <form action="./src/page/store.html">
+                <input type="email" name="introducir nombre" id="email-login" required="obligatorio"
+                    placeholder="Correo Electrónico">
+                <input type="password" name="introducir nombre" id="password--login" required="obligatorio"
+                    placeholder="Contraseña">
+                <div class="login--boton">
+                    <button id="login">
+                        Iniciar Sesión
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <button id="registro">
+            Registrarse
+        </button>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="section-redes">
+            <a href="">
+                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="section">
+            <a href="" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
+            <br>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+
+     <!--scrip js-->
+     <script src="./scripts/login.js"></script>
+</body>
+
+</html>

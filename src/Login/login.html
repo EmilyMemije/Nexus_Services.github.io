@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!--Icono de la página-->
-    <link rel="icon" href="../assets/NS.png">
+    <link rel="icon" href="../../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
@@ -31,7 +31,7 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
                     <img src="../../assets/NS.png" alt="LogoNS">
                 </a>
             </div>
@@ -48,17 +48,18 @@
                     </a>
                 </div>
                 <div class="nav--menu">
-                    <a href="">Blog</a>
-                    <a href="">Servicios</a>
-                    <a href="">Asociados</a>
-                    <a href="">Donaciones</a>
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="" target="_blank">
+                <a href="/src/SOS/sos.html" target="_blank">
                     <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="http://" target="_blank">
+                <a href="/src/login/login.html" target="_blank">
                     <img src="../../assets/User_01.png" alt="ingresar">
                 </a>
             </div>
@@ -79,11 +80,9 @@
             </a>
         </div>
         <div class="formulario--login">
-            <form action="./src/page/store.html">
-                <input type="email" name="introducir nombre" id="email-login" required="obligatorio"
-                    placeholder="Correo Electrónico">
-                <input type="password" name="introducir nombre" id="password--login" required="obligatorio"
-                    placeholder="Contraseña">
+            <form action="./../../index.html">
+                <input type="email" id="email-login" required="obligatorio" placeholder="Correo Electrónico*">
+                <input type="password" id="password--login" required="obligatorio" placeholder="Contraseña*">
                 <div class="login--boton">
                     <button id="login">
                         Iniciar Sesión

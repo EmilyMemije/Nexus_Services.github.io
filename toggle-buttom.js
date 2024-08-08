@@ -18,7 +18,6 @@ function menu (btn,panel,menulink,btn2)
                 d.querySelector(panel).classList.toggle("is-active");
             }
     })
-
 }
 
 menu(".abrir1",".panel","menu-link",".abrir")

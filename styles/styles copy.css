@@ -617,11 +617,10 @@ footer {
   height: 80px;
 }
 
-.abrir
+.container-list button
 {
     display: none;
 }
-
 @media (max-width: 800px)
 {
 
@@ -655,4 +654,8 @@ footer {
    {
     position: absolute;
    }
+   .container-list button
+{
+    display: block;
+}
 }

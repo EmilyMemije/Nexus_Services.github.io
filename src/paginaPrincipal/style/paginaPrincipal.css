@@ -1,0 +1,742 @@
+/*Seccion del encabezado*/
+main
+{
+    text-align: center;
+}
+main h2
+{
+    font-size: 50px;
+    margin: 0%;
+}
+#Encabezado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 5% 0%;
+    width: 100%;
+}
+
+.Container-encabezado
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#1C2B52;
+    color: white;
+    margin: 10px;
+    height: 800px;
+    width: 800px;
+    border-radius: 2em;
+}
+
+.Container-encabezado h2
+{
+    text-align: center;
+    font-size: 120px;
+}
+.Container-encabezado p
+{
+    text-align: center;
+    font-size: 20px;
+    margin: 0%;
+}
+
+.Container-encabezado button
+{
+    margin-top: 5%;
+    height: 10%;
+    width: 30%;
+    border-radius: 2em;
+    font-size: 30px;
+    transition-duration: .5s;
+}
+.Container-encabezado button:hover
+{
+    margin-top: 5%;
+    height: 11%;
+    width: 33%;
+    color: #212A3E;
+    transition-duration: .5s;
+    border-radius: 2em;
+    font-size: 30px;
+}
+
+/*imagen encabezado*/
+.img-encabezado
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
+    margin: 0%;
+    padding: 0%;
+}
+.img-container-enc
+{
+    position: relative;
+    top: -13%;
+    height: 87%;
+    width: 100%;
+}
+.img-container-enc img
+{
+    height: 100%;
+    width: 100%;
+}
+.boton-text-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -23%;
+    width: 100%;
+}
+
+.boton-text-container button
+{
+    margin-top: 5%;
+    height: 80px;
+    width: 40%;
+    border-radius: 2em;
+    font-size: 30px;
+    color: #212A3E;
+    margin-bottom: 3%;
+    transition-duration: .5s;
+}
+.boton-text-container button:hover
+{
+    margin-top: 5%;
+    height: 90px;
+    width: 45%;
+    border-radius: 2em;
+    font-size: 30px;
+    transition-duration: .5s;
+	background-color:#1C2B52 ; 
+    color: white;
+    margin-bottom: 3%;
+}
+.boton-text-container p
+{
+    text-align: center;
+    font-size: 25px;
+    margin: 0%;
+}
+
+/*Seccion de nuestros doctores*/
+#Medicos
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0%;
+    width: 100%;
+    max-height: 400px;
+    gap: 10%;
+    padding: 2%;
+    flex-direction: column;
+}
+
+#Medicos h2
+{
+    position: relative;
+    top: -20px;
+}
+
+#carouselExampleSlidesOnly
+{
+    position: relative;
+    top: 20px;
+}
+
+.conteiner-medicos
+{
+    position: relative;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#1C2B52;
+    width: 60%;
+    font-size: 20px;
+    border-radius: 2rem;
+    color: white;
+    padding: 3%;
+}
+
+.carousel-item img
+{
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+}
+/*Servicios*/
+.Container-Servicios
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Servicios
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2% 0%;
+}
+
+#card-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 2%;
+    padding: 0%;
+    background-color: #1C2B52;
+    height: 600px;
+    width: 500px;
+    border-radius: 2em;
+    transition-duration: .3s;
+}
+#card-container:hover
+{
+    height: 650px;
+    width: 525px;
+    transition-duration: .3s;
+}
+
+#card-container img
+{
+    width: 100%;
+    height: 80%;
+}
+#card-container a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*servicio veterinario*/
+
+#Veterinario
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 3%;
+    margin: 0%;
+    height: 50%;
+    flex-direction: column;
+
+}
+
+.vet-container
+{
+    display: flex;
+}
+
+
+#img-veterinario img
+{
+    width: 1050px;
+}
+
+#text-veterinario
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 45px;
+    text-align: center;
+}
+#text-veterinario button
+{
+    width: 300px;
+    height: 100px;
+    border-radius: 2em;
+    font-size: 30px;
+    border-color:  #212A3E;
+    color: #212A3E;
+    transition-duration: .5s;
+}
+#text-veterinario button:hover
+{
+    width: 350px;
+    height: 125px;
+    border-radius: 2em;
+    font-size: 30px;
+    border: none;
+    background-color: #212A3E;
+    border: solid white 2px;
+    color: white;
+    transition-duration: .5s;
+}
+/*/////////////////////////////////////*/
+/*PRIMER MEDIA */
+/*/////////////////////////////////////*/
+@media (max-width:1400px)
+{
+
+#Encabezado
+{
+    position: relative;
+    margin: 4%;
+    height: 10%;
+}
+
+.Container-encabezado
+{
+    color: white;
+    margin: 10px;
+    height: 550px;
+    width: 550px;
+    
+}
+
+
+.Container-encabezado h2
+{
+    font-size: 70px;
+}
+
+.Container-encabezado p
+{
+    font-size: 15px;
+}
+
+.Container-encabezado button
+{
+    height: 50px;
+    width: 23%;
+    font-size: 15px;
+}
+
+.Container-encabezado button:hover
+{
+    margin-top: 5%;
+    height: 60px;
+    width: 25%;
+    font-size: 17px;
+    color: #212A3E;
+    
+}
+
+.img-container-enc
+{
+    position: relative;
+    top: -5%;
+    height: 550px;
+    width: 550px;
+}
+.img-container-enc img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/*imagen encabezado*/
+.img-encabezado
+{
+    position: relative;
+    top: 100px;
+    height: 800px;
+    width: 800px;
+}
+.img-container-enc
+{
+    height: 600px;
+    width: 700px;
+    top: -100px;
+}
+.img-container-enc img
+{
+    height: 100%;
+    width: 100%;
+}
+.boton-text-container
+{
+    
+    top: -29%;
+    width: 100%;
+}
+
+.boton-text-container button
+{
+    margin-top: 5%;
+    height: 50px;
+    width: 21%;
+    font-size: 15px;
+}
+.boton-text-container button:hover
+{
+    height: 60px;
+    width: 23%;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+.boton-text-container p
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Seccion de nuestros doctores*/
+#Medicos
+{
+
+    flex-direction: column;
+    margin: 5% 0%;
+    width: 100%;
+    max-height: 400px;
+
+}
+
+#Medicos h2
+{
+
+    position: relative;
+    top: -100px;
+
+}
+
+
+#carouselExampleSlidesOnly
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-medicos
+{
+    position: relative;
+    width: 60%;
+    font-size: 15px;
+    border-radius: 2rem;
+    
+}
+
+.carousel-item img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+/*Servicios*/
+
+#card-container
+{
+    
+    font-size: 15px;
+    margin: 2%;
+    height: 400px;
+    width: 300px;
+    border-radius: 2em;
+    transition-duration: .3s;
+}
+#card-container:hover
+{
+    height: 425px;
+    width: 315px;
+    transition-duration: .3s;
+}
+
+/*servicio veterinario*/
+
+
+#img-veterinario img
+{
+    width: 625px;
+}
+
+#text-veterinario
+{ 
+    font-size: 25px;
+}
+#text-veterinario button
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 2em;
+    font-size: 15px;
+}
+#text-veterinario button:hover
+{
+    width: 225px;
+    height: 60px;
+    border-radius: 2em;
+    font-size: 17px;
+}
+
+}
+/*/////////////////////////////////*/
+/*tableta media*/
+/*//////////////////////////////////*/
+@media (max-width:1030px)
+{
+    #Encabezado
+    {
+        width: 90%;
+    }
+    .Container-encabezado
+    {
+        width: 50%;
+    }
+
+    .Container-encabezado button
+    { 
+        width: 50%;
+    }
+    /*imagen con boton*/
+    .img-encabezado
+    {
+        width: 50%;
+    }
+    .img-container-enc
+    {
+        top: 10px;
+        height: 50%;
+        width: 100%
+    }
+    .img-container-enc img
+    {
+        width: 100%;
+    }
+    .boton-text-container
+    {
+        top: -20px;
+    }
+    .boton-text-container button
+    {
+        width: 40%;
+    }
+
+
+}
+
+/*////////////////////////////////*/
+/*tablet mas peque;a*/
+/*///////////////////////////////*/
+/*/////////////////////////////////*/
+/*celular  media*/
+/*//////////////////////////////////*/
+@media (max-width:749px)
+{
+
+main
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+#Encabezado
+{
+    position: relative;
+    margin: 4%;
+    height: 1200px;
+    flex-direction: column;
+}
+
+.Container-encabezado
+{
+   
+    color: white;
+    margin: 10px;
+    height: 600px;
+    width: 300px;
+    
+}
+
+
+.Container-encabezado h2
+{
+    font-size: 60px;
+}
+
+.Container-encabezado p
+{
+    font-size: 13px;
+
+}
+
+.Container-encabezado button
+{
+    height: 50px;
+    width: 40%;
+    font-size: 15px;
+}
+
+.Container-encabezado button:hover
+{
+    margin-top: 5%;
+    height: 11%;
+    width: 50%;
+    font-size: 20px;
+}
+
+
+.img-container-enc
+{
+    position: relative;
+    top: -30%;
+    height: 350px;
+    width: 350px;
+}
+.img-container-enc img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/*imagen encabezado*/
+
+.boton-text-container
+{
+    
+    top: -35%;
+    width: 100%;
+}
+
+.boton-text-container button
+{
+    margin-top: 5%;
+    height: 50px;
+    width: 60%;
+    font-size: 15px;
+}
+.boton-text-container button:hover
+{
+    height: 60px;
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.boton-text-container p
+{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Seccion de nuestros doctores*/
+#Medicos
+{
+    position: relative;
+    flex-direction: column;
+    top: -150px;
+    margin: 5% 0%;
+    width: 400px;
+    max-height: 400px;
+}
+
+#Medicos h2
+{
+    position: relative;
+    top: 5px;
+}
+
+.conteiner-medicos
+{
+    flex-direction: column;
+    position: relative;
+    left: -1px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 2rem;
+    padding: 5%;
+}
+
+.carousel-item 
+{
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    /*left: -55px;
+    width: 390px;*/
+}
+
+.carousel-item img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+/*Servicios*/
+
+#Servicios
+{
+    margin-top: 20px;
+    width: 400px;
+}
+#card-container
+{
+    
+    font-size: 15px;
+    margin: 2%;
+    height: 400px;
+    width: 300px;
+    border-radius: 2em;
+    transition-duration: .3s;
+}
+#card-container:hover
+{
+    height: 425px;
+    width: 315px;
+    transition-duration: .3s;
+}
+
+/*servicio veterinario*/
+
+#Veterinario
+{
+    flex-direction: column;
+}
+
+#img-veterinario img
+{
+    width: 390px;
+    height: 390px;
+}
+
+.vet-container
+{
+    flex-direction: column;
+}
+#text-veterinario
+{ 
+    font-size: 20px;
+    width: auto;
+}
+
+#text-veterinario button
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 2em;
+    font-size: 15px;
+}
+#text-veterinario button:hover
+{
+    width: 225px;
+    height: 60px;
+    border-radius: 2em;
+    font-size: 17px;
+}
+
+}

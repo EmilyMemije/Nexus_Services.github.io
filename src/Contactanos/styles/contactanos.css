@@ -32,7 +32,7 @@
     padding-bottom: 30px;
 }
 
-p{
+p {
     font-style: oblique;
     
 }
@@ -89,11 +89,12 @@ label{
     
 }
 
-button p{
+button p {
     color: #1C2B52;
     font-family: "Lato";
     font-size: 16px;
 }
+
 span {
     color: #296CD1;
 }

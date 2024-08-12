@@ -7,9 +7,8 @@ body {
 }
 
 /*      Barra de navegación     */
-.nav--container{
+.nav--container {
     background: linear-gradient(279deg, rgba(255, 255, 255, 0.80) 11.65%, rgba(30, 144, 255, 0.80) 66.35%, rgba(92, 183, 221, 0.80) 109.43%);
-    position: sticky;
     display: flex;
     top: 0;
     justify-content: space-between;
@@ -17,7 +16,7 @@ body {
 }
 
 /*      logo Imagen     */
-.nav--logo img{
+.nav--logo img {
     width: 157px;
     height: 157px;
 }
@@ -30,7 +29,7 @@ body {
 }
 
 /*--Titulo Nexus Services--*/
-#NS--title{
+#NS--title {
     text-decoration: none;
 }
 
@@ -54,7 +53,7 @@ body {
     position: relative;
 }
 
-.search--imput{
+.search--imput {
     border: none;
     background: none;
     color: black;
@@ -131,7 +130,7 @@ footer {
     font-size: 18px;
 }
 
-.section-redes{
+.section-redes {
     display: inline;
     position: absolute;
     margin-top: 25px;
@@ -575,4 +574,98 @@ footer {
         opacity: 50%;
         color: white;
     }
+}
+
+/*nav bar 2*/
+
+.Container-nav
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #1C2B52;
+    padding: 20px;
+}
+
+.container-icon img
+{
+    width: 120px;
+    height: 120px;
+  }
+
+.container-list
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+.container-list ul, li
+{
+    list-style: none;
+} 
+
+.ul-lis
+{
+    display: flex;
+    margin: 0px;
+    gap: 20px;
+
+}
+
+.container-login
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-login img
+{
+  width: 80px;
+  height: 80px;
+}
+
+.container-list button
+{
+    display: none;
+}
+@media (max-width: 800px)
+{
+
+    .abrir
+    {
+        display: block;
+    }
+    
+   .panel {
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        background: white;
+        color: black;
+        justify-content: center;
+        width: 200%;
+        height: 25%;
+        position: fixed;
+        top: 0;
+        transform: translateX(100%);
+        transition: .4s;
+   }
+
+   .panel.is-active
+   {
+    transform: translateY(0%);
+    transition: .4s;
+   }
+
+   .button1
+   {
+    position: absolute;
+   }
+   .container-list button
+{
+    display: block;
+}
 }

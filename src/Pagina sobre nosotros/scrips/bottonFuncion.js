@@ -71,3 +71,46 @@ function Mostrar(Posicion)
 /*Autoplay()*/
 Bmission.addEventListener('click',Adelante)
 Bvission.addEventListener('click',Atras)
+
+
+//funcionalidad boton flotante
+
+window.onscroll = function() {//
+    const contenedor = document.querySelector('.contenedor-flotante');
+    const offset = window.pageYOffset || document.documentElement.scrollTop;
+    const topPos = 20; // Ajusta la distancia desde la parte superior
+    
+    // Mantiene la posición fija del contenedor flotante
+    if (offset > topPos) {
+        contenedor.style.top = `${offset + 20}px`; // Mueve el contenedor segun el scroll
+    } else {
+        contenedor.style.top = `${topPos}20px`; // Mantén la posición inicial
+    }
+};
+document.addEventListener('DOMContentLoaded', function() {
+    const metodosPago = document.querySelectorAll('input[name="pago"]');
+    const camposTarjeta = document.getElementById('camposTarjeta');
+    const camposOtrosPagos = document.getElementById('camposOtrosPagos');
+    const casillaTyC = document.getElementById('casillaTyC');
+    const botonDonar = document.getElementById('botonDonar');
+
+    metodosPago.forEach(metodo => {
+        metodo.addEventListener('change', function() {
+            if (this.value === 'tarjeta') {
+                camposTarjeta.style.display = 'block';
+                camposOtrosPagos.style.display = 'none';
+            } else {
+                camposTarjeta.style.display = 'none';
+                camposOtrosPagos.style.display = 'block';
+            }
+        });
+    });
+
+    casillaTyC.addEventListener('change', function() {
+        botonDonar.disabled = !this.checked;
+    });
+
+    // Aquí se puede agregar funcionalidad adicional para la selección del monto de donación y el envío del formulario
+});
+
+

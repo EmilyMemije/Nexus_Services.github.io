@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+
+
+.contenedor-donacion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: #3683f79f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario-donacion, .resumen-donacion {
+    width: 48%;
+}
+
+.metodos-pago {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.metodos-pago label {
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#botonDonar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+#botonDonar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.terminos {
+    margin-top: 1rem;
+}
+
+.resumen-donacion {
+    background-color: #f9f9faa1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.monto{
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.total{
+    display: block;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+
+
+.detalles-tarjeta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles-tarjeta input {
+    width: 48%;
+}

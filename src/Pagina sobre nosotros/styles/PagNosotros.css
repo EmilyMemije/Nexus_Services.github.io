@@ -1,13 +1,3 @@
-:root {
-    --footer-blue: #1C2B52;
-    --ocean-blue: #296CD1;
-    --dark-gray: #869DA6;
-    --ivory: #EFF0D5;
-    --not-white: #F2F2EB;
-    --green-tea: #BAD895;
-    }
-
-
 #Conteiner-principal
 {
     display: flex;
@@ -109,7 +99,6 @@
     margin: 40px 70px;
     align-items: center;
     justify-content: center;
-    text-align: justify;
     flex-direction: column;
     overflow: auto;
     text-align: justify;
@@ -121,6 +110,13 @@
     font-size:15px;
 }
 
+#p1{
+    text-align: center;
+}
+
+#container--valores ul{
+    text-align: justify;
+}
 
 #container--valores h2
 {
@@ -148,7 +144,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
     flex-direction: column;
     text-align: justify;
     color: #F2F2EB;

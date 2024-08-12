@@ -7,7 +7,7 @@ body {
 }
 
 /*      Barra de navegación     */
-.nav--container{
+.nav--container {
     background: linear-gradient(279deg, rgba(255, 255, 255, 0.80) 11.65%, rgba(30, 144, 255, 0.80) 66.35%, rgba(92, 183, 221, 0.80) 109.43%);
     display: flex;
     top: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 /*      logo Imagen     */
-.nav--logo img{
+.nav--logo img {
     width: 157px;
     height: 157px;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 /*--Titulo Nexus Services--*/
-#NS--title{
+#NS--title {
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ body {
     position: relative;
 }
 
-.search--imput{
+.search--imput {
     border: none;
     background: none;
     color: black;
@@ -94,13 +94,15 @@ body {
     text-decoration: none;
     color: #1C2B52;
     text-align: center;
-    padding:0px 15px;
+    padding:2px 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .nav--menu a:hover {
     border-radius: 25px 25px 0px 0px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 14.75%, rgba(30, 144, 255, 0.45) 62.3%, rgba(30, 144, 255, 0.90) 101.64%);
-    transition: 0.1s;
+    transition: .5s;
+    padding-bottom: 2px;
 }
 
 /*      Imagen SOS e Icono      */
@@ -110,7 +112,8 @@ body {
     padding: 10px;
 }
 
-.nav--ingresar {
+.nav--ingresar a {
+    color: #DDEBFA;
     margin-right: 60px;
 }
 
@@ -127,10 +130,14 @@ footer {
     font-size: 18px;
 }
 
-.section-redes{
+.section-redes {
     display: inline;
     position: absolute;
     margin-top: 25px;
+}
+
+.section-redes a {
+    color: #1C2B52;
 }
 
 .img-redes{
@@ -150,6 +157,7 @@ footer {
     width: 40px;
     box-shadow: 2px 2px 2px 2px black;
     opacity: 100%;
+    transition: .05s;
 }
 
 #Twitter:hover{
@@ -158,6 +166,7 @@ footer {
     width: 40px;
     box-shadow: 2px 2px 2px 2px black;
     opacity: 100%;
+    transition: .05s;
 }
 
 #Face:hover{
@@ -166,6 +175,7 @@ footer {
     width: 40px;
     box-shadow: 2px 2px 2px 2px black;
     opacity: 100%;
+    transition: .05s;
 }
 
 .section{
@@ -424,7 +434,7 @@ footer {
     }
 
     #IG:hover{
-        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #1C2B52 120.54%);;
         border-radius: 50%;
         width: 30px;
         box-shadow: 2px 2px 2px 2px black;
@@ -432,7 +442,7 @@ footer {
     }
     
     #Twitter:hover{
-        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #1C2B52 120.54%);;
         border-radius: 50%;
         width: 30px;
         box-shadow: 2px 2px 2px 2px black;
@@ -440,7 +450,7 @@ footer {
     }
     
     #Face:hover{
-        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #1C2B52 120.54%);;
         border-radius: 50%;
         width: 30px;
         box-shadow: 2px 2px 2px 2px black;

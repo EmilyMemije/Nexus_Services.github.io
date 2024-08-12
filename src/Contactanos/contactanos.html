@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Contáctanos</title>
     <!--Icono de la página-->
-    <link rel="icon" href="../assets/NS.png">
+    <link rel="icon" href="../../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
@@ -32,7 +32,7 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="src/paginaPrincipal/paginaPrincipal.html">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
                     <img src="../../assets/NS.png" alt="LogoNS">
                 </a>
             </div>
@@ -53,65 +53,69 @@
                     <a href="/src/servicios/servicios.html">Servicios</a>
                     <a href="/src/Asociados/Asociados.html">Asociados</a>
                     <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="" target="_blank">
+                <a href="/src/SOS/sos.html" target="_blank">
                     <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="src/login/login.html" target="_blank">
+                <a href="/src/login/login.html" target="_blank">
                     <img src="../../assets/User_01.png" alt="ingresar">
                 </a>
             </div>
         </nav>
     </header>
     <!--Formulario de contacto"-->
-<div class="conteinerfull">
-    <div class="conteiner-principal">
-                <div class="formulario">
-                    <h1>Formulario de Contacto</h1>
-                    <h2>Escríbenos</h2>
-                    <p>
-                        <label for="Nombre" class="colocarnombre">Nombre <span class="olicgatorio">*</span>
-                        </label>
-                            <input type="text" name="introducir nombre" id="nombre" required="obligatorio"
-                            placeholder="Escribe tu nombre">
-                    </p>
-                    <p>
-                        <label for="email" class="colocaremail">Email <span class="obligatorio">*</span></label>
-                        <input type="email" name="introducir email" id="email" required="Obligatorio"
-                            placeholder="Escribe tu email">
-                    </p>
-                    <p>
-                        <label for="teléfono" class="colocarteléfono">Teléfono</label>
-                        <input type="text" name="introducir telefono" id="teléfono"
-                            placeholder="Escribe tu teléfono">
-                    </p>
-                    <p>
-                        <label for="asunto" class="colocarasunto">Asunto <span class="obligatorio">*</span></label>
-                        <input type="text" name="introducirasunto" id="email" required="Obligatorio"
-                            placeholder="Escribe un asunto">
-                    </p>
-                    <p>
-                        <label for="mensaje" class="colocarmensaje">Mensaje <span class="olicgatorio">*</span></label>
-                        <textarea name="introducir mensaje" id="mensaje" required="Obligatorio"
-                            placeholder="Introduce tu mensaje aquí..."></textarea>
-                    </p>
-                    
-                        <button type="submit" class="enviar"><p>Enviar</p></button>
-                    <p class="aviso"><span class="obligatorio">*</span>Los campos son obligatorios</p>
-                </div>
-                <!-- Redes Sociales> -->
-    </div>
+    <div class="container--full">
+        <div class="container--principal">
+            <div class="formulario">
+                <h1 class="formulario--contacto">Formulario de Contacto</h1>
+                <h2 class="escribenos">Escríbenos</h2>
+                <p>
+                    <label for="nombre" class="colocarnombre">Nombre <span class="olicgatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocaremail">Email <span class="obligatorio">*</span></label>
+                    <input type="email" name="introducir email" id="email" required="Obligatorio"
+                        placeholder="Escribe tu email">
+                </p>
+                <p>
+                    <label for="teléfono" class="colocarteléfono">Teléfono</label>
+                    <input type="text" name="introducir telefono" id="teléfono" placeholder="Escribe tu teléfono">
+                </p>
+                <p>
+                    <label for="asunto" class="colocarasunto">Asunto <span class="obligatorio">*</span></label>
+                    <input type="text" name="introducirasunto" id="email" required="Obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
+                <p>
+                    <label for="mensaje" class="colocarmensaje">Mensaje <span class="olicgatorio">*</span></label>
+                    <textarea name="introducir mensaje" id="mensaje" required="Obligatorio"
+                        placeholder="Introduce tu mensaje aquí..."></textarea>
+                </p>
+
+                <button type="submit" class="enviar">
+                    <p>Enviar</p>
+                </button>
+                <p class="aviso"><span class="obligatorio">*</span>Los campos son obligatorios</p>
+            </div>
+            <!-- Redes Sociales> -->
+        </div>
         <div class="container--redesSociales">
             <div class="section-social">
                 <div id="correo">
-                        <img class="correo" src="../../assets/correo.png" alt="imagencorreo">
-                        <br>
-                    <div for="" id="emai"><p>josue.hernandez.c03@gmail.com</p></div>
+                    <img class="correo" src="../../assets/correo.png" alt="imagencorreo">
+                    <br>
+                    <div for="" id="emai">
+                        <p>josue.hernandez.c03@gmail.com</p>
+                    </div>
                 </div>
                 <div id="telefono">
-                        <img class="telefono" src="../../assets/llamada.png" alt="">
+                    <img class="telefono" src="../../assets/llamada.png" alt="">
                     </a>
                     <br>
                     <label for="" id="tel">5589635412</label>
@@ -129,7 +133,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -155,4 +159,5 @@
         </div>
     </footer>
 </body>
+
 </html>

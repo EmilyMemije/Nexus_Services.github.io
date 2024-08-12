@@ -1,12 +1,11 @@
-
-.conteinerfull{
+.container--full {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.conteiner-principal {
+.container--principal {
     width: 480px;
     height: auto;
     margin: 90px;
@@ -21,23 +20,24 @@
     color: #fbfbfb;
 }
 
-h1 {
+.formulario--contacto {
     font-size: 40px;
     text-align: center;
 }
 
-h2{
+.escribenos {
     font-size: 25px;
     text-align: left;
     font-style: italic;
     padding-bottom: 30px;
 }
-p{
+
+p {
     font-style: oblique;
     
 }
 
-.conteiner-principal input {
+.container--principal input {
     background-color: #FFFF;
     width: 408px;
     height: 40px;
@@ -73,7 +73,7 @@ label{
     float: center; 	
 }
 
-.conteiner-principal button{
+.container--principal button{
 	height: 45px; 
 	padding-left: 5px;
 	padding-right: 5px; 	
@@ -89,11 +89,12 @@ label{
     
 }
 
-button p{
+button p {
     color: #1C2B52;
     font-family: "Lato";
     font-size: 16px;
 }
+
 span {
     color: #296CD1;
 }
@@ -159,4 +160,122 @@ span {
     display: flex;
     align-items: center;
     margin: 40px;
+}
+
+/*---------Mediaquery-----------*/
+
+/*container principal*/
+@media (max-width: 1280px) {
+    .container--principal {
+        width: 400px;
+        height: 1200px;
+        margin: 45px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .escribenos {
+        font-size: 85%;
+    }
+
+    .colocarnombre, .colocaremail, .colocarteléfono, .colocarasunto, .colocarmensaje {
+        font-size: 20px;
+    }
+    #nombre {
+        width: 85%;
+    }
+
+    
+    #email, #teléfono, #email, #mensaje {
+        width: 85%;
+    }
+
+    .container--principal button {
+        width: 85%;
+    }
+
+    /*redes sociales*/
+    .container--redesSociales {
+        width: 400px;
+    }
+
+    .telefono, .correo, .img-redes {
+        width: 75px;
+    }
+
+    #tel, #emai { 
+        font-size: 20px;
+    }
+
+    .img-redes  {
+        width: 25px;
+    }
+}
+
+/*container principal*/
+@media (max-width: 1000px) {
+    .container--principal {
+        width: 250px;
+        height: 1000px;
+        margin: 45px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .formulario--contacto {
+        font-size: 85%;
+    }
+
+    .escribenos {
+        font-size: 75%;
+    }
+
+    .colocarnombre, .colocaremail, .colocarteléfono, .colocarasunto, .colocarmensaje {
+        font-size: 15px;
+    }
+    #nombre, #email, #teléfono, #mensaje {
+        width: 75%;
+    }
+
+    .container--principal button {
+        width: 75%;
+    }
+
+    .aviso {
+        font-size: 40%;
+    }
+    
+     /*redes sociales*/
+    .container--redesSociales {
+        width: 250px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #tel, #emai { 
+        font-size: 15px;
+    }
+
+    .telefono, .correo {
+        width: 50px;
+    }
+
+    .img-redes  {
+        width: 20px;
+    }
+}
+
+@media (max-width: 810px){
+    .container--full {
+        flex-direction: column;
+    }
+    
+    .container--principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

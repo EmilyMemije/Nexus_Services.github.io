@@ -1,7 +1,7 @@
 .container--principal{
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     
 }
 /*Apartado de informacion*/
@@ -12,8 +12,10 @@
     justify-content: center;
     width: 23.8vw;
     height:100vh;
+    top: 2%;
+    position: sticky;
     background-color: #212A3E;
-    
+    margin-right: 250px;
     
 }
 /*Foto de perfil*/
@@ -25,7 +27,7 @@
     padding-bottom: 25px;
 }
 
-.profile-picture{
+.imagen--perfil{
     width: 170px;
     height: 170px;
     margin-bottom: 20px;
@@ -35,14 +37,14 @@
     border: 2px solid white;
 }
 
-.profile-picture img {
+.imagen--perfil img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-#uploadButton {
+#cambiar--foto {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
@@ -53,8 +55,7 @@
     transition: background-color 0.3s;
 }
 
-
-#uploadButton:hover {
+#cambiar--foto:hover {
     background-color: #0056b3;
     opacity: 50%;
 }
@@ -111,17 +112,6 @@ input[type="file"] {
 }
 
 /*Apartado de historial de servicios*/
-.container--historial{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 76.2vw;
-    height:100vh; 
-    overflow-y:scroll;
-    margin-bottom: 10px;
-    
-}
 .title--historial {
     display: flex;
     flex-direction: column;
@@ -130,15 +120,13 @@ input[type="file"] {
     font-family: "Lato";
     font-size: 48px;
     color: #fbfbfb;
-
 }
 
 .container--card {
     display: flex;
     justify-content: start;
     align-items: start;
-    height: 211px;
-    width: 931px;
+    width: 681px;
     flex-direction: column;
 }
 .product--card {
@@ -147,10 +135,11 @@ input[type="file"] {
     justify-content: start;
     border-radius: 8px;
     padding-bottom: 10px;
+    padding-top: 10px;
     background-color: #B8C2D5;
     margin-bottom: 10px;
-    height: 211px;
-    width: 731px;
+    height: 191px;
+    width: 681px;
 }
 
 .container--imagenServicio{
@@ -164,7 +153,7 @@ input[type="file"] {
 .image--servicio{
     width: 145px;
     height: 145px;
-    margin-bottom: 20px;
+    margin: 20px;
     position: static;
     overflow: hidden;
     border-radius: 50%;
@@ -211,9 +200,6 @@ input[type="file"] {
     align-items: start;
     justify-content: start;
 }
-#price-servicio{
-    padding-left: 10px;
-}
 
 .fecha--hora{
     display: flex;
@@ -240,4 +226,72 @@ input[type="file"] {
 
 #hora--servicio{
     padding-left: 10px;
+}
+
+/*Apartado de actualizar datos*/
+.title--actualizar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+
+}
+
+.container--formActualizar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    width: 681px;
+    margin: auto; 
+    font-family: "Lato";
+    border-radius: 8px;
+    padding-bottom: 25px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+
+.container--formActualizar label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.container--formActualizar input {
+    width: 50%;
+    padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#boton--guardar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guardar--datos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 45px; 
+	width: 252px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #BAD895; 
+	border-color: white; 
+	border-style: solid; 
+	border-radius: 2em;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 28px;
+}
+
+.hidden {
+    display: none;
 }

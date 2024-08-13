@@ -1,0 +1,82 @@
+.container--registrarse {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    margin: 0% 0%;
+    gap: 0%; 
+
+}
+
+.container--registrarse h2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+
+}
+
+
+.container--registrarse input:not([type="checkbox"]), select{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.registrarse--boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#registrarse{
+    height: 70px; 
+	width: 252px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 40px; 	
+	background-color: #1C2B52; 
+	border-color: white; 
+	border-style: solid; 
+	border-radius: 2em;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 28px;
+    color: #FFFF;
+}
+
+#registrarse:hover{
+    background-color: #86C0EA;
+    color: #1C2B52;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
+    border-color: #1C2B52;
+}
+/*
+#login:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+*/

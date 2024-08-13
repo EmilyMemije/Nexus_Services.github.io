@@ -141,7 +141,7 @@
     
 }
 
-#seleccion {
+.seleccion {
     background-color: #5977B3;
     padding: 20px;
     border-radius: 10px;
@@ -152,13 +152,13 @@
 
 }
 
-#seleccion img {
+.seleccion img {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
 
-#seleccion p {
+.seleccion p {
     margin: 0;
     font-size: 30px;
     font-family: "Lato";

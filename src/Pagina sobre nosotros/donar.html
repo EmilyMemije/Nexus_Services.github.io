@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Services</title>
-    <!--Icono de la página-->
+    <title>Nexus Services - Donaciones</title>
     <link rel="icon" href="../../assets/NS.png">
 
+    <link rel="stylesheet" href="./styles/estilosDonar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playwrite+US+Modern:wght@100..400&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
     <link rel="stylesheet" href="./styles/PagNosotros.css">
-    <link rel="stylesheet" href="./styles/estilosDonar.css">
-
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,10 +30,10 @@
     <!--Conexion bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <!-- Navbar -->
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
@@ -44,122 +45,99 @@
                 <a href="" id="NS--title">
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
-                <div class="nav--search">
-                    
-                    </a>
-                </div>
-                <div class="nav--menu">                   
-                </div>
+                <div class="nav--search"></div>
+                <div class="nav--menu"></div>
             </div>
             <div class="nav--ingresar">
                 <a href="/src/SOS/sos.html" target="_blank">
                     <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-               
             </div>
         </nav>
     </header>
 
- <!--contenidos-->
-
- <div class="contenedor-donacion">
-    <div class="formulario-donacion">
-        <h2>Nexus services</h2>
-        <p>Tu donativo ayudará a mejorar la calidad de los servicios y que siga siendo gratuito.</p>
-        
-        <h3>Selecciona el método de pago:</h3>
-        <div class="metodos-pago">
-            <label><input type="radio" name="pago" value="tarjeta"> Tarjeta de Crédito/Débito</label>
-            <label><input type="radio" name="pago" value="oxxo"> Pago en OXXO</label>
-            <label><input type="radio" name="pago" value="transferencia"> Transferencia Interbancaria</label>
-            <label><input type="radio" name="pago" value="paypal"> PayPal</label>
-        </div>
-
-        <form id="formularioDonacion">
-            <div id="camposTarjeta" style="display: none;">
-                <input type="text" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="Correo" required>
-                <input type="text" placeholder="Número de Tarjeta" required>
-                <input type="text" placeholder="Nombre del Titular" required>
-                <div class="detalles-tarjeta">
-                    <input type="text" placeholder="MM/AA" required>
-                    <input type="text" placeholder="CVV/CVC" required>
+    <main>
+        <div class="contenedor-donacion">
+            <div class="container">
+                <h2>Nexus Services</h2>
+                <p>Tu donativo ayudará a mejorar la calidad de los servicios y que siga siendo gratuito.</p>
+                
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito/Débito</label>
                 </div>
-            </div>
-            <div id="camposOtrosPagos" style="display: none;">
-                <input type="text" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="Correo" required>
-            </div>
-            <button type="submit" id="botonDonar" disabled>Donar</button>
-        </form>
+                
+                <div class="payment-option">
+                    <input type="radio" id="oxxo" name="payment" value="oxxo">
+                    <label for="oxxo">Pago en OXXO</label>
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="transfer" name="payment" value="transfer">
+                    <label for="transfer">Transferencia Interbancaria</label>
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                
+                <div id="credit-card-details" class="payment-details">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Correo">
+                    <input type="text" placeholder="Número de Tarjeta">
+                    <input type="text" placeholder="Nombre del titular">
+                    <input type="text" placeholder="MM/AA">
+                    <input type="text" placeholder="CVV/CVC">
+                </div>
 
-        <div class="terminos">
-            <label>
-                <input type="checkbox" id="casillaTyC">
-                Al continuar, acepta nuestros <a href="#">Términos y condiciones</a> y <a href="#">Aviso de Privacidad</a>
-            </label>
-        </div>
+                <div id="other-payment-details" class="payment-details">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Correo">
+                </div>
+                
+                <div class="terms">
+                    <input type="checkbox" id="terms-checkbox">
+                    <label for="terms-checkbox">Acepto los términos y condiciones y el aviso de privacidad</label>
+                </div>
+                
+                <button id="donate-btn" class="submit-btn" disabled>Donar</button>
+            </div>
+
+            <div id="customAlert" class="alerta oculto">
+        <p>Gracias por tu donación!<br>Serás redirigido a la página principal en breve...</p>
     </div>
 
-    
-       
-</main>
-                <div class="resumen-donacion">
+            <div class="resumen-donacion">
                 <h3>Resumen del Donativo</h3>
-                <p>Tu donativo para Nexus services </p>
-                <p class="monto">$000.00</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p>Tu donativo para Nexus services</p>
+                <p>Subtotal: $<span id="subtotal"></span></p>
                 <hr>
-                <p>Total <span class="total">$000.00</span></p>
+                <p class="total">Total: $<span id="total"></span></p>
             </div>
         </div>
     </main>
 
-   
-
-
-  <!--fin del contenido-->
-
-
-  <!--Footer-->
-
-    <!--Footer-->
     <footer>
         <div class="section-redes">
-            <a href="">
-                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
-            </a>
-            <a href="">
-                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
-            </a>
-            <a href="">
-                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
-            </a>
+            <a href=""><img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram"></a>
+            <a href=""><img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X"></a>
+            <a href=""><img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook"></a>
         </div>
         <div class="section">
             <a href="" id="aviso">Aviso de privacidad</a>
             <a href="" id="terminos">Términos y condiciones</a>
             <a href="" id="acces">Accesibilidad</a>
-            <br>
         </div>
         <div class="derechos-copi">
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
 
-
-
-
-    <!--Scrip Botstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!--scrip js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scrips/bottonFuncion.js"></script>
+    <script src="./scrips/BottonesDonar.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

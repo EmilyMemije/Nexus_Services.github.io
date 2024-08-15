@@ -195,6 +195,60 @@
     align-items: center;
 }
 
+.seleccion-monto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.monto-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.monto-btn:hover, .monto-btn.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+.monto-personalizado {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#monto-input {
+    flex-grow: 1;
+}
+
+#monto-confirmar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-donar.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+.input-donar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#monto-input {
+    flex-grow: 1;
+}
+
 .botones-precio {
     display: flex;
     justify-content: space-between; /* Distribuye los botones uniformemente */

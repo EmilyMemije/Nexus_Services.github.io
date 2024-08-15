@@ -181,42 +181,39 @@
     </div>
 
     <div class="contenedor-flotante">
+        <center>
+            <h2><strong>Donaciones</strong></h2>
+        </center>
         <div class="botones-precio">
-            <a href="./donar.html">
-                <button class="boton-donar">50.00 MXN</button>
+            <a >
+                <button id="boton50" class="boton-donar" onclick="redireccionarDonar50()">50.00 MXN</button>
             </a>
-            <a href="./donar.html">
-                <button class="boton-donar">100.00 MXN</button>
+            <a >
+                <button id="boton100" class="boton-donar" onclick="redireccionarDonar100()">100.00 MXN</button>
             </a>
         </div>
         <div class="botones-precio">
-            <a href="./donar.html">
-                <button class="boton-donar">150.00 MXN</button>
+            <a >
+                <button id="boton150" class="boton-donar" onclick="redireccionarDonar150()">150.00 MXN</button>
             </a>
-            <a href="./donar.html">
-                <button class="boton-donar">200.00 MXN</button>
-            </a>
-        </div>
-        <div class="botones-precio">
-            <a href="./donar.html">
-                <button class="boton-donar">500.00 MXN</button>
-            </a>
-            <a href="./donar.html">
-                <button class="boton-donar">1000.00 MXN</button>
+            <a >
+                <button id="boton200" class="boton-donar" onclick="redireccionarDonar200()">200.00 MXN</button>
             </a>
         </div>
         <div class="botones-precio">
-            <a href="./donar.html">
-                <button class="boton-donar">2000.00 MXN</button>
+            <a >
+                <button id="boton500" class="boton-donar" onclick="redireccionarDonar500()">500.00 MXN</button>
             </a>
-            <a href="./donar.html">
-                <button class="boton-donar">Otra cantidad</button>
+            <a >
+                <button id="boton1000" class="boton-donar" onclick="redireccionarDonar1000()">1000.00 MXN</button>
             </a>
+     
+                    
         </div>
         <div class="input-donar">
-            <input type="text" placeholder="Ingresa un monto." />
-            <a href="./donar.html">
-                <button class="boton-donar">Donar</button>
+            <input type="text" id="montoDonacion" placeholder="Ingresa un monto." />
+            <a>
+                <button class="boton-donar" onclick="guardarMonto()">Donar</button>
             </a>
         </div>
     </div>
@@ -324,6 +321,7 @@
         crossorigin="anonymous"></script>
     <!--scrip js-->
     <script src="./scrips/bottonFuncion.js"></script>
+   
 </body>
 
 </html>

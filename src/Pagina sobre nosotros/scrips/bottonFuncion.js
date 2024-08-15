@@ -87,30 +87,67 @@ window.onscroll = function() {//
         contenedor.style.top = `${topPos}20px`; // Mantén la posición inicial
     }
 };
-document.addEventListener('DOMContentLoaded', function() {
-    const metodosPago = document.querySelectorAll('input[name="pago"]');
-    const camposTarjeta = document.getElementById('camposTarjeta');
-    const camposOtrosPagos = document.getElementById('camposOtrosPagos');
-    const casillaTyC = document.getElementById('casillaTyC');
-    const botonDonar = document.getElementById('botonDonar');
+function redireccionarDonar50() {
+    const valorBoton = 50;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton', valorBoton);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
 
-    metodosPago.forEach(metodo => {
-        metodo.addEventListener('change', function() {
-            if (this.value === 'tarjeta') {
-                camposTarjeta.style.display = 'block';
-                camposOtrosPagos.style.display = 'none';
-            } else {
-                camposTarjeta.style.display = 'none';
-                camposOtrosPagos.style.display = 'block';
-            }
-        });
-    });
+}
 
-    casillaTyC.addEventListener('change', function() {
-        botonDonar.disabled = !this.checked;
-    });
+function redireccionarDonar100() {
+    const valorBoton1 = 100;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton1', valorBoton1);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
+}
 
-    // Aquí se puede agregar funcionalidad adicional para la selección del monto de donación y el envío del formulario
-});
+function redireccionarDonar150() {
+    const valorBoton15 = 150;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton15', valorBoton15);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
+}
 
+function redireccionarDonar200() {
+    const valorBoton2 = 200;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton2', valorBoton2);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
+}
+
+function redireccionarDonar500() {
+    const valorBoton50 = 500;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton50', valorBoton50);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
+}
+
+function redireccionarDonar1000() {
+    const valorBoton1000 = 1000;
+    // Guardar el valor en el almacenamiento local del navegador
+    localStorage.setItem('valorBoton1000', valorBoton1000);
+    // Redireccionar a la segunda página
+    window.location.href = "./donar.html";
+
+}
+
+
+function guardarMonto() {
+    const montoDonacion = document.getElementById('montoDonacion').value;
+    // Verificar si se ingresó un monto válido
+    if (montoDonacion && !isNaN(montoDonacion)) {
+        // Guardar el valor en el almacenamiento local del navegador
+        localStorage.setItem('montoDonacion', montoDonacion);
+        window.location.href = "./donar.html";
+    } else {
+        alert("Por favor, ingresa un monto válido.");
+    }
+    
+}
 

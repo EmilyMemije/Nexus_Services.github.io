@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Registro de Usuario</title>
     <!--Icono de la página-->
     <link rel="icon" href="../../../../assets/NS.png">
 
@@ -67,16 +67,30 @@
 
     <!--Registrarse-->
     <div class="container--registrarse">
-        <h2 id="title--registro">Registrarse</h2>
+        <h2 id="title--registro">Registrar Usuario</h2>
         <div class="formulario--registrarse">
-            <form action="./../../index.html">
-                <input type="text" id="nombre--registro" required="obligatorio" placeholder="Nombre*">
-                <input type="text" id="apellidos--registro" required="obligatorio" placeholder="Apellidos*">
-                <input type="text" id="apellidos--registro" required="obligatorio" placeholder="Telefono*">
-                <input type="email" id="correo--registro" required="obligatorio" placeholder="Correo electronico*">
-                <input type="password" id="contraseña--registro" required="obligatorio" placeholder="Contraseña*">
-                <input type="password" id="conf-contraseña--registro" required="obligatorio" placeholder="Confirmar contraseña*">
-                <input type="checkbox" required>acepto los terminos y condiciones
+            <form action="../../login.html" id="registrarseUsuarioForm">
+                <div class="form-group">
+                     <input type="text" id="nombre--registroU" required="obligatorio" placeholder="Nombre Completo*" autocomplete="off">
+                     <span id="nombre-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="telefono--registroU" required="obligatorio" placeholder="Telefono*"autocomplete="off">
+                    <span id="telefono-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="correo--registroU" required="obligatorio" placeholder="Correo electronico*"autocomplete="off">
+                    <span id="correo-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="contraseña--registroU" required="obligatorio" placeholder="Contraseña*">
+                    <span id="contraseña-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="conf-contraseña--registroU" required="obligatorio" placeholder="Confirmar contraseña*">
+                    <span id="contraseñaConf-error" class="error-message"></span>
+                </div>
+                <input type="checkbox" required>Acepto los terminos y condiciones
                 
                 <div class="registrarse--boton">
                     <button id="registrarse">
@@ -115,7 +129,8 @@
         </div>
     </footer>
 
-    
+    <!-- <script src="./scripts/registrar.js"></script> -->
+    <script src="./scripts/registrar.js"></script>
      
 </body>
 

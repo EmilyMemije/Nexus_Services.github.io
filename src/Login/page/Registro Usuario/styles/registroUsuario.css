@@ -33,7 +33,6 @@
     border-color: #296CD1;
     margin-top: 15px;
     padding-left: 15px;
-    margin-bottom: 30px;
     font-family: "Lato";
     font-size: 15px;
     align-items: center;
@@ -73,10 +72,9 @@
     opacity: 120%;
     border-color: #1C2B52;
 }
-/*
-#login:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
+span{
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
-
-*/

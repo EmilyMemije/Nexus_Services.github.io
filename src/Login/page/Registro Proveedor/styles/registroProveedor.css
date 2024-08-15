@@ -21,7 +21,7 @@
 }
 
 
-.container--registrarse input:not([type="checkbox"]), select{
+.container--registrarse input:not([type="checkbox"]){
     display: flex;
     flex-direction: column;
     background-color: #FFFF;
@@ -33,7 +33,24 @@
     border-color: #296CD1;
     margin-top: 15px;
     padding-left: 15px;
-    margin-bottom: 30px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container--registrarse select{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 428px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
     font-family: "Lato";
     font-size: 15px;
     align-items: center;
@@ -72,6 +89,13 @@
     font-weight: bold;
     opacity: 120%;
     border-color: #1C2B52;
+}
+
+span{
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 /*
 #login:disabled{

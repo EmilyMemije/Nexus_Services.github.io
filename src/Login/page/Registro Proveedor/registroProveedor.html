@@ -67,12 +67,12 @@
 
     <!--Registrarse-->
     <div class="container--registrarse">
-        <h2 id="title--registro">Registrarse</h2>
+        <h2 id="title--registro">Registro de Especialista</h2>
         <div class="formulario--registrarse">
-            <form action="./../../index.html">
-                <input type="text" id="nombre--registro" required="obligatorio" placeholder="Nombre*">
-                <input type="text" id="apellidos--registro" required="obligatorio" placeholder="Apellidos*">
-                <select name="especialidad" id="especialidad">
+            <form action="../../login.html" id="registrarseForm">
+                <input type="text" id="nombre--registro" required="obligatorio" placeholder="Nombre Completo*" autocomplete="off">
+                <span id="nombre-error" class="error-message"></span>
+                <select name="especialidad" id="especialidad" required="obligatorio">
                     <option value="">Selecciona una opción</option>
                     <option value="nutricion">Nutrición</option>
                     <option value="psicoligia">Psicoligía</option>
@@ -85,9 +85,13 @@
                     <option value="dermatologia">Dermatología</option>
                     <option value="medicina-vete">Medicina Veterinaria</option>
                 </select>
-                <input type="email" id="correo--registro" required="obligatorio" placeholder="Correo electronico*">
+                <span id="especialidad-error" class="error-message"></span>
+                <input type="email" id="correo--registro" required="obligatorio" placeholder="Correo electronico*" autocomplete="off">
+                <span id="correo-error" class="error-message"></span>
                 <input type="password" id="contraseña--registro" required="obligatorio" placeholder="Contraseña*">
+                <span id="contraseña-error" class="error-message"></span>
                 <input type="password" id="conf-contraseña--registro" required="obligatorio" placeholder="Confirmar contraseña*">
+                <span id="contraseñaConf-error" class="error-message"></span>
                 <input type="checkbox" required>acepto los terminos y condiciones
                 
                 <div class="registrarse--boton">
@@ -127,6 +131,9 @@
         </div>
     </footer>
 
+    <!--scrip js-->
+    <!-- <script src="../Registro Proveedor/scripts/registroProveedor.js"></script> -->
+    <script src="./scripts/registroProveedor.js"></script>
     
      
 </body>

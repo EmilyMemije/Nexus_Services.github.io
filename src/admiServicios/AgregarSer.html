@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles copy.css">
+    <link rel="stylesheet" href="/styles/footer copy.css">
+    <link rel="stylesheet" href="/src/admiServicios/styles/AgregarSer.css">
+</head>
+<body>
+    <header>
+        <nav class="nav--container">
+            <div class="nav--logo">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
+                </a>
+            </div>
+            <div class="centro">
+                <a href="" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
+                    <a href="" target="_blank">
+                        <button class="botton">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                        </button>
+                    </a>
+                </div> 
+                <div class="nav--menu">
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a href="" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                </a>
+            </div>
+        </nav>
+        </header>
+    <!--inicia el cuerpo-->
+    <div class="container">
+     <!-- Menú lateral -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="img/pon-a-un-doctor-validando-unos-documentos-de-acept.png" alt="Perfil" class="profile-pic">
+                <h2>Perfil</h2>
+            </div>
+            <nav class="menu">
+                <a href="/src/admiServicios/admiServicios.html"><button class="menu-button">Servicios</button></a>
+                <a href="/src/admiServicios/AgregarSer.html"><button class="menu-button">Agregar servicio</button></a>
+                <button class="menu-button">Eliminar servicio</button>
+                <button class="menu-button">Actualizar servicio</button>
+            </nav>
+        </aside>
+        <!-- Sección principal -->
+         <main class="main-content">
+            <div class="FormContainer">
+                <section id="Section1">
+                <div class="data">
+                    <label for="services">servicio</label>
+                    <select name="services" id="Services">
+                        <option value="Servicio a brindar"></option>
+                       <option value="Psicologia">Psicologia</option>
+                       <option value="Ginecologia">Ginecologia</option>
+                       <option value="Pediatria">Pediatria</option>
+                       <option value="Medico General">Medico General</option>
+                       <option value="Enfermeria">Enfermeria</option>
+                       <option value="Veterinaria">Veterinaria</option>
+                    </select>
+                    <label for="price">Costo</label>
+                    <input id="price" type="number" placeholder="$0.00" >
+                </div>
+                <div class="data">
+                    <p>Dias de atención</p>
+                    <div id="days">
+                        <button id="M">L</button>
+                        <button id="T">M</button>
+                        <button id="W">M</button>
+                        <button id="Th">J</button>
+                        <button id="F">V</button>
+                        <button id="S">S</button>
+                        <button id="Su">D</button>
+                    </div>
+                    <input id="AllDays" type="checkbox">
+                    <label for="AllDays">Todos los Dias</label>
+                </div>
+                <div class="data">
+                    <input id="ConsOnline" type="checkbox">
+                    <label for="ConsOnline">Consultas Online</label>
+                    <input id="Domi" type="checkbox">
+                    <label for="Domi">Visitas a domicilio</label>
+
+                </div>
+            </section>
+            <section id="Section2">
+                <label for="Description">Descripcion del servicio</label>
+                <input id="Description" type="text">
+                <label for="Documentation">Ingrese La cedula</label>
+                <input id="Documentation" type="file">
+            </section>
+            </div>
+            <section id="Section3">
+            </section>
+            <section id="upload" >
+                <button id="submit">Cargar servicio</button>
+            </section>
+    
+         </main>
+    </div>
+    <footer>
+        <div class="section-redes">
+            <a href="">
+            <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="section">
+            <a href="" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
+            <br>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+    <script src="/src/admiServicios/scrips/AgregarSer.js"></script>
+</body>
+</html>

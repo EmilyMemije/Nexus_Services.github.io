@@ -1,0 +1,275 @@
+footer {
+    background-color: #1C2B52;
+    position: absolute;
+    display: inline-block;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 120px;
+    font-family: "Comfortaa";
+    font-size: 18px;
+}
+
+.section-redes{
+    display: inline;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.img-redes{
+    width: 35px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    padding: 6px;
+    margin-left: 10px;
+    opacity: 50%;
+}
+
+#IG:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#Twitter:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+#Face:hover{
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    border-radius: 50%;
+    width: 40px;
+    box-shadow: 2px 2px 2px 2px black;
+    opacity: 100%;
+}
+
+.section{
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    translate: -50%;
+    top: 30px;
+    font-family: "Comfortaa";
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section a{
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    opacity: 50%;
+}
+
+
+#aviso:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
+}
+
+#terminos:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
+} 
+
+#acces:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
+}
+
+.derechos-copi{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 0px;
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: 50%;
+    color: white;
+}
+
+
+/*-Comiezo de mediaquery´s-*/
+
+@media (max-width: 950px){
+    footer{
+    background-color: black;
+    position: static;
+    display: inline-block;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    font-family: "Comfortaa";
+    font-size: 12px;
+    border: solid white 1px;
+    }
+
+    .section-redes{
+        display: flex;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 50%;
+        translate: -50%;
+    }
+
+    .img-redes{
+        width: 25px;
+        display: inline;
+        padding: 6px;
+        opacity: 50%;
+    }
+
+    #IG:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+    
+    #Twitter:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+    
+    #Face:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+
+    
+    .section{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        translate: -50%;
+        top: 70px;
+        font-family: "Comfortaa";
+        font-size: 10px;
+        padding: 5px;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .section a{
+        font-size: 15px;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width: 510px){
+    footer{
+    background-color: black;
+    position: static;
+    display: inline-block;
+    flex-direction: column;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    font-family: "Comfortaa";
+    font-size: 12px;
+    }
+
+    .section-redes{
+        display: flex;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 50%;
+        translate: -50%;
+    }
+
+    .img-redes{
+        width: 25px;
+        display: inline;
+        padding: 6px;
+        opacity: 50%;
+    }
+
+    #IG:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+    
+    #Twitter:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+    
+    #Face:hover{
+        background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+        border-radius: 50%;
+        width: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        opacity: 100%;
+    }
+
+    
+    .section{
+        position: static;
+        flex-direction: column;
+        gap: 5px;
+        left: 50%;
+        translate: -50%;
+        top: 50px;
+        font-family: "Comfortaa";
+        font-size: 10px;
+        padding: 5px;
+        width: 80%;
+    }
+
+    .section a{
+        font-size: 15px;
+        justify-content: space-between;
+    }
+
+    .derechos-copi{
+        position: static;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        translate: -50%;
+        bottom: 0px;
+        margin-top: 50px;
+        font-size: 10px;
+        opacity: 50%;
+        color: white;
+    }
+}

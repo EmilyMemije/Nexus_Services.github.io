@@ -135,29 +135,28 @@
                 <p>Carrito de Servicios</p>
             </div>
 
+            <div class="carrito--vacio">
+                <p>No hay servicios en tu Carrito, agrega un servicio</p>
+            </div>
+
         <!--Especialidad Agregada-->
-            <div class="contenedor--SAG">
-                <div class="cardSrvicio--agregado">
-                    <h3 class="titulo--especialidad">Especialidad</h3>
-                    <p class="Costo--especialidad">precio</p>
-                    <div class="bton--elim">
-                        <button class="eliminar">X</button>
-                    </div>
-                </div>
+            <div class="contenedor--SAG" id="contenedor--SAG">
+                <!--Se llenará con el Js-->
             </div>
         <!--Cuenta total div-->
-            <div class="cuenta--total">
-                <p>total</p>
-                <p class="total a pagar"> $$$$ </p>
+            <div class="cuenta--total" id="container--totales">
+                <p class="total" id="total">Total</p>
+                <p class="total" id="pesos"> $$$$ </p>
             </div>
 
         <!--Botones del carrito-->
             <div class="btones--carrito">
-                <button class="ir--pago">
-                    <a class="ir--pago" src="">
+                <button  class="ir--pago" id="ir--a--pago" onclick="location.href='../Compra/compra.html'">
+                    <a class="ir--pago" src="../Compra/compra.html">
                         continuar al pago
                     </a>
                 </button>
+                <button class="vaciar--carritoBton">Vaciar Carrito</button>
                 <button class="cerrar--carrito">Cerrar carrito</button>
             </div>
         </div>

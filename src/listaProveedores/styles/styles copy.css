@@ -4,6 +4,7 @@ body {
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     padding-bottom: 7em;
     position: relative;
+    background-color: red;
 }
 
 /*      Barra de navegación     */

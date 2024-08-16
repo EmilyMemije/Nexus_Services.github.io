@@ -1,0 +1,42 @@
+[
+    {
+      "correo": "cesar.cholo10@gmail.com",
+      "contraseña":"12345678"
+    },
+    {
+        "correo": "bobert@gmail.com",
+        "contraseña":"12345678"
+    },
+    {
+        "correo": "david1@gmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "alexix10@gmail.com",
+          "contraseña":"12345678"
+      }, 
+      {
+        "correo": "emilyma@gmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "lizpinky1@hotmail.com",
+          "contraseña":"12345678"
+      }, 
+      {
+        "correo": "oscar123@hotmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "cris123pormi@gmail.com",
+          "contraseña":"12345678"
+      }, 
+      {
+        "correo": "jorge.11@hotmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "juanito_perez@gmail.com",
+          "contraseña":"12345678"
+      }
+  ]

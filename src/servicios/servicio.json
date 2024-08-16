@@ -1,0 +1,72 @@
+[
+  {
+    "id":"0001",
+    "image": "./assets/public-service.png",
+    "servicio": "Cuidado",
+    "descripcion": "Cuidado de personas mayores de edad por día",
+    "precio": 700
+  },
+  {
+    "id":"0002",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta general",
+    "descripcion": "Consulta general de cualquier enfermedad, se asesora (Solo se brinda receta)",
+    "precio": 150
+  },
+  {
+    "id":"0003",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta general",
+    "descripcion": "Consulta general de cualquier enfermedad, se asesora y se brinda medicamento",
+    "precio": 250
+  },
+  {
+    "id":"0004",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta psicológica",
+    "descripcion": "Se asesora por medio online o en oficina",
+    "precio": 500
+  },
+  {
+    "id":"0005",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta Especialista",
+    "descripcion": "Enfermedades especiales",
+    "precio": 800
+  },
+  {
+    "id":"0006",
+    "image": "./assets/public-service.png",
+    "servicio": "Asesoramiento estudiantil",
+    "descripcion": "Se asesora en practicas o en estudio de un tema",
+    "precio": 150
+  },
+  {
+    "id":"0007",
+    "image": "./assets/public-service.png",
+    "servicio": "Consejos para el trabajo",
+    "descripcion": "Consulta online donde se practican consejos para el trabajo",
+    "precio": 200
+  },
+  {
+    "id":"0008",
+    "image": "./assets/public-service.png",
+    "servicio": "Analista de Sesiones",
+    "descripcion": "Se verifica el trabajo tomado y se crea un análisis especial",
+    "precio": 1000
+  },
+  {
+    "id":"0009",
+    "image": "./assets/public-service.png",
+    "servicio": "Apoyo emocional",
+    "descripcion": "Sesión de escucha al paciente",
+    "precio": 600
+  },
+  {
+    "id":"0010",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta a mi criatura",
+    "descripcion": "Se brinda una consulta a tu animalito",
+    "precio": 250
+  }
+]

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Proveedor</title>
+
+    <link rel="stylesheet" href="../../../styles/styles copy.css">
+
+
+    <!-- Conexión a estilos de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    
+
+    <!-- Conexion a estilos CSS-->
+    <link rel="stylesheet" href="../../../styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/configuracionProveedor.css">
+
+</head>
+
+<body>
+    
+        <!-- Navbar -->
+        <header>
+            <nav class="nav--container">
+                <div class="nav--logo">
+                    <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                        <img src="/assets/NS.png" alt="LogoNS">
+                    </a>
+                </div>
+                <div class="centro">
+                    <a href="/src/paginaPrincipal/paginaPrincipal.html" id="NS--title">
+                        <h1 id="nav--title">Nexus Services</h1>
+                    </a>
+                    <div class="nav--search">
+                        <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                        <a href="" target="_blank">
+                            <button class="botton">
+                                <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="nav--menu">
+                        <a href="/src/blog/blog.html">Blog</a>
+                        <a href="/src/servicios/servicios.html">Servicios</a>
+                        <a href="/src/Asociados/Asociados.html">Asociados</a>
+                        <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                        <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                    </div>
+                </div>
+                <div class="nav--ingresar">
+                    <a href="/src/SOS/sos.html" target="_blank">
+                        <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+                    </a>
+                    <a href="/src/login/login.html" target="_blank">
+                        <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Contenedor principal -->
+         <div class="container--principal">
+
+
+            <!-- Calendario -->
+            <div class="container--calendar">
+                <div class="header--calendar">
+                    <h1 id="text-day">00</h1>
+                    <h5 id="text-month">Null-1</h5>
+                </div>
+                <div class="body--calendar">
+                    <div class="container--details">
+                        <div class="detail--1">
+                            <div class="detail">
+                                <div class="circle">
+                                    <div class="column">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="circle">
+                                    <div class="column">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail--2">
+                            <div class="detail">
+                                <div class="circle">
+                                    <div class="column">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail">
+                                <div class="circle">
+                                    <div class="column">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container--change--month">
+                        <button id="last-month">&lt;</button>
+                        <div>
+                            <span id="text-month-02">Null-2</span>
+                            <span id="text-year">0000</span>
+                        </div>
+                        <button id="next-month">&gt;</button>
+                    </div>
+                    <div class="container--weekdays">
+                        <span class="weekdays--item">DOM</span>
+                        <span class="weekdays--item">LUN</span>
+                        <span class="weekdays--item">MAR</span>
+                        <span class="weekdays--item">MIÉ</span>
+                        <span class="weekdays--item">JUE</span>
+                        <span class="weekdays--item">VIE</span>
+                        <span class="weekdays--item">SÁB</span>
+                    </div>
+                    <div class="container--days">
+                        <span class="weekdays--item item--day"></span>
+                    </div>
+                    <div class="container--text">
+                    <h2>¡Mantén una comunicación oportuna con tu paciente en tu agenda!</h2>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Menú -->
+            <div class="container--menu">
+
+                <div>
+                    <img class="menu" id="imagenp" src="./assets/img_config_prov.png" alt="imagenprov">
+                </div>
+
+                <a href="../../paginaPrincipal/paginaPrincipal.html" target="_blank">
+                <button type="submit" class="menu">
+                    <p>Cuenta y contraseña</p>
+                </button>
+                </a>
+
+                <a href="../../paginaPrincipal/paginaPrincipal.html" target="_blank">
+                <button type="submit" class="menu" id="green">
+                    <p> Tus servicios</p>
+                </button>
+                </a>
+
+                <a href="../../paginaPrincipal/paginaPrincipal.html" target="_blank">
+                <button type="submit" class="menu">
+                    <p> Datos de contacto</p>
+                </button>
+                </a>
+
+                <a href="../../ComentariosAdmin/comentariosAdmin.html">
+                <button type="submit" class="menu">
+                    <p> Comentarios</p>
+                </button>
+                </a>
+
+            </div>
+
+         </div>
+
+        
+        <!-- Footer -->
+        <footer>
+            <div class="section-redes">
+                <a href="">
+                    <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
+                </a>
+                <a href="">
+                    <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
+                </a>
+                <a href="">
+                    <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="section">
+                <a href="" id="aviso">Aviso de privacidad</a>
+                <a href="" id="terminos">Términos y condiciones</a>
+                <a href="" id="acces">Accesibilidad</a>
+                <br>
+            </div>
+            <div class="derechos-copi">
+                <p>&copy; Derechos reservados. 2024</p>
+            </div>
+        </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./scripts/calendario.js"></script>
+</body>
+</html>

@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Services</title>
-
-    <!--Icono de la página-->
-    <link rel="icon" href="../../assets/NS.png">
-
-    <!--Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../styles/styles copy.css">
-    <link rel="stylesheet" href="../../src/perfilAdmin/styles/perfilAdmin.css">
-
-    <!--Conexcion a estilos de letras-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
+    <title>Panel de Servicios</title>
+    <link rel="stylesheet" href="/styles/styles copy.css">
+    <link rel="stylesheet" href="/styles/footer copy.css">
+    <link rel="stylesheet" href="/src/admiServicios/styles/admiServicios.css">
 </head>
-
 <body>
-    <!-- Navbar -->
+
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
@@ -67,38 +47,47 @@
         </nav>
         </header>
 
-    <!-- Cuerpo de página -->
-    <div class="admin--title">
-        <h1>¡Que gusto volver a verte por aquí Admin!</h1>
-    </div>
-    <hr>
+        <!--inicia el cuerpo-->
 
-    <!-- Content Section -->
     <div class="container">
-        <div class="imgAdmin--container">
-            <h2>Perfil de administrador</h2>
-            <div class="img--perfil">
-            <img src="../../assets/User_01.png" alt="Img-Usuario">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="img/pon-a-un-doctor-validando-unos-documentos-de-acept.png" alt="Perfil" class="profile-pic">
+                <h2>Perfil</h2>
             </div>
-        </div>
-        <div class="options--container">
-            <a href="../modificarCuentas/modificarCuentas.html">Modificar cuentas</a>
-            <a href="">Modificar servicios</a>
-            <a href="">Configurar cuenta de administrador</a>
-        </div> 
+            <nav class="menu">
+                <a href="/src/admiServicios/admiServicios.html"><button class="menu-button">Servicios</button></a>
+                <a href="/src/admiServicios/AgregarSer.html"><button class="menu-button">Agregar servicio</button></a>
+                <button class="menu-button">Eliminar servicio</button>
+                <button class="menu-button">Actualizar servicio</button>
+            </nav>
+        </aside>
+
+        <!-- Sección principal -->
+        <main class="main-content">
+            <header>
+                <h1>Servicios actuales</h1>
+            </header>
+            <section class="services">
+                <!-- Servicio-->
+                <!-- Puedes duplicar y modificar esta estructura para más servicios -->
+            </section>
+        </main>
+
+        <script src="/src/admiServicios/scrips/admiServicios.js"></script>
     </div>
 
-    <!--Footer-->
     <footer>
         <div class="section-redes">
             <a href="">
-                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
             </a>
             <a href="">
-                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
             </a>
             <a href="">
-                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
             </a>
         </div>
         <div class="section">
@@ -112,5 +101,4 @@
         </div>
     </footer>
 </body>
-
 </html>

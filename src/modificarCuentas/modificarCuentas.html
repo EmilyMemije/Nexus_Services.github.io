@@ -11,7 +11,7 @@
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
-    <link rel="stylesheet" href="../../src/perfilAdmin/styles/perfilAdmin.css">
+    <link rel="stylesheet" href="../../src/modificarCuentas/styles/modificarCuentas.css">
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,25 +68,48 @@
         </header>
 
     <!-- Cuerpo de página -->
-    <div class="admin--title">
-        <h1>¡Que gusto volver a verte por aquí Admin!</h1>
+    <div class="modCuenta--title">
+        <h1>Cuentas registradas</h1>
     </div>
-    <hr>
 
-    <!-- Content Section -->
+    <!-- Main Section -->
     <div class="container">
-        <div class="imgAdmin--container">
-            <h2>Perfil de administrador</h2>
-            <div class="img--perfil">
-            <img src="../../assets/User_01.png" alt="Img-Usuario">
+        <div class="admin--section">
+            <div class="imgAdmin--container">
+                <h2>Perfil de administrador</h2>
+                <div class="img--perfil">
+                    <img src="../../assets/User_01.png" alt="Img-Usuario">
+                </div>
+            </div>
+            <div class="options--container">
+                <a href="">Usuario</a>
+                <a href="">Permisos</a>
+                <a href="">Configuración</a>
             </div>
         </div>
-        <div class="options--container">
-            <a href="../modificarCuentas/modificarCuentas.html">Modificar cuentas</a>
-            <a href="">Modificar servicios</a>
-            <a href="">Configurar cuenta de administrador</a>
-        </div> 
+
+
+        <!-- Titulo -->
+
+        <!--Tarjetas de Servicios-->
+        <section id="fondo--main">
+            <section>
+                <!--Cards que se agregan mediante el DOM-->
+            </section>
+        </section>
+
+        <!-- <div class="user--container">
+            <h3>Nombre de la cuenta</h3>
+            <h3>Tipo de cuenta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eius officiis placeat nostrum,
+                dignissimos
+                quia harum explicabo eos temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste
+                consequuntur
+                voluptatum.</p>
+            <img src="" alt="Imagen Usuario">
+        </div> -->
     </div>
+
 
     <!--Footer-->
     <footer>
@@ -111,6 +134,7 @@
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
+    <script src="./scripts/modificarCuentas.js"></script>
 </body>
 
 </html>

@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Services</title>
 
-    <!--Icono de la página-->
-    <link rel="icon" href="../../assets/NS.png">
-
-    <!--Conexion a estilos CSS-->
+    <title>Document</title>
+    <!--estilos-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="/src/paginaPrincipal/style/paginaPrincipal.css">
+    <!--bootsttrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--Conexcion a estilos de letras-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
+<header>
     <!-- Navbar -->
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="../paginaPrincipal/paginaPrincipal.html">
-                    <img src="../../assets/NS.png" alt="LogoNS">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
                 </a>
             </div>
             <div class="centro">
@@ -36,55 +28,181 @@
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
                 <div class="nav--search">
-                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
                     <a href="" target="_blank">
                         <button class="botton">
-                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
                         </button>
                     </a>
-                </div>
+                </div> 
                 <div class="nav--menu">
-                    <a href="../blog/blog.html">Blog</a>
-                    <a href="../servicios/servicios.html">Servicios</a>
-                    <a href="../Asociados/Asociados.html">Asociados</a>
-                    <a href="../Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="../Contactanos/contactanos.html">Contáctanos</a>
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="../SOS/sos.html" target="_blank">
-                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                <a href="/src/SOS/sos.html" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="../login/login.html" target="_blank">
-                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
                 </a>
             </div>
         </nav>
 
-
-    <!--Footer-->
-    <footer>
-        <div class="section-redes">
-            <a href="">
-                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
-            </a>
-            <a href="">
-                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
-            </a>
-            <a href="">
-                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
-            </a>
-        </div>
-        <div class="section">
-            <a href="" id="aviso">Aviso de privacidad</a>
-            <a href="" id="terminos">Términos y condiciones</a>
-            <a href="" id="acces">Accesibilidad</a>
+        </header>
+        <!--pagina principal -->
+        <main>
+            <!--Seccion de encavezado -->
+            <section id="Encabezado">
+                <div class="Container-encabezado">
+                    <h2>¿Como te sientes?</h2>
+                    <p>Agenda una cita con el medico mas</p> 
+                    <p>sercano a ti para atender aquello</p> 
+                    <p>que te aqueja</p>
+                    <button id="agendar">Agendar cita</button>
+                </div>
+                <div class="img-encabezado">
+                    <div class="img-container-enc"><img src="/src/paginaPrincipal/src/img/Online Doctor-pana.png" alt="encabezado">
+                    </div>
+                    <div class="boton-text-container">  
+                        <button >Nuestros Servicios</button>
+                        <p>Checa nuestros servicios</p>
+                        <p>para mantenerte mas saludable y mas </p>
+                        <p>feliz</p>
+                    </div> 
+                </div>
+            </section>
+            <!--carrusel nuestros medicos-->
+            <section id="Medicos">
+                <h2>Nuestros Medicos</h2>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="conteiner-medicos">
+                                    <img src="/src/paginaPrincipal/src/img/Doctors-rafiki.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa adipisci consequatur minus sint, nostrum soluta est eius voluptatum, ex suscipit quaerat ipsam ut cumque, magni aperiam tempore iure pariatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, voluptate blanditiis harum rem neque temporibus est doloremque velit tenetur, inventore minima mollitia, ullam alias sit </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="conteiner-medicos">
+                                    <img src="/src/paginaPrincipal/src/img/Doctors-rafiki.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa adipisci consequatur minus sint, nostrum soluta est eius voluptatum, ex suscipit quaerat ipsam ut cumque, magni aperiam tempore iure pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, asperiores. Nihil tenetur dicta repudiandae ipsum ad sequi rem eum. Dicta unde nesciunt ex a laborum dolorem harum eos, </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="conteiner-medicos">
+                                    <img src="/src/paginaPrincipal/src/img/Doctors-rafiki.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa adipisci consequatur minus sint, nostrum soluta est eius voluptatum, ex suscipit quaerat ipsam ut cumque, magni aperiam tempore iure pariatur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde, tempore officia nobis nisi, facere impedit numquam vel aliquam doloremque quibusdam enim labore! Consequatur nesciunt i</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </section>
+             <!--servicios -->
+             <Div class="Container-Servicios">
+             <h2>Nuestros servicios</h2>
+            <Section id="Servicios">
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Doctors-rafiki.png" alt="General">
+                        <p>Medico general</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Psychologist-pana.png" alt="Psicologia">
+                        <p>Psicologia</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Eating healthy food-rafiki.png" alt="Nutriologia">
+                        <p>Nutriologia</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Public health-rafiki.png" alt="Enfermeria">
+                        <p>Enfermeria</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/crea-un-dentista-atendiendo-a-un-pasiente-con-colo (1).png" alt="Odontologia">
+                        <p>Odontologia</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Pediatrician-rafiki.png" alt="Pediatria">
+                        <p>Pediatria</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/endocrinologo.png" alt="Endocrinologia">
+                        <p>Endocrinologia</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="">
+                        <img src="/src/paginaPrincipal/src/img/Gynecology consultation-rafiki.png" alt="Ginecologia">
+                        <p>Ginecologia</p>
+                    </a>
+                </div>
+                <div id="card-container">
+                    <a href="src/paginaPrincipal/src/img/Skincare-rafiki.png">
+                        <img src="" alt="Dermatologia">
+                        <p>Dermatologia</p>
+                    </a>
+                </div>
+            </Div>
+            </Section>
             <br>
-        </div>
-        <div class="derechos-copi">
-            <p>&copy; Derechos reservados. 2024</p>
-        </div>
-    </footer>
-</body>
+            <!--servicio veterinario-->
+            <section id="Veterinario">
+                <h2>Servicio Veterinario</h2>
+                <div class="vet-container">
+                <div id="img-veterinario">
+                    <img src="/src/paginaPrincipal/src/img/Veterinary-rafiki.png" alt="">
+                </div>
+                <div id="text-veterinario">
+                    <p>Porque ellos tambien son parte de nuestra familia, necesitan estar sanos y fuertes te ofrecemos el servicio veterinario para estar mas tranquil@ con tu mejor amig@.</p>
+                    <button id="servicio-vete">Servicio Veterinario</button>
+                </div>
+            </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="section-redes">
+                <a href="">
+                <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
+                </a>
+                <a href="">
+                    <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
+                </a>
+                <a href="">
+                    <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="section">
+                <a href="" id="aviso">Aviso de privacidad</a>
+                <a href="" id="terminos">Términos y condiciones</a>
+                <a href="" id="acces">Accesibilidad</a>
+                <br>
+            </div>
+            <div class="derechos-copi">
+                <p>&copy; Derechos reservados. 2024</p>
+            </div>
+        </footer>
+    <!--Link bootstra-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+</body>
 </html>

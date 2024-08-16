@@ -28,11 +28,12 @@
 
 <body>
     <!-- Navbar -->
-    <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="/src/paginaPrincipal/paginaPrincipal.html">
-                    <img src="../../assets/NS.png" alt="LogoNS">
+
+                <a href="">
+                    <img src="/assets/NS.png" alt="LogoNS">
+
                 </a>
             </div>
             <div class="centro">
@@ -48,23 +49,21 @@
                     </a>
                 </div>
                 <div class="nav--menu">
-                    <a href="/src/blog/blog.html">Blog</a>
-                    <a href="/src/servicios/servicios.html">Servicios</a>
-                    <a href="/src/Asociados/Asociados.html">Asociados</a>
-                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                    <a href="../blog/blog.html">Blog</a>
+                    <a href="../servicios/servicios.html">Servicios</a>
+                    <a href="../Asociados/Asociados.html">Asociados</a>
+                    <a href="../Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="../Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="/src/SOS/sos.html" target="_blank">
-                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
-                </a>
-                <a href="/src/login/login.html" target="_blank">
-                    <img src="../../assets/User_01.png" alt="ingresar">
+
+                <a href="" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+
                 </a>
             </div>
         </nav>
-    </header>
     <!--Login"-->
     <div class="container--login">
         <h2 id="title-login">Inciar Sesión</h2>
@@ -100,14 +99,18 @@
      <!--Modal-->
      <dialog id="miModal" class="modal">
         <div class="container--seleccion">
-            <button id="seleccion">
-                <img src="../../assets/paciente.png" alt="Soy Paciente">
-                <p>Soy Paciente</p>
-            </button>
-            <button id="seleccion">
-                <img src="../../assets/doctor.png" alt="Soy Espacialista">
-                <p>Soy Especialista</p>
-            </button>
+            <form action="./page/Registro Usuario/registroUsuario.html" id="btnUsuario">
+                <button id="seleccion--usuario" class="seleccion">
+                    <img src="../../assets/paciente.png" alt="Soy Paciente">
+                    <p>Soy Paciente</p>
+                </button>
+            </form>
+            <form action="./page/Registro Proveedor/registroProveedor.html" id="btnProveedor">
+                <button id="seleccion--especialista" class="seleccion">
+                    <img src="../../assets/doctor.png" alt="Soy Espacialista">
+                    <p>Soy Especialista</p>
+                </button>
+            </form>
         </div> 
     </dialog>
 

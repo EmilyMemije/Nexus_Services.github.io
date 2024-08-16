@@ -131,6 +131,21 @@
     background-color: rgba(0, 0, 0, .70);
 }
 
+#btnUsuario {
+   padding-right: 20px;
+   padding-left: 20px;
+}
+
+#btnProveedor {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+#seleccion--usuario{
+    width: 245px;
+}
+
 .container--seleccion {
     display: flex;
     justify-content: center;
@@ -141,7 +156,7 @@
     
 }
 
-#seleccion {
+.seleccion {
     background-color: #5977B3;
     padding: 20px;
     border-radius: 10px;
@@ -152,13 +167,13 @@
 
 }
 
-#seleccion img {
+.seleccion img {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
 
-#seleccion p {
+.seleccion p {
     margin: 0;
     font-size: 30px;
     font-family: "Lato";

@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles copy.css">
+    <link rel="stylesheet" href="/styles/footer copy.css">
     <link rel="stylesheet" href="/src/admiServicios/styles/AgregarSer.css">
 </head>
 <body>
-
+    <header>
+        <nav class="nav--container">
+            <div class="nav--logo">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
+                </a>
+            </div>
+            <div class="centro">
+                <a href="" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
+                    <a href="" target="_blank">
+                        <button class="botton">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                        </button>
+                    </a>
+                </div> 
+                <div class="nav--menu">
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a href="" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                </a>
+            </div>
+        </nav>
+        </header>
+    <!--inicia el cuerpo-->
     <div class="container">
      <!-- Menú lateral -->
         <aside class="sidebar">
@@ -16,8 +55,8 @@
                 <h2>Perfil</h2>
             </div>
             <nav class="menu">
-                <button class="menu-button">Servicios</button>
-                <button class="menu-button">Agregar servicio</button>
+                <a href="/src/admiServicios/admiServicios.html"><button class="menu-button">Servicios</button></a>
+                <a href="/src/admiServicios/AgregarSer.html"><button class="menu-button">Agregar servicio</button></a>
                 <button class="menu-button">Eliminar servicio</button>
                 <button class="menu-button">Actualizar servicio</button>
             </nav>
@@ -70,9 +109,6 @@
             </section>
             </div>
             <section id="Section3">
-                <div class="service">
-
-                </div>
             </section>
             <section id="upload" >
                 <button id="submit">Cargar servicio</button>
@@ -83,13 +119,13 @@
     <footer>
         <div class="section-redes">
             <a href="">
-            <img class="img-redes" id="IG" src="./assets/IG.png" alt="Instagram">
+            <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
             </a>
             <a href="">
-                <img class="img-redes" id="Twitter" src="./assets/X.png" alt="X">
+                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
             </a>
             <a href="">
-                <img class="img-redes" id="Face" src="./assets/FB.png" alt="Facebook">
+                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
             </a>
         </div>
         <div class="section">
@@ -102,6 +138,6 @@
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
-    <script src="src/admiServicios/scrips/AgregarSer.js"></script>
+    <script src="/src/admiServicios/scrips/AgregarSer.js"></script>
 </body>
 </html>

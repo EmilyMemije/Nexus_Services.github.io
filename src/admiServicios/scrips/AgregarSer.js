@@ -19,11 +19,13 @@ selectedDaysContainer.style.flexWrap = 'wrap'; // Opcional, si deseas que los dÃ
 /*FunciÃ³n que crea la tarjeta*/
 function crearTarjetaServicio() {
     // Crear los elementos HTML
-    
-    const detailsDiv = document.querySelector('.service');
+    const servicioDiv = document.createElement('div');
+    servicioDiv.className = 'service';
+
+    const detailsDiv = document.createElement('div');
     detailsDiv.className = 'service-details';
 
-    /*Service.addEventListener('change', e => {
+    Service.addEventListener('change', e => {
         nombre.textContent = e.target.value;
         if (e.target.value=="Psicologia")
             {
@@ -33,31 +35,31 @@ function crearTarjetaServicio() {
             }
        else if (e.target.value=="Ginecologia")
             {
-            img.src = '/img/Gynecology consultation-rafiki.png';
+            img.src = '../admiServicios/img/Gynecology consultation-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
         else if (e.target.value=="Pediatria")
             {
-            img.src = '../img/Pediatrician-rafiki.png';
+            img.src = '../admiServicios/img/Pediatrician-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
         else if (e.target.value=="Medico General")
             {
-            img.src = '../img/Doctors-rafiki.png';
+            img.src = '../admiServicios/img/Doctors-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
          else if (e.target.value=="Enfermeria")
             {
-            img.src = '../img/Public health-rafiki.png';
+            img.src = '../admiServicios/img/Public health-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
          else if (e.target.value=="Veterinaria")
             {
-            img.src = '../img/Veterinary-rafiki.png';
+            img.src = '../admiServicios/img/Veterinary-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
@@ -66,8 +68,8 @@ function crearTarjetaServicio() {
             img.src = '';
             img.alt = '';
             img.className = '';
-            }*/
-    /*});*/
+            }
+    });
 
     Des.addEventListener('change', e => {
         descripcion.textContent = e.target.value;

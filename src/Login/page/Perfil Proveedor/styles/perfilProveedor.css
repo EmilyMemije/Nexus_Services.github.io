@@ -163,9 +163,33 @@ input[type="file"] {
     border: 1px solid #ccc;
 }
 
+#boton--guardar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guardar--datos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 45px; 
+	width: 252px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #BAD895; 
+	border-color: white; 
+	border-style: solid; 
+	border-radius: 2em;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 28px;
+}
 
 
-   
+
     
 
 

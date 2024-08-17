@@ -31,9 +31,11 @@ const ubicacion = document.createElement('p');
 ubicacion.textContent=servicio.Ubicación;
 
 const btn1=document.createElement('button');
-btn1.textContent="btn1";
+btn1.textContent="Ver perfil";
 const btn2=document.createElement('button');
-btn2.textContent="btn2";
+btn2.textContent="Agendar Cita";
+
+/*onclick="location.href='/src/listaProveedores/listaProveedores.html'" */
 
 /*seccion donde se crean las estrellas*/
 

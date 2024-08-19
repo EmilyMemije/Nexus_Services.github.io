@@ -7,6 +7,10 @@
     --green-tea: #BAD895;
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
 .Principal-banner{
     background-color: var(--dark-gray);
     background-size:contain;
@@ -18,11 +22,11 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
+    overflow: hidden;
 }
 
 .Principal-banner img{
     width: auto;
-    max-width: 100%;
     max-width: 550px;
     height: auto;
     object-fit: cover;
@@ -109,7 +113,8 @@
 }
 
 .hidden-images {
-    visibility: hidden;
+    display: none;
+    visibility: none;
     opacity: 0;
     grid-column: 1/-1;
     gap: 50px 100px;
@@ -183,6 +188,7 @@
     padding-bottom: 15px;
     text-align: right;
     color: var(--footer-blue);
+    margin-right: 20px;
 }
 
 

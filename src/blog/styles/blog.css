@@ -109,6 +109,7 @@
 }
 
 .hidden-images {
+    display: none;
     visibility: hidden;
     opacity: 0;
     grid-column: 1/-1;

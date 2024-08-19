@@ -70,9 +70,9 @@
         <h2 id="title--registro">Registro de Especialista</h2>
         <div class="formulario--registrarse">
             <form action="../../login.html" id="registrarseForm">
-                <input type="text" id="nombre--registro" required="obligatorio" placeholder="Nombre Completo*" autocomplete="off">
+                <input type="text" name="nombre--registro" id="nombre--registro" required placeholder="Nombre Completo*" autocomplete="off">
                 <span id="nombre-error" class="error-message"></span>
-                <select name="especialidad" id="especialidad" required="obligatorio">
+                <select name="especialidad" id="especialidad" required>
                     <option value="">Selecciona una opción</option>
                     <option value="nutricion">Nutrición</option>
                     <option value="psicoligia">Psicoligía</option>
@@ -86,11 +86,11 @@
                     <option value="medicina-vete">Medicina Veterinaria</option>
                 </select>
                 <span id="especialidad-error" class="error-message"></span>
-                <input type="email" id="correo--registro" required="obligatorio" placeholder="Correo electronico*" autocomplete="off">
+                <input type="email" name="correo--registro" id="correo--registro" required placeholder="Correo electronico*" autocomplete="off">
                 <span id="correo-error" class="error-message"></span>
-                <input type="password" id="contraseña--registro" required="obligatorio" placeholder="Contraseña*">
+                <input type="password" name="conf-contraseña--registro" id="contraseña--registro" required placeholder="Contraseña*">
                 <span id="contraseña-error" class="error-message"></span>
-                <input type="password" id="conf-contraseña--registro" required="obligatorio" placeholder="Confirmar contraseña*">
+                <input type="password" name="conf-contraseña--registro" id="conf-contraseña--registro" required placeholder="Confirmar contraseña*">
                 <span id="contraseñaConf-error" class="error-message"></span>
                 <input type="checkbox" required id="check">acepto los terminos y condiciones
                 

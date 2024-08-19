@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Services</title>
-
     <!--Icono de la página-->
     <link rel="icon" href="../../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/listaProveedores.css">
+    <link rel="stylesheet" href="./styles/flexbox.css">
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +19,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+
+    <!--Conexion bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,40 +35,144 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="../paginaPrincipal/paginaPrincipal.html">
-                    <img src="../../assets/NS.png" alt="LogoNS">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
                 </a>
             </div>
             <div class="centro">
-                <a href="" id="NS--title">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html" id="NS--title">
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
                 <div class="nav--search">
-                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
                     <a href="" target="_blank">
                         <button class="botton">
-                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
                         </button>
                     </a>
-                </div>
+                </div> 
                 <div class="nav--menu">
-                    <a href="../blog/blog.html">Blog</a>
-                    <a href="../servicios/servicios.html">Servicios</a>
-                    <a href="../Asociados/Asociados.html">Asociados</a>
-                    <a href="../Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="../Contactanos/contactanos.html">Contáctanos</a>
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="../SOS/sos.html" target="_blank">
-                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                <a href="/src/SOS/sos.html" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="../login/login.html" target="_blank">
-                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
                 </a>
             </div>
         </nav>
-    </header>
+        </header>
+
+    <!---->
+
+    <h1 id="profesionales">Profesionales</h1>
+    <div class="body--search">
+        <input class="search--imput" type="text" name="search" placeholder="Buscar: Psicólogos...">
+        <a href="" target="_blank">
+        </a>
+    </div>
+
+    <div class="category--list">
+        <p id="filtro">Filtrar:</p>
+        <a href="#" class="filter-link" data-filter="all">Todos</a>
+        <select name="Services" id="Servicio">
+            <option value="Especialidad">Especialidad</option>
+            <option value="Nutrición">Nutrición</option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Médico General"> Médico General</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Enfermería">Enfermería</option>
+          | <option value="Ginecologia">Ginecologia</option>
+            <option value="Endocrinología">Endocrinología</option>    
+            <option value="Pediatria">Pediatria</option> 
+            <option value="Dermatología">Dermatología</option>
+            <option value="Veterinario">Veterinario</option>          
+        </select>
+        <select name="Review" id="review">
+            <option value="Calificado">Por Calificacion</option>
+            <option value="★★★★★">★★★★★</option>
+            <option value="★★★★☆">★★★★☆</option>
+            <option value="★★★☆☆">★★★☆☆</option>
+            <option value="★★☆☆☆">★★☆☆☆</option>
+            <option value="★☆☆☆☆">★☆☆☆☆</option>
+        </select>
+        <select name="Place" id="place">
+            <option value="Cercano">Más cercano</option>
+            <option value="AO">Álvaro Obregón/option>
+            <option value="AZ">Azcapotzalco/option>
+            <option value="BJ">Benito Juaréz</option>
+            <option value="CO">Coyoacán</option>
+            <option value="CU">Cuajimalpa</option>
+            <option value="CC">Cuauhtémoc</option>
+            <option value="GA">Gustavo A. Madero</option>
+            <option value="IZ">Iztacalco</option>
+            <option value="IP">Iztapalapa</option>
+            <option value="MC">Magdalena Contreras</option>
+            <option value="MH">Miguel Hidalgo</option>
+            <option value="MA">Milpa Alta</option>
+            <option value="TH">Tláhuac</option>
+            <option value="TL">Tlalpan</option>
+            <option value="VC">Venustiano Carranza</option>
+            <option value="XO">Xochimilco</option>
+        </select>
+    </div>
+
+
+    <div class="container">
+        <!--<div class="box" category="MedicoCardiologo">
+            <h2>Dra. Amanda Luna</h2> <img src="./assets/BLOG.jpg" alt="AmandaL.png">
+            <div class="text">
+                <p>Médico Cardiólogo</p>
+                <p>Gustavo A. Madero, CDMX.</p>
+                <button>Ver perfil</button>
+                <button>Haz una cita</button>
+            </div>
+        </div>-->
+    </div>
+    <div>
+        <div class="boton--sig">
+            <button>Siguiente</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="category--letter">
+                <a href="#" id="categoryLetter" category="A">A</a>
+                <a href="#" id="categoryLetter" category="B">B</a>
+                <a href="#" id="categoryLetter" category="C">C</a>
+                <a href="#" id="categoryLetter" category="D">D</a>
+                <a href="#" id="categoryLetter" category="E">E</a>
+                <a href="#" id="categoryLetter" category="F">F</a>
+                <a href="#" id="categoryLetter" category="G">G</a>
+                <a href="#" id="categoryLetter" category="H">H</a>
+                <a href="#" id="categoryLetter" category="I">I</a>
+                <a href="#" id="categoryLetter" category="J">J</a>
+                <a href="#" id="categoryLetter" category="K">K</a>
+                <a href="#" id="categoryLetter" category="L">L</a>
+                <a href="#" id="categoryLetter" category="M">M</a>
+                <a href="#" id="categoryLetter" category="N">N</a>
+                <a href="#" id="categoryLetter" category="O">O</a>
+                <a href="#" id="categoryLetter" category="P">P</a>
+                <a href="#" id="categoryLetter" category="Q">Q</a>
+                <a href="#" id="categoryLetter" category="R">R</a>
+                <a href="#" id="categoryLetter" category="S">S</a>
+                <a href="#" id="categoryLetter" category="T">T</a>
+                <a href="#" id="categoryLetter" category="U">U</a>
+                <a href="#" id="categoryLetter" category="V">V</a>
+                <a href="#" id="categoryLetter" category="W">W</a>
+                <a href="#" id="categoryLetter" category="X">X</a>
+                <a href="#" id="categoryLetter" category="Y">Y</a>
+                <a href="#" id="categoryLetter" category="Z">Z</a>
+            </div>
+        </div>
+    </div>
 
     <!--Footer-->
     <footer>
@@ -86,6 +197,14 @@
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
+
+
+    <!--Scrip Botstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--scrip js-->
+    <script src="./scrips/listaProveedores.js"></script>
 </body>
 
 </html>

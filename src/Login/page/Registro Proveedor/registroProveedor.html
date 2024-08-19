@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
-    <!--Icono de la p�gina-->
+    <!--Icono de la página-->
     <link rel="icon" href="../../../../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
@@ -51,7 +51,7 @@
                     <a href="/src/servicios/servicios.html">Servicios</a>
                     <a href="/src/Asociados/Asociados.html">Asociados</a>
                     <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="/src/Contactanos/contactanos.html">Cont�ctanos</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
@@ -67,28 +67,32 @@
 
     <!--Registrarse-->
     <div class="container--registrarse">
-        <h2 id="title--registro">Registrarse</h2>
+        <h2 id="title--registro">Registro de Especialista</h2>
         <div class="formulario--registrarse">
-            <form action="./../../index.html">
-                <input type="text" id="nombre--registro" required="obligatorio" placeholder="Nombre*">
-                <input type="text" id="apellidos--registro" required="obligatorio" placeholder="Apellidos*">
-                <select name="especialidad" id="especialidad">
-                    <option value="">Selecciona una opci�n</option>
-                    <option value="nutricion">Nutrici�n</option>
-                    <option value="psicoligia">Psicolig�a</option>
-                    <option value="medico-general">M�dico General</option>
-                    <option value="odontologia">Odontolog�a</option>
-                    <option value="enfermeria">Enfermer�a</option>
-                    <option value="ginecologia">Ginecolog�a</option>
-                    <option value="endocrinologia">Endocrinolog�a</option>
-                    <option value="pediatria">Pediat�a</option>
-                    <option value="dermatologia">Dermatolog�a</option>
+            <form action="../../login.html" id="registrarseForm">
+                <input type="text" name="nombre--registro" id="nombre--registro" required placeholder="Nombre Completo*" autocomplete="off">
+                <span id="nombre-error" class="error-message"></span>
+                <select name="especialidad" id="especialidad" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="nutricion">Nutrición</option>
+                    <option value="psicoligia">Psicoligía</option>
+                    <option value="medico-general">Médico General</option>
+                    <option value="odontologia">Odontología</option>
+                    <option value="enfermeria">Enfermería</option>
+                    <option value="ginecologia">Ginecología</option>
+                    <option value="endocrinologia">Endocrinología</option>
+                    <option value="pediatria">Pediatía</option>
+                    <option value="dermatologia">Dermatología</option>
                     <option value="medicina-vete">Medicina Veterinaria</option>
                 </select>
-                <input type="email" id="correo--registro" required="obligatorio" placeholder="Correo electronico*">
-                <input type="password" id="contrase�a--registro" required="obligatorio" placeholder="Contrase�a*">
-                <input type="password" id="conf-contrase�a--registro" required="obligatorio" placeholder="Confirmar contrase�a*">
-                <input type="checkbox" required>acepto los terminos y condiciones
+                <span id="especialidad-error" class="error-message"></span>
+                <input type="email" name="correo--registro" id="correo--registro" required placeholder="Correo electronico*" autocomplete="off">
+                <span id="correo-error" class="error-message"></span>
+                <input type="password" name="conf-contraseña--registro" id="contraseña--registro" required placeholder="Contraseña*">
+                <span id="contraseña-error" class="error-message"></span>
+                <input type="password" name="conf-contraseña--registro" id="conf-contraseña--registro" required placeholder="Confirmar contraseña*">
+                <span id="contraseñaConf-error" class="error-message"></span>
+                <input type="checkbox" required id="check">acepto los terminos y condiciones
                 
                 <div class="registrarse--boton">
                     <button id="registrarse">
@@ -118,7 +122,7 @@
         </div>
         <div class="section">
             <a href="" id="aviso">Aviso de privacidad</a>
-            <a href="" id="terminos">T�rminos y condiciones</a>
+            <a href="" id="terminos">Términos y condiciones</a>
             <a href="" id="acces">Accesibilidad</a>
             <br>
         </div>
@@ -127,6 +131,9 @@
         </div>
     </footer>
 
+    <!--scrip js-->
+    <!-- <script src="../Registro Proveedor/scripts/registroProveedor.js"></script> -->
+    <script src="./scripts/registroProveedor.js"></script>
     
      
 </body>

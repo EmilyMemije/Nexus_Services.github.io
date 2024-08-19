@@ -31,7 +31,7 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                <a href="../../../paginaPrincipal/paginaPrincipal.html">
                     <img src="../../../../assets/NS.png" alt="LogoNS">
                 </a>
             </div>
@@ -65,86 +65,218 @@
             </div>
         </nav>
     </header>
-    <!--Perfil"-->
+    <!-- Perfil -->
     <div class="container--principal">
         <div class="container--informacion">
             <div class="container--imagen">
-                <div class="profile-picture">
-                    <img id="profileImage" src="../../../../assets/User_01.png" alt="Foto de Perfil">
+                <div class="imagen--perfil">
+                    <img id="foto--perfil--usuario" src="../../../../assets/User_01.png" alt="Foto de Perfil">
                 </div>
-                <input type="file" id="fileInput" accept="image/*">
-                <!-- <a href="" id="uploadButton">Cambiar Foto de Perfil</a> -->
-                <button id="uploadButton">Cambiar Foto de Perfil</button>
+                <input type="file" id="cargar--imagen--usuario" accept="image/*">
+                <button id="cambiar--foto">Cambiar Foto de Perfil</button>
             </div>
             <div class="container--datos">
-                <label for="" id="name">Antonio Hernandez Gonzalez</label>
-                <label for="" id="email">ahernandezgonzalez@gmail.com</label>
-                <label for="" id="telefono">+52 5585473882</label>
+                <label id="name">Antonio Hernandez Gonzalez</label>
+                <label id="email">ahernandezgonzalez@gmail.com</label>
+                <label id="telefono">+52 5585473882</label>
             </div>
-            <button class="modificar--datos">Actualizar datos</button>
+            <button id="actualizar" class="modificar--datos">Actualizar datos</button>
         </div>
-        <div class="container--historial">
-                <h2 class="title--historial">Historial de servicios</h2>
-                <div class="container--card">
-                    <div class="product--card">
-                        <div class="container--imagenServicio">
-                            <div class="image--servicio">
-                                <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
-                            </div>
-                        </div>
-                        <div class="container--datosServicio">
-                            <h2 id="servicio">Psicologia</h2>
-                            <div class="especialista">
-                                <p>Nombre del especialista:</p>
-                                <p id="name--especialista">Liliana</p>
-                            </div>
-                            <div class="price">
-                                <p>Precio:</p>
-                                <p id="price-servicio">$costo del servicio</p>
-                            </div>
-                            <div class="fecha--hora">
-                                <div class="fecha">
-                                    <p >Fecha del servicio:</p>
-                                    <p id="fecha--servicio">07/08/2024</p>
-                                </div>
-                                <div class="hora">
-                                    <p>Hora del servicio:</p>
-                                    <p id="hora---servicio">15:55</p>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
 
-                    <div class="product--card">
-                        <div class="container--imagenServicio">
-                            <img src="../../../../assets/User_01.png" alt="Foto de Perfil">
-                        </div>
-                        <div class="container--datosServicio">
-                            <h2 id="servicio">Psicologia</h2>
-                            <div class="especialista">
-                                <p>Nombre del especialista:</p>
-                                <p id="name--especialista">Liliana</p>
-                            </div>
-                            <div class="price">
-                                <p>Precio:</p>
-                                <p id="price-servicio">$costo del servicio</p>
-                            </div>
-                            <div class="fecha--hora">
-                                <div class="fecha">
-                                    <p >Fecha del servicio:</p>
-                                    <p id="fecha--servicio">07/08/2024</p>
-                                </div>
-                                <div class="hora">
-                                    <p>Hora del servicio:</p>
-                                    <p id="hora---servicio">15:55</p>
-                                </div>
-                            </div>
-    
+        <!-- Historial -->
+        <div id="container--historial">
+            <h2 class="title--historial">Historial de servicios</h2>
+            <div class="container--card">
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
                         </div>
                     </div>
-                    
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina Veterinaria</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actualizar Datos -->
+        <div id="container--actualizar" class="hidden">
+            <h2 class="title--actualizar">Actualizar datos</h2>
+            <div class="container--formActualizar">
+                <label for="nombre">Nombre </label>
+                <input type="text" id="nombre" value="Juan">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" value="Perez">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" value="Lomas de chapu">
+                <label for="correoElectronico">Correo electronico</label>
+                <input type="email" id="correoElectronico" value="jperez@gmail.com">
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" value="55 40 04 45 09">
+            </div>
+            <div id="boton--guardar">
+                <button id="guardar" class="guardar--datos">Guardar datos</button>
+            </div>
+
         </div>
     </div>
 
@@ -174,6 +306,7 @@
 
     <!--scrip js-->
     <script src="./scripts/botonFoto.js"></script>
+    <script src="./scripts/actualizarDatos.js"></script>
 </body>
 
 </html>

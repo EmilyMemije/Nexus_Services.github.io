@@ -5,289 +5,218 @@
     --ivory: #EFF0D5;
     --not-white: #F2F2EB;
     --green-tea: #BAD895;
-    }
+}
 
- 
-    
-#Conteiner-principal
-{
+.admin--title {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0% 0%;
-    gap: 0%; 
+    font-family: 'Lato';
+    padding: 30px 0px;
 }
 
-/*Botones de la pag*/
-#botones 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin-top: 2%;
-    padding: 0%;
-}
-#botones button
-{
-    background-color: transparent;
-    border: none;
-    width: 60px;
-    height: 60px;
-    color: #F2F2EB;
-    
-}
-#botones button:hover
-{
-    cursor: pointer;
-    color: aquamarine;
-    animation: 0.6s;
-}
-
-
-/* contenedor de la informacion*/
-
-
-#info
-{
-
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #212A3E;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 500px;
-    width: 80%;
-    margin: 3% 0%;
-    border-radius: 2em;
-
-}
-
-/*Tanio de la fuente*/
-#info h2, p
-{
-    font-size: large;
-}
-
-/*imagen background*/
-
-.logoback{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-}
-
-#logo--back{
-    display: flex;
-    opacity: 15%;
-    width: 400px;
-}
-
-/*contenedor vision*/
-#container-vision
-{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
-    height: 50%;
-    width: 40%;
-    color: white;
-}
-
-/* contenedor valores*/
-#container--valores
-{
-    
-    display: flex;
-    margin: 40px 70px;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    flex-direction: column;
-    overflow: auto;
-    text-align: justify;
-    height: 60%;
+hr {
     width: 70%;
-    padding-top: 5%;
-    padding-right: 5%;
-    color: #F2F2EB;
-    font-size:15px;
+    height: 5px;
+    background: #1C2B52;
+    border-radius: 10px;
 }
 
-
-#container--valores h2
-{
-    text-align: center;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-/*contenedor sobre nosotros*/
-#container-acercaDeNosotros
-{
-    position: absolute;
+.imgAdmin--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 30px 30px;
+    font-family: 'Merriweather';
+}
+
+.imgAdmin--container img {
+    width: 100px;
+}
+
+.imgAdmin--container h2 {
+    margin: 30px 0px 40px 0px;
+}
+
+.img--perfil {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: justify;
-    color: #F2F2EB;
-    height: 50%;
-    width: 40%;
+    border-radius: 70px;
+    border: 0.1px solid black;
+    height: 150px;
+    width: 150px;
+    background: radial-gradient(40% 40% at 50% 50%, #7373 30%, #D9D9D9 100%);
+    box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
+    opacity: 60%;
+    cursor: pointer;
 }
 
-/*contenedor de mision*/
-#container-mision
-{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    flex-direction: column;
-    text-align: justify;
-    color: #F2F2EB;
-    height: 50%;
-    width: 40%;
-}
-
-/*Seccion de integrantres*/
-#team
-{
-    text-align: center;
-    margin-top: 5%;
-}
-
-#container-team
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1%;
-}
-
-.integrante
-{ 
+.options--container {
     display: flex;
     flex-direction: column;
-    background-color: #212A3E;
-    color: antiquewhite;
-    min-height: 600px;
-    width: 450px;
-    margin: 2%;
     align-items: center;
-    justify-content: center;
-    border-radius: 2em;
-    padding: 2%;
-    gap: 20px;
-    padding: 1%;
-}
-.integrante img
-{
-    padding: 0%;
-    background-color: #F2F2EB;
-    height: 60%;
-    width: 60%;
-    border-radius: 50%;
-    margin: 0%;
-}
-.integrante p
-{
-    text-align: center;
+    width: 70%;
+    margin: 60px 30px; 
 }
 
-/*inicia media query con configuracion para iphon*/
-@media(max-width:700px){
-   
-    #Conteiner-principal{
-    flex-direction: column;
+.options--container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather';
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    margin: 30px 60px;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    background: #B8C2D5;
+    box-shadow: 4px 8px 10px 1px rgb(143, 138, 138, 35%);
+    cursor: pointer;
+}
+
+.options--container a:hover {
+    border-radius: 25px 25px 25px 25px;
+    background: #1C2B52;
+    color: #B8C2D5;
+    border:0.5px solid white;
+    transition: .3s;
+    padding: 2.5px 2.5px;
+}
+
+
+/* ----- Media query ----- */
+@media (max-width: 1056px) {
+    .imgAdmin--container {
+        width: 35%;
+        margin: 30px 20px 30px 0px;
     }
 
-    #info
-    {
+    .imgAdmin--container h2 {
+        font-size: 23px;
+    }
+
+    .options--container {
+        width: 65%;
+        margin: 60px 30px 60px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgAdmin--container h2 {
+        font-size: 19px;
+    }
+
+    .options--container {
+        margin: 30px;
+    }
+
+    .imgAdmin--container {
+        margin: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .options--container a{
+        margin: 25px;
+        width: 464px;
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .admin--title {
+        font-size: 15px;
+    }
+
+    .imgAdmin--container h2 {
+        font-size: 19px;
+    }
+
+    .options--container a {
+        font-size: 21px;
+        width: 420px;
+        height: 30px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .admin--title {
+        font-size: 11px;
+    }
+
+    .imgAdmin--container {
+        width: 400px;
+        height: 200px;
+    }
+
+    .imgAdmin--container h2 {
+        font-size: 19px;
+    }
+
+    .options--container a {
+        font-size: 16px;
+        width: 320px;
+        height: 30px;
+        margin: 15px;
+    }
+
+    .img--perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img--perfil img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 490px) {
+    .imgAdmin--container h2 {
+        font-size: 17px;
+    }
+}
+
+/* ----- Media Query movil ----- */
+@media (max-width: 440px) {
+    .admin--title {
+        font-size: 9px;
+    }
+
+    .imgAdmin--container h2 {
+        font-size: 11px;
+    }
+
+    .img--perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img--perfil img {
+        width: 50%;
+    }
+
+    .options--container a {
+        font-size: 13px;
         width: 90%;
     }
-    /*tamanio de letra*/
-    #info h2, p, li
-    {
-        font-size: small;
 
+    .options--container a {
+        width: 250px;
+        height: 20px;
     }
-
-    /*modificacion del logo*/
-    #logo--back{
-        display: flex;
-        opacity: 5%;
-        width: 100px;
-    }
-    .logoback{
-        display: flex;
-        position: absolute;
-        justify-content: center;
-       opacity: 15%;
-    }
-
-    /*modificacion de botones*/
-    #botones 
-    {
-    
-      width: auto;
-    }
-
-    /*adaptacion del div infp*/
-    #info{
-        margin-top: 10%;
-    }
-    /*adaptacion del contenedor grid*/
-    #container--valores
-    {
-        height: 80%;
-    }
-
-    #container-acercaDeNosotros
-    {
-        height: 90%;
-        width: 70%;
-    }
-
-    #container-mision
-    {
-        height: 90%;
-        width: 70%;
-    }
-
-    #container-vision
-    {
-        height: 90%;
-        width: 70%;
-    }
-
-    #container--valores
-    {
-        height: 90%;
-        width: 70%;
-        padding-top: 60%;
-    }
-
-    .integrante
-    {
-        padding: 10%;
-    }
-
-}
-    
-@media (max-width: 450px){
-    #logo--back{
-        display: flex;
-        opacity: 95%;
-        width: 350px;
-    }
-
 }

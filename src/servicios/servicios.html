@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Nexus Services</title>
+
+    <!--Icono de la página-->
+    <link rel="icon" href="../../assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
     <link rel="stylesheet" href="./src/styles/servicios.css">
     <!--Icono de la página-->
@@ -26,7 +31,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -34,8 +38,8 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="/src/paginaPrincipal/paginaPrincipal.html">
-                    <img src="/assets/NS.png" alt="LogoNS">
+                <a href="../paginaPrincipal/paginaPrincipal.html">
+                    <img src="../../assets/NS.png" alt="LogoNS">
                 </a>
             </div>
             <div class="centro">
@@ -43,31 +47,32 @@
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
                 <div class="nav--search">
-                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
                     <a href="" target="_blank">
                         <button class="botton">
-                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
                         </button>
                     </a>
-                </div>
+                </div> 
                 <div class="nav--menu">
                     <a href="/src/blog/blog.html">Blog</a>
-                    <a id="Servicios--cards" href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
                     <a href="/src/Asociados/Asociados.html">Asociados</a>
                     <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
                     <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="" target="_blank">
+
+                <a href="/src/SOS/sos.html" target="_blank">
                     <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="/src/login/login.html" target="_blank">
-                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                <a href="../login/login.html" target="_blank">
+                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
                 </a>
             </div>
         </nav>
-    </header>
+        </header>
 
     <!--Cuerpo de tarjet-->
     <Main>
@@ -130,29 +135,28 @@
                 <p>Carrito de Servicios</p>
             </div>
 
+            <div class="carrito--vacio">
+                <p>No hay servicios en tu Carrito, agrega un servicio</p>
+            </div>
+
         <!--Especialidad Agregada-->
-            <div class="contenedor--SAG">
-                <div class="cardSrvicio--agregado">
-                    <h3 class="titulo--especialidad">Especialidad</h3>
-                    <p class="Costo--especialidad">precio</p>
-                    <div class="bton--elim">
-                        <button class="eliminar">X</button>
-                    </div>
-                </div>
+            <div class="contenedor--SAG" id="contenedor--SAG">
+                <!--Se llenará con el Js-->
             </div>
         <!--Cuenta total div-->
-            <div class="cuenta--total">
-                <p>total</p>
-                <p class="total a pagar"> $$$$ </p>
+            <div class="cuenta--total" id="container--totales">
+                <p class="total" id="total">Total</p>
+                <p class="total" id="pesos"> $$$$ </p>
             </div>
 
         <!--Botones del carrito-->
             <div class="btones--carrito">
-                <button class="ir--pago">
-                    <a class="ir--pago" src="">
+                <button  class="ir--pago" id="ir--a--pago" onclick="location.href='../Compra/compra.html'">
+                    <a class="ir--pago" src="../Compra/compra.html">
                         continuar al pago
                     </a>
                 </button>
+                <button class="vaciar--carritoBton">Vaciar Carrito</button>
                 <button class="cerrar--carrito">Cerrar carrito</button>
             </div>
         </div>
@@ -163,13 +167,13 @@
     <footer>
         <div class="section-redes">
             <a href="">
-                <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
+                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
             </a>
             <a href="">
-                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
+                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
             </a>
             <a href="">
-                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
+                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
             </a>
         </div>
         <div class="section">

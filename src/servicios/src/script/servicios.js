@@ -9,7 +9,7 @@ fetch(url)
     })
     .then(data => {
         serviciosjson = data;
-        
+
         mostrarServicios(serviciosjson);
     })
     .catch(error => console.log(error));
@@ -17,7 +17,7 @@ fetch(url)
 const mostrarServicios = (serviciosjson) => {
     serviciosjson.forEach(serv => {
         const contenedor = document.querySelector('#fondo--main');
-        
+
         const div = document.createElement('div');
         div.classList.add("card--Service");
         div.innerHTML = `
@@ -42,25 +42,25 @@ const mostrarServicios = (serviciosjson) => {
         contenedor.append(div);
 
     })
-    
+
     actualizarBtnId();
-    
+
 }
 
 
 function actualizarBtnId() {
     botonesAgServicio = document.querySelectorAll('.button--addCarrito');
 
-    botonesAgServicio.forEach(boton =>{
+    botonesAgServicio.forEach(boton => {
         boton.addEventListener('click', agregaAlCarrito);
     });
 }
 
-const productosenCarrito =[];
+const productosenCarrito = [];
 
 function agregaAlCarrito(e) {
     const idagregar = e.currentTarget.id;
-    const servicioAgregado = serviciosjson.find(servicio => servicio.id === idagregar);    
+    const servicioAgregado = serviciosjson.find(servicio => servicio.id === idagregar);
 
     if (productosenCarrito.some(servicio => servicio.id === idagregar)) {
         const index = productosenCarrito.findIndex(servicio => servicio.id === idagregar);
@@ -71,14 +71,83 @@ function agregaAlCarrito(e) {
         productosenCarrito.push(servicioAgregado);
     }
 
-    
-    
-
-    
-    
-    
-    
+    localStorage.setItem("Productos-en-carrito", JSON.stringify(productosenCarrito));
 }
+
+//Cargar datos al carrito de compra
+
+//Cargar la info del localStorage
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("Productos-en-carrito"));
+
+
+const carritoVacio = document.querySelector('#contenedor--SAG');
+const fraseCarritoVacio = document.querySelector('.carrito--vacio');
+const btonPago = document.querySelector('#ir--a--pago');
+const totales = document.querySelector('#total');
+const pesos = document.querySelector('#pesos')
+const btonVaciarCarrito = document.querySelector('.vaciar--carritoBton');
+let botonesEliminar;
+
+function eliminarServiciosCarrito() {
+    if (productosEnCarritoLS) {
+        fraseCarritoVacio.classList.add('disabled');
+
+        productosEnCarritoLS.forEach(servicios => {
+            const div1 = document.createElement('div')
+            div1.classList.add('cardSrvicio--agregado');
+            div1.innerHTML = `
+        <h3 class="titulo--especialidad">${servicios.servicio}</h3>
+                <div class="cont--cant--precio">
+                    <p class="cant--Serv">${servicios.cantidad}</p>
+                    <p class="Costo--especialidad">$${servicios.precio * servicios.cantidad}</p>
+                </div>
+                <div class="bton--elim">
+                    <button class="eliminar" id="${servicios.id}">X</button>
+                </div>
+        `
+            carritoVacio.append(div1);
+        })
+
+    } else {
+        totales.classList.add('disabled')
+        pesos.classList.add('disabled');
+        btonPago.classList.add('disabled')
+        btonVaciarCarrito.classList.add('disabled')
+    }
+
+    actualizarbotonesEliminar();
+
+}
+eliminarServiciosCarrito();
+
+
+
+function actualizarbotonesEliminar() {
+    botonesEliminar = document.querySelectorAll('.eliminar');
+
+    botonesEliminar.forEach(boton => {
+        boton.addEventListener('click', eliminarDelCarrito);
+    });
+}
+
+function eliminarDelCarrito(e) {
+    const idboton = e.target.id
+    const index = productosEnCarritoLS.findIndex(producto=> producto.id === idboton);
+
+    console.log(productosEnCarritoLS);
+    
+    productosEnCarritoLS.splice(index,1);
+
+    console.log(productosEnCarritoLS);
+    
+    eliminarServiciosCarrito();
+
+
+}
+
+
+
+
 
 
 

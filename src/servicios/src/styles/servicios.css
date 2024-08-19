@@ -186,29 +186,26 @@ button .carrito-de-compras{
     border-radius: 50%;
 }
 
-#contaier--service {
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
 .nombre--servicio{
     width: fit-content;
     color: #EFF0D5;
     font-family: 'Lato';
     font-size: clamp(12px, 2vw, 40px);
     margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .descripcion--servicio{
-    width: 88%;
+    width: 90%;
     height: fit-content;
     font-family: 'Merriweather';
-    font-size: clamp(8px, 1vw, 22px);
+    font-size: clamp(6px, 2vw, 22px);
     color: #EFF0D5;
     border: solid white 2px;
     border-radius: 1rem;
     padding: 5px 5px;
-    margin-left: 1%;
+    margin-left: clamp(0.1%, 2vw, 1%);
     top: 0;
 }
 
@@ -219,6 +216,8 @@ button .carrito-de-compras{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .stars{
@@ -238,7 +237,8 @@ button .carrito-de-compras{
     width: 20%;
     height: 20%;
     color: #1C2B52;
-    font-size: clamp(5px, 1.5vw, 15px);
+    text-align: center;
+    font-size: clamp(4px, 2vw, 15px);
     border-radius: 1rem;
 }
 
@@ -257,7 +257,9 @@ button .carrito-de-compras{
     position: absolute;
     margin-top: 0%;
     right: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 25%;
     height: 11%;
     background-color: #EFF0D5;
@@ -275,23 +277,46 @@ button .carrito-de-compras{
     text-align: center;
 }
 
+.disabled{
+    display: none;
+}
+
+.carrito--vacio{
+    font-family: 'Lato';
+    font-size: clamp(10px, 1.5vw, 22px);
+    text-align: center;
+}
+
 .cardSrvicio--agregado{
     margin: 5px;
     background-color: #1C2B52;
     border-radius: 1rem;
     padding: 10px;
+    border: solid;
 }
 
 .titulo--especialidad{
     margin-top: 0%;
     font-family: 'Merriweather';
-    font-size: clamp(8px, 1.5vw, 15px);
+    font-size: clamp(6px, 1.5vw, 15px);
     color: #EFF0D5;
 }
 
 .Costo--especialidad{
     font-family: 'Merriweather';
-    font-size: clamp(8px, 1.5vw, 15px);
+    font-size: clamp(6px, 1.5vw, 15px);
+    text-align: right;
+    color: #EFF0D5;
+}
+
+.cont--cant--precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cant--Serv{
+    font-family: 'Merriweather';
+    font-size: clamp(6px, 1.5vw, 15px);
     text-align: right;
     color: #EFF0D5;
 }
@@ -305,8 +330,10 @@ button .carrito-de-compras{
     background-color: red;
     font-size: clamp(6px, 1.5vw, 12px);
     border: none;
+    border-radius: 2px;
     padding: 5px;
     box-shadow: 2px 2px 3px black;
+    width: 15%;
     
     display: flex;
     align-items: center;
@@ -315,17 +342,21 @@ button .carrito-de-compras{
 }
 
 .cuenta--total{
-    margin: 5px;
-    border-radius: 1rem;
-    padding: 10px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: end;
+    margin-bottom: 0%;
+}
+
+.total{
+    font-size: clamp(10px, 2vw, 25px);
+    margin: 0%;
 }
 
 .btones--carrito{
     width: 100%;
-    margin-bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -339,7 +370,19 @@ button .carrito-de-compras{
     font-family: 'Comfortaa';
     font-size: clamp(5px, 1.5vw, 10px);
     border-radius: 2rem;
-    margin: 5px;
+    margin: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vaciar--carritoBton{
+    color: #1C2B52;
+    background-color: #EFF0D5;
+    border-color: #1C2B52;
+    font-family: 'Comfortaa';
+    font-size: clamp(5px, 1.5vw, 10px);
+    border-radius: 2rem;
+    margin: 3px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -353,30 +396,44 @@ button .carrito-de-compras{
     font-weight: 900;
     font-style: italic;
     border-radius: 2rem;
-    margin: 5px;
+    margin: 3px;
     cursor: pointer;
 }
-/*
-@media(max-width: 900px){
-    .container--bton{
-        width: 5.5%;
-    }
-}
 
-@media(max-width: 700px){
-    .container--bton{
-        width: 6%;
-    }
-}
-
-@media(max-width: 650px){
-    .container--bton{
-        width: 6.5%;
-    }
-}
 
 @media(max-width: 500px){
-    .container--bton{
-        width: 7%;
+    .Carrito--desplegable{
+    width: 35%;
+    height: 11%;
+
+}   
+}
+
+@media(max-width: 350px){
+    #fondo--main{
+        width: 50%;
     }
-}*/
+    .card--Service{
+        border-radius: 1rem;
+    }
+    
+    .nombre--servicio{
+        font-size: 12px;
+    }
+    
+    .descripcion--servicio{
+        width: 80%;
+    }
+    
+    .div-container--footer{
+        margin-bottom: 5px;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .button--addCarrito{
+        width: 25%;
+        font-size: 5px;
+    }
+}

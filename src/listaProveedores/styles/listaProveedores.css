@@ -5,15 +5,16 @@
     --ivory: #EFF0D5;
     --not-white: #F2F2EB;
     --green-tea: #BAD895;
-    }
+}
 
-.logoback{
+
+.logoback {
     display: flex;
     position: absolute;
     justify-content: center;
 }
 
-#logo--back{
+#logo--back {
     display: flex;
     opacity: 15%;
     width: 400px;
@@ -22,9 +23,9 @@
 
 .body--search {
     display: flex;
-    justify-content: space-between; 
-    max-width: 1000px; 
-    width: 100%; 
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 20px;
     background: #F2F2EB;
@@ -36,8 +37,8 @@
 .search--imput::placeholder {
     flex-grow: 1;
     padding: 10px;
-    color: #1C2B52; 
-    opacity: 1; 
+    color: #1C2B52;
+    opacity: 1;
     margin-right: 10px;
     box-sizing: border-box;
 }
@@ -59,35 +60,30 @@
     box-sizing: border-box;
 }
 
-.category--list select
-{
+.category--list select {
     background-color: #869DA6;
     border: none;
 }
 
-.boton--sig {
-    position: relative; 
-    width: 100%;
-    height: 50px;
-    
-}
 
 .boton--sig button {
-    position: absolute;
-    padding: 10px 40px;
+    width: 120px;
+    text-align: center;
+    height: 50px;
+    margin-left:10px;
+    margin-right: 10px;
     bottom: 0px;
-    right: 50px;
-    background-color: #BAD895; 
-    color: white; 
-    border: none; 
-    border-radius: 50px; 
-    font-size: 16px; 
-    cursor: pointer; 
+    background-color: #BAD895;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .boton--sig button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
 
@@ -95,54 +91,67 @@ button:hover {
     background-color: #0056b3;
 }
 
-.category--letter{
+.contenedor-botones2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+margin-left: 50%;
+translate: -50%;
+margin-top: 20px;
+}
+
+
+.category--letter {
     display: flex;
     max-width: 2000px;
     background: #869DA6;
     margin: 50px;
     padding: 0px;
     box-sizing: border-box;
-    
+
 }
 
 
-@media(max-width:700px){
-   
-    #Container-principal{
-    flex-direction: column;
+@media(max-width:700px) {
+
+    #Container-principal {
+        flex-direction: column;
     }
 
-    #info
-    {
+    #info {
         width: 90%;
     }
+
     /*tamanio de letra*/
-    #info h2, p, li
-    {
+    #info h2,
+    p,
+    li {
         font-size: small;
 
     }
 
     /*modificacion del logo*/
-    #logo--back{
+    #logo--back {
         display: flex;
         opacity: 5%;
         width: 100px;
     }
-    .logoback{
+
+    .logoback {
         display: flex;
         position: absolute;
         justify-content: center;
-       opacity: 15%;
+        opacity: 15%;
     }
 
 
-    
-@media (max-width: 450px){
-    #logo--back{
-        display: flex;
-        opacity: 95%;
-        width: 350px;
+
+    @media (max-width: 450px) {
+        #logo--back {
+            display: flex;
+            opacity: 95%;
+            width: 350px;
+        }
     }
-}
 }

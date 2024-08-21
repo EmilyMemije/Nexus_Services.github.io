@@ -202,6 +202,7 @@
     color: var(--footer-blue);
     text-align: center;
     padding-bottom: 30px;
+    text-decoration: none;
 }
 
 .redes img{
@@ -209,6 +210,7 @@
     filter: brightness(0.2) contrast(1.8);
     width: 30px;
     height: 30px;
+    text-decoration: none;
 }
 
 #IG:hover{

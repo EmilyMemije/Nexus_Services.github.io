@@ -17,7 +17,8 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 150vh;
+    
 }
 
 /* Menú lateral */
@@ -26,6 +27,7 @@ body {
     color: white;
     width: 25%;
     padding: 20px;
+    height: auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -73,6 +75,7 @@ body {
 /* Sección principal */
 .main-content {
     width: 75%;
+    height: auto;
     overflow-y: scroll;
     padding: 20px;
     box-sizing: border-box;
@@ -80,6 +83,29 @@ body {
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     padding-bottom: 7em;
     position: relative;
+}
+
+.actualizar-btn
+{
+    border: none;
+    border-radius: 25%;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/update.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.eliminar-btn
+{
+    border: none;
+    border-radius: 25%;
+    height: 30px;
+    width: 30px;
+    background-image:url("/src/admiServicios/img/trash.png") ;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    
 }
 
 header h1 {
@@ -161,3 +187,4 @@ header h1 {
     border-radius: 50%;
     font-size: 0.9em;
 }
+

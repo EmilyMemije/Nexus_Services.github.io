@@ -7,7 +7,7 @@
     gap: 20px;
 }
 
-.box{
+.box {
     background-color: #1C2B52;
     padding: 20px;
     width: 40%;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+
 }
 
 
@@ -33,10 +33,9 @@
     text-align: right;
 }
 
-.box h2 
-{
-  color: white;
-  text-align: center;
+.box h2 {
+    color: white;
+    text-align: center;
 }
 
 
@@ -132,7 +131,7 @@
         max-width: 80%;
     }
 
-    
+
     .category--letter {
         display: flex;
         gap: .09%;
@@ -145,11 +144,11 @@
         font-size: 50%;
     }
 
-    .category--list a{
+    .category--list a {
         font-size: 14px;
         padding: 8px 12px;
     }
-    
+
 }
 
 /* Media query para pantallas de 450px*/
@@ -175,13 +174,13 @@
         max-width: 100%;
     }
 
-   
+
     .category--letter a {
         font-size: 12px;
         padding: 6px 10px;
     }
 
-    .category--list a{
+    .category--list a {
         font-size: 14px;
         padding: 8px 12px;
     }

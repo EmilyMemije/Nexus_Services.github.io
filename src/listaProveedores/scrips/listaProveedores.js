@@ -1,118 +1,139 @@
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function() {
+    const option = document.querySelector('#Servicio');
+    const optionStar = document.querySelector('#review');
+    const container = document.querySelector(".container");
+    const BotonCargarMas = document.querySelector("#boton-cargarMas");
+    const BotonAtras = document.querySelector("#Atras");
 
-const option = document.querySelector('#Servicio');
-const optionStar=document.querySelector('#review');
-const container=document.querySelector(".container");
+    let paginaActual = 0;
+    const cardsPorPag = 4; // Número de tarjetas que queramos visualizar por página
+    let allCards = []; // Donde se almacenarán las tarjetas cargadas
 
+    function CrearTarjeta(servicio) {
+        const divbox = document.createElement('div');
+        divbox.className = 'box';
 
-function CrearTarjeta(servicio)
-{
-//div
-const divbox = document.createElement('div');
-divbox.className = 'box';
+        const titulocard = document.createElement('h2');
+        titulocard.textContent = servicio.Titulo;
 
-const titulocard = document.createElement('h2');
-titulocard.textContent=servicio.Titulo;
+        const img = document.createElement('img');
+        img.src = servicio.Img;
+        img.alt = servicio.nombre;
 
-const img=document.createElement('img');
-img.src=servicio.Img;
-img.alt = servicio.nombre;
+        const textocard = document.createElement('div');
+        textocard.className = 'textcard';
 
+        const especialidad = document.createElement('p');
+        especialidad.textContent = servicio.Especialidad;
 
-//div
-const textocard = document.createElement('div');
-textocard.className = 'textcard';
+        const ubicacion = document.createElement('p');
+        ubicacion.textContent = servicio.Ubicación;
 
-const especialidad = document.createElement('p');
-especialidad.textContent=servicio.Especialidad;
+        const btn1 = document.createElement('button');
+        btn1.textContent = "Ver perfil";
+        const btn2 = document.createElement('button');
+        btn2.textContent = "Agendar Cita";
 
-const ubicacion = document.createElement('p');
-ubicacion.textContent=servicio.Ubicación;
+        const estrella = document.createElement('p');
+        estrella.textContent = servicio.Estrellas;
 
-const btn1=document.createElement('button');
-btn1.textContent="Ver perfil";
-const btn2=document.createElement('button');
-btn2.textContent="Agendar Cita";
+        divbox.appendChild(titulocard);
+        divbox.appendChild(img);
+        divbox.appendChild(textocard);
+        textocard.appendChild(especialidad);
+        textocard.appendChild(estrella);
+        textocard.appendChild(ubicacion);
+        textocard.appendChild(btn1);
+        textocard.appendChild(btn2);
 
-/*onclick="location.href='/src/listaProveedores/listaProveedores.html'" */
+        divbox.dataset.especialidad = servicio.Especialidad;
+        divbox.dataset.estrella = servicio.Estrellas;
 
-/*seccion donde se crean las estrellas*/
+        container.appendChild(divbox);
+    }
 
-const estrella=document.createElement('p');
-estrella.textContent=servicio.Estrellas;
+    function displayCards(cards) {
+        container.innerHTML = "";
+        const start = paginaActual * cardsPorPag;
+        const end = start + cardsPorPag;
+        const cardsToShow = cards.slice(start, end);
         
-container.appendChild(divbox);
-divbox.appendChild(titulocard);
-divbox.appendChild(img);
-divbox.appendChild(textocard);
-textocard.appendChild(especialidad);
-textocard.appendChild(estrella);
-textocard.appendChild(ubicacion);
-textocard.appendChild(btn1);
-textocard.appendChild(btn2);
+        cardsToShow.forEach(servicio => CrearTarjeta(servicio));
 
-divbox.dataset.especialidad=servicio.Especialidad;
-divbox.dataset.estrella=servicio.Estrellas;
-}
+        // Verificar si hay más tarjetas para mostrar
+        if (end >= cards.length) {
+            BotonCargarMas.style.display = "none"; // Ocultar el botón "Siguiente" si ya no hay tarjetas que mostrar
+        } else {
+            BotonCargarMas.style.display = "block";
+        }
 
-function obtenerServicios() {
-    fetch('listaProveedores.json')
-        .then(response => response.json())
-        .then(data => {
-            data.forEach(servicio => {
-                console.log(servicio);
-                    CrearTarjeta(servicio);
+        // Mostrar u ocultar botón "Atrás"
+        if (paginaActual > 0) {
+            BotonAtras.style.display = "block";
+        } else {
+            BotonAtras.style.display = "none";
+        }
+    }
+
+    async function obtenerServicios() {
+        try {
+            const response = await fetch('listaProveedores.json');
+            const data = await response.json();
+            allCards = data.cards; // Aquí almacenamos todas las tarjetas
+            displayCards(allCards); // Acá mostramos las primeras
+
+           //Filtro por Especialidad
+            option.addEventListener("change", e => {
+                const selection = e.target.value;
+                paginaActual = 0; // Reiniciar a la primera página al filtrar
+                if (selection === "Especialidad") {
+                    allCards=data.cards;
+                    displayCards(allCards);
+                } else {
+                    const tarjetasFiltradas = data.cards.filter(servicio => servicio.Especialidad === selection);
+                    displayCards(tarjetasFiltradas);
+                    allCards=tarjetasFiltradas;
+                }
             });
-        })
-        .catch(error => console.error('Error al obtener los servicios:', error));
-}
 
-function filtro()
-{
-    option.addEventListener("change",e=>{
-    const selection=e.target.value;
-    const tarjetas = container.querySelectorAll('.box');
-    console.log(selection);
-    tarjetas.forEach(tarjeta => {
-        // Mostrar todas las tarjetas si 'Todos' está seleccionado
-        if (selection==="Especialidad")
-        {
-            tarjeta.style.display = 'flex';
-        }
-        else if (tarjeta.dataset.especialidad === selection) {
-            tarjeta.style.display = 'flex';
-        } else {
-            tarjeta.style.display = 'none';
-        }
-    })
-})
-}
+            //Filtro Por Calificación (Estrellas)
+            optionStar.addEventListener("change", e => {
+                const selection = e.target.value;
+                console.log(selection);
+                paginaActual = 0; // Reiniciar a la primera página al filtrar
+                if (selection === "Por Calificacion") {
+                    allCards=data.cards;
+                    displayCards(allCards);
+                } else {
+                    const tarjetasFiltradas = data.cards.filter(servicio => servicio.Estrellas === selection);
+                    displayCards(tarjetasFiltradas);
+                    allCards=tarjetasFiltradas;
+                }
+            });
 
-function filtro2()
-{
-    optionStar.addEventListener("change",e=>{
-    const selection=e.target.value;
-    const tarjetas = container.querySelectorAll('.box');
-    console.log(selection);
-    tarjetas.forEach(tarjeta => {
-        // Mostrar todas las tarjetas si 'Todos' está seleccionado
-        if (selection==="Calificado")
-        {
-            tarjeta.style.display = 'flex';
+            
+        } catch (error) {
+            console.error('Error al obtener los servicios:', error);
         }
-        else if (tarjeta.dataset.estrella === selection) {
-            tarjeta.style.display = 'flex';
-        } else {
-            tarjeta.style.display = 'none';
-        }
-    })
-})
-}
+    }
 
-filtro();
-filtro2();
-//option.addEventListener("change",filtro);
-obtenerServicios();
-})
+    //Función Botón Siguiente
+    function CargarMas() {
+        paginaActual++;
+        displayCards(allCards);
+    }
 
+    //Función Botón Atrás
+    function CargarMenos() {
+        paginaActual--;
+        displayCards(allCards);
+    }
+
+    //Asignación de evento para los botones Siguiente (CargarMas) y Atrás(CargarMenos)
+    BotonCargarMas.addEventListener("click", CargarMas);
+    BotonAtras.addEventListener("click", CargarMenos);
+
+    // Inicializar la carga de servicios
+    obtenerServicios();
+});

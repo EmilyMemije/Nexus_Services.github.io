@@ -1,0 +1,113 @@
+
+.titulo {
+    border-radius: 15px;
+    background: #1C2B52;
+    height: 172px;
+    font-family: "Lato";
+    color: #D9D9D9;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
+}
+.boton1{
+    background: #BAD895;
+    border-radius: 50%;
+    width: 68.4px;
+    height: 68.4px;
+    color: #1C2B52;
+}
+.boton2{
+    background: #BAD895;
+    border-radius: 50%;
+    width: 68.4px;
+    height: 68.4px;
+    color: #1C2B52;
+}
+.boton3{
+    background: #2768B3;
+    border-radius: 50%;
+    width: 68.4px;
+    height: 68.4px;
+}
+.texto {
+    font-size: 22.5px;
+    margin-top: 10px;
+    color: #D9D9D9;
+}
+
+
+#ab {
+    height: 2px;
+    width: 250px;
+    background-color: #D9D9D9;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    padding-top: 0px;
+}
+#bc {
+    height: 2px;
+    width: 250px;
+    background-color: #D9D9D9;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    padding-top: 0px;
+}
+
+.resumen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resument{
+    display: flex;
+    background-color: #F2F2EB;
+    width: 678.637px;
+    height: 503px;
+    border-radius: 25px;
+    margin-left: 37px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#resument {
+    padding-top: 25px;
+    padding-left: 25px;
+    flex-direction: column;
+    color: #1C2B52;
+    text-align:justify;
+    font-family: "Lato";
+    font-size: 35px;
+    font-weight: 900;
+}
+.linea1 {
+    display: flex;
+    height: 5px;
+    width: 690px;
+    background-color: #1C2B52;
+}

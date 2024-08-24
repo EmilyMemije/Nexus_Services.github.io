@@ -79,9 +79,12 @@
             </a>
         </div>
         <div class="formulario--login">
-            <form action="./../../index.html" id="form--login">
-                <input type="email" id="email-login" required="obligatorio" placeholder="Correo Electrónico*">
-                <input type="password" id="password--login" required="obligatorio" placeholder="Contraseña*">
+            <form action="../Login/page/Perfil Usuario/perfilUsuario.html" id="form--login">
+                <span id="login--error" class="login-message"></span>
+                <input type="email" id="email-login"  placeholder="Correo Electrónico*">
+                <span id="email-error" class="error-message"></span>
+                <input type="password" id="password--login"  placeholder="Contraseña*">
+                <span id="password-error" class="error-message"></span>
                 <div class="login--boton">
                     <button id="login">
                         Iniciar Sesión

@@ -1,0 +1,157 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+}
+
+
+.logoback {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+#logo--back {
+    display: flex;
+    opacity: 15%;
+    width: 400px;
+}
+
+
+.body--search {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #F2F2EB;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.search--imput::placeholder {
+    flex-grow: 1;
+    padding: 10px;
+    color: #1C2B52;
+    opacity: 1;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#profesionales {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+
+.category--list {
+    display: flex;
+    max-width: 1500px;
+    border-radius: 20px;
+    background: #869DA6;
+    margin: 50px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.category--list select {
+    background-color: #869DA6;
+    border: none;
+}
+
+
+.boton--sig button {
+    width: 120px;
+    text-align: center;
+    height: 50px;
+    margin-left:10px;
+    margin-right: 10px;
+    bottom: 0px;
+    background-color: #BAD895;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton--sig button:hover {
+    background-color: #0056b3;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contenedor-botones2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+margin-left: 50%;
+translate: -50%;
+margin-top: 20px;
+}
+
+
+.category--letter {
+    display: flex;
+    max-width: 2000px;
+    background: #869DA6;
+    margin: 50px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+@media(max-width:700px) {
+
+    #Container-principal {
+        flex-direction: column;
+    }
+
+    #info {
+        width: 90%;
+    }
+
+    /*tamanio de letra*/
+    #info h2,
+    p,
+    li {
+        font-size: small;
+
+    }
+
+    /*modificacion del logo*/
+    #logo--back {
+        display: flex;
+        opacity: 5%;
+        width: 100px;
+    }
+
+    .logoback {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        opacity: 15%;
+    }
+
+
+
+    @media (max-width: 450px) {
+        #logo--back {
+            display: flex;
+            opacity: 95%;
+            width: 350px;
+        }
+    }
+}

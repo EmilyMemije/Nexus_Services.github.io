@@ -1,0 +1,439 @@
+main{
+    display: flex;
+    flex-direction: row;
+
+    background-image: url(../../assets/iconos-lineales-acerca-elementos-medicos.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: right;
+    background-size: 400px;
+}
+
+.container--bton{
+    width: clamp(40px, 6vw, 200px);
+    height: fit-content;
+    display: flex;
+    position: sticky;
+    align-items: start;
+    justify-content: end;
+    border: none;
+
+    margin-top: 1.5%;
+    top: 1.5%;
+    left: 93%;
+}
+
+.container--bton:hover{
+    transition: 50ms;
+    transform: scale(1.1);
+    .carrito-de-compras{
+        filter: drop-shadow(5px 5px 10px #1C2B52);
+    }
+}
+
+.compras{
+    width: 100%;    
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+button .carrito-de-compras{
+    width: 100%;
+}
+
+/*-----Contendo del usuario-----*/
+.Card-User{
+    width: 35%;
+    height: fit-content;
+    border-radius: 2rem;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px grey;
+
+    margin-top: 2%;
+    top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-bottom: 7rem;
+}
+
+.img--cont--foto{
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 10px;
+}
+
+.img--cont--foto:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+#user--photo{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    box-shadow: 8px 8px 10px rgb(147, 147, 147);
+    border: solid ;
+}
+
+.Card-User h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: clamp(10px, 2vw, 25px);
+    padding-top: 5px;
+    margin: 0%;
+}
+
+.Card-User h2{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa';
+    font-size: clamp(8px, 1.5vw, 20px);
+    opacity: 80%;
+    margin: 0%;
+    border: none;
+}
+
+.Card-User #stars{
+    width: auto;
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Card-User img{
+    width: 5%;
+}
+
+.Card-User h3{
+    width: fit-content;
+    display: flex;
+    justify-content: left;
+    font-family: 'Lato';
+    font-size: clamp(10px, 2vw, 15px);
+    opacity: 70%;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-bottom: 0px;
+    border-bottom: solid 4px;
+}
+
+.Card-User p{
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    font-family: 'Merriweather';
+    font-size: clamp(8px, 1.2vw, 10px);
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+
+/*-----Cards de Servicios-----*/
+#fondo--main{
+    width: 40%;
+    height: fit-content;
+
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    left: 2%;
+}
+
+.card--Service{
+    width: 100%;
+    height: fit-content;
+    background-color: #1C2B52;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    border: solid;
+}
+
+.card--Service:hover{
+    transform: scale(95%);
+    box-shadow: 10px 10px 10px #869DA6;
+    #img--service{
+        filter: drop-shadow(5px 5px 10px #869DA6);
+    }
+}
+
+#img--service{
+    width: 25%;
+    position: relative;
+    margin-left: 40%;
+    translate: -80%;
+    border-radius: 50%;
+}
+
+.nombre--servicio{
+    width: fit-content;
+    color: #EFF0D5;
+    font-family: 'Lato';
+    font-size: clamp(12px, 2vw, 40px);
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.descripcion--servicio{
+    width: 90%;
+    height: fit-content;
+    font-family: 'Merriweather';
+    font-size: clamp(6px, 2vw, 22px);
+    color: #EFF0D5;
+    border: solid white 2px;
+    border-radius: 1rem;
+    padding: 5px 5px;
+    margin-left: clamp(0.1%, 2vw, 1%);
+    top: 0;
+}
+
+.div-container--footer{
+    width: 90%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.stars{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    right: 0%;
+    margin-right: 0%;
+    width: 7%;
+}
+
+.card--Service .stars--calif{
+    width: 100%;
+}
+
+.button--addCarrito{
+    width: 20%;
+    height: 20%;
+    color: #1C2B52;
+    text-align: center;
+    font-size: clamp(4px, 2vw, 15px);
+    border-radius: 1rem;
+}
+
+.button--addCarrito:hover{
+    transition: 50ms;
+    transform: scale(1.1);
+}
+
+
+/*Carrito de compras*/
+.Desactivate{
+    visibility: hidden;
+}
+
+.Carrito--desplegable{
+    position: absolute;
+    margin-top: 0%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 11%;
+    background-color: #EFF0D5;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    box-shadow: -10px 10px 80px grey;
+
+    transform: translatex(-0%);
+    transition: 1s;    
+}
+
+.titulo{
+    font-family: 'Lato';
+    font-size: clamp(10px, 1.5vw, 25px);
+    text-align: center;
+}
+
+.disabled{
+    display: none;
+}
+
+.carrito--vacio{
+    font-family: 'Lato';
+    font-size: clamp(10px, 1.5vw, 22px);
+    text-align: center;
+}
+
+.cardSrvicio--agregado{
+    margin: 5px;
+    background-color: #1C2B52;
+    border-radius: 1rem;
+    padding: 10px;
+    border: solid;
+}
+
+.titulo--especialidad{
+    margin-top: 0%;
+    font-family: 'Merriweather';
+    font-size: clamp(6px, 1.5vw, 15px);
+    color: #EFF0D5;
+}
+
+.Costo--especialidad{
+    font-family: 'Merriweather';
+    font-size: clamp(6px, 1.5vw, 15px);
+    text-align: right;
+    color: #EFF0D5;
+}
+
+.cont--cant--precio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cant--Serv{
+    font-family: 'Merriweather';
+    font-size: clamp(6px, 1.5vw, 15px);
+    text-align: right;
+    color: #EFF0D5;
+}
+
+.bton--elim{
+    display: flex;
+    justify-content: center;
+}
+
+.eliminar{
+    background-color: red;
+    font-size: clamp(6px, 1.5vw, 12px);
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+    width: 15%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cuenta--total{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    margin-bottom: 0%;
+}
+
+.total{
+    font-size: clamp(10px, 2vw, 25px);
+    margin: 0%;
+}
+
+.btones--carrito{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.ir--pago{
+    color: #1C2B52;
+    background-color: #EFF0D5;
+    border-color: #1C2B52;
+    font-family: 'Comfortaa';
+    font-size: clamp(5px, 1.5vw, 10px);
+    border-radius: 2rem;
+    margin: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vaciar--carritoBton{
+    color: #1C2B52;
+    background-color: #EFF0D5;
+    border-color: #1C2B52;
+    font-family: 'Comfortaa';
+    font-size: clamp(5px, 1.5vw, 10px);
+    border-radius: 2rem;
+    margin: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cerrar--carrito{
+    color: #1C2B52;
+    background-color: #EFF0D5;
+    border-color: #1C2B52;
+    font-family: 'Comfortaa';
+    font-size: clamp(5px, 1.5vw, 10px);
+    font-weight: 900;
+    font-style: italic;
+    border-radius: 2rem;
+    margin: 3px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 500px){
+    .Carrito--desplegable{
+    width: 35%;
+    height: 11%;
+
+}   
+}
+
+@media(max-width: 350px){
+    #fondo--main{
+        width: 50%;
+    }
+    .card--Service{
+        border-radius: 1rem;
+    }
+    
+    .nombre--servicio{
+        font-size: 12px;
+    }
+    
+    .descripcion--servicio{
+        width: 80%;
+    }
+    
+    .div-container--footer{
+        margin-bottom: 5px;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .button--addCarrito{
+        width: 25%;
+        font-size: 5px;
+    }
+}

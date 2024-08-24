@@ -154,9 +154,166 @@
     color: #F2F2EB;
     height: 50%;
     width: 40%;
+
+
+}
+#fondoDonaciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #212A3E;
+    border-radius: 2em;
+    padding: 20px;
+    color: #F2F2EB;
+    width: 700px;
+    margin: 3% 0 3% 3%; 
+}
+#imgDona {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/*Seccion de integrantres*/
+.container--Donaciones {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text--Don {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.contenedor-flotante {
+    width: 350px; /* Ajusta el ancho */
+    background-color: rgba(35, 167, 243, 0.479); /* */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de tarjeta */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre botones */
+    position: fixed; /* Hace que el contenedor sea flotante */
+    top: 50px; /* Ajusta la distancia desde la parte superior */
+    right: 50px; /* Ajusta la distancia desde la parte derecha */
+    align-items: center;
+}
+
+.seleccion-monto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.monto-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.monto-btn:hover, .monto-btn.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+.monto-personalizado {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#monto-input {
+    flex-grow: 1;
+}
+
+#monto-confirmar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-donar.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+.input-donar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#monto-input {
+    flex-grow: 1;
+}
+
+.botones-precio {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones uniformemente */
+    width: 100%;
+}
+
+.botones-precio a {
+    width: 48%; /* Asegura que los botones tengan el mismo tamaño */
+}
+
+.boton-donar {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para botones */
+    transition: background-color 0.3s ease; /* Efecto de transición en hover */
+}
+
+.boton-donar:hover {
+    background-color: #e7e7e7; /* Cambia el fondo al hacer hover */
+}
+
+.input-donar {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-donar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-donar button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #007bff; /* Azul para el botón Donar */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-donar button:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+}
+
+/*Seccion de integrantes*/
 #team
 {
     text-align: center;
@@ -289,4 +446,272 @@
         width: 350px;
     }
 
+}
+
+/* Estilos generales para el contenedor principal de donaciones */
+#fondoDonaciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #212A3E;
+    border-radius: 2em;
+    padding: 20px;
+    color: #F2F2EB;
+    width: 700px;
+    margin: 3% 0 3% 3%;
+}
+
+/* Estilos para el contenedor interno de donaciones */
+.container--Donaciones {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Estilos para el texto de donaciones */
+.text--Don {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Estilos para el contenedor flotante */
+.contenedor-flotante {
+    width: 350px;
+    background-color: rgba(35, 167, 243, 0.479);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    align-items: center;
+}
+
+/* Estilos para la selección de monto */
+.seleccion-monto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones de monto */
+.monto-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los botones de monto al pasar el mouse o estar activos */
+.monto-btn:hover, .monto-btn.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos para el monto personalizado */
+.monto-personalizado {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#monto-input {
+    flex-grow: 1;
+}
+
+#monto-confirmar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de donar cuando está activo */
+.boton-donar.activo {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilos para el contenedor de entrada de donación */
+.input-donar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Estilos para los botones de precio */
+.botones-precio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.botones-precio a {
+    width: 48%;
+}
+
+/* Estilos para el botón de donar */
+.boton-donar {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.boton-donar:hover {
+    background-color: #e7e7e7;
+}
+
+/* Estilos para el contenedor de entrada de donación */
+.input-donar {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-donar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-donar button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-donar button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* Escritorio */
+@media screen and (min-width: 1024px) {
+    #fondoDonaciones {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .contenedor-flotante {
+        width: 400px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #fondoDonaciones {
+        width: 90%;
+        margin: 3% auto;
+    }
+
+    .contenedor-flotante {
+        width: 300px;
+        right: 20px;
+    }
+}
+
+/* Teléfono Android */
+@media screen and (max-width: 767px) {
+    #fondoDonaciones {
+        width: 95%;
+        margin: 3% auto;
+        padding: 15px;
+    }
+
+    .contenedor-flotante {
+        width: 90%;
+        position: static;
+        margin: 20px auto;
+    }
+
+    .seleccion-monto {
+        grid-template-columns: 1fr;
+    }
+
+    .botones-precio {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones-precio a {
+        width: 100%;
+    }
+
+    .input-donar {
+        flex-direction: column;
+    }
+
+    .input-donar input,
+    .input-donar button {
+        width: 100%;
+    }
+}
+
+
+
+/* Media Queries */
+
+/* Escritorio grande */
+@media screen and (min-width: 1200px) {
+    #imgDona {
+        width: 60%;
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    #imgDona {
+        width: 50%;
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #imgDona {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+/* Teléfono Android (y otros móviles) */
+@media screen and (max-width: 767px) {
+    #imgDona {
+        width: 100%;
+        margin: 15px auto;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media screen and (max-width: 320px) {
+    #imgDona {
+        width: 100%;
+        margin: 10px auto;
+    }
 }

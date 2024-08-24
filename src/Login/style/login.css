@@ -51,11 +51,25 @@
     border-color: #296CD1;
     margin-top: 15px;
     padding-left: 15px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-family: "Lato";
     font-size: 15px;
     align-items: center;
     justify-items: center;
+}
+
+/* Estilo normal cuando la contraseña cumple la regex */
+#password--login.valid {
+    background-color: #FFFF;
+    border-color: #296CD1;
+    opacity: 1;
+}
+
+/* Estilo tenue cuando la contraseña no cumple la regex */
+#password--login.invalid {
+    background-color: #e0e0e0; /* Un gris más claro para indicar que está deshabilitado */
+    border-color: #999999; /* Borde gris tenue */
+    opacity: 0.6;
 }
 
 .login--boton{
@@ -65,7 +79,7 @@
 } 
 
 #login{
-    height: 45px; 
+    /* height: 45px; 
 	width: 252px;   
 	padding-left: 5px;
 	padding-right: 5px; 	
@@ -77,7 +91,22 @@
 	border-radius: 2em;	
     cursor: pointer;
     font-family: "Lato";
-    font-size: 28px;
+    font-size: 28px; */
+
+    place-content: center;
+    text-align: center;
+    height: 49.85px; 
+	width: 250px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #1C2B52; 
+    color: #F2F2EB;
+	border-radius: 30px;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 16px;
 }
 
 #login:hover{
@@ -90,13 +119,13 @@
     opacity: 120%;
 }
 
-#login:disabled{
+/* #login:disabled{
     opacity: 0.6;
     cursor: not-allowed;
-}
+} */
 
 #registro{
-    height: 45px; 
+    /* height: 45px; 
 	width: 149px;   
 	padding-left: 5px;
 	padding-right: 5px; 	
@@ -108,16 +137,41 @@
 	border-radius: 2em;	
     cursor: pointer;
     font-family: "Lato";
-    font-size: 24px;
+    font-size: 24px; */
+    place-content: center;
+    text-align: center;
+    height: 49.85px; 
+	width: 250px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #BAD895; 
+    color: #1C2B52;
+	border-radius: 30px;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 16px;
 }
 
 #registro:hover{
-    color: white;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
+    color: #869DA6;
+    opacity: 70%;
+}
+
+.login-message{
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.error-message{
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 /*----------Modal---------*/
@@ -177,6 +231,14 @@
     margin: 0;
     font-size: 30px;
     font-family: "Lato";
+}
+
+#seleccion--usuario:hover, #seleccion--especialista:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    transform: scale(1.05); /* Agranda un poco el botón */
+    transition: 1s
 }
 
 

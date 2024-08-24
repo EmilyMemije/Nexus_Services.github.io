@@ -11,6 +11,7 @@
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="../../src/perfilAdmin/styles/perfilAdmin.css">
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +22,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,8 +32,8 @@
     <header>
         <nav class="nav--container">
             <div class="nav--logo">
-                <a href="../paginaPrincipal/paginaPrincipal.html">
-                    <img src="../../assets/NS.png" alt="LogoNS">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
                 </a>
             </div>
             <div class="centro">
@@ -37,39 +41,51 @@
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
                 <div class="nav--search">
-                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
                     <a href="" target="_blank">
                         <button class="botton">
-                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
                         </button>
                     </a>
-                </div>
+                </div> 
                 <div class="nav--menu">
-                    <a href="../blog/blog.html">Blog</a>
-                    <a href="../servicios/servicios.html">Servicios</a>
-                    <a href="../Asociados/Asociados.html">Asociados</a>
-                    <a href="../Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="../Contactanos/contactanos.html">Contáctanos</a>
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="../SOS/sos.html" target="_blank">
-                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                <a href="/src/SOS/sos.html" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="../login/login.html" target="_blank">
-                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
                 </a>
             </div>
         </nav>
-    </header>
+        </header>
 
+    <!-- Cuerpo de página -->
     <div class="admin--title">
-        <h1 style="display: flex; justify-content: center;">¡Que gusto volver a verte por aquí Admin!</h1>
-        <hr>
+        <h1>¡Que gusto volver a verte por aquí Admin!</h1>
     </div>
-    <div class="imgAdmin--container">
-        <h2>Perfil de administrador</h2>
-        <img src="" alt="">
+    <hr>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="imgAdmin--container">
+            <h2>Perfil de administrador</h2>
+            <div class="img--perfil">
+            <img src="../../assets/User_01.png" alt="Img-Usuario">
+            </div>
+        </div>
+        <div class="options--container">
+            <a href="../modificarCuentas/modificarCuentas.html">Modificar cuentas</a>
+            <a href="">Modificar servicios</a>
+            <a href="">Configurar cuenta de administrador</a>
+        </div> 
     </div>
 
     <!--Footer-->

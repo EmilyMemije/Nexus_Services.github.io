@@ -188,3 +188,96 @@ header h1 {
     font-size: 0.9em;
 }
 
+::-webkit-scrollbar
+{
+    background-color: none;
+    width: 5px;
+}
+
+/*autoresponsive*/
+@media (max-width: 1500px){
+
+    body{
+        height: 180vh;
+    }
+
+}
+
+
+@media (max-width:800px)
+{
+   
+    body
+    {
+        height: 200vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .sidebar
+    {
+        width: 100%;
+    }
+
+    .menu-button
+    {
+        height: 40px;
+    }
+
+    .main-content
+    {
+        width: 100%;
+        text-align: center;
+       
+    }
+    
+    .service
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-icon
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .service-details
+    {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .eliminar-btn
+    {
+        margin-top: 10px;
+    }
+
+    .actualizar-btn
+    {
+        margin-top: 10px;
+    }
+
+    footer
+    {
+        overflow: hidden;
+    }
+
+    header
+    {
+        overflow: hidden;
+    }
+
+
+
+}

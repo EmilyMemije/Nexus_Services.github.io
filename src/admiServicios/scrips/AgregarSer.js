@@ -145,12 +145,50 @@ function crearTarjetaServicio() {
     /*ingresa los datos a la api */
 
     // Llama a la función para cargar los datos desde el JSON al localStorage 
-           
-        function guardarArticuloEnLocalStorage(nuevoArticulo) {
-        }
 
 
 crearTarjetaServicio();
+
+//validaciones del form 
+
+
+upload.addEventListener('click',function(e){
+
+    let formIsValid = true;
+    e.preventDefault();
+    if (nombre.value==="Servicio a brindar")
+    {
+        alert("Por favor seleccione un servicio")
+        formIsValid = false;
+    }
+    if(Des.value==='')
+    {
+        alert("Por Favor ingresa una descripcion")
+        formIsValid = false;
+    }
+    if (price===''||price===0)
+    {
+        alert("Por favor ingrese un precion")
+        formIsValid = false;
+    }
+    if(dayDiv.value==='')
+    {
+        alert("Seleccione los dias de servicio")
+        formIsValid = false;
+    }
+
+    const selectedDays = selectedDaysContainer.querySelectorAll('.selected-day');
+    if (selectedDays.length === 0) {
+        alert("Por favor, seleccione al menos un día.");
+        formIsValid = false;
+    }
+
+    if (!formIsValid) {
+        return;
+    }
+})
+
+
 
 upload.addEventListener('click', function(){
     nombre.textContent = Service.value;
@@ -166,5 +204,5 @@ upload.addEventListener('click', function(){
             .filter(button => button.classList.contains('active'))
             .map(button => button.textContent.trim())
     };
-    guardarArticuloEnLocalStorage(data);
+
 })

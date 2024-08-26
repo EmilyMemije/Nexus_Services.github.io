@@ -30,7 +30,8 @@
 
 .box p {
     color: #F2F2EB;
-    text-align: right;
+    text-align: center;
+
 }
 
 .box h2 {
@@ -52,6 +53,17 @@
 }
 
 
+.box .textocard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
 .box button {
     background-color: #F2F2EB;
@@ -60,9 +72,9 @@
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 40px;
+    margin-top: 10px;
     flex: 1;
 }
-
 
 .box button:hover {
     background-color: #296CD1;

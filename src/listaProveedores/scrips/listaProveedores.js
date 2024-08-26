@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const divbox = document.createElement('div');
         divbox.className = 'box';
 
+        //Creando contenedor para imagen y p's
+        const divContent = document.createElement('div');
+        divContent.className = 'box-content';
+
         const titulocard = document.createElement('h2');
         titulocard.textContent = servicio.Titulo;
 
@@ -40,13 +44,25 @@ document.addEventListener("DOMContentLoaded", function () {
         estrella.textContent = servicio.Estrellas;
 
         divbox.appendChild(titulocard);
-        divbox.appendChild(img);
-        divbox.appendChild(textocard);
+        //divbox.appendChild(img);
+        //divbox.appendChild(textocard);
         textocard.appendChild(especialidad);
         textocard.appendChild(estrella);
         textocard.appendChild(ubicacion);
-        textocard.appendChild(btn1);
-        textocard.appendChild(btn2);
+
+        //Almacenamiento de imagen y texto
+        divContent.appendChild(img);
+        divContent.appendChild(textocard);
+        
+        divbox.appendChild(divContent);
+
+        //Crear un contenedor para los botones
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
+
+        buttonContainer.appendChild(btn1);
+        buttonContainer.appendChild(btn2);
+        textocard.appendChild(buttonContainer);
 
         divbox.dataset.especialidad = servicio.Especialidad;
         divbox.dataset.estrella = servicio.Estrellas;

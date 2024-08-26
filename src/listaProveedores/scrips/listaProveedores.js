@@ -39,14 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const estrella = document.createElement('p');
         estrella.textContent = servicio.Estrellas;
 
+        // Crear un contenedor para los botones
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
+
         divbox.appendChild(titulocard);
         divbox.appendChild(img);
         divbox.appendChild(textocard);
         textocard.appendChild(especialidad);
         textocard.appendChild(estrella);
         textocard.appendChild(ubicacion);
-        textocard.appendChild(btn1);
-        textocard.appendChild(btn2);
+
+        buttonContainer.appendChild(btn1);
+        buttonContainer.appendChild(btn2);
+        textocard.appendChild(buttonContainer);
+
 
         divbox.dataset.especialidad = servicio.Especialidad;
         divbox.dataset.estrella = servicio.Estrellas;
@@ -58,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayCards(cards) {
         container.innerHTML = "";
 
-        if(cards.length === 0){
+        if (cards.length === 0) {
             const sinResultados = document.createElement('p');
             sinResultados.textContent = 'No se encontraron resultados';
             container.appendChild(sinResultados);
@@ -67,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const start = paginaActual * cardsPorPag;
         const end = start + cardsPorPag;
         const cardsToShow = cards.slice(start, end);
-        
+
         cardsToShow.forEach(servicio => CrearTarjeta(servicio));
 
         // Verificar si hay más tarjetas para mostrar
@@ -92,17 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
             allCards = data.cards; // Aquí almacenamos todas las tarjetas
             displayCards(allCards); // Acá mostramos las primeras
 
-           //Filtro por Especialidad
+            //Filtro por Especialidad
             option.addEventListener("change", e => {
                 const selection = e.target.value;
                 paginaActual = 0; // Reiniciar a la primera página al filtrar
                 if (selection === "Especialidad") {
-                    allCards=data.cards;
+                    allCards = data.cards;
                     displayCards(allCards);
                 } else {
                     const tarjetasFiltradas = data.cards.filter(servicio => servicio.Especialidad === selection);
                     displayCards(tarjetasFiltradas);
-                    allCards=tarjetasFiltradas;
+                    allCards = tarjetasFiltradas;
                 }
             });
 
@@ -112,30 +119,30 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(selection);
                 paginaActual = 0; // Reiniciar a la primera página al filtrar
                 if (selection === "Por Calificacion") {
-                    allCards=data.cards;
+                    allCards = data.cards;
                     displayCards(allCards);
                 } else {
                     const tarjetasFiltradas = data.cards.filter(servicio => servicio.Estrellas === selection);
                     displayCards(tarjetasFiltradas);
-                    allCards=tarjetasFiltradas;
+                    allCards = tarjetasFiltradas;
                 }
             });
 
             //Filtro por Ubicación
             optionUbicacion.addEventListener("change", e => {
-                const selection = e.target.value;            
+                const selection = e.target.value;
                 paginaActual = 0; // Reiniciar a la primera página al filtrar
                 if (selection === "Más cercano") {
-                    allCards=data.cards;
+                    allCards = data.cards;
                     displayCards(allCards);
                 } else {
                     const tarjetasFiltradas = data.cards.filter(servicio => servicio.Ubicacion === selection);
                     console.log('Tarjetas filtradas:', tarjetasFiltradas);
                     displayCards(tarjetasFiltradas);
-                    allCards=tarjetasFiltradas;
+                    allCards = tarjetasFiltradas;
                 }
             });
-            
+
         } catch (error) {
             console.error('Error al obtener los servicios:', error);
         }

@@ -1,0 +1,187 @@
+<<<<<<< HEAD
+{
+=======
+/* Reset para asegurar que todos los elementos usen el mismo modelo de caja */
+* {
+>>>>>>> 9c7619421d3e3cfef36b8ee4c8a905cac77a43bc
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3683f79f;
+}
+
+.contenedor-donacion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Incrementa el ancho máximo */
+    width: 90vw; /* El contenedor ocupará el 90% del ancho de la ventana */
+    min-width: 320px; /* Tamaño mínimo para que no se encoja demasiado */
+    margin: 2rem auto;
+    background-color: #3683f79f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario-donacion, .resumen-donacion {
+    width: 48%;
+}
+
+.metodos-pago {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.metodos-pago label {
+    margin-bottom: 0.5rem;
+}
+
+form input, .payment-details input[type="text"], .payment-details input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#botonDonar, .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    margin-top: 2%;
+}
+
+#botonDonar:disabled, .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.terminos {
+    margin-top: 1rem;
+}
+
+.resumen-donacion {
+    background-color: #f9f9faa1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.monto, .total {
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.detalles-tarjeta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles-tarjeta input {
+    width: 48%;
+}
+
+.container {
+    background-color: #f9f9faa1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    margin-right: 200px;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.payment-option {
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Estilos para la alerta personalizada */
+.alerta {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.oculto {
+    display: none;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    /* Estilos para desktop */
+    .contenedor-donacion {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos para tablet */
+    .contenedor-donacion {
+        flex-direction: column;
+    }
+
+    .formulario-donacion, .resumen-donacion {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Estilos para móvil */
+    .contenedor-donacion {
+        flex-direction: column;
+        padding: 1rem;
+        min-width: 320px; /* Tamaño mínimo para pantallas muy pequeñas */
+    }
+
+    .formulario-donacion, .resumen-donacion {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .detalles-tarjeta {
+        flex-direction: column;
+    }
+
+    .detalles-tarjeta input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Media query para pantallas muy muuy pequeñas  */
+    .contenedor-donacion {
+        padding: 1rem;
+    }
+
+    .formulario-donacion, .resumen-donacion {
+        width: 100%;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Services</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="../../assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
+    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="../Compra/styles/styles.css">
+    <link rel="stylesheet" href="../Compra/styles/estilos.css">
+
+    <!--Conexcion a estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav--container">
+            <div class="nav--logo">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="/assets/NS.png" alt="LogoNS">
+                </a>
+            </div>
+            <div class="centro">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
+                    <a href="" target="_blank">
+                        <button class="botton">
+                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                        </button>
+                    </a>
+                </div> 
+                <div class="nav--menu">
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a href="/src/SOS/sos.html" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                </a>
+            </div>
+        </nav>
+        </header>
+
+    <!---->
+
+    <!-- Confirmacion de pago  -->
+    <div class="titulo">
+        <h1 id="titulo">Confimación de pago</h1>
+        <div class="botones">
+            <div class="boton1">1.<p class="texto">Carrito</p></div>
+            <hr id="ab">
+            <div class="boton2">2.<p class="texto">Pago</p></div>
+            <hr id="bc">
+            <div class="boton3">3.<p class="texto">Agradecimiento</p></div>
+        </div>
+    </div>
+
+    <div class="resumen">
+        <div class="resument" id="resument">Resumen <br>
+            <hr class="linea1">
+            <table>
+                <tr>
+                    <td class="servico">Servicio</td>
+                    <td class="descripcion">Descripción</td>
+                    <td class="costo">Costo</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contenedor">
+                <!-- Tarjeta -->
+                <section class="tarjeta" id="tarjeta">
+                    <div class="delantera">
+                        <!--<div class="logo-marca" id="logo-marca">
+                            <img src="img/logos/visa.png" alt=""> 
+                        </div>
+                        <img src="img/chip-tarjeta.png" class="chip" alt="">-->
+                        <div class="datos">
+                            <div class="grupo" id="numero">
+                                <p class="label">Número Tarjeta</p>
+                                <p class="numero">#### #### #### ####</p>
+                            </div>
+                            <div class="flexbox">
+                                <div class="grupo" id="nombre">
+                                    <p class="label">Nombre Tarjeta</p>
+                                    <p class="nombre">---- ----</p>
+                                </div>
+        
+                                <div class="grupo" id="expiracion">
+                                    <p class="label">Expiracion</p>
+                                    <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="trasera">
+                        <div class="barra-magnetica"></div>
+                        <div class="datos">
+                            <div class="grupo" id="firma">
+                                <p class="label">Firma</p>
+                                <div class="firma"><p></p></div>
+                            </div>
+                            <div class="grupo" id="ccv">
+                                <p class="label">CCV</p>
+                                <p class="ccv"></p>
+                            </div>
+                        </div>
+                        <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+                        <a href="#" class="link-banco">www.tubanco.com</a>
+                    </div>
+                </section>
+        
+                <!-- Contenedor Boton Abrir Formulario -->
+                <div class="contenedor-btn">
+                    <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+        
+                <!-- Formulario -->
+                <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+                    <div class="grupo">
+                        <label for="inputNumero">Número Tarjeta</label>
+                        <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                    </div>
+                    <div class="grupo">
+                        <label for="inputNombre">Nombre</label>
+                        <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+                    </div>
+                    <div class="flexbox">
+                        <div class="grupo expira">
+                            <label for="selectMes">Expiracion</label>
+                            <div class="flexbox">
+                                <div class="grupo-select">
+                                    <select name="mes" id="selectMes">
+                                        <option disabled selected>Mes</option>
+                                    </select>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                                <div class="grupo-select">
+                                    <select name="year" id="selectYear">
+                                        <option disabled selected>Año</option>
+                                    </select>
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="grupo ccv">
+                            <label for="inputCCV">CCV</label>
+                            <input type="text" id="inputCCV" maxlength="3">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-enviar"><a href="./gracias/gracias.html"></a> Enviar</button>
+                </form>
+            </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="section-redes">
+            <a href="">
+                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="section">
+            <a href="" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
+            <br>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
+    margin: 0;
+
+}
+
+/*      Barra de navegación     */
+.nav--container{
+    background: linear-gradient(279deg, rgba(255, 255, 255, 0.80) 11.65%, rgba(30, 144, 255, 0.80) 66.35%, rgba(92, 183, 221, 0.80) 109.43%);
+    position: sticky;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*      logo Imagen     */
+.nav--logo img{
+    width: 157px;
+    height: 157px;
+}
+
+/*      Centro del navvar       */
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--Titulo Nexus Services--*/
+#NS--title{
+    text-decoration: none;
+}
+
+#nav--title {
+    display: flex;
+    justify-content: center;
+    color: #1C2B52;
+    font-family: "Lato";
+    font-size: 45px;
+    text-shadow: 8px 8px 10px #ffffff;
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+/*--Barra de búsqueda--*/
+.nav--search {
+    display: flex;
+    margin-top: 10px;
+    max-width: 280px;
+    border-radius: 50px;
+    background: linear-gradient(82deg, rgba(255, 255, 255, 0.85) 25.66%, rgba(134, 192, 234, 0.81) 101.15%, rgba(0, 122, 255, 0.85) 131.58%);
+    position: relative;
+}
+
+.search--imput{
+    border: none;
+    background: none;
+    color: black;
+    font-size: 12px;
+    padding: 7px 9px 7px 15px; 
+}
+
+/*--Boton y lupa--*/
+.botton {
+    color: white;
+    position: absolute;
+    right: 0px;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: none;
+    display: inline-block;
+    opacity: 80%;
+}
+
+.botton:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 5px 10px;
+    transform: translateY(-3px);
+    opacity: 120%;
+    cursor: pointer;
+}
+
+/*--Menú de servicios--*/
+.nav--menu {
+    display: inline;
+    font-family: "Lato";
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.nav--menu a {
+    text-decoration: none;
+    color: #1C2B52;
+    text-align: center;
+    padding:0px 15px;
+}
+
+.nav--menu a:hover {
+    border-radius: 25px 25px 0px 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 14.75%, rgba(30, 144, 255, 0.45) 62.3%, rgba(30, 144, 255, 0.90) 101.64%);
+    transition: 0.1s;
+}
+
+/*      Imagen SOS e Icono      */
+
+#SOS-image{
+    width: 60px;
+    padding: 10px;
+}
+
+.nav--ingresar {
+    margin-right: 60px;
+}

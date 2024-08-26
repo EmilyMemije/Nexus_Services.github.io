@@ -1,0 +1,62 @@
+[
+    {
+        "imagen": "img/Psychologist-pana.png",
+        "nombre": "Psicologia",
+        "descripcion": "Descripción del servicio 1",
+        "precio": "$100",
+        "dias": ["L", "M", "X", "J", "V"]
+    },
+    {
+        "imagen": "img/Pediatrician-rafiki.png",
+        "nombre": "Pediatria",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "S", "D"]
+    }
+    ,
+    {
+        "imagen": "img/crea-un-dentista-atendiendo-a-un-pasiente-con-colo (1).png",
+        "nombre": "Odontologia",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "V", "S"]
+    }
+    ,
+    {
+        "imagen": "img/Veterinary-rafiki.png",
+        "nombre": "Veterinario",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "J", "V","S","D"]
+    },
+    {
+        "imagen": "img/Psychologist-pana.png",
+        "nombre": "Psicologia",
+        "descripcion": "Descripción del servicio 1",
+        "precio": "$100",
+        "dias": ["L", "M", "X", "J", "V"]
+    },
+    {
+        "imagen": "img/Pediatrician-rafiki.png",
+        "nombre": "Pediatria",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "S", "D"]
+    }
+    ,
+    {
+        "imagen": "img/crea-un-dentista-atendiendo-a-un-pasiente-con-colo (1).png",
+        "nombre": "Odontologia",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "V", "S"]
+    }
+    ,
+    {
+        "imagen": "img/Veterinary-rafiki.png",
+        "nombre": "Veterinario",
+        "descripcion": "Descripción del servicio 2",
+        "precio": "$200",
+        "dias": ["L", "M", "M", "J", "V","S","D"]
+    }
+]

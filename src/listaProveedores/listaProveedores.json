@@ -1,0 +1,145 @@
+{
+    "cards":
+[
+    {
+        "Titulo": "Dra. Ana Martínez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★☆☆☆☆"
+    },
+    {
+        "Titulo": "Dra. Luisa Olvera",
+        "Especialidad": "Pediatria",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★☆☆☆☆"
+    },
+    {
+        "Titulo": "Dra. Melissa Ramos",
+        "Especialidad": "Nutrición",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas": "★★★☆☆"
+    },
+    {
+        "Titulo": "Lic. Miguel Mendoza",
+        "Especialidad": "Odontología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dr. Hugo Morales ",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dra. Maria Rosas",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★☆☆"
+    },
+    {
+        "Titulo": "Dr. Guillermo Benitez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★☆"
+    },
+    {
+        "Titulo": "Dra. Nelly Guzman",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dra. Blanca Fernandez",
+        "Especialidad": "Veterinaria",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★☆☆☆"
+    },
+    {
+        "Titulo": "Dr. Marcos Lopez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dra. Ana Martínez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★☆☆☆☆"
+    },
+    {
+        "Titulo": "Dra. Luisa Olvera",
+        "Especialidad": "Pediatria",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★☆☆☆☆"
+    },
+    {
+        "Titulo": "Dra. Juan Ramos",
+        "Especialidad": "Nutrición",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas": "★★★☆☆"
+    },
+    {
+        "Titulo": "Lic. Miguel Mendoza",
+        "Especialidad": "Odontología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dr. Hugo Morales ",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dra. Maria Rosas",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★☆☆"
+    },
+    {
+        "Titulo": "Dr. Guillermo Benitez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★☆"
+    },
+    {
+        "Titulo": "Dra. Nelly Guzman",
+        "Especialidad": "Endocrinología",
+        "Ubicación": "Coyoacán, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    },
+    {
+        "Titulo": "Dra. Blanca Fernandez",
+        "Especialidad": "Veterinaria",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★☆☆☆"
+    },
+    {
+        "Titulo": "Dr. Marcos Lopez",
+        "Especialidad": "Médico General",
+        "Ubicación": "Gustavo A. Madero, CDMX.",
+        "Img":"assets/BLOG.jpg",
+        "Estrellas":"★★★★★"
+    }
+    ]
+}

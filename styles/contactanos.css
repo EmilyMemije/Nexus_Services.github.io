@@ -1,0 +1,135 @@
+#Conteiner-principal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+    margin: 2% 0%;
+}
+
+.container--formulario {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 500px;
+    width: 400px;
+    background-color:#212A3E;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 2em;
+    padding-top: 30px;
+}
+
+.container--redesSociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 25%;
+    background-color:#212A3E;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 2em;
+    padding-top: 30px;
+}
+
+
+.formulario {
+    background-color: #212A3E;
+    padding: 5px 15px 05px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+#nombre{
+    width: 350px;
+}
+
+#email{
+    width: 350px;
+}
+
+#company{
+    width: 350px;
+}
+
+#mensaje{
+    width: 350px;
+    height: 100px;
+}
+
+.button--save {
+    display: block;
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #B8C2D5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    
+}  
+
+#Conteiner-principal img{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    padding: 10px 50px;
+    margin: 3%;
+}
+
+.img-social{
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    padding: 6px;
+    margin-left: 10px;
+    opacity: 50%;
+}
+
+.telefono{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.correo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#tel{
+    background-color: #212A3E;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#emai{
+    background-color: #212A3E;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

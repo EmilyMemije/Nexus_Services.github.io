@@ -1,12 +1,12 @@
 .container--registrarse {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     height: auto;
+
     margin: 0% 0%;
     gap: 0%;
-    
 
 }
 
@@ -21,7 +21,9 @@
 
 }
 
+
 .container--registrarse input:not([type="checkbox"]) {
+
     display: flex;
     flex-direction: column;
     background-color: #FFFF;
@@ -106,6 +108,7 @@ span {
         justify-content: center;
 
     }
+  
     .form-group{
         display: flex;
         flex-direction: column;
@@ -125,6 +128,7 @@ span {
     #registrarse {
         height: 60px;
         width: 240px;
+
         font-size: 20px;
         justify-content: center;
 
@@ -134,6 +138,7 @@ span {
 @media only screen and (max-width: 510px) {
     .container--registrarse {
         width: 100vw;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -161,6 +166,7 @@ span {
         justify-content: center;
         height: 50px;
         width: 230px;
+
         font-size: 17px;
     }
 }

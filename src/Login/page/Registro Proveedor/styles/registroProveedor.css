@@ -127,6 +127,42 @@ span{
     }
 }
 
+*/
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width: 570px) {
+    .container--registrarse {
+        width: 85%;
+    }
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .container--registrarse input:not([type="checkbox"]){
+        width: 85%;
+    }
+    .container--registrarse select {
+        width: 90%;
+    }
+
+    #registrarse{
+        height: 60px; 
+	    width: 240px; 
+        font-size: 20px;
+        justify-content: center;
+
+    }
+    /*
+    #check {
+        font-size: 200px;
+    }
+*/
+}
+
 @media (max-width: 510px) {
     .container--registrarse {
         width: 75%;

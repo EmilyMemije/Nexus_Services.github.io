@@ -2,7 +2,8 @@ main{
     display: flex;
     flex-direction: row;
 
-    background-image: url(../../assets/iconos-lineales-acerca-elementos-medicos.png);
+
+    background-image: url('../../assets/iconos-lineales-acerca-elementos-medicos.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: right;
@@ -55,8 +56,8 @@ button .carrito-de-compras{
 
     margin-top: 2%;
     top: 2%;
-    margin-left: 5%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 1%;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -147,13 +148,19 @@ button .carrito-de-compras{
 
 /*-----Cards de Servicios-----*/
 #fondo--main{
-    width: 40%;
-    height: fit-content;
+    width: 45%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #1C2B52 transparent;
+    scrollbar-width: thin;
 
     position: relative;
     margin-top: 1%;
     margin-bottom: 2%;
-    left: 2%;
+    left: 0.5%;
+    padding-right: 20px;
+    padding-left: 10px;
 }
 
 .card--Service{
@@ -261,14 +268,12 @@ button .carrito-de-compras{
     flex-direction: column;
     justify-content: space-evenly;
     width: 25%;
-    height: 11%;
+    height: 25%;
     background-color: #EFF0D5;
     overflow-y: scroll;
     scrollbar-width: 10px;
     box-shadow: -10px 10px 80px grey;
-
-    transform: translatex(-0%);
-    transition: 1s;    
+    transition: 1s;
 }
 
 .titulo{
@@ -288,6 +293,7 @@ button .carrito-de-compras{
 }
 
 .cardSrvicio--agregado{
+    width: auto;
     margin: 5px;
     background-color: #1C2B52;
     border-radius: 1rem;
@@ -404,7 +410,7 @@ button .carrito-de-compras{
 @media(max-width: 500px){
     .Carrito--desplegable{
     width: 35%;
-    height: 11%;
+    height: 30%;
 
 }   
 }

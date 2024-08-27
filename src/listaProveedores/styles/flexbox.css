@@ -51,6 +51,17 @@
     color: #F2F2EB;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Ajusta el espacio entre los botones */
+}
+
+.textcard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Ajusta el espacio entre el texto y los botones */
+}
 
 
 .box button {
@@ -61,6 +72,8 @@
     cursor: pointer;
     border-radius: 40px;
     flex: 1;
+
+    margin-top: 10px;
 }
 
 

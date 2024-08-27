@@ -4,8 +4,9 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    margin: 0 auto;
-    gap: 0%; 
+
+    margin: 0% 0%;
+    gap: 0%;
 
 }
 
@@ -21,11 +22,29 @@
 }
 
 
-.container--registrarse input:not([type="checkbox"]){
+.container--registrarse input:not([type="checkbox"]) {
+
     display: flex;
     flex-direction: column;
     background-color: #FFFF;
     width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    padding-left: 15px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container--registrarse select{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 428px;
     height: 40px;
     border-radius: 10px;
     border-style: double;
@@ -39,30 +58,30 @@
     justify-items: center;
 }
 
-.registrarse--boton{
+.registrarse--boton {
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
-#registrarse{
-    height: 70px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 40px; 	
-	background-color: #1C2B52; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+#registrarse {
+    height: 70px;
+    width: 252px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    background-color: #1C2B52;
+    border-color: white;
+    border-style: solid;
+    border-radius: 2em;
     cursor: pointer;
     font-family: "Lato";
     font-size: 28px;
     color: #FFFF;
 }
 
-#registrarse:hover{
+#registrarse:hover {
     background-color: #86C0EA;
     color: #1C2B52;
     transition: 0.1s;
@@ -72,7 +91,8 @@
     opacity: 120%;
     border-color: #1C2B52;
 }
-span{
+
+span {
     display: flex;
     width: 408px;
     text-align: justify;
@@ -81,45 +101,51 @@ span{
 
 /*---------Mediaquery-----------*/
 
-@media (max-width: 570px) {
-    .container--registrarse {
-        width: 85%;
-    }
+@media only screen and (max-width: 570px) {
 
     .container--registrarse h2 {
         font-size: 40px;
         justify-content: center;
 
     }
-
-    .container--registrarse input:not([type="checkbox"]), select{
-        width: 85%;
+  
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+    .container--registrarse input:not([type="checkbox"]),
+    select {
+        width: 400px;
+        
+    }
+    #check{
+        margin-left: 60px;
     }
 
-    #registrarse{
-        height: 60px; 
-	    width: 240px; 
+    #registrarse {
+        height: 60px;
+        width: 240px;
+
         font-size: 20px;
         justify-content: center;
 
     }
-    /*
-    #check {
-        font-size: 200px;
-    }
-*/
 }
 
-@media (max-width: 510px) {
+@media only screen and (max-width: 510px) {
     .container--registrarse {
-        width: 75%;
+        width: 100vw;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
         margin: 0 auto;
-        padding-left: 100px;
+        padding: 0px;
     }
 
     .container--registrarse h2 {
@@ -128,14 +154,19 @@ span{
 
     }
 
-    .container--registrarse input:not([type="checkbox"]), select{
-        width: 75%;
+    .container--registrarse input:not([type="checkbox"]),
+    select {
+        width: 65%;
     }
 
-    #registrarse{
+    .container--registrarse select {
+        width: 80%;
+    }
+    #registrarse {
         justify-content: center;
-        height: 50px; 
-	    width: 230px; 
+        height: 50px;
+        width: 230px;
+
         font-size: 17px;
     }
 }

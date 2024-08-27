@@ -97,10 +97,34 @@ span{
     text-align: justify;
     margin-bottom: 30px;
 }
-/*
-#login:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width: 570px) {
+    .container--registrarse {
+        width: 85%;
+    }
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .container--registrarse input:not([type="checkbox"]){
+        width: 85%;
+    }
+    .container--registrarse select {
+        width: 90%;
+    }
+
+    #registrarse{
+        height: 60px; 
+	    width: 240px; 
+        font-size: 20px;
+        justify-content: center;
+
+    }
 }
 
 */

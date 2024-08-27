@@ -4,8 +4,9 @@
     justify-items: center;
     align-items: center;
     height: auto;
+    width: auto;
     margin: 0% 0%;
-    gap: 0%; 
+    gap: 0%;
 
 }
 
@@ -20,26 +21,35 @@
 
 }
 
-.container--inicioSocial{
+.container--inicioSocial {
     display: flex;
     justify-items: center;
     align-items: center;
 }
 
-#logo--google{
-    width: 70px; 
-    padding: 0px 10px 10px 10px;
-}
-#logo--facebook{
-    width: 70px;
-    padding: 0px 10px 10px 10px;
-}
-#logo--mac{
+#logo--google {
     width: 70px;
     padding: 0px 10px 10px 10px;
 }
 
-.formulario--login input{
+#logo--facebook {
+    width: 70px;
+    padding: 0px 10px 10px 10px;
+}
+
+#logo--mac {
+    width: 70px;
+    padding: 0px 10px 10px 10px;
+}
+
+#form--login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario--login input {
     display: flex;
     flex-direction: column;
     background-color: #FFFF;
@@ -49,75 +59,93 @@
     border-style: double;
     border-width: 1px;
     border-color: #296CD1;
-    margin-top: 15px;
     padding-left: 15px;
-    margin-bottom: 30px;
     font-family: "Lato";
     font-size: 15px;
     align-items: center;
     justify-items: center;
 }
 
-.login--boton{
+/* Estilo normal cuando la contraseña cumple la regex */
+#password--login.valid {
+    background-color: #FFFF;
+    border-color: #296CD1;
+    opacity: 1;
+}
+
+/* Estilo tenue cuando la contraseña no cumple la regex */
+#password--login.invalid {
+    background-color: #e0e0e0;
+    /* Un gris más claro para indicar que está deshabilitado */
+    border-color: #999999;
+    /* Borde gris tenue */
+    opacity: 0.6;
+}
+
+.login--boton {
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
-
-#login{
-    height: 45px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
-    cursor: pointer;
-    font-family: "Lato";
-    font-size: 28px;
 }
 
-#login:hover{
+#login {
+    place-content: center;
+    text-align: center;
+    height: 49.85px;
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #F2F2EB;
+    color: #1C2B52;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 16px;
+}
+
+#login:hover {
     background-color: #1C2B52;
-    color: white;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
+    color: #F2F2EB;
 }
 
-#login:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-#registro{
-    height: 45px; 
-	width: 149px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #869DA6; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+#registro {
+    font-size: 24px;
+    place-content: center;
+    text-align: center;
+    height: 49.85px;
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #F2F2EB;
+    color: #1C2B52;
+    border-radius: 30px;
     cursor: pointer;
     font-family: "Lato";
-    font-size: 24px;
+    font-size: 16px;
 }
 
-#registro:hover{
-    color: white;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
+#registro:hover {
+    background-color: #1C2B52;
+    color: #F2F2EB;
+}
+
+.login-message {
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.error-message {
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 /*----------Modal---------*/
@@ -132,17 +160,17 @@
 }
 
 #btnUsuario {
-   padding-right: 20px;
-   padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #btnProveedor {
     padding-left: 20px;
     padding-right: 20px;
-    
+
 }
 
-#seleccion--usuario{
+#seleccion--usuario {
     width: 245px;
 }
 
@@ -153,7 +181,7 @@
     height: 50vh;
     margin: 0;
     background-color: #5977B3;
-    
+
 }
 
 .seleccion {
@@ -179,71 +207,75 @@
     font-family: "Lato";
 }
 
+#seleccion--usuario:hover,
+#seleccion--especialista:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Agranda un poco el botón */
+    transition: 1s
+}
+
 
 /*---------Mediaquery-----------*/
 
-@media (max-width:700px) {
+@media only screen and (max-width:700px) {
     .container--login h2 {
         font-size: 35px;
-    
+
     }
-    
-    #logo--google{
-        width: 45px; 
+
+    #logo--google {
+        width: 45px;
         padding: 0px 05px 05px 05px;
     }
-    #logo--facebook{
-        width: 45px; 
+
+    #logo--facebook {
+        width: 45px;
         padding: 0px 05px 05px 05px;
     }
-    #logo--mac{
-        width: 45px; 
+
+    #logo--mac {
+        width: 45px;
         padding: 0px 05px 05px 05px;
     }
-    
-    .formulario--login input{
-        
+
+    .error-message {
+        width: 300px;
+    }
+
+    .formulario--login input {
         width: 300px;
         height: 25px;
-        border-radius: 10px;
-        border-style: double;
-        border-width: 1px;
-        margin-top: 15px;
-        padding-left: 15px;
-        margin-bottom: 15px;
         font-size: 12px;
-        
+
     }
-    
-    #login{
-        height: 30px; 
-        width: 172px;   
+
+    #login {
+        height: 30px;
+        width: 172px;
         padding-left: 5px;
-        padding-right: 5px; 	
-        margin-bottom: 20px; 
-        margin-top: 10px; 	
-        border-radius: 2em;	
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 2em;
         font-size: 20px;
     }
-    
-    #registro{
-        height: 30px; 
-        width: 129px;   
+
+    #registro {
+        height: 30px;
+        width: 129px;
         padding-left: 5px;
-        padding-right: 5px; 	
-        margin-bottom: 20px; 
-        margin-top: 10px; 
-        border-radius: 2em;	
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 2em;
         font-size: 18px;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10em;
     }
 }
 
-@media (max-width: 450px){
+@media only screen and (max-width: 450px) {
     body {
         display: flex;
         flex-direction: column;

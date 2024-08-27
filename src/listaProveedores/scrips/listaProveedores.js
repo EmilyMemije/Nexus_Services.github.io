@@ -104,11 +104,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 const selection = e.target.value;
                 paginaActual = 0; // Reiniciar a la primera página al filtrar
                 if (selection === "Especialidad") {
+
                     allCards = data.cards;
                     displayCards(allCards);
                 } else {
                     const tarjetasFiltradas = data.cards.filter(servicio => servicio.Especialidad === selection);
                     displayCards(tarjetasFiltradas);
+
                     allCards = tarjetasFiltradas;
                 }
             });
@@ -119,11 +121,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(selection);
                 paginaActual = 0; // Reiniciar a la primera página al filtrar
                 if (selection === "Por Calificacion") {
+
                     allCards = data.cards;
                     displayCards(allCards);
                 } else {
                     const tarjetasFiltradas = data.cards.filter(servicio => servicio.Estrellas === selection);
                     displayCards(tarjetasFiltradas);
+
                     allCards = tarjetasFiltradas;
                 }
             });
@@ -142,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     allCards = tarjetasFiltradas;
                 }
             });
-
         } catch (error) {
             console.error('Error al obtener los servicios:', error);
         }

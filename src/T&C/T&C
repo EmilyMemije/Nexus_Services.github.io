@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Services</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="./assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
+    <link rel="stylesheet" href="./styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/T&C.css">
+
+    <!--Conexcion a estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <!--Conexion bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="scrips/codigo.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav--container">
+            <div class="nav--logo">
+                <a href="/src/paginaPrincipal/paginaPrincipal.html">
+                    <img src="../../assets/NS.png" alt="LogoNS">
+                </a>
+            </div>
+            <div class="centro">
+                <a href="" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <a href="" target="_blank">
+                        <button class="botton">
+                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
+                        </button>
+                    </a>
+                </div>
+                <div class="nav--menu">
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/servicios/servicios.html">Servicios</a>
+                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a href="/src/SOS/sos.html" target="_blank">
+                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a href="/src/login/login.html" target="_blank">
+                    <img src="../../assets/User_01.png" alt="ingresar">
+                </a>
+           
+        </nav>
+    </header>
+
+    <!---->
+    <!-- inicia cuerpo de la pagina-->
+
+    <div id="Container-principal">
+        <!--Aviso privacidad-->
+        <div id="info">
+            <div id="container-TYC">
+                <h1 class="text--ACDH">Terminos y condiciones</h2>
+                <p class="text--ACDp">Estos Términos y Condiciones en línea regulan los términos contractuales de prestación de servicios entre Nexus Services, S.A. de C.V. y a sus empresas matrices, controladoras, afiliadas y subsidiarias (referidas conjuntamente como "Nexus Services"), (en lo sucesivo, “Nexus Services”) y sus clientes quienes actúan en capacidad de profesionales (en lo sucesivo,"Términos y Condiciones") <br><br>
+                    Objeto <br>
+                    Estos Términos y Condiciones, los Términos y Condiciones de Servicios Específicos (tal y como se definen en la Sección 1(c) y los Términos y Condiciones disponibles en lo sucesivo, el “Sitio Web” (colectivamente, el "Contrato") aplican cuando los profesionales de la salud (incluyendo tanto doctores como otros especialistas como, por ejemplo, dentistas, nutriologos, psicólogos, médicos generales o enfermeras), (en lo sucesivo, el "Especialista en Salud" o "Usted"), contratan un paquete de servicios (en lo sucesivo, el "Paquete de Servicios" o los “Servicios”) con la finalidad de prestar dichos Servicios a sus Pacientes (tal y como se define posteriormente) <br>
+                    El alcance de los Servicios ofrecidos como parte de un Paquete de Servicios viene determinado por la descripción del Servicio en el momento de la celebración del Contrato, a la que se puede acceder en https://www.doctoralia.com.mx/ecommerce/plan o según le sea notificado por Doctoralia. 
+                    "Términos y Condiciones de Servicios Específicos" significa los términos y condiciones de uso que se aplican a los servicios específicos mismos que pueden estar dentro o fuera de un Paquete de Servicios y que se encuentran descritos en el Anexo I de los presentes Términos y Condiciones. Estos servicios específicos pueden estar sujetos a tarifas adicionales, tal y como se indica en los Términos y Condiciones de Servicios Específicos. <br>
+                    “Pacientes” (o, individualmente, “Paciente”)  significa el/los individuo/s que tiene/n una o más visitas con el Especialista en Salud que se encuentren alojadas en los sistemas de Doctoralia independientemente del canal a través del cual se haya gestionado dicha visita (ya sea por el individuo a través de Doctoralia u otro canal o directamente por el Especialista en Salud o su personal a través cualquier canal). <br>
+                    <br>Perfil del Especialista en Salud <br>
+                    Para utilizar los Servicios, Usted debe crear un perfil personalizado en Sitio Web y accesible públicamente (en adelante un "Perfil") a su cuenta. <br>
+                    Usted puede crear un Perfil o nosotros podemos hacerlo por Usted. Para permitirnos crear su perfil, debe proporcionar a Doctoralia información completa y precisa durante el registro (y a más tardar siete (7) días después de la celebración del Contrato) sobre su identidad y sus cualificaciones profesionales. No debe proporcionar información falsa o engañosa. Nos reservamos el derecho de verificar su identidad y cualificaciones profesionales. <br>
+                    Sólo puede solicitar la asignación de un Perfil para Usted.  Una vez configurado su Perfil, Usted será el propietario del mismo y no podrá cederlo a otra persona. Si Usted trabaja para y/o con un consultorio médico, una clínica o sus instalaciones profesionales correspondientes (colectivamente una "Clínica"), la relación entre Usted y la Clínica o centro médico queda fuera del ámbito del Contrato. <br> <br>
+                    Usted se compromete a: (a) editar la información de su Perfil inmediatamente si la información cambia; y (b) añadir su disponibilidad en el software propiedad de Doctoralia que le permite gestionar su agenda e incluir su disponibilidad para concertar y gestionar visitas médicas o no médicas (el "Calendario de Reservas") en el Sitio Web de Doctoralia y mantenerlo actualizado.  
+                    Usted autoriza a Doctoralia a: (i) modificar el contenido de los materiales y documentos proporcionados por Usted con el fin de preparar el perfil; y (ii) crear y/o actualizar el perfil mediante el uso de información disponible públicamente. Las modificaciones se limitarán a mejorar la calidad y la precisión de la publicación. <br> <br>
+                    IMPORTANTE: Las citas reservadas a través de Doctoralia son vinculantes. Por lo tanto, sólo debe ofrecer citas a través de Doctoralia que pueda mantener y atender a tiempo. Cuando los Pacientes reservan una cita reservada se le envía por correo electrónico o se incluye en su Calendario de Reservas. Si no puede atender al Paciente en ese momento, deberá informar al Paciente con la debida antelación de que no puede mantener la cita.
+                    Cuenta Google My Business
+                    Mediante la contratación de un Paquete de Servicios, el Especialista en Salud solicita a Doctoralia (i) crear y gestionar una cuenta con los datos almacenados en su Perfil, o (ii) gestionar una cuenta existente en Google My Business (o "GMB"), en nombre y por cuenta del Especialista en Salud. En todo momento, el Especialista en Salud es el propietario de la cuenta (la "Cuenta GMB"), que puede ser gestionada por Doctoralia. 
+                    Para crear y gestionar la cuenta de GMB, el Especialista en Salud debe tener o crear una cuenta de Google.<br>
+                    Si ha almacenado fotos en su Perfil, una de las fotos se utilizará también al crear la Cuenta GMB, en aplicación de la sección 7 de los presentes Términos y Condiciones.
+                    En caso de que se produzcan cambios en los datos del perfil del Especialista en Salud, Doctoralia podrá replicar los mismos en la Cuenta GMB. Sin embargo, al crear y actualizar la Cuenta GMB, Doctoralia actúa como un mero proveedor de servicios para el Especialista en Salud. En este sentido, el Especialista en Salud siempre será el único responsable de la Cuenta GMB, eximiendo a Doctoralia de cualquier reclamación de terceros en relación con la misma.<br>
+                    La gestión de Doctoralia de la Cuenta GMB no incluye la gestión de las reseñas de Google. Las reseñas en la Cuenta GMB tampoco están relacionadas con las opiniones publicadas en Nexus Services No estamos autorizados a comprobar las reseñas de Google ni somos responsables de ellas en modo alguno, por lo que el Especialista en Salud debe ponerse en contacto con Google directamente para cualquier queja u objeción.<br>
+                    En caso que en cualquier momento durante la vigencia del presente Contrato el Especialista en Salud ya no desee que su Cuenta GMB sea gestionada por Doctoralia, deberá solicitarlo con un preaviso de 30 días por correo electrónico a soporte-mx@doctoralia.com, tras lo cual dejaremos de realizar cualquier actualización de la Cuenta GMB. <br> <br>
+                    El Especialista en Salud reconoce que la creación de la Cuenta en Google My Business (i) implica una transferencia de datos personales a Google que será un responsable del tratamiento independiente de dichos datos (ii) puede implicar una transferencia internacional de datos a las filiales de Google en Estados Unidos y (iii) se rige por las condiciones aplicables de Google que deberán ser leídas detenidamente por el Especialista en Salud antes de la ejecución del presente Contrato (a la fecha del Contrato las condiciones indicadas están disponibles aquí https://policies.google.com/privacy.<br>
+                    A la finalización del Contrato, es responsabilidad del Especialista en Salud hacerse cargo de la gestión de la Cuenta GMB. Deberá hacerlo poniéndose en contacto con el equipo de Atención al Cliente de Doctoralia para que puedan procesar su solicitud. <br><br>
+                    Precios, pagos y cambios de tarifas.<br>
+                    Doctoralia cobrará le cobrará a Usted los precios comunicados en el momento de la celebración del Contrato. En caso de prórroga del Contrato, se aplicarán los precios del Paquete de Servicios en el momento de la prórroga del Contrato entre las partes. <br>
+                    Doctoralia se reserva el derecho de aumentar el precio que se le está cobrando previa notificación a través del Sitio Web<br>
+                    Sin perjuicio de lo dispuesto anteriormente, Doctoralia, hasta el final del segundo trimestre de cada año natural, se reserva el derecho de cambiar el monto de la remuneración para ajustar su monto a los cambios en los precios conforme el Índice Nacional de Precios al Consumidor (el llamado INPC) publicado por el Instituto Nacional de Estadística y Geografía (INEGI) para el año civil anterior.<br>
+                    El Especialista en Salud acepta que los pagos se realizarán por cada periodo de liquidación, que podrá ser mensual o anual ("Periodo de Liquidación") y que será acordado entre las partes.
+                    En caso de requerir factura, es responsabilidad del Especialista en Salud proporcionar la información necesaria para la emisión de la misma (incluyendo sin limitar la Constancia de Situación Fiscal con los datos vigentes y el régimen fiscal correspondiente). Las facturas deberán de expedirse de conformidad con la legislación aplicable y serán enviadas al correo electrónico facilitado por el Especialista en Salud para tales efectos.<br><br>
+                    El Especialista en Salud acepta y reconoce que, en caso de solicitar factura, ésta deberá ser solicitada durante el mes natural en el cual se presta el Servicio. No obstante, en caso de cualquier modificación que requiera la factura, se deberá solicitar durante los treinta (30) días siguientes a la emisión de la factura.<br>
+                    El pago por los Servicios podrá efectuarse mediante tarjeta de crédito o débito.<br>
+                    En caso de retraso en el pago, Doctoralia tiene derecho a exigir los intereses legales por retraso de pago. Además, Doctoralia tiene derecho a exigir el pago de los costos de recuperación de las cuentas por cobrar según lo establecido en la ley aplicable.
+                    Un retraso en el pago de la totalidad o parte del coste del Servicio de al menos 14 (catorce) días puede resultar en el bloqueo del acceso a todos los Servicios. El bloqueo del acceso a todos los Servicios no exime al Especialista en Salud de pagar la remuneración debida por la duración del bloqueo.<br>
+                    En caso de retraso en el pago de la totalidad o parte de las cantidades adeudadas a Doctoralia, que afecte a dos (2) Períodos de liquidación durante la vigencia del Contrato, Nexus Services tendrá derecho a rescindir el Contrato anticipadamente, sin necesidad de requerimiento previo, con efecto inmediato por incumplimiento del Especialista en Salud.
+                    Todos los pagos pueden abonarse primero a los intereses por demora y luego a las cuentas por cobrar del Especialista en Salud vencidas más recientemente a Doctoralia bajo cualquier título o relación legal.<br><br>
+                    Derechos y obligaciones de Nexus Services.<br>
+                    Doctoralia ofrece sus Servicios basándose en el estado actual de Internet y en el marco técnico, legal y comercial vigente para el tráfico de datos en Internet. Usted es consciente de que la calidad del tráfico de datos en Internet depende de estas condiciones y de otras circunstancias sobre las que Nexus Services no tiene ningún control ni es responsable. En consecuencia, el derecho de Nexus Services a recibir el pago no se ve afectado en caso de fallos en el funcionamiento de internet. <br>
+                    Si el incumplimiento por parte del Especialista en Salud de cualquiera de sus deberes, responsabilidades u obligaciones da lugar a que Doctoralia no pueda cumplir con sus Servicios (ya sea en parte, en su totalidad o a tiempo), Usted no podrá derivar ninguna responsabilidad contra Nexus Services. La obligación de pago a Doctoralia no se verá afectada.<br>
+                    En el caso de Especialistas en Salud que integren los Servicios con un proveedor externo, será necesaria la integración previa entre ambas herramientas, funcionalidades o plataformas. En el caso de que, por cualquier motivo, Doctoralia no pueda realizar la integración y dicha integración sea necesaria para que Usted reciba los Servicios, Doctoralia podrá, a su entera discreción, rescindir el presente Contrato con efecto inmediato sin responsabilidad alguna para el Especialista en Salud o cualquier tercero. <br><br>
+                    Nexus Services podrá, a su entera discreción, actualizar el alcance y el contenido de los paquetes en cualquier momento sin avisar al Especialista en Salud, en el entendido que, en caso de contratar los Paquetes de Servicio, se tendrá como aceptado a todos los efectos legales que haya lugar.<br><br>
+                    Derechos y Obligaciones del Especialista en Salud.<br>
+                    Usted debe crear, pagar y mantener (incluso con las medidas de seguridad adecuadas) la infraestructura técnica necesaria (por ejemplo, hardware, software, telecomunicaciones, red interna, sitio web propio, etc.) para permitir el uso y funcionamiento de los Servicios. Esta responsabilidad también se aplica a cualquier enlace a otros sitios web, así como a la información, las imágenes y los vídeos del Especialista en Salud.
+                    Usted debe: (i) no transmitir sus datos de acceso a terceros; y (ii) mantener sus datos de acceso protegidos del acceso no autorizado de terceros. Usted se compromete a informar a Nexus Services tan pronto como tenga conocimiento de que sus datos de acceso están siendo utilizados por terceros sin autorización. Doctoralia tiene derecho a bloquear el acceso a los Servicios hasta que se resuelva el problema. <br>
+                    Usted debe: (i) utilizar los Servicios únicamente para los fines previstos; (ii) abstenerse de utilizar los Servicios de forma ilegal, fraudulenta, poco ética, engañosa, ofensiva o inapropiada; (iii) asegurarse de que el uso de los Servicios no pone en peligro el buen funcionamiento o la reputación de Doctoralia, ni perjudica el funcionamiento de los sistemas de ésta o de terceros; y (iv) no intentar acceder, descifrar, descompilar, desmontar o aplicar ingeniería inversa a ningún software de Doctoralia.
+                    Para evitar la pérdida de datos, deben guardarse en su sistema informático copias de seguridad de todos los contenidos que Usted publique, haga accesibles o reciba en o a través de nuestros sistemas.<br>
+                    Al utilizar los Servicios, Usted debe:<br>
+                    Observar las normas médicas y terapéuticas aplicables y, en particular, señalar al Paciente la necesidad de consultas en personal (in situ) que pudieran ser necesarias;<br>
+                    Respetar plenamente todas las normas y códigos profesionales aplicables; y<br>
+                    Actuar a título directo y personal y, en particular, no transmitir a terceros no autorizados los datos de acceso para utilizar las funciones de SMS, correo electrónico, telemedicina o chat, ni dar consejos médicos en presencia de terceros no autorizados.
+                    En caso de requerir factura, proporcionar la Constancia de Situación Fiscal y el régimen fiscal vigente, 
+                    Usted reconoce que ciertas comunicaciones a los Pacientes o a terceros (como las comunicaciones de marketing) pueden requerir el consentimiento, y se compromete a utilizar los Servicios de conformidad con la normativa aplicable (incluyendo, sin limitación, la normativa de datos personales y normativas que regulen comunicaciones electrónicas) al enviar comunicaciones a través de los Servicios. Usted garantiza que cuenta con la base legal adecuada para enviar comunicaciones a través de los Servicios y exime a Doctoralia de cualquier reclamación o responsabilidad del Paciente o de terceros en relación con el contenido o el envío de las comunicaciones.<br><br>
+                    Derechos de propiedad intelectual y contenidos de terceros.<br>
+                    Este es un Contrato para el  acceso y uso de los Servicios. Mediante la aceptación de los presentes Términos y Condiciones y el uso de los Servicios, no se le concede a Usted una licencia, ni derechos de propiedad intelectual, sobre ningún software o contenido. Nexus Services (junto con sus filiales, en su caso) conserva todos los derechos de propiedad intelectual sobre los Servicios, el Calendario de Reservas, la aplicación en la que se prestan los Servicios, el software subyacente y el código fuente, y cualesquiera otros productos o servicios prestados en virtud del presente Contrato, así como sobre cualquier objeto publicado creado por Doctoralia o sus empleados o publicado en https://www.doctoralia.com.mx o en la aplicación móvil de Doctoralia o propiedad de Doctoralia; su duplicación, venta, alquiler, arrendamiento, licencia, distribución, creación de obras derivadas y/u otros tipos de uso sin el consentimiento expreso por escrito de Doctoralia. <br>
+                    Los derechos de autor de los objetos creados por Doctoralia o sus empleados o publicados en el Sitio Web o en la aplicación móvil de Doctoralia son propiedad de Doctoralia. No se permite la duplicación y/o el uso de gráficos, documentos sonoros, secuencias de vídeo y textos en otras publicaciones electrónicas o impresas sin el consentimiento expreso por escrito de Doctoralia. <br>
+                    En la medida en que Usted publique cualquier contenido (por ejemplo, fotos de perfil, consejos médicos, respuestas a preguntas de pacientes o de otro tipo, etc.) a través de los Servicios, Usted acepta que podamos almacenar, publicar y poner a disposición su contenido. La responsabilidad de dicho contenido recae exclusivamente en Usted. Usted no debe infringir la legislación aplicable ni los derechos de terceros al utilizar los Servicios.<br>
+                    Al escribir en el Sitio Web respuestas a preguntas y consultas realizadas por particulares y, por tanto, publicar contenido en Doctoralia, Usted estará otorgando a favor de Doctoralia una licencia mundial, no exclusiva, exenta de royalties y transferible (con derecho de sub-licencia) para utilizar, reproducir, distribuir, realizar obras derivadas de, mostrar y ejecutar ese Contenido en relación con la prestación de los Servicios y con el funcionamiento del Servicio y de la actividad de Doctoralia, incluyendo sin limitación alguna, a efectos de promoción y redistribución de la totalidad o de una parte del Servicio (y de sus obras derivadas) en cualquier formato y a través de cualquier canal de comunicación.<br>
+                    No está permitida la integración de contenidos protegidos por derechos de autor (por ejemplo, textos) si no se dispone de los derechos de uso necesarios por parte del titular de los derechos. <br>
+                    Si desea proporcionar información sobre terceras personas, por ejemplo, su personal o equipo profesional, debe asegurarse de que los afectados están de acuerdo con la correspondiente publicación de la información y el uso de fotos y, en particular, que cuenta con base legítima adecuada en materia de protección de datos para publicar dicha información. Doctoralia podrá exigir en cualquier momento la correspondiente prueba de ello.
+                    El Especialista en Salud puede enlazar contenidos de terceros a través de los Servicios. Los enlaces no deben remitir a contenidos que infrinjan la legislación aplicable. Nos reservamos el derecho de eliminar contenidos o enlaces inapropiados, o contenidos o enlaces que no se alinean con nuestra marca, intereses comerciales legítimos o reputación
+                    Confidencialidad.<br><br>
+                    El Especialista en Salud y Doctoralia se comprometen, durante la vigencia del presente Contrato y durante tres (3) años después de su terminación, a mantener la confidencialidad de cualquier Información Confidencial recibida de la otra parte. "Información Confidencial" significa toda la información y conocimientos empresariales, operativos, organizativos y técnicos que: (i) se designen como "confidenciales"; o (ii) que razonablemente se esperaría que fueran confidenciales. 
+                    Esta obligación no se aplica a la información que; (a) se demuestre que ya era conocida por el destinatario en el momento de la celebración del Contrato o que se haya conocido posteriormente a través de terceros, sin violar ningún acuerdo de confidencialidad, normativa legal u orden gubernamental; (b) que se conozca públicamente en el momento de la celebración del Contrato o se dé a conocer públicamente con posterioridad, en la medida en que esto no se base en un incumplimiento del Contrato; (c) que deba ser revelada debido a obligaciones legales o por orden de un tribunal o una autoridad competente. En la medida en que esté permitido y sea posible, el receptor obligado a revelar informará a la otra parte con antelación y le dará la oportunidad de tomar medidas contra la revelación. 
+                    <br><br>
+                    Ambas partes están obligadas a acordar las correspondientes obligaciones de confidencialidad con sus empleados, ejecutivos y otros terceros que intervengan en la ejecución del Contrato.
+                    Consecuencias de incumplimiento de las obligaciones por parte del Especialista en Salud 
+                    Sin perjuicio de lo dispuesto en la cláusula 13, en caso de que el Especialista en Salud incumpla o se sospeche que se han incumplido las obligaciones especificadas en la cláusula 2 (Perfil del Especialista en Salud), 4 (Precios, Pagos y Cambios de Tarifas), 6 (Obligaciones del Especialista en Salud), 7 (Derechos de Propiedad Intelectual y Contenido de Terceros) y 8 (Confidencialidad), Doctoralia tendrá derecho a restringir, suspender o terminar los Servicios ofrecidos a Usted sin ningún reembolso u otro pago a Usted. 
+                    <br><br>
+                    Indemnización
+                    Usted se obliga a sacar en paz y a salvo e indemnizar a Doctoralia, así como a sus socios, accionistas, inversionistas, representantes, apoderados, agentes, asesores legales, prestadores de servicios y empleados de cualesquier gastos, daños y/o perjuicios (incluyendo de manera enunciativa más no limitativo lucro cesante, pérdidas y /o daños directos o indirectos, penalidades, intereses y honorarios razonables de abogados) resientan estos últimos con motivo de la interposición de cualesquiera denuncias, demandas, litigios, inspecciones, verificaciones o en general, procedimientos judiciales, administrativas o extrajudiciales que se inicien en contra de Doctoralia o de las personas antes referidas que surjan de o en relación con:
+                    Infracción de los derechos de propiedad intelectual de un tercero; 
+                    incumplimiento de las obligaciones de confidencialidad
+                    incumplimiento de las obligaciones en materia de protección de datos, 
+                    incumplimiento de la legislación aplicable y de la normativa profesional
+                    cualquier daño (incluyendo daño físico o psíquico) generado a un Paciente por Usted o su personal; y/o el uso de los Servicios por parte del Especialista en Salud o de su personal, y/o por la falta de veracidad o inexactitud de las manifestaciones del Especialista en Salud. <br><br>
+                    Usted acepta que coadyuvará con Doctoralia defensa contra las citadas reclamaciones mediante la presentación de declaraciones, en particular declaraciones juradas, así como otra información, y trabajará para que cualquier reclamación de terceros se haga valer directamente contra Usted. Todos los demás derechos de Doctoralia no se verán afectados.<br><br>
+                    Responsabilidad<br>
+                    La responsabilidad de Doctoralia quedará siempre limitada de acuerdo con lo indicado en el párrafo siguiente, salvo en aquellos casos en que no pueda limitarse la responsabilidad de acuerdo con la legislación aplicable.<br>
+                    Nexus Services únicamente será responsable frente al Especialista en Salud (i) por una cantidad máxima acumulada igual a la suma de las últimas seis (6) mensualidades pagadas por el Especialista en Salud al amparo de este Contrato; y (ii) siempre y cuando los daños hayan sido debidamente acreditados por el Cliente. <br>
+                    En ningún caso Doctoralia será responsable por cualquier pérdida de beneficios, lucro cesante, pérdida de negocio, pérdida o corrupción de datos o información o de cualquier pérdida indirecta o consecuencial, costes, daños, cargos o gastos indirectos o consecuenciales, cualquiera que sea la forma en que se produzcan en virtud de este Contrato.
+                    Doctoralia no será responsable de cualquier acción, demanda, denuncia o reclamación iniciada por Pacientes o terceros derivado o motivado en los daños y/o perjuicios (o inclusive daños morales) que puedan reclamar los Pacientes con motivo de la prestación de servicios profesionales que desempeñe el Especialista en Salud, su personal o, en su caso, con los centros médicos, incluyendo pero no limitado a casos de negligencia médica, mala praxis, diagnósticos erróneos o efectos secundarios por tratamiento médico.<br><br>
+                    Nexus Services no será responsable por ningún daño relacionado con la falta de conexión a Internet o con el mal funcionamiento del servidor web u otros componentes o servicios proporcionados por terceros, ni por cualquier incompatibilidad entre el sistema del Especialista en Salud y el Sitio Web. <br>
+                    Doctoralia en ningún caso será responsable (i) de la actividad profesional realizada por el Especialista en Salud ni por la presentación de titulaciones o licencias fraudulentas; (ii) del incumplimiento de las obligaciones legales del Especialista en Salud para el correcto ejercicio de su actividad profesional y la promoción de la misma; (iii) de los contenidos e informaciones facilitadas por el Especialista en Salud; (iv) ni por el uso indebido del Sitio Web y/o la aplicación móvil llevado a cabo por los Especialistas en Salud y/o algún tercero. <br>
+                    En materia de protección de datos, el Especialista en Salud, como Responsable del Tratamiento (tal y como se define en el Anexo II), será responsable de los daños y perjuicios causados en el caso de que las operaciones de tratamiento no se ajusten a lo dispuesto en la normativa de protección de datos aplicable.Doctoralia como Encargado del Tratamiento (tal y como se define en el Anexo II), sólo será responsable de los daños y perjuicios causados por el tratamiento cuando se haya demostrado debidamente que no ha cumplido con las obligaciones de la normativa de privacidad aplicable específicamente dirigida a los encargados del tratamiento o haya actuado al margen o en contra de las instrucciones legales del Especialista en Salud establecidas en el Contrato y siempre con sujeción a la limitación de responsabilidad establecida en esta cláusula.
+                    Opiniones
+                    Usted siempre puede responder a las opiniones.  No obstante, cualquier acción de Doctoralia en relación con las opiniones, en particular su publicación, distribución, análisis y/o eliminación, así como la configuración o envío de avisos, no es objeto del Contrato y Usted reconoce que Doctoralia tiene el derecho exclusivo de, entre otros, verificar, analizar, publicar o retirar las opiniones. 
+                    Usted se compromete a no participar directa ni indirectamente en la publicación de opiniones falsas.<br>
+                    Usted reconoce y acepta que Doctoralia cuenta con políticas y procesos internos que regulan la publicación de opiniones y se compromete a cumplir con las decisiones que Doctoralia tome en aplicación de dichas políticas y procesos. Usted tendrá derecho a impugnar opiniones y, en ese caso, las opiniones afectadas serán revisadas por Doctoralia. No obstante, Usted se compromete a aceptar las decisiones de Doctoralia en cuanto a la publicación de opiniones y a no impugnar opiniones por el hecho de que sean negativas. <br>
+                    Usted reconoce y acepta que las opiniones negativas no tienen consecuencias negativas significativas para su integridad o profesionalidad, y que cualquier riesgo en este sentido es menor que los beneficios que Usted obtiene a través de los Servicios en términos de visibilidad en la web. <br>
+                    Usted no podrá reclamar ningún incumplimiento de las obligaciones contractuales accesorias por parte de Doctoralia, en particular, pero sin limitarse a ello, si no está de acuerdo con la publicación, la distribución, análisis y/o la eliminación de las opiniones así como la configuración o envío de avisos al comprobar las opiniones o si existe una sospecha de manipulación de las mismas.
+                    Duración del Contrato, suspensión y terminación del mismo
+                    Este Contrato tiene una duración mínima de 12 meses (el “Período de Permanencia”), siendo después renovado indefinidamente de manera automática hasta que una de las partes lo termine a través de notificación con al menos 4 (cuatro) semanas antes de que finalice el período contractual de conformidad con el siguiente proceso: contacto vía telefónica al número 5541653261, de lunes a viernes, en un horario de 09:00 am a 18:00 pm, seleccionando la opción 1 del menú y posteriormente la opción número 4.
+                    Antes de la finalización del Período de Permanencia el Especialista en Salud no podrá resolver este Contrato, excepto por las causas previstas en la ley o en el Contrato. Si el Especialista en Salud decide dar de baja y/o dejar de utilizar los Servicios antes de que finalice el Período de Permanencia, o si el Contrato fuera resuelto por Doctoralia por falta de pago de la Contraprestación, el Especialista en Salud deberá pagar a Nexus Services, como indemnización, las Contraprestaciones restantes hasta la finalización de dicho periodo (la “Indemnización”). 
+                    Doctoralia podrá exigir la Indemnización en un único pago, que será exigible y pagadera dentro del plazo máximo de treinta (30) días naturales desde la recepción de la factura. Las Partes reconocen que (a) el coste de los Servicios se establece bajo el supuesto de que el Especialista en Salud cumplirá con el Período de Permanencia, y consecuentemente (b) la Indemnización representa una estimación correcta de los daños sufridos por Doctoralia por la terminación anticipada de este Contrato. <br><br>
+                    Nexus Services podrá terminar el Contrato anticipadamente o suspender o restringir los Servicios  
+                    si adquiere información que conduzca a suponer que el Especialista en Salud carece de título acreditativo suficiente para ejercer su profesión o en caso del que el Especialista en Salud incumpla la ley aplicable, sus obligaciones profesionales o los códigos de conducta y de ética que les sean aplicables. 
+                    si detecta manipulación de opiniones, como la presentación de una valoración u opinión por el propio Especialista en Salud sobre sí mismo o su involucración, directa o indirecta, en la redacción de cualquier opinión falsa. 
+                    en caso de una sentencia o resolución emitida por autoridad competente que resulte en la pérdida del derecho de ejercer o un permiso necesario para llevar a cabo la actividad profesional por parte del Especialista en Salud.<br>
+                    En caso de conducta de un Especialista en Salud que pueda causar un riesgo, daño o perjuicio a un Paciente, indicios de comportamiento delictivo y/o  comportamiento indebido que pudiera perjudicar considerablemente la reputación de Doctoralia o de terceros. Por “comportamiento indebido” se entenderá cualquier comportamiento difamatorio, inapropiado, amenazador, odioso o que pueda atentar contra la integridad física o moral de un Paciente u otro individuo. 
+                    si el Especialista en Salud incumpliera las obligaciones indicadas en la cláusula 9 superior. <br>
+                    En la medida de lo posible, el Especialista en Salud será informado de la suspensión o restricción de uso de los Servicios o, en su caso, terminación del Contrato por los medios que Doctoralia considere oportunos y tendrá derecho a expresar su punto de vista para su valoración por parte de Doctoralia. Doctoralia no ostenta responsabilidad alguna frente al Especialista en Salud en caso de suspensión, restricción o cancelación definitiva de la Cuenta de Usuario.<br>
+                    Sin perjuicio de lo establecido en el párrafos anteriores, cualquiera de las partes podrá terminar el Contrato con efecto inmediato si la otra parte comete un incumplimiento sustancial del mismo, incluyendo, sin limitación, un incumplimiento de las siguientes obligaciones:
+                    7 (Derechos de propiedad intelectual y contenidos de terceros) y 8 (Confidencialidad)];<br>
+                    El incumplimiento de una obligación contractual por parte de una de las partes, a menos que se subsane en un plazo de 15 días a partir de la recepción de la notificación escrita por parte de la otra.; <br>
+                    Las cláusulas 4 (Precios, Pagos y Cambios de Tarifas); 8 (Confidencialidad); 9 (Consecuencias del incumplimiento de las obligaciones); 10 (Indemnización) y 11 (Responsabilidad) seguirán vigentes tras la resolución del Contrato. <br><br>
+                    Dentro de los cuatro meses siguientes a la terminación del Contrato por cualquier motivo, el Especialista en Salud tendrá derecho a solicitar a Doctoralia una copia digital de los datos e información de sus pacientes alojados en la plataforma de Doctoralia. El Especialista en Salud reconoce que no podrá recuperar los datos una vez cumplido el plazo de cuatro meses.
+                    <br><br>Datos personales <br>
+                    Las partes se comprometen a tratar los datos personales a los que tengan acceso o que traten en cumplimiento de sus respectivas obligaciones de privacidad y protección de datos personales de conformidad con la legislación aplicable.<br>
+                    La celebración de este Contrato requiere el acceso y tratamiento de los datos personales del Especialista en Salud por parte de Doctoralia en nombre del Especialista en Salud. Nexus Services y el Especialista en Salud acuerdan regular las condiciones de acceso y tratamiento de los datos personales por parte de Doctoralia mediante el acuerdo de tratamiento de datos que se adjunta como Anexo 1 al presente Contrato.<br>
+                    El Especialista en Salud: (a) entiende que Doctoralia trata los datos personales de los Pacientes y de otros usuarios (incluyendo, pero sin limitarse a la publicación de opiniones en el Perfil del Especialista en Salud o la gestión del Booking Calendar) en su calidad de responsable del tratamiento. Para obtener más información sobre los datos personales y las finalidades para las que Doctoralia trata los datos de los Pacientes y otros  usuarios como Responsable del Tratamiento, puede consultar la política de privacidad de Nexus Services, disponible en el Sitio Web. Asimismo, el Especialista en Salud (b) acepta que Doctoralia pueda tratar sus datos personales (incluyendo los datos de sus empleados o colaboradores que accedan a la plataforma a través de sus respectivas cuentas) como responsable del tratamiento para mantener, tratar y actualizar los datos de su perfil en las plataformas de Doctoralia, así como para gestionar el acceso a y el uso de los Servicios por parte del Especialista en Salud o de sus empleados o colaboradores; (c) se compromete a cumplir con las obligaciones de información previstas en la normativa de privacidad aplicable relativas a cualquiera de sus empleados o colaboradores que accedan a la plataforma de Doctoralia a través de la cuenta del Especialista en Salud, asegurándose también de que cuenta con el consentimiento u otra base de legitimación adecuada para comunicar cualquier dato personal de dicho empleado o colaborador a Doctoralia. <br>
+                    El Especialista en Salud entiende que los datos relativos a la existencia de citas médicas que el propio Especialista en Salud o sus empleados o colaboradores hayan programado con respecto a sus Pacientes (datos de identificación del Paciente, fecha, visita del Especialista en Salud y del centro médico) serán tratados por Doctoralia como Responsable del Tratamiento en aquellos casos en que el Paciente dé su consentimiento expreso a Doctoralia. El Especialista en Salud reconoce que, al disponer de dichos datos en sus cuentas de Doctoralia, los Pacientes pueden tener una mejor visibilidad del historial de citas con el respectivo Especialista en Salud con independencia de que dichas citas hayan sido programadas por el usuario directamente o por el Especialista en Salud a través del uso de los Servicios.<br>
+                    Tras la finalización del Contrato, Doctoralia seguirá tratando el perfil del Especialista en Salud que aparece en el Sitio Web y/o app de Doctoralia en su calidad de responsable del tratamiento siempre que el Especialista en Salud: (a) siga teniendo un Perfil en la web y/o app de Doctoralia; y (b) no manifieste su deseo de eliminar dicho perfil.<br><br>
+                    Resolución de solicitudes y reclamaciones.<br>
+                    Como parte del sistema de gestión de reclamaciones, el Especialista en Salud podrá presentar las reclamaciones directamente a Doctoralia, a través de la cuenta de correo electrónico del asesor que Doctoralia asigne a su Cuenta o, en su defecto, a nosedonde@nxservices.com. <br>
+                    Las reclamaciones se deberán remitir dentro del plazo máximo de catorce (14) días naturales a contar desde la fecha del evento que dio lugar a la reclamación y deberán contener los motivos que la fundamentan. <br>
+                    Modificación de los presentes Términos y Condiciones 
+                    Nos reservamos el derecho a modificar el Contrato en cualquier momento sin previo aviso. Usted reconoce expresamente el derecho de Doctoralia de modificar el presente Contrato en cualquier tiempo, debiendo consultar periódicamente los Términos y Condiciones vigentes en cada momento. En el evento de que el Especialista en Salud no esté de acuerdo con las modificaciones realizadas al presente Contrato, este podrá solicitar a Doctoralia la terminación del mismo dentro de los treinta (30) días naturales posteriores al aviso, sin responsabilidad alguna a su cargo. Se entenderá que el Especialista en Salud, acepta las modificaciones efectuadas a los presentes Términos y Condiciones si solicitan el Servicio en fecha posterior a que tales modificaciones entren en vigor, o si transcurrido dicho plazo no ejercitó su derecho de revocación.
+                    <br><br>
+                    Fuerza mayor<br>
+                    Nexus Services no será responsable y no incurrirá en incumplimiento contractual en caso de que no puedan utilizarse los Medios Digitales o no se pueda prestar el Servicio por causas de fuerza mayor, incluyendo, pero sin estar limitado a incendios, inundaciones, huracanes, tormentas, ciclones, terremotos, sismos, movimientos telúricos, huelgas, guerras, insurrecciones, motines, rebeliones, clausuras, ataques cibernéticos de hackers, casos fortuitos u otras causas de naturaleza similar o distinta.
+                    <br><br>
+                    Ley aplicable y jurisdicción
+                    Las Partes en este acto convienen de manera terminante que el presente Contrato será regido e interpretado de acuerdo con la legislación civil federal vigente en México, por lo que las Partes renuncian, de manera expresa e irrevocable, a cualquier otra legislación que pudiera ser aplicable en virtud de sus domicilios presentes o futuros o por cualquier otra razón o concepto.
+                    <br><br>
+                    Para cualquier controversia relacionada con la validez, la interpretación y el cumplimiento de los presentes Términos y Condiciones, las Partes expresa e irrevocablemente acuerdan y consienten en someterse exclusivamente a la jurisdicción de los juzgados y tribunales competentes sitos en la Ciudad de México, y en este acto expresa e incondicionalmente renuncian, en los términos más amplios permitidos por la ley, a cualquier otro fuero que pudiera corresponderles por razón de sus domicilios actuales o futuros o por cualquier otra razón.
+                    <br><br>
+                    Prevalencia
+                    Si hubiese discrepancias entre las Condiciones Generales, las Condiciones Particulares y los Términos y Condiciones del Sitio Web, aplicará el siguiente órden de prevalencia: 1) Condiciones Particulares, 2) Condiciones Generales y, finalmente, 3) Términos y Condiciones del Sitio Web.
+                    <br><br>
+                    ANEXO I. Términos y Condiciones de Servicios Específicos. 
+                    Los presentes Términos y condiciones de Servicios Específicos pueden ser adquiridos a través de un clic desde el Sitio Web, mismos que pueden implicar cargos adicionales.
+                    <br><br>
+                    Servicio “SaaS”
+                    Por lo que hace a los Especialistas en Salud el Servicio incluye, además, las siguientes funcionalidades:
+                    <br><br>
+                    1. Tener acceso a una agenda en línea denominada "NExusSerplanner ®" que permite, entre otras cosas, lo siguiente:
+                    (i) publicar un calendario de disponibilidad para citas profesionales, mediante el Calendario de Visitas; 
+                    <br><br>
+                    (ii) gestionar citas con los Pacientes y ofrecer el acceso a una agenda virtual; 
+                    <br><br>
+                    (iii) enviar recordatorios a los Pacientes y a los Especialistas en Salud respecto de las citas agendadas; 
+                    <br><br>
+                    (iv) fomentar que los Pacientes emitan opiniones y valoraciones sobre el Especialista en Salud en cuestión; y (v) permitir que los Pacientes reserven citas a través de los Medios Digitales, durante las veinticuatro (24) horas del día. 
+                    <br><br>
+                    2. Podrá publicar información ampliada sobre los datos de contacto del Especialista en Salud (v. gr., número(s) telefónico(s) de contacto, servicios y precios, experiencia profesional, contenidos audiovisuales, formas de pago aceptadas, compañías aseguradoras con las que el profesional tenga convenios, etc.).
+                    <br><br>
+                    3. Llevar a cabo el posicionamiento del Perfil del profesional en los motores de búsqueda en Internet, así como en el Sitio Web de Doctoralia.
+                    <br><br>
+                    4.En función del plan de Servicios contratado, que los Pacientes describan a los Especialistas en Salud, por conducto de la Plataforma, la descripción de un episodio clínico relativo al (los) padecimiento(s) que en específico motiven la solicitud de una cita profesional o de una consulta médica. Esta funcionalidad tendrá la posibilidad de ser adquirida de forma adicional de conformidad con lo establecido en el Sitio Web (https://www.doctoralia.com.mx/ecommerce/plan) o lo comunicado a través de los canales oficiales de Doctoralia.
+                    <br><br>
+                    Las demás funcionalidades que expresamente se incluyan en el Sitio Web al momento en que el Especialista en Salud contrate los servicios (https://www.doctoralia.com.mx/ecommerce/plan).
+                    <br><br>
+                    Servicio "First Class"
+                    i. El alcance del complemento "First Class" (también conocido como Destacado) cuenta como principal funcionalidad con la promoción y la colocación del Perfil del Usuario en los primeros lugares de su respectiva especialidad, esto dentro de los medios digitales. El precio de la membresía "First Class" se determinará atendiendo a un algoritmo que calcula, entre otros factores, la demanda de una especialidad dentro de una población. El precio, la descripción detallada de los beneficios que dicha categoría ofrece y los términos a que se encuentra sujeta se informarán al Profesionista en la invitación respectiva. Doctoralia podrá actualizar el alcance y el contenido del complemento "First Class" discrecionalmente en cualquier momento sin notificación previa al Especialista en Salud.
+                    <br><br>
+                    j. Los costes del complemento "First Class" dependen de la especialidad y de la ubicación deseada, y se pueden solicitar al equipo de atención al cliente de Nexus Services.
+                    <br><br>
+                    k. El complemento “especialidades First Class" se activa inmediatamente después de la contratación. A partir de ese momento comenzará a correr el plazo mensual.
+                    <br><br>
+                    l. El complemento "First Class" se renovará por períodos iguales, a menos que el Especialista en Salud o Doctoralia termine dicho servicio con un preaviso de siete (7) días, por escrito. El complemento “First Class" puede cancelarse por correo electrónico o por teléfono poniéndose en contacto con el equipo de atención al cliente de Doctoralia. 
+                    <br><br>
+                    Servicios  “Centro de citas”
+                    Los Especialistas en Salud que hayan adquirido paquete con Centro de Citas, y a solicitud expresa del Profesional de Salud, con el servicio de recepción de llamadas telefónicas, (en idioma inglés conocido como "Call-Center: Centro de Citas Nexus Services") operado por un tercero ajeno a Doctoralia.
+                    <br><br>
+                    Al respecto, Especialista en Salud acepta y consiente lo siguiente:
+                    <br><br>
+                    (i) que Doctoralia podrá, en caso de contratarse el servicio de recepción de llamadas telefónicas, desplegar un teléfono troncal cuya línea es propiedad del centro de llamadas o "Call-Center:Centro de Citas Doctoralia" en el perfil del Especialista en Salud y en su caso, en el portal de "Google My Business" que tenga habilitado dicho Especialista en Salud, esto, en sustitución del (de los) número(s) telefónico(s) que sea(n) propio(s) del Especialista en Salud;
+                    
+                    (ii) que el servicio mencionado será únicamente activado por el especialista de Salud bajo expresa solicitud.
+                    
+                    (iii) que el personal del centro de llamadas o "Call-Center:Centro de Citas Doctoralia" podrá agendar directamente citas para el Especialista en Salud únicamente consultando la herramienta denominada "Docplanner ®".
+                    
+                    (iv) que podrá solicitar la cancelación del servicio de recepción de llamadas en cualquier momento y sin penalización alguna únicamente dando aviso con cuatro  (4) semanas previos a la fecha de cobro, al correo electrónico soporte-mx@doctoralia.com. 
+                    
+                    Servicio “Página Web”
+                    Consiste en proporcionar al Especialista en Salud la posibilidad de configurar y personalizar su propio dominio de Internet (asociado al dominio de Doctoralia) y la opción de generar un código o "Widget" que permita integrar su Perfil en su sitio de internet particular.
+                    
+                    Servicios "plugins"
+                    Servicios "Videoconsulta Doctoralia" 
+                    1.1. Esta función ofrece la opción de realizar consultas online a través de  ("eConsultas") con Pacientes que hayan reservado dicho tipo de consulta utilizando el Sitio Web de Doctoralia o poniéndose en contacto con el Especialista en Salud directamente (Plataforma de Telemedicina). La Plataforma de Telemedicina le permitirá:
+                    
+                    i) Realizar consultas en línea con los usuarios por telefono, videollamada o chat de texto, ya sea utilizando la solución de videollamadas proporcionada por Doctoralia o su propia solución técnica;
+                    
+                    ii) Preparación, procesamiento y archivo de información relativa a los Pacientes;
+                    
+                    iii) Mantener un registro de las eConsultas;
+                    
+                    iv) Beneficiarse de otros servicios auxiliares técnicos de comunicación y soporte que apoyan el desempeño de las consultas en línea que realice o cualquier comunicación con los Pacientes.
+                    
+                    1.2. El acceso a la Plataforma será ininterrumpido, excepto en el caso de que las actividades de mantenimiento requeridas afecten a la Plataforma (de las cuales recibirá un aviso previo por parte de Doctoralia), o de problemas técnicos que resulten en una suspensión de los Servicios, en cuyo caso, le serán comunicados al Especialista en Salud con la mayor brevedad posible.
+                    
+                    Servicios "Doctoralia Pagos" 
+                    Los Especialistas en Salud que hayan adquirido paquete con Doctoralia Pagos acepta y consiente lo siguiente:
+                    
+                    (i) Doctoralia pagos es una funcionalidad que le permitirá realizar el cobro de sus consultas (tanto presenciales, como videoconsultas, por adelantado o posterior a la consulta) de conformidad con lo establecido en los términos y condiciones para el uso de Pago Integrada.
+                    
+                    (ii) Doctoralia pagos tiene comisión adicional por servicio por transacción.
+                    
+                    (iii) que tendrá que activar Doctoralia Pagos, y al hacerlo, inicia el proceso de alta y verificación.
+                    
+                    (ii) una vez activo, se procederá con la verificación de la cuenta vía email.
+                    
+                    (iii) Tras concluir este paso, el especialista recibirá un correo en un periodo de 24 a 72 horas hábiles en donde se le indica que podrá hacer uso de Doctoralia pagos.
+                    
+                    (iv) Doctoralia Pagos no emite factura a los pacientes.
+                    
+                    (v) Los especialistas en Salud podrán elegir la frecuencia en la que desea recibir los pagos en su cuenta bancaria (mínimo 4 días y máximo 30 días).
+                    
+                    Servicios “Recetas Electrónicas”
+                    A través de este complemento, los Especialistas en Salud que hayan adquirido paquete con elegibilidad a Prescrypto (tercero independiente de Doctoralia),  dependiendo de su especialidad, y a solicitud expresa de los Especialistas en Salud, podrán crear recetas, cancelarlas, imprimirlas, enviarlas y personalizarlas.
+                    
+                    Al respecto, el Especialista en Salud acepta y consiente lo siguiente:
+                    
+                    (i) que tendrá que activar Prescrypto, y al hacerlo, el especialista tiene que aceptar los Términos y Condiciones y la Política de Privacidad de Prescrypto.
+                    
+                    (ii) que el servicio, una vez activo, se procederá con un registro para que Prescrypto pueda hacer la validación de su cuenta
+                    
+                    (iii) Tras concluir este paso, el especialista recibirá un correo en donde se le indica que el proceso de validación ha comenzado y el tiempo que deberá esperar para poder hacer uso y emitir su primera receta médica.
+                    
+                    (iv) especialidades que no tienen disponibles recetas electrónicas:
+                    
+                    Analista clínico
+                    Naturista
+                    Podólogo
+                    Psicólogo
+                    Psicoanalista
+                    Quiropráctico
+                    Fisioterapeuta
+                    Terapia complementaria
+                    Nutriólogo clínico
+                    Logopeda
+                    Enfermero
+                    Dentista-Odontólogo
+                    Optometrista
+                    Terapeuta ocupacional
+                    Psicopedagogo
+                    Nutricionista
+                    Cancelación
+                    Para llevar a cabo la cancelación de alguno de los Servicios Específicos será necesario que alguna de las partes lleve a cabo una notificación por escrito con al menos 4 (cuatro) semanas de antelación al siguiente fecha de cobro. 
+                    
+                    ANEXO II. Convenio de Tratamiento de Datos 
+                    Objeto
+                    El presente Convenio de Tratamiento de Datos (en adelante, el "Convenio") se celebra entre Doctoralia México, S.A. de C.V. y el Especialista en Salud en relación con los Servicios.
+                    
+                    El objeto del Convenio es (i) regular las obligaciones de Doctoralia México, S.A. de C.V. como encargado del tratamiento (en adelante, el "Encargado"), en relación con el tratamiento de los datos personales necesarios para los Servicios y (ii) recordar al Especialista en Salud sus principales obligaciones como responsable del tratamiento (en adelante, el "Responsable") de los datos personales. Las definiciones detalladas en el Contrato se aplicarán al presente Convenio.
+                    
+                    El Encargado del tratamiento tratará los siguientes datos para los fines de los Servicios:
+                    
+                    Datos personales de los Pacientes del Especialista en Salud (nombre, apellidos, dirección, contactos, y otros datos personales gestionados por el Especialista en Salud o facilitados por el Paciente al Especialista en Salud, incluyendo datos de carácter médico, datos relativos a la salud, incorporados a los sistemas a través de los cuales Doctoralia presta los Servicios, estando dichos datos bajo la custodia o control y, en todo caso, responsabilidad del Especialista en Salud).
+                    Obligaciones del Responsable del Tratamiento
+                    El Especialista en Salud deberá:
+                    
+                    Entregar y/o dar a Doctoralia México, S.A. de C.V. acceso a los datos personales necesarios para la prestación de los Servicios. 
+                    Cumplir con las obligaciones relativas a los derechos de los Titulares de los Datos. En particular, el Especialista en Salud deberá informar a los Titulares a través de su Aviso de Privacidad los mecanismos disponibles para el ejercicio de sus derechos.
+                    Poner a disposición de los Titulares, con carácter previo a la recogida de sus datos personales, el Aviso de Privacidad del Especialista en Salud que deberá cumplir con todos los requisitos de información previstos en la Ley. 
+                    Contar con un fundamento legal en términos de la Ley para tratar lícitamente los datos personales necesarios para los Servicios (incluyendo, para el envío de comunicaciones a través de la plataforma o sistemas ofrecidos por Doctoralia).
+                    Implementar las medidas técnicas, físicas y organizativas adecuadas para garantizar la seguridad de los datos personales (incluyendo, sin limitación, una política de gestión de accesos y permisos que garantice el deber de secreto y confidencialidad de los datos de forma que el acceso cumpla con la normativa sanitaria vigente).
+                    Ser plenamente responsable de las actividades de tratamiento llevadas a cabo en virtud del presente Contrato y garantizar, antes y durante el tratamiento, que el Encargado del Tratamiento cumple con la normativa aplicable en materia de privacidad.
+                    Garantizar la exactitud de los datos y mantener la veracidad de los datos personales.  Asimismo, el Especialista en Salud se compromete, en caso de que los datos sean inexactos, a rectificarlos inmediatamente después de haber sido informado.
+                    Notificar las violaciones de datos de carácter personal a las autoridades de protección de datos y, en su caso, a los interesados cuando legalmente proceda).
+                    En el supuesto de reclamaciones, solicitudes o quejas de los interesados, recibidas de éstos directamente o a través del Encargado del Tratamiento, derivadas de errores o inexactitudes ocurridos durante la recogida o el tratamiento de datos personales cuando dichos errores sean imputables, directa o indirectamente, al Encargado del Tratamiento o a su personal, el Especialista en Salud del Tratamiento se compromete a efectuar inmediatamente las correcciones necesarias y a eximir al Encargado del Tratamiento de cualquier reclamación o responsabilidad al respecto.
+                    Llevar a cabo las evaluaciones de impacto sobre la privacidad pertinentes cuando así se requiera.
+                    Respetar en todo caso las obligaciones de secreto profesional impuestas por la normativa médica y aplicable.
+                    Obligaciones del Encargado del Tratamiento
+                    El Encargado del Tratamiento deberá:
+                    
+                    Tratar los datos personales, de acuerdo con las instrucciones documentadas y el Aviso de Privacidad facilitado por el Responsable, e informar al Responsable si, en su opinión, una instrucción vulnera la normativa de privacidad aplicable antes de su ejecución.
+                    No tratar los datos personales para fines distintos de los estipulados en el presente Contrato.
+                    Mantener por escrito un registro de todas las categorías de actividades de tratamiento de datos realizadas por cuenta del Responsable del Tratamiento.
+                    Notificar al Responsable del Tratamiento, sin dilación indebida, cualquier violación de la seguridad de los datos personales bajo su responsabilidad de la que tenga conocimiento, junto con toda la información pertinente para la documentación y evaluación del incidente.
+                    Poner a disposición del Responsable del tratamiento toda la información necesaria para demostrar el cumplimiento de sus obligaciones y permitir y contribuir a la realización de auditorías e inspecciones por parte del Responsable del tratamiento o de otro auditor autorizado por éste.  En este caso, el Interventor podrá realizar un máximo de 1 (una) auditoría por año natural. Los costes de dicha auditoría correrán a su vez a cargo del Responsable del Tratamiento, quien notificará al Encargado del Tratamiento su intención de realizar dicha auditoría y los aspectos que serán objeto de la misma con una antelación mínima de 30 días naturales a su realización. En ningún caso la auditoría podrá comprometer o poner en riesgo los sistemas de Doctoralia.
+                    Mantener las medidas de seguridad administrativas, técnicas y físicas necesarias para cumplir con sus obligaciones de seguridad, considerando entre otros aspectos, la naturaleza de los datos sujetos a tratamiento, el ámbito, contexto y finalidades del tratamiento, así como los riesgos de probabilidad y gravedad para los derechos y libertades de los Titulares.
+                    Garantizar que el personal autorizado para tratar los datos está sujeto a obligaciones contractuales de confidencialidad.
+                    Respetar las obligaciones de confidencialidad respecto de los datos personales, obligación que subsistirá incluso después de la terminación del Contrato.
+                    Asistir, en su caso, al Responsable del tratamiento en el cumplimiento de su obligación de responder a las solicitudes de ejercicio de derechos. En particular, el Encargado del Tratamiento se compromete a: (a) Informar a los interesados que ejerciten algún derecho ante el Encargado del Tratamiento de sus condiciones de Encargado del Tratamiento y de la necesidad de dirigirse al Responsable del Tratamiento para ejercitar sus derechos, a fin de que dichos interesados puedan redirigir sus solicitudes al Responsable del Tratamiento; y (b) asistir y prestar apoyo al Responsable del Tratamiento en todas aquellas solicitudes cuya complejidad requiera la participación de Doctoralia.
+                    Únicamente subcontratar los Servicios a terceros de conformidad con lo dispuesto a continuación
+                    Asistir al Responsable para garantizar el cumplimiento de las obligaciones establecidas en los numerales 4, 6 y 11 de la presente cláusula "3”. Obligaciones del Encargado del Tratamiento", considerando la naturaleza del tratamiento y la información de que disponga el Encargado.
+                    Por instrucción y solicitud del Responsable, devolver o destruir los datos personales y, en su caso, los soportes en que se encuentren almacenados, una vez finalizados los Servicios. La supresión y la devolución implican la destrucción de las copias y el borrado completo de los datos existentes en los equipos informáticos utilizados, salvo que el borrado completo no sea técnicamente posible o suponga un esfuerzo desproporcionado (como, por ejemplo, en el caso de copias residuales y periódicas en sistemas de copias de seguridad, que se borrarán en el momento en que se sobrescriban). Para proceder a dicha devolución o borrado, el Responsable deberá enviar una solicitud al Encargado del tratamiento a la siguiente dirección: avisodeprivacidad@docplanner.com dentro de los cuatro (4) meses siguientes a la terminación del Contrato.
+                    Subcontratación de Servicios:
+                    El Responsable del tratamiento autoriza al Encargado del tratamiento a recurrir a subencargados del tratamiento. El Encargado se asegurará de que sus subencargados estén sujetos a las mismas obligaciones de protección de datos que el Encargado en virtud del presente Contrato de Tratamiento, supervisará el cumplimiento de las mismas, y deberá imponer a sus subencargados la obligación de aplicar las medidas técnicas y organizativas adecuadas, de tal forma que el tratamiento cumpla los requisitos establecidos en la Ley.
+                    
+                    Sin perjuicio de la autorización otorgada por el Responsable del tratamiento en el sentido del párrafo anterior, el Encargado del tratamiento seguirá siendo plenamente responsable frente al Responsable del tratamiento de la actuación de cualquiera de dichos subencargados que incumpla sus obligaciones en materia de protección de datos.
+                    
+                    Terminación, resolución y extinción
+                    La terminación, resolución o extinción del Contrato de Servicios obligará al Encargado del Tratamiento a destruir o devolver los datos al Responsable del Tratamiento de conformidad con la cláusula 3.12 del presente Convenio y 12.d del Contrato.</p>
+                <div class="logoback">
+                    <img src="../../assets/NS.png" alt="logo" id="logo--back">
+                </div>
+            </div>
+
+            
+
+
+                <div class="logoback">
+                    <img src="../../assets/NS.png" alt="logo" id="logo--back">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <div class="section-redes">
+            <a href="">
+                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="section">
+            <a href="/src/politicasPrivacidad/politicasPrivacidad.html" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
+            <br>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+
+
+    <!--Scrip Botstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--scrip js-->
+    <script src="./scrips/politicasPrivacidad.js"></script>
+</body>
+
+</html>

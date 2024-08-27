@@ -1,67 +1,82 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // URL de la API
     const apiUrl = '/src/admiServicios/json/index.json'; 
 
-    // Función para crear las tarjetas de servicios
     function crearTarjetaServicio(servicio) {
-        // Crear los elementos HTML
-        //Crea el Div principal
         const servicioDiv = document.createElement('div');
         servicioDiv.className = 'service';
-        //Crea el contenedor de la imagen
+        servicioDiv.dataset.id = servicio.id; // Añadir ID al dataset para identificar el servicio
+
         const img = document.createElement('img');
         img.src = servicio.imagen;
         img.alt = servicio.nombre;
         img.className = 'service-icon';
-        //crea el div donde se encontraran la descripcion
+
         const detailsDiv = document.createElement('div');
         detailsDiv.className = 'service-details';
-        //crea el titulo de la descripcion
+
         const nombre = document.createElement('h3');
         nombre.textContent = servicio.nombre;
-        //crea el parrafo de la descripcion
+
         const descripcion = document.createElement('p');
         descripcion.textContent = `Descripción: ${servicio.descripcion}`;
-        //crea el div que contiene el precio del producto
+
         const priceDiv = document.createElement('div');
         priceDiv.className = 'service-price';
+
         const precio = document.createElement('p');
         precio.textContent = `Precio: ${servicio.precio}`;
-        // crea el div principal que contendra los dias y el parrafo de dias
-        const contentDays=document.createElement('div');
-        contentDays.className='ContentDats';
-        // crea un div que contendra el dia de la semana
+
+        const contentDays = document.createElement('div');
+        contentDays.className = 'ContentDays';
+
         const daysDiv = document.createElement('div');
         daysDiv.className = 'service-days';
-        //crea el parrafo que contendra "dias de atencion"
+
         const parafday = document.createElement('p');
-        parafday.textContent=("dias de atención");
-        //se crea un forEach que recorre un array dentro del js y crea un div que contenga esa informacion
+        parafday.textContent = "días de atención";
+
         servicio.dias.forEach(dia => {
-            //crea un div que contiene el dia de la semana
             const dayDiv = document.createElement('div');
             dayDiv.className = 'day';
             dayDiv.textContent = dia;
-            //inserta los divs en daysDiv
             daysDiv.appendChild(dayDiv);
         });
 
-        // Añadir elementos al DOM
-        // añade el nombre descripcion y precio en los divs creados
+        // Botón de eliminar que se muestra solo en modo eliminar
+        const eliminarBtn = document.createElement('button');
+        eliminarBtn.textContent = '';
+        eliminarBtn.className = 'eliminar-btn';
+        eliminarBtn.style.display = 'none'; // Oculto por defecto
+
+        eliminarBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Evitar que el evento se propague al contenedor
+            eliminarServicio(servicioDiv, servicio.id);
+        });
+
+        // Botón de actualización que se muestra solo en modo actualizar
+        const actualizarBtn = document.createElement('button');
+        actualizarBtn.textContent = '';
+        actualizarBtn.className = 'actualizar-btn';
+        actualizarBtn.style.display = 'none'; // Oculto por defecto
+
+        actualizarBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Evitar que el evento se propague al contenedor
+            const id = servicioDiv.dataset.id; // Obtener el ID del dataset del servicio
+            window.location.href = `ActualizarSer.html?${id}`;
+        });
+
+        servicioDiv.appendChild(img);
+        servicioDiv.appendChild(detailsDiv);
         detailsDiv.appendChild(nombre);
         detailsDiv.appendChild(descripcion);
         priceDiv.appendChild(precio);
-        //ingresa todos los divs en el contenedor principal
-        servicioDiv.appendChild(img);
-        servicioDiv.appendChild(detailsDiv);
         servicioDiv.appendChild(priceDiv);
-        //ingresa contentDays en el contenedor principal
         servicioDiv.appendChild(contentDays);
-        //inserta parafday en el contenedor contentDays
         contentDays.appendChild(parafday);
         contentDays.appendChild(daysDiv);
+        servicioDiv.appendChild(eliminarBtn);
+        servicioDiv.appendChild(actualizarBtn);
 
-        // Añadir la tarjeta al contenedor de servicios
         document.querySelector('.services').appendChild(servicioDiv);
     }
 
@@ -69,29 +84,75 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
-                // Guardar los datos en el localStorage
-                localStorage.setItem('servicioData', JSON.stringify(data));
-                // Crear las tarjetas de servicio a partir de los datos almacenados
+                let i = 0;  // Usar un contador si los IDs no son únicos
                 data.forEach(servicio => {
+                    // Generar un ID único si no existe o se basa en el índice
+                    const servicioId = servicio.id ? servicio.id : `servicio-${i}`;
+                    
+                    // Verificación en consola
+                    console.log(`Guardando servicio con ID: ${servicioId}`);
+
+                    // Guardar cada servicio individualmente en localStorage
+                    localStorage.setItem(`servicioData-${servicioId}`, JSON.stringify(servicio));
+
+                    // Crear la tarjeta del servicio
                     crearTarjetaServicio(servicio);
+                    
+                    i++;  // Incrementar el contador
                 });
             })
             .catch(error => console.error('Error al cargar los servicios:', error));
     }
 
-    // Función para obtener los servicios desde la API
     function obtenerServiciosDesdeLocalStorage() {
-        const servicios = JSON.parse(localStorage.getItem('servicioData')) || [];
-        servicios.forEach(servicio => {
-            crearTarjetaServicio(servicio);
+        // Obtener todas las claves del localStorage
+        Object.keys(localStorage).forEach(key => {
+            if (key.startsWith('servicioData-')) {
+                const servicio = JSON.parse(localStorage.getItem(key));
+                crearTarjetaServicio(servicio);
+            }
         });
     }
 
-    // Llamar a la función para obtener y mostrar los servicios
-    if (localStorage.getItem('servicioData')) {
+    function eliminarServicio(servicioDiv, id) {
+        // Eliminar la tarjeta del DOM
+        if (servicioDiv) {
+            servicioDiv.remove();
+        }
+
+        // Eliminar el servicio del localStorage
+        localStorage.removeItem(`servicioData-${id}`);
+    }
+
+    let modoEliminar = false;
+    let modoActualizar = false;
+
+    document.querySelector('.menu-button:nth-child(3)').addEventListener('click', function() {
+        modoEliminar = !modoEliminar;
+        modoActualizar = false;
+        document.querySelectorAll('.eliminar-btn').forEach(btn => {
+            btn.style.display = modoEliminar ? 'block' : 'none';
+        });
+        document.querySelectorAll('.actualizar-btn').forEach(btn => {
+            btn.style.display = 'none';
+        });
+    });
+
+    document.querySelector('.menu-button:nth-child(4)').addEventListener('click', function() {
+        modoActualizar = !modoActualizar;
+        modoEliminar = false;
+        document.querySelectorAll('.actualizar-btn').forEach(btn => {
+            btn.style.display = modoActualizar ? 'block' : 'none';
+        });
+        document.querySelectorAll('.eliminar-btn').forEach(btn => {
+            btn.style.display = 'none';
+        });
+    });
+
+    if (Object.keys(localStorage).some(key => key.startsWith('servicioData-'))) {
         obtenerServiciosDesdeLocalStorage();
     } else {
-        // Si no hay datos en el `localStorage`, los obtenemos de la API
         obtenerDatosYGuardarEnLocalStorage();
     }
 });
+

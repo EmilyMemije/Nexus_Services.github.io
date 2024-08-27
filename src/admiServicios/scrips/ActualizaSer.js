@@ -25,51 +25,6 @@ function crearTarjetaServicio() {
     const detailsDiv = document.createElement('div');
     detailsDiv.className = 'service-details';
 
-    Service.addEventListener('change', e => {
-        nombre.textContent = e.target.value;
-        if (e.target.value=="Psicologia")
-            {
-            img.src = '../admiServicios/img/Psychologist-pana.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-       else if (e.target.value=="Ginecologia")
-            {
-            img.src = '../admiServicios/img/Gynecology consultation-rafiki.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-        else if (e.target.value=="Pediatria")
-            {
-            img.src = '../admiServicios/img/Pediatrician-rafiki.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-        else if (e.target.value=="Medico General")
-            {
-            img.src = '../admiServicios/img/Doctors-rafiki.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-         else if (e.target.value=="Enfermeria")
-            {
-            img.src = '../admiServicios/img/Public health-rafiki.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-         else if (e.target.value=="Veterinaria")
-            {
-            img.src = '../admiServicios/img/Veterinary-rafiki.png';
-            img.alt = 'Psicologo';
-            img.className = 'service-icon';
-            }
-        else
-            {
-            img.src = '';
-            img.alt = '';
-            img.className = '';
-            }
-    });
 
     Des.addEventListener('change', e => {
         descripcion.textContent = e.target.value;
@@ -142,67 +97,5 @@ function crearTarjetaServicio() {
 
     Section.appendChild(servicioDiv);
 }
-    /*ingresa los datos a la api */
-
-    // Llama a la función para cargar los datos desde el JSON al localStorage 
-
 
 crearTarjetaServicio();
-
-//validaciones del form 
-
-
-upload.addEventListener('click',function(e){
-
-    let formIsValid = true;
-    e.preventDefault();
-    if (nombre.value==="Servicio a brindar")
-    {
-        alert("Por favor seleccione un servicio")
-        formIsValid = false;
-    }
-    if(Des.value==='')
-    {
-        alert("Por Favor ingresa una descripcion")
-        formIsValid = false;
-    }
-    if (price===''||price===0)
-    {
-        alert("Por favor ingrese un precion")
-        formIsValid = false;
-    }
-    if(dayDiv.value==='')
-    {
-        alert("Seleccione los dias de servicio")
-        formIsValid = false;
-    }
-
-    const selectedDays = selectedDaysContainer.querySelectorAll('.selected-day');
-    if (selectedDays.length === 0) {
-        alert("Por favor, seleccione al menos un día.");
-        formIsValid = false;
-    }
-
-    if (!formIsValid) {
-        return;
-    }
-})
-
-
-
-upload.addEventListener('click', function(){
-    nombre.textContent = Service.value;
-    descripcion.textContent = Des.value;
-    precio.textContent = `Precio: ${price.value}`;
-
-    const data = {
-        imagen: img.src,
-        nombre: nombre.textContent,
-        descripcion: descripcion.textContent,
-        precio: precio.textContent.replace('Precio: ', ''),
-        dias: Array.from(buttons)
-            .filter(button => button.classList.contains('active'))
-            .map(button => button.textContent.trim())
-    };
-
-})

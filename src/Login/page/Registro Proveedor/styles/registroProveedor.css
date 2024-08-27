@@ -97,13 +97,6 @@ span{
     text-align: justify;
     margin-bottom: 30px;
 }
-/*
-#login:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-*/
 
 
 /*---------Mediaquery-----------*/
@@ -132,11 +125,6 @@ span{
         justify-content: center;
 
     }
-    /*
-    #check {
-        font-size: 200px;
-    }
-*/
 }
 
 @media (max-width: 510px) {

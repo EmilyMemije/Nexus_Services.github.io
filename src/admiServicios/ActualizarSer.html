@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="/src/SOS/sos.html" target="_blank">
+                <a href="" target="_blank">
                     <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
                 <a href="/src/login/login.html" target="_blank">
@@ -56,7 +56,6 @@
             </div>
             <nav class="menu">
                 <a href="/src/admiServicios/admiServicios.html"><button class="menu-button">Servicios</button></a>
-                 
             </nav>
         </aside>
         <!-- Sección principal -->
@@ -64,16 +63,6 @@
             <div class="FormContainer">
                 <section id="Section1">
                 <div class="data">
-                    <label for="services">servicio</label>
-                    <select name="services" id="Services">
-                        <option value="Servicio a brindar"></option>
-                       <option value="Psicologia">Psicologia</option>
-                       <option value="Ginecologia">Ginecologia</option>
-                       <option value="Pediatria">Pediatria</option>
-                       <option value="Medico General">Medico General</option>
-                       <option value="Enfermeria">Enfermeria</option>
-                       <option value="Veterinaria">Veterinaria</option>
-                    </select>
                     <label for="price">Costo</label>
                     <input id="price" type="number" placeholder="$0.00" >
                 </div>
@@ -98,16 +87,14 @@
                     <label for="Domi">Visitas a domicilio</label>
 
                 </div>
-            </section>
+            </section> 
             <section id="Section2">
                 <label for="Description">Descripcion del servicio</label>
                 <input id="Description" type="text">
-                <label for="Documentation">Ingrese La cedula</label>
-                <input id="Documentation" type="file">
             </section>
             </div>
             <section id="Section3">
-                <h2>previsualizacion</h2>
+                <h3>Previsualizacion</h3>
             </section>
             <section id="upload" >
                 <button id="submit">Cargar servicio</button>
@@ -137,6 +124,6 @@
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
-    <script src="/src/admiServicios/scrips/AgregarSer.js"></script>
+    <script src="/src/admiServicios/scrips/ActualizaSer.js"></script>
 </body>
 </html>

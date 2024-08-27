@@ -65,6 +65,7 @@
             </div>
         </nav>
     </header>
+    
     <!-- Perfil -->
     <div class="container--principal">
         <div class="container--informacion">
@@ -75,20 +76,22 @@
                 <input type="file" id="cargar--imagen--usuario" accept="image/*">
                 <button id="cambiar--foto">Cambiar Foto de Perfil</button>
                 <a id="cerrarSesion" href="../../login.html">
-                    <button id="cerrarSesion">Cerrar Sesion</button>
+                    <button id="cerrarSesion">Cerrar Sesión</button>
                 </a>
             </div>
-            <div class="container--datos">
-                <label id="name"></label>
-                <label id="email"></label>
-                <label id="telefono"></label>
-                <label id="dire"></label>
-            </div>
-            <div class="container--boton" id="container--boton">
-                <button id="actualizar" class="modificar--datos">Actualizar datos</button>
-                <a href="../../../Configuraciones/configuracionUsuario/configuracionUsuario.html" target= "_self">
-                    <button id="configuracion" class="modificar--datos">Configuración</button>
-                </a>
+            <div class="datosPerfil">
+                <div class="container--datos">
+                    <label id="name"></label>
+                    <label id="email"></label>
+                    <label id="telefono"></label>
+                    <label id="dire"></label>
+                </div>
+                <div class="container--boton" id="container--boton">
+                    <button id="actualizar" class="modificar--datos">Actualizar datos</button>
+                    <a href="../../../Configuraciones/configuracionUsuario/configuracionUsuario.html" target="_self">
+                        <button id="configuracion" class="modificar--datos">Configuración</button>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -96,7 +99,7 @@
         <div id="container--historial" >
             <h2 class="title--historial">Historial de servicios</h2>
             <div class="container--card" id="historial--cards">
-                
+                <!-- Va el llenado de las tarjetas -->
             </div>
         </div>
 
@@ -112,7 +115,7 @@
                 <input type="text" id="direccion" autocomplete="off" placeholder="Alcaldía, Ciudad">
                 <span id="direccion-error" class="error-message"></span>
 
-                <label for="correoElectronico">Correo electronico:</label>
+                <label for="correoElectronico">Correo electrónico:</label>
                 <input type="email" id="correoElectronico" autocomplete="off">
                 <span id="correo-error" class="error-message"></span>
 
@@ -123,7 +126,6 @@
             <div id="boton--guardar">
                 <button id="guardar" class="guardar--datos">Guardar datos</button>
             </div>
-
         </div>
     </div>
 

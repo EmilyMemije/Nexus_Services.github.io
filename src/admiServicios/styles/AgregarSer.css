@@ -19,7 +19,7 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 120vh;
 }
 
 /* Menú lateral */
@@ -55,7 +55,7 @@ body {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    width: 250px;
     height: 70px;
     font-size: 20px;
     transition-duration: 0.3s;
@@ -77,7 +77,13 @@ body {
     margin: 0;
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     padding-bottom: 7em;
-    
+    overflow: scroll;
+}
+
+::-webkit-scrollbar
+{
+    background-color: none;
+    width: 5px;
 }
 
 /*Contenedor del form*/
@@ -292,4 +298,113 @@ header h1 {
    color: white;
    border: var(--footer-blue) 2px solid;
    transition: .3s;
+}
+
+
+/*media */
+
+@media (max-width:1000px)
+{
+
+    body
+    {
+        height: 165vh;
+    }
+
+    .container {
+        display: flex;
+        height: 150vh;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .sidebar
+    {
+        width: 100%;
+    }
+
+    .menu-button
+    {
+        height: 40px;
+    }
+
+    .main-content
+    {
+        width: 100%;
+        text-align: center;
+        overflow-y: scroll;
+        flex-direction: column;
+
+    }
+    /*inputs*/
+        .FormContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #Section1
+    {
+        flex-direction: column;
+    }
+
+    .data
+    {
+        width: 100%;
+        display: flex;
+    }
+
+    .ContentDays
+    {
+        width: 100%;
+    }
+ 
+
+    /*tarjeta*/
+    .service
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .service-icon
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .service-details
+    {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .ContentDays
+    {
+        flex-direction: column;
+        width: 100%;
+           
+    }
+
+    /*actualizar-btn*/
+
+
+    /*footer y header*/
+    footer
+    {
+        overflow: hidden;
+    }
+
+    header
+    {
+        overflow: hidden;
+    }
+
+
+
 }

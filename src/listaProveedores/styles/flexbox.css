@@ -19,7 +19,6 @@
 }
 
 
-
 .box .content {
     display: flex;
     flex-direction: row;
@@ -31,11 +30,13 @@
 .box p {
     color: #F2F2EB;
     text-align: right;
+    font-family: "Merriweather";
 }
 
 .box h2 {
     color: white;
     text-align: center;
+    font-family: "lato";
 }
 
 
@@ -65,20 +66,24 @@
 
 
 .box button {
-    background-color: #F2F2EB;
-    color: #1C2B52;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    border-radius: 40px;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    transition-duration: 0.3s;
     flex: 1;
-
-    margin-top: 10px;
 }
 
 
 .box button:hover {
-    background-color: #296CD1;
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 .category--list {
@@ -87,21 +92,6 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-.category--list a {
-    text-decoration: none;
-    color: #1C2B52;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-.category--list a:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
 }
 
 

@@ -1,6 +1,7 @@
 const url = 'servicio.json'
 
 
+
 fetch(url)
     .then(function (response) {
         return response.json();
@@ -52,6 +53,7 @@ function actualizarBotonesAgregar() {
         boton.addEventListener('click', agregaAlCarrito);
     });
 }
+
 
 let productosEnCarrito = [];
 

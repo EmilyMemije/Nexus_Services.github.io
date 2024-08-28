@@ -2,6 +2,7 @@ main{
     display: flex;
     flex-direction: row;
 
+
     background-image: url('../../assets/iconos-lineales-acerca-elementos-medicos.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -273,7 +274,6 @@ button .carrito-de-compras{
     overflow-y: scroll;
     scrollbar-width: 10px;
     box-shadow: -10px 10px 80px grey;
-
     transition: 1s;
 }
 

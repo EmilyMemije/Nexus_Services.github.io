@@ -137,6 +137,7 @@ button .carrito-de-compras{
     width: 90%;
     display: flex;
     justify-content: left;
+    text-align: justify;
     font-family: 'Merriweather';
     font-size: clamp(8px, 1.2vw, 10px);
     margin-top: 5px;

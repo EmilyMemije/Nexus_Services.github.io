@@ -1,146 +1,144 @@
 {
-    "cards":
-[
-    {
-        "Titulo": "Dra. Ana Martínez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Luisa Olvera",
-        "Especialidad": "Pediatria",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Melissa Ramos",
-        "Especialidad": "Nutrición",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas": "★★★☆☆"
-    },
-    {
-        "Titulo": "Lic. Miguel Mendoza",
-        "Especialidad": "Odontología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dr. Hugo Morales ",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Benito Juaréz, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Maria Rosas",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★☆☆"
-    },
-    {
-        "Titulo": "Dr. Guillermo Benitez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★☆"
-    },
-    {
-        "Titulo": "Dra. Nelly Guzman",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Blanca Fernandez",
-        "Especialidad": "Veterinaria",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★☆☆☆"
-    },
-    {
-        "Titulo": "Dr. Marcos Lopez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Ana Martínez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Luisa Olvera",
-        "Especialidad": "Pediatria",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Juan Ramos",
-        "Especialidad": "Nutrición",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas": "★★★☆☆"
-    },
-    {
-        "Titulo": "Lic. Miguel Mendoza",
-        "Especialidad": "Odontología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dr. Hugo Morales ",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Maria Rosas",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★☆☆"
-    },
-    {
-        "Titulo": "Dr. Guillermo Benitez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★☆"
-    },
-    {
-        "Titulo": "Dra. Nelly Guzman",
-        "Especialidad": "Endocrinología",
-        "Ubicacion": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Blanca Fernandez",
-        "Especialidad": "Veterinaria",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★☆☆☆"
-    },
-    {
-        "Titulo": "Dr. Marcos Lopez",
-        "Especialidad": "Médico General",
-        "Ubicacion": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-
-    }
+    "cards": [
+        {
+            "Titulo": "Dra. Ana Martínez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★☆☆☆☆"
+        },
+        {
+            "Titulo": "Dra. Luisa Olvera",
+            "Especialidad": "Pediatría",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★☆☆☆☆"
+        },
+        {
+            "Titulo": "Dra. Melissa Ramos",
+            "Especialidad": "Nutrición",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★☆☆"
+        },
+        {
+            "Titulo": "Lic. Miguel Mendoza",
+            "Especialidad": "Odontología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dr. Hugo Morales",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Benito Juárez, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dra. Maria Rosas",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★☆☆"
+        },
+        {
+            "Titulo": "Dr. Guillermo Benitez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★☆"
+        },
+        {
+            "Titulo": "Dra. Nelly Guzmán",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dra. Blanca Fernández",
+            "Especialidad": "Veterinaria",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★☆☆☆"
+        },
+        {
+            "Titulo": "Dr. Marcos López",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dra. Ana Martínez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★☆☆☆☆"
+        },
+        {
+            "Titulo": "Dra. Luisa Olvera",
+            "Especialidad": "Pediatría",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★☆☆☆☆"
+        },
+        {
+            "Titulo": "Dr. Juan Ramos",
+            "Especialidad": "Nutrición",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★☆☆"
+        },
+        {
+            "Titulo": "Lic. Miguel Mendoza",
+            "Especialidad": "Odontología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dr. Hugo Morales",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dra. Maria Rosas",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★☆☆"
+        },
+        {
+            "Titulo": "Dr. Guillermo Benítez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★☆"
+        },
+        {
+            "Titulo": "Dra. Nelly Guzmán",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        },
+        {
+            "Titulo": "Dra. Blanca Fernández",
+            "Especialidad": "Veterinaria",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★☆☆☆"
+        },
+        {
+            "Titulo": "Dr. Marcos López",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "assets/BLOG.jpg",
+            "Estrellas": "★★★★★"
+        }
     ]
 }

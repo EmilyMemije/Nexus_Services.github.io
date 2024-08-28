@@ -42,6 +42,11 @@
     text-align: justify;
 }
 
+ul {
+    font-family: "Merriweather"; 
+    font-size: medium; 
+}
+
 .main--img {
     width: 100%;
 }

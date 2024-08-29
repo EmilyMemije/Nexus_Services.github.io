@@ -7,6 +7,10 @@
     gap: 20px;
 }
 
+h1 {
+    font-family: "Lato";
+}
+
 .box {
     background-color: #1C2B52;
     padding: 20px;
@@ -17,7 +21,6 @@
     height: 100%;
 
 }
-
 
 
 .box .content {
@@ -31,11 +34,13 @@
 .box p {
     color: #F2F2EB;
     text-align: right;
+    font-family: "Merriweather";
 }
 
 .box h2 {
     color: white;
     text-align: center;
+    font-family: "lato";
 }
 
 
@@ -51,44 +56,48 @@
     color: #F2F2EB;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Ajusta el espacio entre los botones */
+}
+
+.textcard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Ajusta el espacio entre el texto y los botones */
+}
 
 
 .box button {
-    background-color: #F2F2EB;
-    color: #1C2B52;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    border-radius: 40px;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s;
     flex: 1;
 }
 
 
 .box button:hover {
-    background-color: #296CD1;
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 .category--list {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Lato";
     gap: 20px;
     margin-top: 20px;
-}
-
-.category--list a {
-    text-decoration: none;
-    color: #1C2B52;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-.category--list a:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
 }
 
 

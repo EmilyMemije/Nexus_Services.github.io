@@ -1,8 +1,15 @@
 
+@media (max-width: 768px) {
+
+    body {
+    font-size: 16px;
+    }
+}
 .titulo {
+    display: flex;
     border-radius: 15px;
     background: #1C2B52;
-    height: 172px;
+    height: 130px;
     font-family: "Lato";
     color: #D9D9D9;
     flex-direction: column;
@@ -20,33 +27,6 @@
     font-style: normal;
     font-weight: 500;
 }
-.botones {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 45px;
-    margin-top: 15px;
-}
-.boton1{
-    background: #BAD895;
-    border-radius: 50%;
-    width: 68.4px;
-    height: 68.4px;
-    color: #1C2B52;
-}
-.boton2{
-    background: #BAD895;
-    border-radius: 50%;
-    width: 68.4px;
-    height: 68.4px;
-    color: #1C2B52;
-}
-.boton3{
-    background: #2768B3;
-    border-radius: 50%;
-    width: 68.4px;
-    height: 68.4px;
-}
 .texto {
     font-size: 22.5px;
     margin-top: 10px;
@@ -54,60 +34,75 @@
 }
 
 
-#ab {
-    height: 2px;
-    width: 250px;
-    background-color: #D9D9D9;
-    margin-right: 0px;
-    margin-top: 30px;
-    margin-left: 0px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    padding-top: 0px;
-}
-#bc {
-    height: 2px;
-    width: 250px;
-    background-color: #D9D9D9;
-    margin-right: 0px;
-    margin-top: 30px;
-    margin-left: 0px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    padding-top: 0px;
-}
-
 .resumen {
     display: flex;
+    width: auto;
     align-items: center;
     justify-content: center;
 }
 .resument{
     display: flex;
-    background-color: #F2F2EB;
+    background-color: white;
     width: 678.637px;
-    height: 503px;
+    margin-top: 50px;
+    min-height: 200px;
     border-radius: 25px;
-    margin-left: 37px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-#resument {
-    padding-top: 25px;
-    padding-left: 25px;
-    flex-direction: column;
-    color: #1C2B52;
-    text-align:justify;
+    padding: 35px;
     font-family: "Lato";
-    font-size: 35px;
-    font-weight: 900;
+    font-size: 25px;
+    text-align: justify;
+    color: #1C2B52;
 }
+
 .linea1 {
     display: flex;
     height: 5px;
-    width: 690px;
+    width: 640px;
     background-color: #1C2B52;
+}
+
+#conexioGracias {
+    text-decoration: none;
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "lato";
+    width: fit-content;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1C2B52;
+    color: white; 
+
+}
+
+td:last-child {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+
+    #titulo {
+    
+    font-size: 25px;
+    }
+    .titulo{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    table {
+    font-size: 17px;
+    }
 }

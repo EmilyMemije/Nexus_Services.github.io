@@ -17,7 +17,7 @@
     position: sticky;
     background-color: #212A3E;
     padding-top: 35px;
-
+    padding-bottom: 2rem;
 }
 
 /*Foto de perfil*/
@@ -49,6 +49,7 @@
 #cambiar--foto {
     text-decoration: none;
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -64,6 +65,7 @@
 
 #cerrarSesion {
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -123,23 +125,24 @@ input[type="file"] {
 }
 
 .container--boton button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
-    text-align: center;
-    height: 49.85px;
-    width: 250px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: #F2F2EB;
-    color: #212A3E;
-    border-radius: 30px;
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
+    text-align: center;
+    width: 95%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.container--boton button:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
 .container--boton a {
@@ -149,6 +152,7 @@ input[type="file"] {
 /*Apartado de historial de servicios*/
 #container--historial {
     width: 76.2vw;
+    margin-bottom: 2rem;
 }
 
 .title--historial {
@@ -273,6 +277,13 @@ input[type="file"] {
     width: 76.2vw;
 }
 
+#actualizar.modificar--datos { 
+    font-family: "Lato";
+}
+
+#configuracion.modificar--datos {
+    font-family: "Lato";
+}
 .title--actualizar {
     display: flex;
     flex-direction: column;
@@ -321,25 +332,24 @@ input[type="file"] {
 }
 
 .guardar--datos {
-    place-content: center;
-    text-align: center;
-    height: 49.85px;
-    width: 250px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: #F2F2EB;
-    color: #1C2B52;
-    border-radius: 30px;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
+    text-align: center;
+    width: 35%;
+    font-size: 20px;
+    transition-duration: 0.3s
 }
 
 .guardar--datos:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
 .hidden {

@@ -60,7 +60,7 @@
 
 #Ultimos-articulos{
     font-family: "Lato" ;
-    font-size: 28px;
+    font-size: 29.5px;
     color: #1C2B52;
     font-weight: 700;
     margin: 25px;
@@ -84,8 +84,8 @@
 }
 
 .article-boxes p{
-    font-size: 17px;
     text-align: right;
+    font-family: "Merriweather" ;
     margin: 20px;
 }
 
@@ -97,6 +97,10 @@
     font-family: "Merriweather" ;
     display: inline-block;
     overflow: hidden;
+}
+
+#box h3{
+    font-family:"Lato";
 }
 
 
@@ -131,28 +135,27 @@
 }
 
 .boton-mas{
-    background-color: #BAD895;
-    border: #BAD895 solid 2px;
-    border-radius: 35px;
-    width: 100px; 
-    height: 40px;
-    font-size: 15px;
-    font-family: "Merriweather";
+    background-color: white;
     color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
     text-align: center;
-    cursor:pointer;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
     float: right;
     margin-right: 20px;
-
-    line-height: 40px;
-    white-space: nowrap;
-    overflow: hidden;
+    margin-bottom: 10px;
+    font-family: "Lato";
 }
 
 #Vermas:hover{
-    background-color: #A6C56C;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 .container--masinfo{
@@ -164,6 +167,7 @@
 
 .container--masinfo h3{
     text-align: center;
+    font-family: "lato";
     font-size: 33px;
     padding: 15px;
 }
@@ -180,6 +184,9 @@
     color: #EFF0D5;
 }
 
+.container--masinfo li{
+    font-size: "lato";
+}
 
 .contenido-masinfo img{
     width: 200px;
@@ -198,24 +205,30 @@
 
 .redes{
     font-family: "Lato";
-    font-size: 25px;
+    font-size: 29.5px; 
     color: var(--footer-blue);
     text-align: center;
     padding-bottom: 30px;
+    text-decoration: none;
+    
+}
+
+.redes a{
     text-decoration: none;
 }
 
 .redes img{
     align-items: left;
     filter: brightness(0.2) contrast(1.8);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
 }
 
 #IG:hover{
-    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     border-radius: 50%;
+    filter: brightness(1) contrast(1);
     width: 31px;
     box-shadow: 2px 2px 2px 2px black;
     opacity: 50%;
@@ -224,6 +237,7 @@
 #Twitter:hover{
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
     border-radius: 50%;
+    filter: brightness(1) contrast(1);
     width: 31px;
     box-shadow: 2px 2px 2px 2px black;
     opacity: 50%;
@@ -232,8 +246,9 @@
 #Face:hover{
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);;
     border-radius: 50%;
+    filter: brightness(1) contrast(1);
     width: 31px;
-    box-shadow: 2px 2px 2px 2px #296CD1;
+    box-shadow: 2px 2px 2px 2px #112b51;
     opacity: 50%;
 }
 

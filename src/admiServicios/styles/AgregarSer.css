@@ -39,6 +39,10 @@ body {
     margin-bottom: 40px;
 }
 
+.profile h2 {
+    font-family: "Lato";
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
@@ -46,19 +50,29 @@ body {
     border: 3px solid white;
 }
 
+.menu{
+
+    width: clamp(10px, 200px, 400px);
+}
+
+#refserv{
+ width: 100%;
+ height: fit-content;
+}
+
 .menu-button {
     background-color: white;
     color: var(--footer-blue);
     border: none;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 250px;
-    height: 70px;
+    width: 100%;
     font-size: 20px;
     transition-duration: 0.3s;
+    font-family: "Lato";
 }
 
 .menu-button:hover {
@@ -219,7 +233,8 @@ header h1 {
     margin: 5px 0;
     color: var(--footer-blue);
     width: 100%;
-    font-size: 25px;
+    font-size: 17px;
+    font-family: "Merriweather";
 }
 
 .service-price {
@@ -267,6 +282,17 @@ header h1 {
 #Description
 {
     font-size: 20px;
+    font-family: "Merriweather";
+}
+
+label
+{
+    font-family: "lato";
+}
+
+#Section3 h3
+{
+    font-family: "lato";
 }
 
 #upload
@@ -275,28 +301,30 @@ header h1 {
     align-items: center;
     justify-content: center;
     margin: 5%;
+    height: 40px;
+
 }
 
-#upload button
+#submit
 {
-    background-color: var(--green-tea);
+    background-color: white;
     border-radius: 2rem;
-   height: 60px;
+    border: none;
+    height: 40px;
    width: 200px;
    color: var(--footer-blue);
-   border: var(--footer-blue) 2px solid;
    transition: .3s;
    font-size: 20px;
+   font-family: "Lato";
 }
 
 #upload button:hover
 {
     background-color: var(--footer-blue);
     border-radius: 2rem;
-   height: 60px;
    width: 200px;
    color: white;
-   border: var(--footer-blue) 2px solid;
+   border: white 2px solid;
    transition: .3s;
 }
 
@@ -398,6 +426,7 @@ header h1 {
     footer
     {
         overflow: hidden;
+        display:absolute;
     }
 
     header

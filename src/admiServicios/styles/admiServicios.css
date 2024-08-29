@@ -41,6 +41,10 @@ body {
     
 }
 
+.profile h2 {
+    font-family: "Lato";
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
@@ -48,6 +52,10 @@ body {
     border: 3px solid white;
 }
 
+.menu{
+    font-family: "Lato";
+    width: clamp(10px, 250px, 400px);
+}
 
 .menu-button {
     background-color: white;
@@ -59,10 +67,11 @@ body {
     cursor: pointer;
     text-align: center;
     width: 100%;
-    height: 70px;
     font-size: 20px;
+    font-family: "Lato";
     transition-duration: 0.3s;
 }
+
 
 .menu-button:hover {
     background-color:var(--footer-blue);
@@ -112,11 +121,13 @@ header h1 {
     margin: 0;
     margin-bottom: 20px;
     color:var(--footer-blue);
+    font-family: "lato";
 }
 
 .services {
     display: flex;
     flex-direction: column;
+    font-family: "lato";
     gap: 20px;
 }
 
@@ -138,17 +149,21 @@ header h1 {
 .service-details {
     flex-grow: 1;
     width: 25%;
+    
 }
 
 .service-details h3 {
     margin: 0;
     margin-bottom: 10px;
     color:var(--footer-blue);
+    font-family: "lato";
 }
 
 .service-details p {
     margin: 5px 0;
     color: var(--footer-blue);
+    text-align: justify;
+    font-family: "Merriweather";
 }
 
 .service-price {
@@ -158,6 +173,7 @@ header h1 {
     justify-content: center;
     color: var(--footer-blue);
     width: 25%;
+    font-family: "Merriweather";
     
 }
 
@@ -165,6 +181,7 @@ header h1 {
     display: flex;
     gap: 5px;
     align-items: center;
+    font-family: "lato";
 }
 
 .ContentDats
@@ -198,7 +215,7 @@ header h1 {
 @media (max-width: 1500px){
 
     body{
-        height: 180vh;
+        height: 182vh;
     }
 
 }
@@ -209,7 +226,7 @@ header h1 {
    
     body
     {
-        height: 200vh;
+        height: 180vh;
     }
 
     .container {

@@ -1,23 +1,16 @@
-const d= document;
+const abrirMenu= document.querySelector('.abrir');
+const cerrarMenu = document.querySelector('.cerrar');
+const menuPags = document.querySelector('.container--menus');
 
-const active=d.querySelector(".container-list");
+abrirMenu.addEventListener("click", (e)=>{
+    const menuAbierto = document.querySelector('#menu--desplegable');
+    menuAbierto.classList.toggle('noactive');
+    menuPags.classList.toggle('noactive');
 
-function menu (btn,panel,menulink,btn2)
-{
-    d.addEventListener("click",(e)=>{
-        if(e.target.matches(btn))
-        {
-            d.querySelector(panel).classList.toggle("is-active");
-        }
-        if(e.target.matches(menulink))
-        {
-            d.querySelector(panel).classList.remove("is-active");
-        }
-        if(e.target.matches(btn2))
-            {
-                d.querySelector(panel).classList.toggle("is-active");
-            }
-    })
-}
+})
 
-menu(".abrir1",".panel","menu-link",".abrir")
+cerrarMenu.addEventListener("click", (e)=>{
+    const menuCerrado = document.querySelector('#menu--desplegable');
+    menuCerrado.classList.toggle('noactive');
+    menuPags.classList.toggle('noactive');
+})

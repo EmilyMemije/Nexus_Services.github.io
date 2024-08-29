@@ -33,59 +33,79 @@
     <!-- Navbar -->
     <header>
         <nav class="nav--container">
-            <div class="nav--logo">
-                <a href="/src/paginaPrincipal/paginaPrincipal.html">
-                    <img src="/assets/NS.png" alt="LogoNS">
-                </a>
+            <div class="container--menus">
+                <div class="nav--logo">
+                    <a id="container--logo" href="">
+                        <img id="logo--Ns" src="/assets/NS.png" alt="LogoNS">
+                    </a>
+                </div>
+
+                <!--Accesos de la nueva Navbar-->
+                <div class="container-list">
+                    <button class="abrir">
+                        <img id="img--menu" src="/assets/menu.png" alt="">
+                    </button>
+                </div>
             </div>
+            <div class="ul-lis noactive" id="menu--desplegable">
+                <button class="cerrar">
+                    <img id="cerrarNS" src="/assets/NS.png" alt="">
+                </button>
+                <a href="/src/blog/blog.html" class="menu-link">Blog</a>
+                <a href="/src/servicios/servicios.html" class="menu-link">Servicios</a>
+                <a href="/src/listaProveedores/listaProveedores.html" class="menu-link">lista de proveedores</a>
+                <a href="/src/Contactanos/contactanos.html" class="menu-link">Contactanos</a>
+                <a href="/src/Pagina sobre nosotros/Nosotros.html" class="menu-link">Donaciones</a>
+                <a href="/src/paginaPrincipal/paginaPrincipal.html" class="menu-link">Página principal</a>
+                <a href="/src/login/login.html" class="menu-link">Login</a>
+            </div>
+
+            <!--Aquí empieza lo de Nexus Services-->
+
             <div class="centro">
-                <a href="" id="NS--title">
+                <a href="/index.html" id="NS--title">
                     <h1 id="nav--title">Nexus Services</h1>
                 </a>
                 <div class="nav--search">
-                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
-                    <a href="" target="_blank">
-                        <button class="botton">
-                            <img src="/assets/lupa.png" alt="lupa" width="80%" id="lupa">
-                        </button>
-                    </a>
-                </div> 
+                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <button class="botton">
+                        <img src="/assets/lupa.png" alt="lupa" id="lupa">
+                    </button>
+                </div>
                 <div class="nav--menu">
                     <a href="/src/blog/blog.html">Blog</a>
                     <a href="/src/servicios/servicios.html">Servicios</a>
-                    <a href="/src/Asociados/Asociados.html">Asociados</a>
+                    <a href="/src/Asociados/Asociados.html">Lista de proveedores</a>
                     <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
                     <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
             </div>
             <div class="nav--ingresar">
-                <a href="/src/SOS/sos.html" target="_blank">
+                <a class="extras--serv" href="" target="_blank">
                     <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                 </a>
-                <a href="/src/login/login.html" target="_blank">
+                <a class="extras--serv" href="/src/login/login.html" target="_blank">
                     <img src="/assets/User_01.png" alt="ingresar" id="login-image">
                 </a>
             </div>
         </nav>
-        </header>
+    </header>
 
     <!---->
 
-      <!--Donaciones-->
-        <div id="fondoDonaciones">
-            <div id="container--Donaciones">
-                
-                <h2 class="text--Don">Donaciones</h2>
-                <p class="text--Don">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Hic eligendi culpa distinctio dolores ab debitis, adipisci
-                    laudantium minus nisi quo inventore aspernatur deleniti 
-                    omnis! Sit recusandae saepe provident. Alias, rem?<img id="imgDona" src="./img/donar.JPG" alt="Donar"></p>
-                <div class="logoback">
-                    <img src="../../assets/NS.png" alt="logo" id="logo--back">
-                </div>
-            </div>
+    <!--Donaciones-->
+    <div id="fondoDonaciones">
+        <div id="container--Donaciones">
+
+            <h2 class="text--Don">Donaciones</h2>
+            <p class="text--Don">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Hic eligendi culpa distinctio dolores ab debitis, adipisci
+                laudantium minus nisi quo inventore aspernatur deleniti
+                omnis! Sit recusandae saepe provident. Alias, rem?<img id="imgDona" src="./img/donar.JPG" alt="Donar">
+            </p>
         </div>
-    
+    </div>
+
 
     <!-- inicia cuerpo de la pagina-->
 
@@ -95,9 +115,9 @@
             <div id="container-acercaDeNosotros">
                 <h2 class="text--ACDH">Acerca de nosotros</h2>
                 <p class="text--ACDp">En Nexus Services nos motiva que todos los usuarios que busquen algún servicio
-                    (enfocado a salud por el momento), cuenten con una plataforma accesible, segura y que les garantice
+                    (enfocado en salud por el momento) cuenten con una plataforma accesible, segura y que les garantice
                     confianza al contratar el servicio. Además, ponemos nuestros esfuerzos en acercar a todos aquellos
-                    profesionales que ofrecen un servicio, a ser más visibles para su comunidad.</p>
+                    profesionales que ofrecen un servicio a ser más visibles para su comunidad.</p>
                 <div class="logoback">
                     <img src="../../assets/NS.png" alt="logo" id="logo--back">
                 </div>
@@ -141,25 +161,41 @@
                     <center>
                         <h2><strong>Valores</strong></h2>
                     </center>
-                    En Nexus Services, nos guiamos por un conjunto de valores 
-                    fundamentales que definen nuestraideantidad y relación con 
-                    nuestros clientes y proveedores:</p>
+                    En Nexus Services nos guiamos por un conjunto de valores
+                    fundamentales que definen nuestra ideantidad y relación con
+                    nuestros clientes y proveedores:
+                </p>
                 <br>
                 <ul>
-                    <li> <strong>Confianza:</strong> Construir un ambiente seguro y fiable tanto para los consumidores
-                        como para los proveedores de servicios.</li>
-                    <li><strong>Transparencia:</strong> Ser claros y honestos en todas las interacciones y transacciones
-                        dentro de la plataforma.</li>
-                    <li><strong>Colaboración</strong> Apoyarnos los unos a los otros con la finalidad de ayudar a quien
-                        lo necesite.</li>
-                    <li><strong>Empatía:</strong> Ponernos en el lugar del usuario.</li>
-                    <li><strong>Respeto:</strong> No permitir malos tratos ni prácticas.</li>
-                    <li><strong>Accesibilidad:</strong> Creamos una plataforma amigable y fácil de usar, accesible para
-                        todos los usuarios.</li>
-                    <li><strong>Eficiencia:</strong> Nos esforzamos por ofrecer servicios de manera rápida y efectiva
-                        para satisfacer las necesidades de nuestros clientes.</li>
+                    <li>
+                        <strong>Confianza:</strong> Construir un ambiente seguro y fiable tanto para los consumidores
+                        como para los proveedores de servicios.
+                    </li>
+                    <li>
+                        <strong>Transparencia:</strong> Ser claros y honestos en todas las interacciones y transacciones
+                        dentro de la plataforma.
+                    </li>
+                    <li>
+                        <strong>Colaboración:</strong> Apoyarnos los unos a los otros con la finalidad de ayudar a quien
+                        lo necesite.
+                    </li>
+                    <li>
+                        <strong>Empatía:</strong> Ponernos en el lugar del usuario.
+                    </li>
+                    <li>
+                        <strong>Respeto:</strong> No permitir malos tratos ni prácticas.
+                    </li>
+                    <li>
+                        <strong>Accesibilidad:</strong> Creamos una plataforma amigable y fácil de usar, accesible para
+                        todos los usuarios.
+                    </li>
+                    <li>
+                        <strong>Eficiencia:</strong> Nos esforzamos por ofrecer servicios de manera rápida y efectiva
+                        para satisfacer las necesidades de nuestros clientes.
+                    </li>
                 </ul>
-                <p> Estos valores son el núcleo de Nexus Services. Te invitamos a descubrir más acerca de nosotros</p>
+                <p>Estos valores son el núcleo de Nexus Services. Te invitamos a descubrir más acerca de nosotros.</p>
+
                 <div class="logoback">
                     <img src="../../assets/NS.png" alt="logo" id="logo--back">
                 </div>
@@ -185,30 +221,30 @@
             <h2><strong>Donaciones</strong></h2>
         </center>
         <div class="botones-precio">
-            <a >
+            <a>
                 <button id="boton50" class="boton-donar" onclick="redireccionarDonar50()">50.00 MXN</button>
             </a>
-            <a >
+            <a>
                 <button id="boton100" class="boton-donar" onclick="redireccionarDonar100()">100.00 MXN</button>
             </a>
         </div>
         <div class="botones-precio">
-            <a >
+            <a>
                 <button id="boton150" class="boton-donar" onclick="redireccionarDonar150()">150.00 MXN</button>
             </a>
-            <a >
+            <a>
                 <button id="boton200" class="boton-donar" onclick="redireccionarDonar200()">200.00 MXN</button>
             </a>
         </div>
         <div class="botones-precio">
-            <a >
+            <a>
                 <button id="boton500" class="boton-donar" onclick="redireccionarDonar500()">500.00 MXN</button>
             </a>
-            <a >
+            <a>
                 <button id="boton1000" class="boton-donar" onclick="redireccionarDonar1000()">1000.00 MXN</button>
             </a>
-     
-                    
+
+
         </div>
         <div class="input-donar">
             <input type="text" id="montoDonacion" placeholder="Ingresa un monto." />
@@ -227,26 +263,26 @@
             <div class="integrante">
                 <img src="./img/ale.jpg" alt="Alex">
                 <h4>Alexis</h4>
-                <p>Economista y trader profesional, con pasiones en la lectura e investigaciones políticas, con gran
-                    gusto en conocer nuevas personas. </p>
+                <p>Economista y trader profesional, con pasión por la lectura e investigaciones políticas, y con gran
+                    gusto por conocer nuevas personas.</p>
             </div>
             <div class="integrante">
                 <img src="./img/cesar.jpg" alt="Cesar">
                 <h4>Cesar</h4>
-                <p>Me considero una persona tranquila a la cual le gusta pasar su tiempo libre jugando videojuegos,
-                    escuchando música o leyendo algún libro</p>
+                <p>Me considero una persona tranquila a la que le gusta pasar su tiempo libre jugando videojuegos,
+                    escuchando música o leyendo algún libro.</p>
             </div>
             <div class="integrante">
                 <img src="./img/chris.jpg" alt="Christopher">
                 <h4>Christopher</h4>
-                <p>Soy ingeneiro en comunicaciones y electronica, me apaciona la tecnologia asi como el conocimiento,
-                    siempre busco nuevas cosas que hacer y aprender poder crecer personal y profecionalmente</p>
+                <p>Soy ingeniero en comunicaciones y electrónica. Me apasiona la tecnología, así como el conocimiento.
+                    Siempre busco nuevas cosas que hacer y aprender para crecer personal y profesionalmente. </p>
             </div>
             <div class="integrante">
                 <img src="./img/dav.jpg" alt="David">
                 <h4>David</h4>
                 <p>Apasionado por las tecnologías y el uso de herramientas para la resolución de problemas, disfruto de
-                    los retos y de los deportes</p>
+                    los retos y de los deportes. </p>
             </div>
             <div class="integrante">
                 <img src="./img/em.jpg" alt="Emily">
@@ -257,7 +293,7 @@
             <div class="integrante">
                 <img src="./img/jor.jpg" alt="Jorge">
                 <h4>Jorge</h4>
-                <p>Soy una persona a la que le gusta practicar deportes, ir al cine y escuchar música</p>
+                <p>Soy una persona a la que le gusta practicar deportes, ir al cine y escuchar música.</p>
             </div>
             <div class="integrante">
                 <img src="./img/jos.jpg" alt="Josue">
@@ -285,43 +321,59 @@
             </div>
         </div>
     </div>
->
+    >
     </div>
 
 
-
-    <!--Footer-->
-    <footer>
+<!--Footer-->
+<footer>
+    <div class="primer--cont">
         <div class="section-redes">
-            <a href="">
-                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
             </a>
-            <a href="">
-                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
             </a>
-            <a href="">
-                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
             </a>
         </div>
         <div class="section">
-            <a href="" id="aviso">Aviso de privacidad</a>
-            <a href="" id="terminos">Términos y condiciones</a>
-            <a href="" id="acces">Accesibilidad</a>
-            <br>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="aviso">Aviso de privacidad</a>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="terminos">Términos y condiciones</a>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="acces">Accesibilidad</a>
         </div>
-        <div class="derechos-copi">
-            <p>&copy; Derechos reservados. 2024</p>
-        </div>
-    </footer>
+    </div>
+    <div class="derechos-copi">
+        <p>&copy; Derechos reservados. 2024</p>
+    </div>
+</footer>
 
 
     <!--Scrip Botstrap-->
+    <script src="../../toggle-buttom.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--scrip js-->
     <script src="./scrips/bottonFuncion.js"></script>
-   
+
 </body>
 
 </html>

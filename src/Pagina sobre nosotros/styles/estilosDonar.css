@@ -93,11 +93,20 @@ form input, .payment-details input[type="text"], .payment-details input[type="em
     width: 100%;
     margin-right: 200px;
     max-width: 300px;
+    font-family: "Lato";
+}
+
+.resumen-donacion p {
+    font-family: "Lato";
 }
 
 h2 {
     text-align: center;
     color: #333;
+}
+
+.container p {
+    font-family: "Lato";
 }
 
 .payment-option {

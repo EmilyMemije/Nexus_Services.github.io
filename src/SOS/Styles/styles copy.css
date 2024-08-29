@@ -248,6 +248,7 @@ footer {
     border-radius: 8px;
     box-shadow: black;
     text-align: center;
+    font-family: "Lato";
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     display: flex; 
     flex-direction: column; 

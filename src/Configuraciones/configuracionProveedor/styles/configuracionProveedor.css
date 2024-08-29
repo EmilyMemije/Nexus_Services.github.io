@@ -14,8 +14,8 @@
     height: 600px;
     margin: 100px auto;
     border-radius: 20px;
-    background-color:#F2F2EB;
-} 
+    background-color: #F2F2EB;
+}
 
 .container--text h2 {
     display: flex;
@@ -29,128 +29,165 @@
     background: linear-gradient(#296CD1, #1C2B52);
     border-radius: 15px 15px 0px 0px;
     display: flex;
-    flex-direction: column; }
-    .header--calendar h1 {
-        margin: 30px 30px 0px 30px;
-        padding: 0px;
-        font-family: 'Lato';
-        color: #EFF0D5;
-        font-size: 100px; }
-    .header--calendar h5 {
-        margin: 0px 30px;
-        padding: 0px;
-        font-family: 'Lato';
-        color: #EFF0D5;
-        font-size: 40px; }
-  
+    flex-direction: column;
+}
+
+.header--calendar h1 {
+    margin: 30px 30px 0px 30px;
+    padding: 0px;
+    font-family: 'Lato';
+    color: #EFF0D5;
+    font-size: 100px;
+}
+
+.header--calendar h5 {
+    margin: 0px 30px;
+    padding: 0px;
+    font-family: 'Lato';
+    color: #EFF0D5;
+    font-size: 40px;
+}
+
 .body--calendar {
     width: 100%;
     height: 55%;
-    border-radius: 0px 0px 20px 20px; }
-  
+    border-radius: 0px 0px 20px 20px;
+}
+
 .container--details {
     width: 100%;
     height: 30px;
     position: relative;
     top: -14px;
     display: flex;
-    justify-content: space-between; }
-    .container--details .detail--1, .container--details .detail--2 {
-        width: 70px;
-        height: 100%;
-        display: flex;
-        justify-content: center; }
-        .container--details .detail--1 .detail, .container--details .detail--2 .detail {
-            margin: 0px 2px;
-            width: 10px;
-            height: 100%; }
-        .container--details .detail--1 .detail .circle, .container--details .detail--2 .detail .circle {
-            width: 10px;
-            height: 10px;
-            background: #1C1E26;
-            position: relative;
-            top: calc(30px - 10px);
-            border-radius: 50%; }
-        .container--details .detail--1 .detail .circle .column, .container--details .detail--2 .detail .circle .column {
-            width: 80%;
-            height: 30px;
-            background: #ececec;
-            margin: 0px auto;
-            position: relative;
-            top: -22px;
-            border-radius: 5px; }
-  
+    justify-content: space-between;
+}
+
+.container--details .detail--1,
+.container--details .detail--2 {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container--details .detail--1 .detail,
+.container--details .detail--2 .detail {
+    margin: 0px 2px;
+    width: 10px;
+    height: 100%;
+}
+
+.container--details .detail--1 .detail .circle,
+.container--details .detail--2 .detail .circle {
+    width: 10px;
+    height: 10px;
+    background: #1C1E26;
+    position: relative;
+    top: calc(30px - 10px);
+    border-radius: 50%;
+}
+
+.container--details .detail--1 .detail .circle .column,
+.container--details .detail--2 .detail .circle .column {
+    width: 80%;
+    height: 30px;
+    background: #ececec;
+    margin: 0px auto;
+    position: relative;
+    top: -22px;
+    border-radius: 5px;
+}
+
 .container--change--month {
     width: 100%;
     height: 25px;
     display: flex;
-    justify-content: space-evenly; }
-    .container--change--month div {
-        height: 20px;
-        margin: auto;
-        font-family: 'Merriweather'; }
-    .container--change--month button {
-        font-family: 'Merriweather';
-        font-size: 20px;
-        margin: auto 5px;
-        border: none;
-        background: none;
-        cursor: pointer; }
-  
+    justify-content: space-evenly;
+}
+
+.container--change--month div {
+    height: 20px;
+    margin: auto;
+    font-family: 'Merriweather';
+}
+
+.container--change--month button {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    margin: auto 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .container--weekdays {
     width: 90%;
     height: 40px;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    margin: 0px auto; }
-    .container--weekdays span {
-      color: #296CD1;
-      font-family: 'Merriweather';
-      height: 100%;
-      line-height: 2.5; }
-  
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0px auto;
+}
+
+.container--weekdays span {
+    color: #296CD1;
+    font-family: 'Merriweather';
+    height: 100%;
+    line-height: 2.5;
+}
+
 .weekdays--item {
-    display:grid;
-    grid-template-columns: (7,1fr) ;
+    display: grid;
+    grid-template-columns: (7, 1fr);
     margin: auto;
     width: calc(100% / 7);
     justify-content: center;
-    cursor: pointer; }
-  
+    cursor: pointer;
+}
+
 .weekdays--item:hover {
-    color: #1C2B52; }
-  
+    color: #1C2B52;
+}
+
 .prev_days {
-    opacity: 0.5; }
-  
+    opacity: 0.5;
+}
+
 .container--days {
     width: 90%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     flex-flow: row wrap;
-    margin: 0px auto; }
-    .container--days span {
-        color: black;
-        background: #F2F2EB;
-        height: 20px;
-        margin: 5px 0px;
-        padding: 0px;
-        font-family: 'Merriweather'; }
-    .container--days .today {
-        display: flex; }
-    .container--days .today:after {
-        content: "Hoy";
-        width: 28px;
-        height: 20px;
-        background: #BAD895;
-        position: static;
-        border-radius: 50%;
-        border: 2px solid #296CD1;
-        opacity: 0.5;
-        margin: 0px 0px 0px 0px; }
-  
-  /*# sourceMappingURL=styles.css.map */
+    margin: 0px auto;
+}
+
+.container--days span {
+    color: black;
+    background: #F2F2EB;
+    height: 20px;
+    margin: 5px 0px;
+    padding: 0px;
+    font-family: 'Merriweather';
+}
+
+.container--days .today {
+    display: flex;
+}
+
+.container--days .today:after {
+    content: "Hoy";
+    width: 28px;
+    height: 20px;
+    background: #BAD895;
+    position: static;
+    border-radius: 50%;
+    border: 2px solid #296CD1;
+    opacity: 0.5;
+    margin: 0px 0px 0px 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */
 
 .container--menu {
     flex-direction: column;
@@ -161,6 +198,9 @@
     font-family: "Lato";
     font-size: 30px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 480px;
     height: 720px;
     margin: auto;
@@ -172,51 +212,57 @@
     border-radius: 20px;
     box-shadow: 0px 2px 10px rgba(15, 15, 15, 0.5);
     position: static;
-    top: 50%;
+    top: 10%;
     right: 50%;
     transform: translate(50%, -50%);
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.container--menu a{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .container--menu button {
-    flex-direction: column;
-    place-content: center;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
-    width: 250px;
-    margin: 10px;
-    padding: 2px;
-    border-radius: 30px;
-    color: #F2F2EB;
-    background-color:#1C2B52;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    position: static;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition-duration: 0.3s
 }
 
 .container--menu button:hover {
-    color: #869DA6;
-    opacity: 70%;
+    background-color: white;
+    color: #212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
+/*
 #green {
     color:#1C2B52;
     background-color:#BAD895;
 }
-
+*/
 @media (max-width: 750px) {
     .container--principal {
-    flex-direction: column;
-    place-content: center;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
+        flex-direction: column;
+        place-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -224,10 +270,11 @@
     .container--calendar {
         border-radius: 20px;
         margin: auto;
-        padding: 2px;        
+        padding: 2px;
     }
+
     .container--calendar .container--text h2 {
-        font-size: small ;
+        font-size: small;
     }
 }
 
@@ -237,14 +284,15 @@
         padding: 2px;
         transform: translate(-24%, 0%);
     }
+
     /* Botones del menú */
     .container--menu button {
         flex-wrap: wrap;
         flex-direction: column;
         place-content: center;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        position: static;        
+        position: static;
     }
 }

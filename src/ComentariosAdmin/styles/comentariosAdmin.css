@@ -37,11 +37,19 @@
 }
 
 #user {
-    font-family:'Lato';
+    font-family:"lato";
     font-size: 1.5rem;
     font-weight:700;
-    margin-bottom: 1,5rem;
+    margin-bottom: 1.5rem;
     color: #869DA6;
+}
+
+#user h3 {
+    font-family: "Lato";
+}
+
+.boton.enviar, .boton.cancelar {
+    font-family: "Lato";
 }
 
 .calificacion {
@@ -94,22 +102,29 @@ textarea {
     justify-content: space-around;
     grid: .5rem;
     align-items: center;
+    margin-top: 10px;
 }
 
 .botones .boton {
-    padding: .75rem 1rem;
-    border-radius: .5rem;
+    margin: 0px 10px 10px 0px;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    outline: none;
+    padding: 10px 5px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-size: .875rem;
-    font-weight: 500;
-    background-color: #F2F2EB;
-    color:#296CD1;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
 }
 
 .botones .boton:hover {
-    background:#BAD895;
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
 @media (max-width:750px) {

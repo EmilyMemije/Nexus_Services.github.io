@@ -64,31 +64,33 @@
 } 
 
 #registrarse{
-    height: 70px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 40px; 	
-	background-color: #1C2B52; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
     font-family: "Lato";
-    font-size: 28px;
-    color: #FFFF;
+    transition-duration: 0.3s;
 }
 
 #registrarse:hover{
-    background-color: #86C0EA;
-    color: #1C2B52;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
-    border-color: #1C2B52;
+    background-color: white;
+    color: #212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+#nombre--registro,
+#correo--registro,
+#contraseña--registro,
+#conf-contraseña--registro,
+#registrarseForm {
+    font-family: "Lato";
 }
 
 span{
@@ -125,6 +127,42 @@ span{
         justify-content: center;
 
     }
+}
+
+
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width: 570px) {
+    .container--registrarse {
+        width: 85%;
+    }
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .container--registrarse input:not([type="checkbox"]){
+        width: 85%;
+    }
+    .container--registrarse select {
+        width: 90%;
+    }
+
+    #registrarse{
+        height: 60px; 
+	    width: 240px; 
+        font-size: 20px;
+        justify-content: center;
+
+    }
+    /*
+    #check {
+        font-size: 200px;
+    }
+*/
 }
 
 @media (max-width: 510px) {

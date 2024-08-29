@@ -65,6 +65,7 @@
             </div>
         </nav>
     </header>
+
     <!--Perfil"-->
     <div class="container--principal">
         <div class="container--informacion">
@@ -73,42 +74,118 @@
                     <img id="profileImage" src="../../../../assets/User_01.png" alt="Foto de Perfil">
                 </div>
                 <input type="file" id="fileInput" accept="image/*">
-                <!-- <a href="" id="uploadButton">Cambiar Foto de Perfil</a> -->
-                <button id="uploadButton">Cambiar Foto de Perfil</button>
+                <button id="cambiar--foto">Cambiar Foto de Perfil</button>
             </div>
             <div class="container--datos">
-                <label for="" id="name">Jorge Licea Jiménez</label>
-                <label for="" id="email">liceajj@gmail.com</label>
-                <label for="" id="telefono">+52 5585473882</label>
+                <label id="name">Jorge Licea Jiménez</label>
+                <label id="cedula">Cedula: 112 22 5555 554 4444</label>
+                <label id="especialidad">Médico General</label>
+                <label id="email">liceajj@gmail.com</label>
+                <label id="telefono">5585473882</label>
+                
             </div>
             <button id="updateButton" class="modificar--datos">Actualizar datos</button>
         </div>
+    
 
+        <!-- Servicios -->
+        <div id="container--servicios">
+            <h2 class="title--servicios">Servicios</h2>
+            <div class="container--card">
+                <div class="servicio--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medico General</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicio--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medico General</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    
+        
         <!--Actualizar Datos-->
-        <div class="container--actualizar">
+        <div id="container--actualizar" class="hidden">
             <h2 class="title--actualizar">Actualizar datos del proveedor</h2>
             <div class="container--formActualizar">
-                <label for="nombre">Nombre </label>
-                <input type="text" id="nombre" value="Juan">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" value="Perez">
+                <label for="nameAct">Nombre </label>
+                <input type="text" id="nameAct" value="Jorge Licea Jiménez">
+                <span id="nombre-error" class="error-message"></span>
+
                 <label for="direccion">Dirección</label>
-                <input type="text" id="direccion" value="Lomas de chapu">
+                <input type="text" id="direccionAct" value="Lomas de chapu">
+                <span id="direccion-error" class="error-message"></span>
+
                 <label for="especialidad">Especialidad</label>
-                <input type="text" id="especialidad" value="Medico General">
+                <input type="text" id="especialidadAct" value="Medico General">
+                <span id="especialidad" class="error-message"></span>
+
                 <label for="correoElectronico">Correo electronico</label>
-                <input type="email" id="correoElectronico" value="jperez@gmail.com">
-                <label for="cedula">Cedula</label>
-                <input type="text" id="cedula" value="112 22 5555 554 4444">
+                <input type="email" id="correoElectronicoAct" value="liceajj@gmail.com">
+                <span id="correo-error" class="error-message"></span>
+
+
                 <label for="celular">Celular</label>
-                <input type="text" id="celular" value="55 40 04 45 09">
+                <input type="text" id="celularAct" value="5585473882">
+                <span id="celular-error" class="error-message"></span>
+
             </div>
             <div id="boton--guardar">
                 <button id="guardar" class="guardar--datos">Guardar datos</button>
             </div>
+
         </div>
 
     </div>
+   
 
     <!--Footer-->
     <footer>
@@ -136,6 +213,7 @@
 
     <!--scrip js-->
     <script src="./scripts/botonFoto.js"></script>
+    <script src="./scripts/actualizarDatos.js"></script>
 </body>
 
 </html>

@@ -44,9 +44,10 @@
     object-position: center;
 }
 
-#uploadButton {
+#cambiar--foto {
     text-decoration: none;
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -55,7 +56,7 @@
     transition: background-color 0.3s;
 }
 
-#uploadButton:hover {
+#cambiar--foto:hover {
     background-color: #0056b3;
     opacity: 50%;
 }
@@ -70,6 +71,10 @@ input[type="file"] {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding: 25px;
 }
 
 #name{
@@ -79,6 +84,8 @@ input[type="file"] {
     padding-bottom: 25px;
 }
 
+
+/*
 #email{
     font-family: "Lato";
     font-size: 15px;
@@ -92,36 +99,151 @@ input[type="file"] {
     color: #fbfbfb;
     padding-bottom: 25px;
 }
-
+*/
 .modificar--datos{
-    display: flex;
-    justify-content: center;
-    height: 45px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 28px;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    transition-duration: 0.3s;
 }
 
-/*Apartado de actualizar datos*/
-.container--actualizar{
+.modificar--datos:hover{
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+/*Servicios*/
+
+.title--servicios {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+}
+
+.container--card {
+    display: flex;
     justify-content: start;
-    width: 73.2vw;
-    height:fit-content; 
-    margin-bottom: 10px; 
-    
-} 
+    align-items: start;
+    width: 681px;
+    flex-direction: column;
+}
+
+.servicio--card {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    height: 191px;
+    width: 681px;
+}
+
+.container--imagenServicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 211px;
+}
+
+.image--servicio{
+    width: 145px;
+    height: 145px;
+    margin: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #212A3E;
+    background-color: #212A3E;
+}
+
+.image--servicio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container--datosServicio{
+    width: 771px;
+    height: 211px;
+    color: #212A3E;
+    font-size: 20;
+    font-family: "Lato";
+}
+
+#servicio{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 36px;
+    margin: 0px;
+}
+
+
+.especialista{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#name--especialista{
+    padding-left: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha--hora{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#fecha--servicio{
+    padding-left: 10px;
+}
+
+.hora{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 40px;
+}
+
+#hora--servicio{
+    padding-left: 10px;
+}
+
+
+/*Apartado de actualizar datos*/
 .title--actualizar {
     display: flex;
     flex-direction: column;
@@ -135,19 +257,17 @@ input[type="file"] {
 
 .container--formActualizar {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 200px 250px minmax(100px, auto);
     grid-gap: 10px;
     width: 681px;
-    margin: auto; 
+    margin: auto;
     font-family: "Lato";
-    border-radius: 8px;
-    padding-bottom: 10px;
+    border-radius: 2rem;
+    padding-bottom: 25px;
     background-color: #B8C2D5;
     margin-bottom: 10px;
     padding-top: 25px;
-
-    
-    
+ 
 }
 
 .container--formActualizar label {
@@ -169,28 +289,42 @@ input[type="file"] {
     justify-content: center;
     align-items: center;
 }
-.guardar--datos{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 45px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
-    cursor: pointer;
+
+#updateButton.modificar--datos {
     font-family: "Lato";
-    font-size: 28px;
+}
+.guardar--datos{
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.guardar--datos:hover{
+    background-color:#212A3E;
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.servicio--card:hover{
+    border: 3px solid #212A3E;
+    transform: scale(1.05);
+    transition: .7ms;
 }
 
 
-
-    
 
 
 

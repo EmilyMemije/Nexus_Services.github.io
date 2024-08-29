@@ -32,47 +32,67 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="nav--container">
-            <div class="nav--logo">
-                <a href="../paginaPrincipal/paginaPrincipal.html">
-                    <img src="../../assets/NS.png" alt="LogoNS">
-                </a>
-            </div>
-            <div class="centro">
-                <a href="" id="NS--title">
-                    <h1 id="nav--title">Nexus Services</h1>
-                </a>
-                <div class="nav--search">
-                    <input class="search--imput"  type="text" name="search" placeholder="Buscar...">
-                    <a href="" target="_blank">
-                        <button class="botton">
-                            <img src="../../assets/lupa.png" alt="lupa" width="80%" id="lupa">
-                        </button>
-                    </a>
-                </div> 
-                <div class="nav--menu">
-                    <a href="/src/blog/blog.html">Blog</a>
-                    <a href="/src/servicios/servicios.html">Servicios</a>
-                    <a href="/src/Asociados/Asociados.html">Asociados</a>
-                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
-                </div>
-            </div>
-            <div class="nav--ingresar">
+       <nav class="nav--container">
+           <div class="container--menus">
+               <div class="nav--logo">
+                   <a id="container--logo" href="">
+                       <img id="logo--Ns" src="/assets/NS.png" alt="LogoNS">
+                   </a>
+               </div>
 
-                <a href="/src/SOS/sos.html" target="_blank">
-                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
-                </a>
-                <a href="../login/login.html" target="_blank">
-                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
-                </a>
-            </div>
-        </nav>
-        </header>
+               <!--Accesos de la nueva Navbar-->
+               <div class="container-list">
+                   <button class="abrir">
+                       <img id="img--menu" src="/assets/menu.png" alt="">
+                   </button>
+               </div>
+           </div>
+           <div class="ul-lis noactive" id="menu--desplegable">
+               <button class="cerrar">
+                   <img id="cerrarNS" src="/assets/NS.png" alt="">
+               </button>
+               <a href="/src/blog/blog.html" class="menu-link">Blog</a>
+               <a href="/src/servicios/servicios.html" class="menu-link">Servicios</a>
+               <a href="/src/listaProveedores/listaProveedores.html" class="menu-link">lista de proveedores</a>
+               <a href="/src/Contactanos/contactanos.html" class="menu-link">Contactanos</a>
+               <a href="/src/Pagina sobre nosotros/Nosotros.html" class="menu-link">Donaciones</a>
+               <a href="/src/paginaPrincipal/paginaPrincipal.html" class="menu-link">Página principal</a>
+               <a href="/src/login/login.html" class="menu-link">Login</a>
+           </div>
+
+           <!--Aquí empieza lo de Nexus Services-->
+
+           <div class="centro">
+               <a href="/index.html" id="NS--title">
+                   <h1 id="nav--title">Nexus Services</h1>
+               </a>
+               <div class="nav--search">
+                   <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                   <button class="botton">
+                       <img src="/assets/lupa.png" alt="lupa" id="lupa">
+                   </button>
+               </div>
+               <div class="nav--menu">
+                   <a href="/src/blog/blog.html">Blog</a>
+                   <a href="/src/servicios/servicios.html">Servicios</a>
+                   <a href="/src/Asociados/Asociados.html">Lista de proveedores</a>
+                   <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                   <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+               </div>
+           </div>
+           <div class="nav--ingresar">
+               <a class="extras--serv" href="/src/SOS/sos.html" target="_blank">
+                   <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+               </a>
+               <a class="extras--serv" href="/src/login/login.html" target="_blank">
+                   <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+               </a>
+           </div>
+       </nav>
+   </header>
 
     <!--Cuerpo de tarjet-->
     <Main>
@@ -80,8 +100,8 @@
             <div class="img--cont--foto">
                 <img src="./assets/User_photo.png" alt="Fotous uario" id="user--photo">
             </div>
-            <h1 class="especializacion--user">Especialización</h1>
-            <h2 class="nombreUserEsp">Nombre Especialista</h2>
+            <h1 class="especializacion--user">Médico Cardiólogo</h1>
+            <h2 class="nombreUserEsp">Dra. Amanda Luna</h2>
             <div id="stars">
                 <img class="fi fi-ss-star" src="./assets/estrella2.svg">
                 <img class="fi fi-ss-star" src="./assets/estrella2.svg">
@@ -89,29 +109,58 @@
                 <img class="fi fi-ss-star" src="./assets/estrella2.svg">
                 <img class="fi fi-ss-star" src="./assets/estrella2.svg">
             </div>
-            <h3>Sobre Mi</h3>
+            <h3>Sobre Mí</h3>
             <p class="parrafos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero! Culpa iure molestiae hic eius
-                exercitationem adipisci, dolore dolorem aliquam, in nam quisquam itaque, beatae repellendus totam alias
-                vitae cumque?
+                Mi objetivo es brindar un cuidado integral y personalizado para cada paciente. Me apasiona la
+                cardiología porque combina mi interés por la ciencia con mi deseo de ayudar a las personas a mantener
+                una vida saludable y activa. <br>
+                Mi formación académica incluye una licenciatura en Medicina, seguida de una
+                especialización en Cardiología en [Nombre de la Institución], donde he desarrollado una profunda
+                comprensión de las enfermedades cardiovasculares y las mejores prácticas para su tratamiento. <br>
+                Estoy comprometida en educar a mis pacientes sobre la importancia de la salud cardiovascular y en
+                promover hábitos que favorezcan un corazón sano.Si tienes preocupaciones sobre tu salud cardiovascular o
+                simplemente deseas una evaluación profesional, no dudes en contactarme. Estoy aquí para ayudarte a
+                alcanzar tus objetivos de salud y bienestar.
             </p>
             <h3>Experiencia</h3>
             <p class="parrafos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero! Culpa iure molestiae hic eius
-                exercitationem adipisci, dolore dolorem aliquam, in nam quisquam itaque, beatae repellendus totam alias
-                vitae cumque?
+                <b>Cardiólogo Especialista</b>
+                <p>Clínica Cardiovascular Avanzada<br>
+                Enero 2010 – Presente<br>
+                Diagnóstico y tratamiento de enfermedades cardíacas, incluyendo hipertensión, insuficiencia cardíaca y
+                arritmias.<br>
+                Realización de pruebas cardiovasculares y desarrollo de planes de tratamiento personalizados.<br>
+                Educación a pacientes sobre prevención y manejo de enfermedades del corazón.</p>
+                
+               <p><b>Médico Interno en Cardiología</b></p>
+               <p>Hospital General Gea González<br>
+                Julio 2005 – Diciembre 2009
+
+                Atención de emergencias cardiológicas y asistencia en procedimientos diagnósticos y terapéuticos.
             </p>
             <h3>Cursos & Certificaciones</h3>
             <p class="parrafos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero! Culpa iure molestiae hic eius
-                exercitationem adipisci, dolore dolorem aliquam, in nam quisquam itaque, beatae repellendus totam alias
-                vitae cumque?
+                Certificación en Cardiología <br>
+                Consejo Mexicano de Cardiología<br>
+                Año de emisión: 2010
+                <br><br>
+                Certificación en Ecocardiografía<br>
+                Sociedad Mexicana de Ecocardiografía<br>
+                Año de emisión: 2012
+                <br><br>
+                Certificación en Manejo de Hipertensión Arterial<br>
+                Instituto Nacional de Cardiología<br>
+                Año de emisión: 2015
+                <br><br>
+                Certificación en Electrofisiología Cardíaca<br>
+                Sociedad Latinoamericana de Electrofisiología<br>
+                Año de emisión: 2018
             </p>
             <h3>Comentarios</h3>
             <p class="parrafos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, libero! Culpa iure molestiae hic eius
-                exercitationem adipisci, dolore dolorem aliquam, in nam quisquam itaque, beatae repellendus totam alias
-                vitae cumque?
+                Con más de 15 años en el campo de la cardiología, ha sido parte integral de equipos multidisciplinarios en hospitales de renombre. <br>
+                Ha contribuido a la literatura médica con investigaciones sobre enfermedades cardíacas y ha publicado artículos en revistas especializadas. <br>
+                Ofrece un enfoque holístico en el tratamiento de enfermedades cardíacas, combinando avances tecnológicos con cuidado personalizado.
             </p>
         </div>
 
@@ -128,7 +177,7 @@
                 <img class="carrito-de-compras" src="./assets/carrito-de-compras.png" alt="carrito-de-compras">
             </button>
         </div>
-        
+
         <!--Carrto de especialidades-->
         <div class="Carrito--desplegable Desactivate" id="carrito--Servicios">
             <div class="titulo">
@@ -139,56 +188,80 @@
                 <p>No hay servicios en tu Carrito, agrega un servicio</p>
             </div>
 
-        <!--Especialidad Agregada-->
+            <!--Especialidad Agregada-->
             <div class="contenedor--SAG" id="contenedor--SAG">
                 <!--Se llenará con el Js-->
             </div>
-        <!--Cuenta total div-->
+            <!--Cuenta total div-->
             <div class="cuenta--total" id="container--totales">
-                <p class="total" id="total">Total</p>
-                <p class="total" id="pesos"> $$$$ </p>
+
+                <p class="total disabled" id="total">Total</p>
+                <p class="total disabled" id="pesos"> $$$$ </p>
             </div>
 
-        <!--Botones del carrito-->
+            <!--Botones del carrito-->
             <div class="btones--carrito">
-                <button  class="ir--pago" id="ir--a--pago" onclick="location.href='../Compra/compra.html'">
+
+                <button class="ir--pago disabled" id="ir--a--pago" onclick="location.href='../Compra/compra.html'">
+
                     <a class="ir--pago" src="../Compra/compra.html">
-                        continuar al pago
+                        Continuar al pago
                     </a>
                 </button>
-                <button class="vaciar--carritoBton">Vaciar Carrito</button>
+
+                <button class="vaciar--carritoBton disabled">Vaciar Carrito</button>
                 <button class="cerrar--carrito">Cerrar carrito</button>
             </div>
         </div>
     </Main>
 
 
-    <!--Footer-->
-    <footer>
+   <!--Footer-->
+ <footer>
+    <div class="primer--cont">
         <div class="section-redes">
-            <a href="">
-                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
             </a>
-            <a href="">
-                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
             </a>
-            <a href="">
-                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            <a class="contt--immgg" href="">
+                <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
             </a>
         </div>
         <div class="section">
-            <a href="" id="aviso">Aviso de privacidad</a>
-            <a href="" id="terminos">Términos y condiciones</a>
-            <a href="" id="acces">Accesibilidad</a>
-            <br>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="aviso">Aviso de privacidad</a>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="terminos">Términos y condiciones</a>
+            <a class="palabras--footer" href="/src/T&C/T&C.html" id="acces">Accesibilidad</a>
         </div>
-        <div class="derechos-copi">
-            <p>&copy; Derechos reservados. 2024</p>
-        </div>
-    </footer>
+    </div>
+    <div class="derechos-copi">
+        <p>&copy; Derechos reservados. 2024</p>
+    </div>
+</footer>
 
-    <!--Coneción con javaScript-->
+    <!--Conexión con javaScript-->
+    <script src="../../toggle-buttom.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    
     <script src="./src/script/servicios.js"></script>
+
 </body>
 
 </html>

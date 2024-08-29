@@ -7,6 +7,9 @@
     --green-tea: #BAD895;
 }
 
+.item {
+    font-family: "Lato";
+}
 
 .logoback {
     display: flex;
@@ -33,6 +36,9 @@
     box-sizing: border-box;
 }
 
+.search--imput{
+    width: 100%;
+}
 
 .search--imput::placeholder {
     flex-grow: 1;
@@ -54,42 +60,73 @@
     display: flex;
     max-width: 1500px;
     border-radius: 20px;
-    background: #869DA6;
+    background: var(--footer-blue);
     margin: 50px;
     padding: 0px;
     box-sizing: border-box;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.category--list a {
+    text-decoration: none;
+    color: #1C2B52;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.category--list a:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
+}
+
+.category--list p{
+    margin-top: 15px;
 }
 
 .category--list select {
-    background-color: #869DA6;
+    background-color: white;
     border: none;
+    padding: 5px;
+    border-radius: 2.5rem;
 }
 
 
 .boton--sig button {
-    width: 120px;
-    text-align: center;
-    height: 50px;
-    margin-left:10px;
-    margin-right: 10px;
-    bottom: 0px;
-    background-color: #BAD895;
-    color: white;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    border-radius: 50px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-bottom: 15px;
 }
 
 .boton--sig button:hover {
-    background-color: #0056b3;
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
-
+/*
 button:hover {
-    background-color: #0056b3;
-}
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
+}*/
 
 .contenedor-botones2{
 display: flex;

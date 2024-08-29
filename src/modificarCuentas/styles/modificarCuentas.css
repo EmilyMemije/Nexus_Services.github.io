@@ -42,7 +42,7 @@
     flex-direction: column-reverse;
     width: 80%;
     margin: 30px 20px;
-    font-family: 'Merriweather';
+    font-family: 'Lato';
 }
 
 .imgAdmin--container img {
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Merriweather';
+    font-family: 'Lato';
     font-size: x-large;
     text-decoration: none;
     color: black;

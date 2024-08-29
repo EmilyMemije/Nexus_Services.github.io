@@ -70,7 +70,7 @@ body {
 .ul-lis{
     width: 20%;
     height: 100%;
-    background: linear-gradient(360deg, rgba(67,67,67,1) 0%, rgb(54, 132, 184) 42%, rgba(91, 185, 240, 0.568) 100%);
+    background: linear-gradient(360deg, rgba(67,67,67,1) 0%, rgba(192,192,192,1) 42%, rgba(255,255,255,1) 100%);
     display: flex;
     align-items: center;
     position: absolute;
@@ -79,7 +79,6 @@ body {
     gap: 10px;
     top: 0%;
     left: 0%;
-    opacity:0.8;
 }
 
 .ul-lis{

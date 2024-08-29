@@ -33,18 +33,6 @@
     box-sizing: border-box;
 }
 
-.search--imput{
-    width: 100%;
-}
-
-.search--imput::placeholder {
-    flex-grow: 1;
-    padding: 10px;
-    color: #1C2B52;
-    opacity: 1;
-    margin-right: 10px;
-    box-sizing: border-box;
-}
 
 #profesionales {
     margin-left: 200px;
@@ -146,9 +134,8 @@ margin-top: 20px;
 
 }
 
-
-@media(max-width:700px) {
-
+/*Medias Queries*/
+@media (max-width: 700px) {
     #Container-principal {
         flex-direction: column;
     }
@@ -157,14 +144,12 @@ margin-top: 20px;
         width: 90%;
     }
 
-    /*tamanio de letra*/
     #info h2,
     p,
     li {
-        font-size: small;
-
+        font-size: small; 
     }
-
+    
     /*modificacion del logo*/
     #logo--back {
         display: flex;
@@ -179,13 +164,28 @@ margin-top: 20px;
         opacity: 15%;
     }
 
+    .category--list {
+        display: flex;
+        max-width: 100%;
+        margin: 50px;
+        box-sizing: border-box;
+        font-size: "Merriweather";
+        flex-wrap: wrap;
+        padding-bottom: 12px;
+    }
+    
+    .category--list select {
+        background-color: white;
+        width: 80%;
+        border: none;
+    }
+}
 
 
-    @media (max-width: 450px) {
-        #logo--back {
-            display: flex;
-            opacity: 95%;
-            width: 350px;
-        }
+@media (max-width: 450px) {
+    #logo--back {
+        display: flex;
+        opacity: 95%;
+        width: 350px;
     }
 }

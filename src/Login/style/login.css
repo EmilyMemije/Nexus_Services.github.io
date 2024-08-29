@@ -71,6 +71,7 @@
     font-size: 15px;
     align-items: center;
     justify-items: center;
+    margin-bottom: 10px;
 }
 
 /* Estilo normal cuando la contraseña cumple la regex */

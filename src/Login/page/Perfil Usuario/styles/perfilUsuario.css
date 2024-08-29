@@ -17,6 +17,7 @@
     position: sticky;
     background-color: #212A3E;
     padding-top: 35px;
+    padding-bottom: 2rem;
 }
 
 /*Foto de perfil*/
@@ -151,6 +152,7 @@ input[type="file"] {
 /*Apartado de historial de servicios*/
 #container--historial {
     width: 76.2vw;
+    margin-bottom: 2rem;
 }
 
 .title--historial {

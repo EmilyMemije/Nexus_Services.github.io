@@ -93,34 +93,15 @@
     <!-- Confirmacion de pago  -->
     <div class="titulo">
         <h1 id="titulo">Confimación de pago</h1>
-        <div class="botones">
-            <div class="boton1">1.<p class="texto">Carrito</p></div>
-            <hr id="ab">
-            <div class="boton2">2.<p class="texto">Pago</p></div>
-            <hr id="bc">
-            <div class="boton3">3.<p class="texto">Agradecimiento</p></div>
-        </div>
     </div>
 
     <div class="resumen">
-        <div class="resument" id="resument">Resumen <br>
-            <hr class="linea1">
-            <table>
-                <tr>
-                    <td class="servico">Servicio</td>
-                    <td class="descripcion">Descripción</td>
-                    <td class="costo">Costo</td>
-                </tr>
-            </table>
+        <div  class="resument" id="contenedor-servicios"></div>
         </div>
         <div class="contenedor">
                 <!-- Tarjeta -->
                 <section class="tarjeta" id="tarjeta">
                     <div class="delantera">
-                        <!--<div class="logo-marca" id="logo-marca">
-                            <img src="img/logos/visa.png" alt=""> 
-                        </div>
-                        <img src="img/chip-tarjeta.png" class="chip" alt="">-->
                         <div class="datos">
                             <div class="grupo" id="numero">
                                 <p class="label">Número Tarjeta</p>
@@ -133,7 +114,7 @@
                                 </div>
         
                                 <div class="grupo" id="expiracion">
-                                    <p class="label">Expiración</p>
+                                    <p class="label">Expiracion</p>
                                     <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
                                 </div>
                             </div>
@@ -161,22 +142,22 @@
                 <div class="contenedor-btn">
                     <button class="btn-abrir-formulario" id="btn-abrir-formulario">
                         <i class="fas fa-plus"></i>
-                    </button>
+                    ↓</button>
                 </div>
         
                 <!-- Formulario -->
-                <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-                    <div class="grupo1">
+                <form action="" id="formulario-tarjeta" class="formulario-tarjeta noactive">
+                    <div class="grupo">
                         <label for="inputNumero">Número Tarjeta</label>
                         <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
                     </div>
-                    <div class="grupo1">
+                    <div class="grupo">
                         <label for="inputNombre">Nombre</label>
                         <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
                     </div>
                     <div class="flexbox">
                         <div class="grupo expira">
-                            <label for="selectMes">Expiración</label>
+                            <label for="selectMes">Expiracion</label>
                             <div class="flexbox">
                                 <div class="grupo-select">
                                     <select name="mes" id="selectMes">
@@ -198,9 +179,12 @@
                             <input type="text" id="inputCCV" maxlength="3">
                         </div>
                     </div>
-                    <button type="submit" class="btn-enviar"><a href="./gracias/gracias.html"></a> Enviar</button>
+                    
+                    <a href="../../src/Compra/gracias/gracias.html" class="btn-enviar" >Enviar</a>
                 </form>
             </div>
+        
+
 
 
     <!--Footer-->

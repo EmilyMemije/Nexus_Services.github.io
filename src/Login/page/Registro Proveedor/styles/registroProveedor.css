@@ -6,6 +6,7 @@
     height: auto;
     margin: 0% 0%;
     gap: 0%; 
+    height: 100vh;
 
 }
 
@@ -41,7 +42,6 @@
 
 .container--registrarse select{
     display: flex;
-    flex-direction: column;
     background-color: #FFFF;
     width: 428px;
     height: 40px;
@@ -53,8 +53,6 @@
     padding-left: 15px;
     font-family: "Lato";
     font-size: 15px;
-    align-items: center;
-    justify-items: center;
 }
 
 .registrarse--boton{
@@ -72,7 +70,7 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    width: 180px;
     font-size: 20px;
     transition-duration: 0.3s;
 }

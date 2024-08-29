@@ -45,15 +45,26 @@ form input, .payment-details input[type="text"], .payment-details input[type="em
 }
 
 #botonDonar, .submit-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    border-radius: 5px;
-    width: auto;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
     margin-top: 2%;
 }
+
+.submit-btn:hover{
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
+}
+
 
 #botonDonar:disabled, .submit-btn:disabled {
     background-color: #cccccc;

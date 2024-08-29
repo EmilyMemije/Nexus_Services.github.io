@@ -36,6 +36,7 @@
     margin: 3% 0%;
     border-radius: 2em;
     overflow: auto; 
+    scrollbar-width: none;
 }
 
 #info h1 {

@@ -7,7 +7,7 @@
     width: auto;
     margin: 0% 0%;
     gap: 0%;
-
+    height: 100vh;
 }
 
 .container--login h2 {
@@ -62,6 +62,7 @@
     padding-left: 15px;
     font-family: "Lato";
     font-size: 15px;
+    margin-bottom: 15px;
     align-items: center;
     justify-items: center;
 }
@@ -92,12 +93,12 @@
     background-color: #212A3E;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    width: 180px;
     font-size: 20px;
     transition-duration: 0.3s
 }
@@ -118,7 +119,7 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 11%;
+    width: 180px;
     font-size: 20px;
     transition-duration: 0.3s
 }

@@ -10,7 +10,7 @@
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/loginAdmin.css">
 
 
     <!--Conexcion a estilos de letras-->
@@ -87,28 +87,15 @@
             </div>
         </nav>
     </header>
-    
+
+    </header>
     <!--Login"-->
-    <a href="/src/loginAdmin/loginAdmin.html">
-        <img id="logo-Admin" src="/assets/accesoAdmin.png" alt="loginAdmins">
-    </a>
-
-
     <div class="container--login">
         <h2 id="title-login">Iniciar Sesión</h2>
-        <div class="container--inicioSocial">
-            <a href="">
-                <img id="logo--google" src="../../assets/google.png" alt="Google">
-            </a>
-            <a href="">
-                <img id="logo--facebook" src="../../assets/facebook.png" alt="Facebook">
-            </a>
-            <a href="">
-                <img id="logo--mac" src="../../assets/mac.png" alt="Mac">
-            </a>
-        </div>
+        <h2 id="title-login">Bienvenido Administrador</h2>
+        
         <div class="formulario--login">
-            <form action="../Login/page/Perfil Usuario/perfilUsuario.html" id="form--login">
+            <form action="../perfilAdmin/perfilAdmin.html" id="form--login">
                 <input type="email" id="email-login" required="obligatorio" placeholder="Correo Electrónico*">
                 <input type="password" id="password--login" required="obligatorio" placeholder="Contraseña*">
                 <div class="login--boton">
@@ -119,76 +106,39 @@
             </form>
 
         </div>
-        <button id="registro">
-            Registrarse
-        </button>
+        
 
     </div>
 
-     <!--Modal-->
-     <dialog id="miModal" class="modal">
-        <div class="container--seleccion">
-            <form action="./page/Registro Usuario/registroUsuario.html" id="btnUsuario">
-                <button id="seleccion--usuario" class="seleccion">
-                    <img src="../../assets/paciente.png" alt="Soy Paciente">
-                    <p>Soy Paciente</p>
-                </button>
-            </form>
-            <form action="./page/Registro Proveedor/registroProveedor.html" id="btnProveedor">
-                <button id="seleccion--especialista" class="seleccion">
-                    <img src="../../assets/doctor.png" alt="Soy Espacialista">
-                    <p>Soy Especialista</p>
-                </button>
-            </form>
-        </div> 
-    </dialog>
+     
 
     <!--Footer-->
     <footer>
-        <div class="primer--cont">
-            <div class="section-redes">
-                <a class="contt--immgg" href="">
-                    <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
-                </a>
-                <a class="contt--immgg" href="">
-                    <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
-                </a>
-                <a class="contt--immgg" href="">
-                    <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
-                </a>
-            </div>
-            <div class="section">
-                <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
-                <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
-                <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
-            </div>
+        <div class="section-redes">
+            <a href="">
+                <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+            </a>
+            <a href="">
+                <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="section">
+            <a href="" id="aviso">Aviso de privacidad</a>
+            <a href="" id="terminos">Términos y condiciones</a>
+            <a href="" id="acces">Accesibilidad</a>
+            <br>
         </div>
         <div class="derechos-copi">
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
 
-
-    <!--bostrap scrip-->
-
-    <script src="/toggle-buttom.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>    
-
      <!--scrip js-->
-     <script src="./scripts/login.js"></script>
-     <script src="./scripts/modal.js"></script>
+     <script src="./scripts/loginAdmin.js"></script>
+    
 
 </body>
 

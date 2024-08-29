@@ -1,3 +1,12 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+    }
+    
 .container--login {
     display: flex;
     flex-direction: column;
@@ -65,29 +74,23 @@
 } 
 
 #login{
-    height: 45px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 28px;
+    text-align: center;
+    width: 65%;
+    font-size: 20px;
+    transition-duration: 0.3s;
 }
 
 #login:hover{
-    background-color: #1C2B52;
+    background-color:var(--footer-blue);
     color: white;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 #login:disabled{
@@ -200,16 +203,11 @@
         
     }
     
-    #login{
-        height: 30px; 
-        width: 172px;   
-        padding-left: 5px;
-        padding-right: 5px; 	
-        margin-bottom: 20px; 
-        margin-top: 10px; 	
-        border-radius: 2em;	
-        font-size: 20px;
-    }
+  #login
+    {
+        width: 50%;
+        font-size: 18px;
+    } 
     
     #registro{
         height: 30px; 

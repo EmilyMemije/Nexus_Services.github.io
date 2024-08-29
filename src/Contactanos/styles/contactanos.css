@@ -17,23 +17,27 @@
     font-family: "Lato";
     font-size: 25px;
     box-shadow: #296CD1;
-    color: #fbfbfb;
 }
+
 
 .formulario--contacto {
     font-size: 40px;
     text-align: center;
 }
 
+.formulario h1, h2{
+    color: white;
+}
+
 .escribenos {
     font-size: 25px;
     text-align: left;
-    font-style: italic;
+    font-style: "lato";
     padding-bottom: 30px;
 }
 
-p {
-    font-style: oblique;
+label {
+    font-style: "lato";
     
 }
 
@@ -70,29 +74,35 @@ textarea {
 
 label{
     display: block; 
-    float: center; 	
+    float: center; 
+    color:white;	
+}
+
+.contenedor--bton--env{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container--principal button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
-	width: 420px;   
+	background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    
-    
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
 }
 
-button p {
-    color: #1C2B52;
-    font-family: "Lato";
-    font-size: 16px;
+.container--principal button:hover{
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 span {
@@ -100,8 +110,9 @@ span {
 }
 
 .aviso {
-    font-family: "Comfortaa";
+    font-family: "Merriweather";
     font-size: 12px;
+    color: white;
 }
 
 
@@ -137,6 +148,9 @@ span {
     width: 100px;
 }
 
+#tel{
+    font-family: "Merriweather";
+}
 
 
 #correo{
@@ -146,6 +160,10 @@ span {
     align-items: center;
     
     
+}
+
+#emai{
+    font-family: "Merriweather";
 }
 
 .correo {

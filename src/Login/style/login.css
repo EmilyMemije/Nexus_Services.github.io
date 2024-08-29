@@ -89,48 +89,45 @@
 }
 
 #login {
-    place-content: center;
-    text-align: center;
-    height: 49.85px;
-    width: 250px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: #F2F2EB;
-    color: #1C2B52;
-    border-radius: 30px;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition-duration: 0.3s
 }
 
 #login:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
 #registro {
-    font-size: 24px;
-    place-content: center;
-    text-align: center;
-    height: 49.85px;
-    width: 250px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: #F2F2EB;
-    color: #1C2B52;
-    border-radius: 30px;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
-    font-family: "Lato";
-    font-size: 16px;
+    text-align: center;
+    width: 11%;
+    font-size: 20px;
+    transition-duration: 0.3s
 }
 
 #registro:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
 .login-message {

@@ -44,6 +44,14 @@
     color: #869DA6;
 }
 
+#user h3 {
+    font-family: "Lato";
+}
+
+.boton.enviar, .boton.cancelar {
+    font-family: "Lato";
+}
+
 .calificacion {
     display: flex;
     justify-content: center;

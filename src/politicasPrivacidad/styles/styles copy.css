@@ -229,48 +229,15 @@ footer {
     opacity: 120%;
 }
 
-
-.directorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    margin: 20px 100px; 
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.item {
-    background-color: #eaeaea;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: black;
-    text-align: center;
-    font-family: "Lato";
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    height: 100%; 
-}
-
-.item:hover {
-    transform: scale(1.4);
-  
-}
-
-.item h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.item p {
-    margin: 0;
-    font-size: 14px;
+.derechos-copi{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 0px;
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: 50%;
+    color: white;
 }
 
 

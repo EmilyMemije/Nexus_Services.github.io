@@ -47,6 +47,7 @@
 #cambiar--foto {
     text-decoration: none;
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -184,6 +185,7 @@ input[type="file"] {
     height: 211px;
     color: #212A3E;
     font-size: 20;
+    font-family: "Lato";
 }
 
 #servicio{
@@ -287,6 +289,10 @@ input[type="file"] {
     justify-content: center;
     align-items: center;
 }
+
+#updateButton.modificar--datos {
+    font-family: "Lato";
+}
 .guardar--datos{
     background-color: white;
     color: var(--footer-blue);
@@ -318,7 +324,7 @@ input[type="file"] {
     transition: .7ms;
 }
 
-    
+
 
 
 

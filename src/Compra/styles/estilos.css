@@ -54,6 +54,7 @@ body {
     height: 260px;
 	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
 	background-size: cover;
+	font-family: "Lato";
 }
 
 .delantera .logo-marca {
@@ -196,6 +197,10 @@ body {
 	z-index: 1;
 	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 	transition: clip-path .3s ease-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Lato";
 }
 
 .formulario-tarjeta.active {
@@ -223,6 +228,7 @@ body {
 	padding: 5px 12px;
 	transition: .3s ease all;
 	border-radius: 5px;
+	font-family: "Lato";
 }
 
 .formulario-tarjeta input:hover,

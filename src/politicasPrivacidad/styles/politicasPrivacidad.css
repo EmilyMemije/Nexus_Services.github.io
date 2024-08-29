@@ -22,38 +22,34 @@
 
 
 /* contenedor de la informacion*/
-#info {
+#info
+{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: "Merriweather";
     background-color: #212A3E;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 600px; /* Ajuste automático según el contenido */
+    height: 500px;
     width: 80%;
     margin: 3% 0%;
     border-radius: 2em;
-    overflow: auto; 
-    z-index: -2;
+
 }
 
-#info h1 {
-    text-align: center;
+/*Tanio de la fuente*/
+#info h2, p
+{
+    font-size: large;
 }
-#info p {
-    padding: 50px;
-}
-
-
 
 /*imagen background*/
 
 .logoback{
     display: flex;
-    position: center;
+    position: absolute;
     justify-content: center;
 }
 
@@ -65,16 +61,21 @@
 
 
 /*contenedor aviso privacidad*/
-#container-TYC
+#container-avisoPrivacidad
 {
     position: absolute;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: justify;
     color: #F2F2EB;
     height: 50%;
-   
+    width: 40%;
+}
+
+.prueba{
+    position: static;
 }
 
 
@@ -86,20 +87,22 @@
     flex-direction: column;
     }
 
-    #info {
+    #info
+    {
         width: 90%;
-        margin-top: 10%;
-        height: auto; /* Asegura que el contenedor se ajuste al contenido en pantallas pequeñas */
-        
     }
+    /*tamanio de letra*/
+    #info h2, p, li
+    {
+        font-size: small;
 
-    #info h2, p, li {
-        font-size: small; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
     }
 
     /*modificacion del logo*/
-    #logo--back {
-        width: 100px; /* Ajusta el tamaño del logo */
+    #logo--back{
+        display: flex;
+        opacity: 5%;
+        width: 100px;
     }
     .logoback{
         display: flex;
@@ -137,3 +140,4 @@
     }
 
 }
+

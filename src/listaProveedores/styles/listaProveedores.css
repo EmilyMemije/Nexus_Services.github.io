@@ -7,6 +7,9 @@
     --green-tea: #BAD895;
 }
 
+.item {
+    font-family: "Lato";
+}
 
 .logoback {
     display: flex;

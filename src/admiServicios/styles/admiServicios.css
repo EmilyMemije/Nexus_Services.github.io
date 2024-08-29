@@ -41,6 +41,10 @@ body {
     
 }
 
+.profile h2 {
+    font-family: "Lato";
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
@@ -49,7 +53,7 @@ body {
 }
 
 .menu{
-
+    font-family: "Lato";
     width: clamp(10px, 250px, 400px);
 }
 
@@ -64,6 +68,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: 20px;
+    font-family: "Lato";
     transition-duration: 0.3s;
 }
 
@@ -158,6 +163,7 @@ header h1 {
     margin: 5px 0;
     color: var(--footer-blue);
     text-align: justify;
+    font-family: "Merriweather";
 }
 
 .service-price {

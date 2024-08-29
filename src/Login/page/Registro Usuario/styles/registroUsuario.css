@@ -75,6 +75,7 @@
     text-align: center;
     width: 100%;
     font-size: 20px;
+    font-family: "Lato";
     transition-duration: 0.3s
 }
 
@@ -83,6 +84,15 @@
     color:#212A3E;
     border: solid white 2px;
     transition-duration: .3s;
+}
+
+#nombre--registroU,
+#correo--registroU,
+#contraseña--registroU,
+#conf-contraseña--registroU,
+#telefono--registroU,
+#registrarseUsuarioForm {
+    font-family: "Lato";
 }
 
 span {

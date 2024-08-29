@@ -83,6 +83,7 @@
     text-align: center;
     width: 65%;
     font-size: 20px;
+    font-family: "Lato";
     transition-duration: 0.3s;
 }
 
@@ -96,6 +97,12 @@
 #login:disabled{
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+#form--login,
+#email-login,
+#password-login {
+    font-family: "Lato";
 }
 
 #registro{

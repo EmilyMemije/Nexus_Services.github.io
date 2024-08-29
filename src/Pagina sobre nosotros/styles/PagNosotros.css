@@ -71,6 +71,15 @@
 #info h2, p
 {
     font-size: large;
+    font-family: "Merriweather";
+}
+
+h2 {
+    font-family: "Lato";
+}
+
+h4 {
+    font-family: "Merriweather";
 }
 
 /*imagen background*/
@@ -525,6 +534,10 @@
     flex-grow: 1;
 }
 
+#montoDonacion {
+    font-family: "Lato";
+}
+
 #monto-confirmar {
     background-color: #007bff;
     color: white;
@@ -568,6 +581,7 @@
     color: #000;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Lato";
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;

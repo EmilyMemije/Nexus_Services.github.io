@@ -32,7 +32,7 @@ hr {
     flex-direction: column;
     width: 30%;
     margin: 30px 30px;
-    font-family: 'Merriweather';
+    font-family: 'Lato';
 }
 
 .imgAdmin--container img {
@@ -69,25 +69,27 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato';
+    font-size: x-large;
     text-decoration: none;
-    background-color: white;
-    color: var(--footer-blue);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 2rem;
+    color: black;
+    margin: 30px 60px;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    background: #B8C2D5;
+    box-shadow: 4px 8px 10px 1px rgb(143, 138, 138, 35%);
     cursor: pointer;
-    text-align: center;
-    width: 180px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    transition-duration: 0.3s;
 }
 
 .options--container a:hover {
-    background-color:var(--footer-blue);
-    color: white;
-    border: solid white 2px;
-    transition-duration: .3s
+    border-radius: 25px 25px 25px 25px;
+    background: #1C2B52;
+    color: #B8C2D5;
+    border:0.5px solid white;
+    transition: .3s;
+    padding: 2.5px 2.5px;
 }
 
 

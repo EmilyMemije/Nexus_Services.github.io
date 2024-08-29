@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         daysDiv.className = 'service-days';
 
         const parafday = document.createElement('p');
-        parafday.textContent = "días de atención";
+        parafday.textContent = "Días de atención";
 
         servicio.dias.forEach(dia => {
             const dayDiv = document.createElement('div');

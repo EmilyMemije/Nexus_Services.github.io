@@ -20,12 +20,12 @@
     margin-bottom: 20px;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    z-index: -2;
 }
 
 .box.flipped .card-inner{
     transform: rotateY(180deg); /* Rota toda la caja */
 }
-
 
 .card-inner {
     position: relative;

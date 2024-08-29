@@ -6,7 +6,6 @@
     height: auto;
     margin: 0% 0%;
     gap: 0%; 
-    height: 100vh;
 
 }
 
@@ -42,6 +41,7 @@
 
 .container--registrarse select{
     display: flex;
+    flex-direction: column;
     background-color: #FFFF;
     width: 428px;
     height: 40px;
@@ -53,6 +53,8 @@
     padding-left: 15px;
     font-family: "Lato";
     font-size: 15px;
+    align-items: center;
+    justify-items: center;
 }
 
 .registrarse--boton{
@@ -70,8 +72,9 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 180px;
+    width: 100%;
     font-size: 20px;
+    font-family: "Lato";
     transition-duration: 0.3s;
 }
 
@@ -80,6 +83,14 @@
     color: #212A3E;
     border: solid white 2px;
     transition-duration: .3s;
+}
+
+#nombre--registro,
+#correo--registro,
+#contraseña--registro,
+#conf-contraseña--registro,
+#registrarseForm {
+    font-family: "Lato";
 }
 
 span{

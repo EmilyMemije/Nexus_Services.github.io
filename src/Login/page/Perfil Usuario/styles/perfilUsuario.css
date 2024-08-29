@@ -17,7 +17,6 @@
     position: sticky;
     background-color: #212A3E;
     padding-top: 35px;
-
 }
 
 /*Foto de perfil*/
@@ -49,6 +48,7 @@
 #cambiar--foto {
     text-decoration: none;
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -64,6 +64,7 @@
 
 #cerrarSesion {
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -126,6 +127,7 @@ input[type="file"] {
     background-color: white;
     color: var(--footer-blue);
     border: none;
+    padding: 10px 20px;
     margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
@@ -273,6 +275,13 @@ input[type="file"] {
     width: 76.2vw;
 }
 
+#actualizar.modificar--datos { 
+    font-family: "Lato";
+}
+
+#configuracion.modificar--datos {
+    font-family: "Lato";
+}
 .title--actualizar {
     display: flex;
     flex-direction: column;
@@ -318,7 +327,6 @@ input[type="file"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40px;
 }
 
 .guardar--datos {
@@ -330,7 +338,7 @@ input[type="file"] {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 180px;
+    width: 35%;
     font-size: 20px;
     transition-duration: 0.3s
 }

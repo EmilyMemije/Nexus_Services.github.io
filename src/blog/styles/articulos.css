@@ -36,6 +36,10 @@
     margin: 5px 5px 0px 0px;
 }
 
+#Botoncita {
+    font-family: "Lato";
+}
+
 .main--text p{
     font-family: "Merriweather";
     font-size: medium;
@@ -49,6 +53,10 @@ ul {
 
 .main--img {
     width: 100%;
+}
+
+.main--container p {
+    font-family: "Merriweather";
 }
 
 .aside--container {
@@ -122,6 +130,7 @@ padding: 5px;
 
 .autho-card-info p{
     text-align: justify;
+    font-family: "Merriweather";
     padding: 0px 15px 0px 0px;
 }
 

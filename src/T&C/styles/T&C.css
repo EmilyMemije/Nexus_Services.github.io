@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Merriweather";
     background-color: #212A3E;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -36,7 +37,7 @@
     margin: 3% 0%;
     border-radius: 2em;
     overflow: auto; 
-    scrollbar-width: none;
+    z-index: -2;
 }
 
 #info h1 {
@@ -89,6 +90,7 @@
         width: 90%;
         margin-top: 10%;
         height: auto; /* Asegura que el contenedor se ajuste al contenido en pantallas pequeñas */
+        
     }
 
     #info h2, p, li {

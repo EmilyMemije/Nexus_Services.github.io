@@ -2,6 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: start;
+    
 }
 /*Apartado de informacion*/
 .container--informacion{
@@ -15,6 +16,7 @@
     position: sticky;
     background-color: #212A3E;
     margin-right: 250px;
+    
 }
 /*Foto de perfil*/
 .container--imagen{
@@ -45,6 +47,7 @@
 #cambiar--foto {
     text-decoration: none;
     font-size: 14px;
+    font-family: "Lato";
     cursor: pointer;
     background-color: #212A3E;
     color: #fff;
@@ -101,13 +104,13 @@ input[type="file"] {
     background-color: white;
     color: var(--footer-blue);
     border: none;
-    padding: 10px 5px;
+    padding: 10px 20px;
     margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 150px;
-    font-size: 18px;
+    width: 90%;
+    font-size: 20px;
     transition-duration: 0.3s;
 }
 
@@ -182,6 +185,7 @@ input[type="file"] {
     height: 211px;
     color: #212A3E;
     font-size: 20;
+    font-family: "Lato";
 }
 
 #servicio{
@@ -284,7 +288,10 @@ input[type="file"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40px;
+}
+
+#updateButton.modificar--datos {
+    font-family: "Lato";
 }
 .guardar--datos{
     background-color: white;
@@ -295,7 +302,7 @@ input[type="file"] {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 180px;
+    width: 50%;
     font-size: 20px;
     transition-duration: 0.3s;
 }
@@ -317,7 +324,7 @@ input[type="file"] {
     transition: .7ms;
 }
 
-    
+
 
 
 

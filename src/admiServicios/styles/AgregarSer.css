@@ -39,6 +39,10 @@ body {
     margin-bottom: 40px;
 }
 
+.profile h2 {
+    font-family: "Lato";
+}
+
 .profile-pic {
     width: 250px;
     height: 250px;
@@ -68,6 +72,7 @@ body {
     width: 100%;
     font-size: 20px;
     transition-duration: 0.3s;
+    font-family: "Lato";
 }
 
 .menu-button:hover {
@@ -310,6 +315,7 @@ label
    color: var(--footer-blue);
    transition: .3s;
    font-size: 20px;
+   font-family: "Lato";
 }
 
 #upload button:hover

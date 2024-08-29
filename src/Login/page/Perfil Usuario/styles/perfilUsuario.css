@@ -126,7 +126,6 @@ input[type="file"] {
     background-color: white;
     color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
     margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
@@ -319,6 +318,7 @@ input[type="file"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 40px;
 }
 
 .guardar--datos {
@@ -330,7 +330,7 @@ input[type="file"] {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 35%;
+    width: 180px;
     font-size: 20px;
     transition-duration: 0.3s
 }

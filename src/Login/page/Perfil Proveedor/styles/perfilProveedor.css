@@ -2,7 +2,6 @@
     display: flex;
     justify-content: start;
     align-items: start;
-    
 }
 /*Apartado de informacion*/
 .container--informacion{
@@ -16,7 +15,6 @@
     position: sticky;
     background-color: #212A3E;
     margin-right: 250px;
-    
 }
 /*Foto de perfil*/
 .container--imagen{
@@ -103,13 +101,13 @@ input[type="file"] {
     background-color: white;
     color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     margin: 10px 0px;
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 90%;
-    font-size: 20px;
+    width: 150px;
+    font-size: 18px;
     transition-duration: 0.3s;
 }
 
@@ -286,6 +284,7 @@ input[type="file"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 40px;
 }
 .guardar--datos{
     background-color: white;
@@ -296,7 +295,7 @@ input[type="file"] {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 50%;
+    width: 180px;
     font-size: 20px;
     transition-duration: 0.3s;
 }

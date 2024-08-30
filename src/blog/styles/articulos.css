@@ -97,7 +97,7 @@ position: static;
 }
 
 .author-card{
-background-color: #BAD895;
+background-color:  #296CD1;
 border-radius: 20px;
 display: flex;
 flex-direction: row;
@@ -119,6 +119,7 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: #EFF0D5;
 }
 
 .autho-card-info h5{
@@ -132,6 +133,7 @@ padding: 5px;
     text-align: justify;
     font-family: "Merriweather";
     padding: 0px 15px 0px 0px;
+
 }
 
 .autho-card-info button{

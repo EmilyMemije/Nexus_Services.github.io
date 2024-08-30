@@ -19,11 +19,9 @@
  
 }
 
-
-
 /* contenedor de la informacion*/
 #info {
-    position: relative;
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +35,7 @@
     margin: 3% 0%;
     border-radius: 2em;
     overflow: auto; 
-    z-index: -2;
+    scrollbar-width: none;
 }
 
 #info h1 {

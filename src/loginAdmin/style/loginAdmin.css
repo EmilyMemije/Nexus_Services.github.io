@@ -47,28 +47,24 @@
 } 
 
 #login{
-    height: 45px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	background-color: #BAD895; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
+    text-align: center;
+    width: 180px;
+    font-size: 20px;
     font-family: "Lato";
-    font-size: 28px;
+    transition-duration: 0.3s
 }
 
 #login:hover{
-    background-color: #1C2B52;
-    color: white;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
     opacity: 120%;
 }
 

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Nexus Services</title>
+
     <!--Icono de la página-->
-    <link rel="icon" href="../../../../assets/NS.png">
+    <link rel="icon" href="../../assets/NS.png">
 
     <!--Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../../../styles/styles copy.css">
-    <link rel=" stylesheet" href="../Registro Proveedor/styles/registroProveedor.css" />
+    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/modificarServicios.css">
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +19,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -69,7 +71,7 @@
                 </div>
                 <div class="nav--menu">
                     <a href="/src/blog/blog.html">Blog</a>
-                    <a href="/src/Asociados/Asociados.html">Lista de proveedores</a>
+                    <a href="/src/listaProveedores/listaProveedores.html">Lista de proveedores</a>
                     <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
                     <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
                 </div>
@@ -84,48 +86,49 @@
             </div>
         </nav>
     </header>
+    <!-- Cuerpo de página -->
+    <div class="modServicios--title">
+        <h1>Servicios registrados</h1>
+    </div>
 
-
-    <!-- Registrarse -->
-    <div class="container--registrarse">
-        <h2 id="title--registro">Registro de Especialista</h2>
-        <div class="formulario--registrarse">
-            <form action="../../login.html" id="registrarseForm">
-                <input type="text" name="nombre--registro" id="nombre--registro" required placeholder="Nombre Completo*"
-                    autocomplete="off">
-                <span id="nombre-error" class="error-message"></span>
-                <select name="especialidad" id="especialidad" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="nutricion">Nutrición</option>
-                    <option value="psicoligia">Psicología</option>
-                    <option value="medico-general">Médico General</option>
-                    <option value="odontologia">Odontología</option>
-                    <option value="enfermeria">Enfermería</option>
-                    <option value="ginecologia">Ginecología</option>
-                    <option value="endocrinologia">Endocrinología</option>
-                    <option value="pediatria">Pediatría</option>
-                    <option value="dermatologia">Dermatología</option>
-                    <option value="medicina-vete">Medicina Veterinaria</option>
-                </select>
-                <span id="especialidad-error" class="error-message"></span>
-                <input type="email" name="correo--registro" id="correo--registro" required
-                    placeholder="Correo electronico*" autocomplete="off">
-                <span id="correo-error" class="error-message"></span>
-                <input type="password" name="conf-contraseña--registro" id="contraseña--registro" required
-                    placeholder="Contraseña*">
-                <span id="contraseña-error" class="error-message"></span>
-                <input type="password" name="conf-contraseña--registro" id="conf-contraseña--registro" required
-                    placeholder="Confirmar contraseña*">
-                <span id="contraseñaConf-error" class="error-message"></span>
-                <input type="checkbox" required id="check">Acepto los términos y condiciones
-
-                <div class="registrarse--boton">
-                    <button id="registrarse">
-                        Registrarse
-                    </button>
+    <!-- Main Section -->
+    <div class="container">
+        <div class="admin--section">
+            <!-- <section class="admin--container"> -->
+                <div class="imgAdmin--container">
+                    <h2>Perfil de administrador</h2>
+                    <div class="img--perfil">
+                        <img src="../../assets/User_01.png" alt="Img-Usuario">
+                    </div>
                 </div>
-            </form>
+                <div class="options--container">
+                    <a href="../modificarCuentas/modificarCuentas.html">Usuarios</a>
+                    <a href="">Servicios</a>
+                    <a href="../perfilAdmin/perfilAdmin.html">Configuración</a>
+                </div>
+            <!-- </section> -->
         </div>
+
+
+        <!-- Titulo -->
+
+        <!--Tarjetas de Servicios-->
+        <section class="fondo--main">
+            <section>
+                <!--Cards que se agregan mediante el DOM-->
+            </section>
+        </section>
+
+        <!-- <div class="user--container">
+            <h3>Nombre de la cuenta</h3>
+            <h3>Tipo de cuenta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eius officiis placeat nostrum,
+                dignissimos
+                quia harum explicabo eos temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste
+                consequuntur
+                voluptatum.</p>
+            <img src="" alt="Imagen Usuario">
+        </div> -->
     </div>
 
 
@@ -144,24 +147,17 @@
                 </a>
             </div>
             <div class="section">
-                <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
-                <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
-                <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
+                <a class="palabras--footer" href="/src/T&C/T&C.html" id="aviso">Aviso de privacidad</a>
+                <a class="palabras--footer" href="/src/T&C/T&C.html" id="terminos">Términos y condiciones</a>
+                <a class="palabras--footer" href="/src/T&C/T&C.html" id="acces">Accesibilidad</a>
             </div>
         </div>
         <div class="derechos-copi">
             <p>&copy; Derechos reservados. 2024</p>
         </div>
     </footer>
-
-
-    <!--scrip js-->
-    <!-- <script src="../Registro Proveedor/scripts/registroProveedor.js"></script> -->
-    <script src="./scripts/registroProveedor.js"></script>
+    <script src="./scripts/modificarServicios.js"></script>
     <script src="../../toggle-buttom.js"></script>
-
-
-
 </body>
 
 </html>

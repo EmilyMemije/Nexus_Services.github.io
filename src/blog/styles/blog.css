@@ -142,7 +142,7 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 120px;
+    width: 140px;
     font-size: 20px;
     transition-duration: 0.3s;
     float: right;
@@ -202,7 +202,6 @@
     margin-right: 20px;
 }
 
-
 .redes{
     font-family: "Lato";
     font-size: 29.5px; 
@@ -210,20 +209,33 @@
     text-align: center;
     padding-bottom: 30px;
     text-decoration: none;
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor--red--soc{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .redes a{
     text-decoration: none;
 }
 
-.redes img{
-    align-items: left;
+.contenedor--red--soc img{
+    align-items: center;
     filter: brightness(0.2) contrast(1.8);
-    width: 40px;
-    height: 40px;
     text-decoration: none;
+    width: 30px;
+    height: 30px;
 }
+
+
 
 #IG:hover{
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);

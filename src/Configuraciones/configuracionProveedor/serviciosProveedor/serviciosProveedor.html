@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuración del Proveedor</title>
-
-    <link rel="stylesheet" href="../../../styles/styles copy.css">
-
+    <title>Tus Servicios</title>
 
     <!-- Conexión a estilos de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,26 +16,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+
+        <link rel="stylesheet" href="../../../../styles/styles copy.css">
+        <link rel="stylesheet" href="./styles/serviciosProveedores.css">
     
-
-    <!-- Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../../styles/styles copy.css">
-    <link rel="stylesheet" href="./styles/configuracionUsuario.css">
-
 </head>
 
 <body>
-    
+
         <!-- Navbar -->
         <header>
             <nav class="nav--container">
                 <div class="container--menus">
                     <div class="nav--logo">
-                        <a id="container--logo" href="">
+                        <a id="container--logo" href="/src/paginaPrincipal/paginaPrincipal.html">
                             <img id="logo--Ns" src="/assets/NS.png" alt="LogoNS">
                         </a>
                     </div>
-    
+        
                     <!--Accesos de la nueva Navbar-->
                     <div class="container-list">
                         <button class="abrir">
@@ -59,11 +52,11 @@
                     <a href="/src/paginaPrincipal/paginaPrincipal.html" class="menu-link">Página principal</a>
                     <a href="/src/Login/login.html" class="menu-link">Login</a>
                 </div>
-    
+        
                 <!--Aquí empieza lo de Nexus Services-->
-    
+        
                 <div class="centro">
-                    <a href="/index.html" id="NS--title">
+                    <a href="/src/paginaPrincipal/paginaPrincipal.html" id="NS--title">
                         <h1 id="nav--title">Nexus Services</h1>
                     </a>
                     <div class="nav--search">
@@ -73,16 +66,14 @@
                         </button>
                     </div>
                     <div class="nav--menu">
-                        <a href="/src/blog/blog.html">Blog</a>
-                        <a href="/src/Asociados/Asociados.html">Lista de proveedores</a>
-                        <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
-                        <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
-                        <br>
+                        <a href="./../blog/blog.html">Blog</a>
+                        <a href="/src/listaProveedores/listaProveedores.html">Lista de proveedores</a>
+                        <a href="./../Pagina sobre nosotros/Nosotros.html"> Donaciones </a>
+                        <a href="./../Contactanos/contactanos.html"> Contáctanos </a>
                     </div>
-                    
                 </div>
                 <div class="nav--ingresar">
-                    <a class="extras--serv" href="" target="_blank">
+                    <a class="extras--serv" href="/src/SOS/sos.html" target="_blank">
                         <img src="/assets/sos.png" alt="SOS" id="SOS-image">
                     </a>
                     <a class="extras--serv" href="/src/login/login.html" target="_blank">
@@ -91,112 +82,64 @@
                 </div>
             </nav>
         </header>
-
-
-        <!-- Contenedor principal -->
-         <div class="container--principal">
-
-
-            <!-- Calendario -->
-            <div class="container--calendar">
-                <div class="header--calendar">
-                    <h1 id="text-day">00</h1>
-                    <h5 id="text-month">Null-1</h5>
+    
+        <!-- Servicios -->
+        <div id="container--servicios">
+            <h2 class="title--servicios">Tus servicios</h2>
+            <div class="container--card">
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medicina General</h2>
+                        <div class="especialista">
+                            <p>Tu nombre:</p>
+                            <p id="name-especialista"> Antonio Hernández Gonzalez</p>
+                        </div>
+                        <div class="cedula">
+                            <p>Cédula Profesional: </p>
+                            <p id="name-cedula">0000000</p>
+                        </div>    
+                        <div class="concepto">
+                            <p>El médico general es el profesional de la medicina que cuenta con los conocimientos y las destrezas necesarias para diagnosticar y resolver con tratamiento medico y con procedimientos sencillos la mayoría de los padecimientos que el ser humano sufre en su vida, desde niño hasta la vejez, con acciones frecuentemente realizadas en el consultorio del medico o en la casa del enfermo.</p>
+                        </div>
+                        <div class="precio">
+                            <p>Precio: $</p>
+                            <p id="precio-servicio">Costo de tu servicio</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="body--calendar">
-                    <div class="container--details">
-                        <div class="detail--1">
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail--2">
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
+                <div class="product--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
                         </div>
                     </div>
-                    <div class="container--change--month">
-                        <button id="last-month">&lt;</button>
-                        <div>
-                            <span id="text-month-02">Null-2</span>
-                            <span id="text-year">0000</span>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Dermatología</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name-especialista">Antonio Hernandez Gonzalez</p>
                         </div>
-                        <button id="next-month">&gt;</button>
-                    </div>
-                    <div class="container--weekdays">
-                        <span class="weekdays--item">DOM</span>
-                        <span class="weekdays--item">LUN</span>
-                        <span class="weekdays--item">MAR</span>
-                        <span class="weekdays--item">MIÉ</span>
-                        <span class="weekdays--item">JUE</span>
-                        <span class="weekdays--item">VIE</span>
-                        <span class="weekdays--item">SÁB</span>
-                    </div>
-                    <div class="container--days">
-                        <span class="weekdays--item item--day"></span>
-                    </div>
-                    <div class="container--text">
-                    <h2>Mantente al tanto de tus citas ¡Reagenda sin costo!</h2>
+                        <div class="cedula">
+                            <p>Cédula Profesional:</p>
+                            <p id="name-cedula">0000000</p>
+                        </div>
+                        <div class="concepto">
+                            <p>La dermatología es una especialidad médica que se encarga del estudio, conocimiento y tratamiento de las enfermedades o afecciones de la piel, cabello y uñas. Los dermatólogos diagnostican y tratan enfermedades o alteraciones que puedan afectar a la piel, al pelo, a las uñas o a las mucosas.</p>
+                        </div>
+                        <div class="precio">
+                            <p>Precio: $</p>
+                            <p id="precio-servicio">Costo del servicio</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            
-            <!-- Menú -->
-            <div class="container--menu">
-
-                <div>
-                    <img class="menu" id="imagenu" src="./assets/img_config_user.png" alt="imagenuser">
-                </div>
-
-                <a href="../../Login/page/Perfil Usuario/perfilUsuario.html">
-                <button type="submit" class="menu">
-                    Actualizar tus datos
-                </button>
-                </a>
-
-                <a href="./datosMedicosBasicos/datosMedicosBasicos.html">
-                <button type="submit" class="menu" id="green">
-                    Datos médicos básicos
-                </button>
-                </a>
-
-                <a href="./preferencias/preferencias.html">
-                <button type="submit" class="menu">
-                    Preferencias
-                </button>
-                </a>
-
-                <a href="../../ComentariosAdmin/comentariosAdmin.html">
-                <button type="submit" class="menu">
-                    Comentarios
-                </button>
-                </a>
-
-            </div>
-
-         </div>
-
-        
         <!-- Footer -->
         <footer>
             <div class="primer--cont">
@@ -212,21 +155,20 @@
                     </a>
                 </div>
                 <div class="section">
-                    <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
-                    <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
-                    <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
+                    <a class="palabras--footer" href="/src/T&C/T&C.html" id="aviso">Aviso de privacidad</a>
+                    <a class="palabras--footer" href="/src/T&C/T&C.html" id="terminos">Términos y condiciones</a>
+                    <a class="palabras--footer" href="/src/T&C/T&C.html" id="acces">Accesibilidad</a>
                 </div>
             </div>
             <div class="derechos-copi">
                 <p>&copy; Derechos reservados. 2024</p>
             </div>
         </footer>
-    
-    
-        <!--bostrap scrip-->
-    
-        <script src="/toggle-buttom.js"></script>
-    
+        
+            <!--Link bootstrap-->
+            <script src="../../toggle-buttom.js"></script>
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
@@ -239,8 +181,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./scripts/calendario.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+
 </body>
 </html>

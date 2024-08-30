@@ -10,6 +10,7 @@
 
 }
 
+
 .container--login h2 {
     display: flex;
     flex-direction: column;
@@ -106,7 +107,7 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    width: 180px;
     font-size: 20px;
     font-family: "Lato";
     transition-duration: 0.3s
@@ -128,7 +129,7 @@
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 11%;
+    width: 180px;
     font-size: 20px;
     font-family: "Lato";
     transition-duration: 0.3s
@@ -259,28 +260,25 @@
         font-size: 12px;
 
     }
-
-    #login {
-        height: 30px;
-        width: 172px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        border-radius: 2em;
-        font-size: 20px;
+/*
+    .modal {
+        width: 80%;
+    }*/
+/*
+    #btnUsuario {
+        width: 80%;
     }
 
-    #registro {
-        height: 30px;
-        width: 129px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        border-radius: 2em;
-        font-size: 18px;
+    #btnProveedor {
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
+    .seleccion{
+        width: 90%;
+       
+    }*/
+
 }
 
 @media only screen and (max-width: 450px) {

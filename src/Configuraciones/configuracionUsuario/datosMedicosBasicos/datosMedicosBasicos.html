@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuración del Proveedor</title>
-
-    <link rel="stylesheet" href="../../../styles/styles copy.css">
-
+    <title>Datos Médicos Básicos</title>
 
     <!-- Conexión a estilos de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +16,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+
+        <link rel="stylesheet" href="../../../../styles/styles copy.css">
+        <link rel="stylesheet" href="./styles/datosMedicosBasicos.css">
     
-
-    <!-- Conexion a estilos CSS-->
-    <link rel="stylesheet" href="../../../styles/styles copy.css">
-    <link rel="stylesheet" href="./styles/configuracionUsuario.css">
-
 </head>
 
 <body>
-    
+
         <!-- Navbar -->
         <header>
             <nav class="nav--container">
@@ -91,112 +84,29 @@
                 </div>
             </nav>
         </header>
-
-
-        <!-- Contenedor principal -->
-         <div class="container--principal">
-
-
-            <!-- Calendario -->
-            <div class="container--calendar">
-                <div class="header--calendar">
-                    <h1 id="text-day">00</h1>
-                    <h5 id="text-month">Null-1</h5>
-                </div>
-                <div class="body--calendar">
-                    <div class="container--details">
-                        <div class="detail--1">
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="detail--2">
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detail">
-                                <div class="circle">
-                                    <div class="column">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container--change--month">
-                        <button id="last-month">&lt;</button>
-                        <div>
-                            <span id="text-month-02">Null-2</span>
-                            <span id="text-year">0000</span>
-                        </div>
-                        <button id="next-month">&gt;</button>
-                    </div>
-                    <div class="container--weekdays">
-                        <span class="weekdays--item">DOM</span>
-                        <span class="weekdays--item">LUN</span>
-                        <span class="weekdays--item">MAR</span>
-                        <span class="weekdays--item">MIÉ</span>
-                        <span class="weekdays--item">JUE</span>
-                        <span class="weekdays--item">VIE</span>
-                        <span class="weekdays--item">SÁB</span>
-                    </div>
-                    <div class="container--days">
-                        <span class="weekdays--item item--day"></span>
-                    </div>
-                    <div class="container--text">
-                    <h2>Mantente al tanto de tus citas ¡Reagenda sin costo!</h2>
-                    </div>
-                </div>
+    
+        <!-- Datos -->
+        <div class="container--datos" id="container--medInfo">
+            <h2 class="title--medInfo">Tus datos médicos</h2>
+            <div class="container--formMedInfo">
+                <label for="tipoSanguineo">Tipo de sangre </label>
+                <input type="text" id="tipoSanguineo">
+                <label for="alergias">Alergias</label>
+                <input type="text" id="alergias">
+                <!-- <label for="alerigasFarma">Alergias a medicamentos</label> -->
+                <!-- <input type="text" id="alergiasFarma" value="No"> -->
+                <label for="estatura">Estatura [cm]</label>
+                <input type="text" id="estatura">
+                <label for="peso">Peso [Kg]</label>
+                <input type="text" id="peso">
+                <!-- <label for="sexo">Sexo</label> -->
+                <!-- <input type="text" id="sexo" value="Femenino"> -->
             </div>
-
-            
-            <!-- Menú -->
-            <div class="container--menu">
-
-                <div>
-                    <img class="menu" id="imagenu" src="./assets/img_config_user.png" alt="imagenuser">
-                </div>
-
-                <a href="../../Login/page/Perfil Usuario/perfilUsuario.html">
-                <button type="submit" class="menu">
-                    Actualizar tus datos
-                </button>
-                </a>
-
-                <a href="./datosMedicosBasicos/datosMedicosBasicos.html">
-                <button type="submit" class="menu" id="green">
-                    Datos médicos básicos
-                </button>
-                </a>
-
-                <a href="./preferencias/preferencias.html">
-                <button type="submit" class="menu">
-                    Preferencias
-                </button>
-                </a>
-
-                <a href="../../ComentariosAdmin/comentariosAdmin.html">
-                <button type="submit" class="menu">
-                    Comentarios
-                </button>
-                </a>
-
+            <div id="boton--guardar">
+                <button type="submit" id="guardar" class="guardar--datos">Guardar datos</button>
             </div>
+        </div>
 
-         </div>
-
-        
         <!-- Footer -->
         <footer>
             <div class="primer--cont">
@@ -240,7 +150,6 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./scripts/calendario.js"></script>
+
 </body>
 </html>

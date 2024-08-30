@@ -178,6 +178,11 @@ span {
     display: flex;
     align-items: center;
     margin: 40px;
+    width: 1;
+}
+
+.redes-sociales img{
+    width: 75px;
 }
 
 /*---------Mediaquery-----------*/

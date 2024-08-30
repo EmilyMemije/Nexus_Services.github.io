@@ -162,7 +162,7 @@ productosEnCarritoLS.forEach(producto => {
 	const celdaDescripcion = document.createElement('td');
 	celdaDescripcion.textContent = producto.descripcion;
 	const celdaPrecio = document.createElement('td');
-	celdaPrecio.textContent = `$${producto.precio}`;
+	celdaPrecio.textContent = `$${producto.precio * producto.cantidad}`;
 	fila.appendChild(celdaServicio);
 	fila.appendChild(celdaDescripcion);
 	fila.appendChild(celdaPrecio);
@@ -176,7 +176,7 @@ productosEnCarritoLS.forEach(producto => {
   // ... (tu código existente)
 
   // Agregar el precio al total
-    total += producto.precio;
+    total += producto.precio * producto.cantidad;
 });
 
 // Crear la fila del total

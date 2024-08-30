@@ -5,6 +5,7 @@ body {
     padding-bottom: 7em;
     position: relative;
     background-color: red;
+
 }
 
 /*      Barra de navegación     */
@@ -120,7 +121,6 @@ body {
 }
 
 
-/*- Footer -*/
 footer {
     background-color: #1C2B52;
     position: absolute;

@@ -58,6 +58,7 @@ body {
     justify-content: center;
     background-color: transparent;
     border: none;
+    
 }
 
 #img--menu{
@@ -65,7 +66,8 @@ body {
 }
 
 .noactive{
-    visibility: hidden;
+    transition: .4s;
+    translate: -100%;
 }
 
 .ul-lis{
@@ -74,12 +76,13 @@ body {
     background: linear-gradient(360deg, rgba(67,67,67,1) 0%, rgba(192,192,192,1) 42%, rgba(255,255,255,1) 100%);
     display: flex;
     align-items: center;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     margin: 0px;
     gap: 10px;
     top: 0%;
     left: 0%;
+    z-index: 2;
 }
 
 .ul-lis{
@@ -195,6 +198,7 @@ body {
     font-family: "Lato";
     margin-top: 1%;
     margin-bottom: 0%;
+    
 }
 
 .nav--menu a {
@@ -384,6 +388,18 @@ footer {
 @media (max-width: 750px){
     .container-list{
         visibility: visible;
+
+    }
+
+    .ul-lis{
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(360deg, rgba(67,67,67,1) 0%, rgba(192,192,192,1) 42%, rgba(255,255,255,1) 100%);
+        margin: 0px;
+        gap: 10px;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
     }
 
     .search--imput {

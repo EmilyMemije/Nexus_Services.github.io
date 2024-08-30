@@ -12,7 +12,7 @@
     }
 
 .Principal-banner{
-    background-color: var(--dark-gray);
+    background-color: #1C2B52;;
     background-size:contain;
     display: flex;
     flex-direction: row;
@@ -45,7 +45,7 @@
     font-size:40px;
     font-family: "Lato" ;
     font-weight: 900;
-    color: #1C2B52;
+    color: #F2F2EB;;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -53,6 +53,7 @@
 .container-info p{
     font-size:22px;
     padding: 15px;
+    color: #EFF0D5;;
     font-family: "Merriweather" ;
     text-align: center;
     line-height: 1.6;
@@ -81,12 +82,14 @@
     font-size: 20px;
     text-align: right;
     margin: 10px;
+    color: #1C2B52;
 }
 
 .article-boxes p{
     text-align: right;
     font-family: "Merriweather" ;
     margin: 20px;
+    color: #1C2B52;
 }
 
 
@@ -159,7 +162,7 @@
 }
 
 .container--masinfo{
-    background-color: var(--dark-gray);
+    background-color: #1C2B52;
     font-family: "Merriweather";
     color: #1C2B52;
     width: 100%;
@@ -170,6 +173,7 @@
     font-family: "lato";
     font-size: 33px;
     padding: 15px;
+    color: #EFF0D5;
 }
 
 
@@ -233,6 +237,7 @@
     text-decoration: none;
     width: 30px;
     height: 30px;
+    padding-right: 10px;
 }
 
 

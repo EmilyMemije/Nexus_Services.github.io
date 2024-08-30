@@ -57,14 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
         descripcion.textContent = servicio.Descripcion;
         descripcion.className = 'descripcion';
 
-        const Telefono = document.createElement('p');
-        Telefono.textContent = ("Teléfono: " + servicio.Telefono);
+        //Quitamos telefono a petición de un mentor
+        /*const Telefono = document.createElement('p');
+        Telefono.textContent = ("Teléfono: " + servicio.Telefono);*/
 
         const Email = document.createElement('p');
         Email.textContent = ("Correo: " + servicio.Email);
 
         const Direccion = document.createElement('p');
-        Direccion.textContent = ("Dirección: " + servicio.Direccion);
+        Direccion.textContent = ("Consultorio: " + servicio.Direccion);
 
         const closeBtn = document.createElement('button');
         closeBtn.className = 'close-btn';
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardBack.className = 'card-back';
 
         //Contenido del div "Más información"
-        masInfo.append(descripcion, Direccion, Telefono, Email, closeBtn);
+        masInfo.append(descripcion, Direccion, Email, closeBtn);
 
 
         cardBack.appendChild(masInfo);

@@ -165,14 +165,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
         displayCards(tarjetasFiltradas);
     }
-    
+
+    function TarjetaMain()
+    {
+        let tarjetasFiltradas = allCards;
+        console.log("Entre a tarjeta main")
+        let Tarjeta=localStorage.getItem('ServiCard')
+        console.log(Tarjeta);
+        tarjetasFiltradas = tarjetasFiltradas.filter(servicio => servicio.Especialidad === Tarjeta);
+        displayCards(tarjetasFiltradas);
+    }
 
     async function obtenerServicios() {
         try {
             const response = await fetch('listaProveedores.json');
             const data = await response.json();
             allCards = data.cards; // Aquí almacenamos todas las tarjetas
-            MostrarTarjetasFiltradas();
+            let existe=localStorage.getItem('ServiCard')
+            if(existe)
+            {
+                TarjetaMain();
+                localStorage.removeItem('ServiCard');
+            }
+            else
+            {
+                MostrarTarjetasFiltradas();
+            }
+            
             //displayCards(allCards); // Acá mostramos las primeras
 
             //Filtro Especialidad

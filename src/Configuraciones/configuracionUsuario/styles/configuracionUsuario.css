@@ -143,11 +143,12 @@
         content: "Hoy";
         width: 28px;
         height: 20px;
+        color:#296CD1;
         background: #BAD895;
         position: static;
         border-radius: 50%;
         border: 2px solid #296CD1;
-        opacity: 0.5;
+        opacity: 0.8;
         margin: 0px 0px 0px 0px; }
   
   /*# sourceMappingURL=styles.css.map */
@@ -236,14 +237,18 @@
     }
     .container--calendar .container--text h2 {
         font-size: small ;
+        place-content: center;
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 750px) {
+    #imagenu {
+        transform: translate(0%, -20%);
+    }
     .container--menu {
         margin: auto;
         padding: 2px;
-        transform: translate(-28%, 0%);
     }
     /* Botones del menú */
     .container--menu button {

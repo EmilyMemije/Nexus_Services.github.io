@@ -28,7 +28,7 @@
     border-radius: 10px;
     padding: 10px;
     background-color: #B8C2D5;
-    margin-bottom: 10px;
+    margin: 30px;
     width: 681px;
 }
 
@@ -107,7 +107,8 @@
 @media (max-width: 700px) {
     .container--card .product--card {
         width: 60%;
-        transform: translate(-100%, 0%);
+        transform: translate(-94%, 0%);
+        margin: 20px;
     }
     .container--datosServicio {
         transform: translate(-10%, 0%);

@@ -180,10 +180,11 @@
     width: 28px;
     height: 20px;
     background: #BAD895;
+    color:#296CD1;
     position: static;
     border-radius: 50%;
     border: 2px solid #296CD1;
-    opacity: 0.5;
+    opacity: 0.8;
     margin: 0px 0px 0px 0px;
 }
 
@@ -247,7 +248,7 @@
     background-color: white;
     color: #212A3E;
     border: solid white 2px;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 /*
@@ -275,14 +276,18 @@
 
     .container--calendar .container--text h2 {
         font-size: small;
+        place-content: center;
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 750px) {
+    #imagenp {
+        transform: translate(0%, -20%);
+    }
     .container--menu {
         margin: auto;
         padding: 2px;
-        transform: translate(-24%, 0%);
     }
 
     /* Botones del menú */

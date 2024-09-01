@@ -89,18 +89,23 @@
         <div class="container--datos" id="container--medInfo">
             <h2 class="title--medInfo">Tus datos médicos</h2>
             <div class="container--formMedInfo">
-                <label for="tipoSanguineo">Tipo de sangre </label>
-                <input type="text" id="tipoSanguineo">
-                <label for="alergias">Alergias</label>
-                <input type="text" id="alergias">
-                <!-- <label for="alerigasFarma">Alergias a medicamentos</label> -->
-                <!-- <input type="text" id="alergiasFarma" value="No"> -->
-                <label for="estatura">Estatura [cm]</label>
-                <input type="text" id="estatura">
-                <label for="peso">Peso [Kg]</label>
-                <input type="text" id="peso">
-                <!-- <label for="sexo">Sexo</label> -->
-                <!-- <input type="text" id="sexo" value="Femenino"> -->
+
+                <label for="tipoSanguineo">Tipo de sangre:</label>
+                <input type="text" id="tipoSanguineo" autocomplete="off">
+                <span id="tipoSanguineo-error" class="error-message"></span>
+
+                <label for="alergias">Alergias:</label>
+                <input type="text" id="alergias" autocomplete="off">
+                <span id="alergias-error" class="error-message"></span>
+
+                <label for="estatura">Estatura [cm]:</label>
+                <input type="text" id="estatura" autocomplete="off">
+                <span id="estatura-error" class="error-message"></span>
+
+                <label for="peso">Peso [Kg]:</label>
+                <input type="text" id="peso" autocomplete="off">
+                <span id="peso-error" class="error-message"></span>
+
             </div>
             <div id="boton--guardar">
                 <button type="submit" id="guardar" class="guardar--datos">Guardar datos</button>
@@ -150,6 +155,6 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
     
-
+    <script src="../datosMedicosBasicos/scripts/guardadoDeDatos.js"></script>
 </body>
 </html>

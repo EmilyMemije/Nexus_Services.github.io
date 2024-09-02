@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiUrl = '../../../admiServicios/json/index.json'; 
+    const apiUrl = '../../admiServicios/json/index.json'; 
 
     function crearTarjetaServicio(servicio) {
         const servicioDiv = document.createElement('div');

@@ -19,6 +19,8 @@
     font-family: "Lato";
     font-size: 48px;
     color: #fbfbfb;
+    padding-top: 25px;
+    padding-bottom: 15px;
 
 }
 
@@ -26,27 +28,31 @@
     display: flex;
     justify-items: center;
     align-items: center;
-}
-#logo--google {
-    width: 70px;
-     justify-items: center;
-    
+    padding-bottom: 5px;
 }
 
 #logo-Admin {
-   width: 70px;
-  float: right; /* Ajusta la imagen a la derecha */
-  opacity: 0.5; /* Ajusta el nivel de transparencia (0 es completamente transparente, 1 es opaco) */
-  margin-left: 10px; 
+    width: 70px;
+    float: right;
+    /* Ajusta la imagen a la derecha */
+    opacity: 0.5;
+    /* Ajusta el nivel de transparencia (0 es completamente transparente, 1 es opaco) */
+    margin-left: 10px;
+}
+
+#logo--google {
+    width: 75px;
+    padding: 0px 10px 10px 10px;
+
 }
 
 #logo--facebook {
-    width: 70px;
+    width: 75px;
     padding: 0px 10px 10px 10px;
 }
 
 #logo--mac {
-    width: 70px;
+    width: 75px;
     padding: 0px 10px 10px 10px;
 }
 
@@ -114,8 +120,8 @@
 }
 
 #login:hover {
-    background-color:white;
-    color:#212A3E;
+    background-color: white;
+    color: #212A3E;
     border: solid white 2px;
     transition-duration: .3s;
 }
@@ -136,25 +142,18 @@
 }
 
 #registro:hover {
-    background-color:white;
-    color:#212A3E;
+    background-color: white;
+    color: #212A3E;
     border: solid white 2px;
     transition-duration: .3s;
-}
-
-.login-message {
-    display: flex;
-    width: 408px;
-    text-align: justify;
-    margin-bottom: 5px;
-    margin-top: 10px;
 }
 
 .error-message {
     display: flex;
     width: 408px;
     text-align: justify;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 /*----------Modal---------*/
@@ -260,11 +259,12 @@
         font-size: 12px;
 
     }
-/*
+
+    /*
     .modal {
         width: 80%;
     }*/
-/*
+    /*
     #btnUsuario {
         width: 80%;
     }
@@ -292,4 +292,28 @@
         font-size: 35px;
         padding-top: 25px;
     }
+
+    /*----------Modal---------*/
+
+    .modal {
+        width: 100vw;
+    }
+
+    #seleccion--usuario {
+        width: 145px;
+    }
+
+    .container--seleccion {
+        height: 30vh;
+    }
+
+    .seleccion img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .seleccion p {
+        font-size: 22px;
+    }
+
 }

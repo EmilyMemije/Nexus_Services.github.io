@@ -19,8 +19,7 @@ const passwordRegex = /^[a-zA-Z0-9$%&_\@#!.\-]{8,}$/;
 const emailInput = document.getElementById('email-login');
 const passwordInput = document.getElementById('password--login');
 const form = document.getElementById('form--login');
-const errorEmail = document.getElementById('email-error');
-const errorPassword = document.getElementById('password-error');
+// const errorEmail = document.getElementById('email-error');
 const errorLogin = document.getElementById('login--error');
 
 emailInput.addEventListener('input', (event) =>{
@@ -29,11 +28,11 @@ emailInput.addEventListener('input', (event) =>{
     // Sentencia condicional para evaluar el valor del input, si se cumple se habilita el boton, en caso contrario, sigue deshabilitado
     if(emailGmailRegex.test(email) === true || emailHotmailRegex.test(email) === true ){
         // Es válido, esconder el mensaje de error
-        errorEmail.textContent = '';
+        errorLogin.textContent = '';
     } else {
         // Mostrar un mensaje de error si no cumple con la longitud
-        errorEmail.textContent = 'Por favor, ingresa un correo electrónico válido.';
-        errorEmail.style.color = '#dc3545'; // Rojo para indicar error
+        // errorEmail.textContent = 'Por favor, ingresa un correo electrónico válido.';
+        // errorEmail.style.color = '#dc3545'; // Rojo para indicar error
     }
 });
 
@@ -44,12 +43,10 @@ passwordInput.addEventListener('input', (event) =>{
         // Si la contraseña cumple con la regex, aplicar estilo normal
         passwordInput.classList.add('valid');
         passwordInput.classList.remove('invalid');
-        errorPassword.textContent = '';
     } else {
         // Si no cumple con la regex, aplicar estilo tenue
         passwordInput.classList.add('invalid');
         passwordInput.classList.remove('valid');
-        errorPassword.textContent = '';
     }
 });
 
@@ -62,26 +59,6 @@ class usuario{
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-
-    let formIsValid = true;
-    // Verificar si el campo de email está vacío
-    if (emailInput.value === '') {
-        formIsValid = false;
-        errorEmail.textContent = 'El campo de correo electrónico no puede estar vacío.';
-        errorEmail.style.color = '#dc3545'; // Rojo para indicar error
-    }
-
-    // Verificar si el campo de contraseña está vacío
-    if (passwordInput.value === '') {
-        formIsValid = false;
-        errorPassword.textContent = 'El campo de contraseña no puede estar vacío.';
-        errorPassword.style.color = '#dc3545'; // Rojo para indicar error
-    }
-
-    // Si el formulario no es válido, evitar el envío
-    if (!formIsValid) {
-        return;
-    }
 
     fetch(`login.json`)
         .then(response => response.json())

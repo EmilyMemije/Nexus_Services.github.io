@@ -11,7 +11,7 @@ const img = document.createElement('img');
 const nombre = document.createElement('h3');
 const descripcion = document.createElement('p');
 const precio = document.createElement('p');
-const apiUrl = '../../src/admiServicios/json/index.json'; 
+const apiUrl = '../src/admiServicios/json/index.json'; 
 // Asegúrate de que los días se muestren horizontalmente
 selectedDaysContainer.style.display = 'flex'; 
 selectedDaysContainer.style.flexWrap = 'wrap'; // Opcional, si deseas que los días salten a una nueva línea si se desbordan

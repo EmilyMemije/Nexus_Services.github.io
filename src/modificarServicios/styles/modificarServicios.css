@@ -1,0 +1,183 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+}
+
+.modServicios--title {
+    display: flex;
+    width: 100%;
+    font-family: 'Lato';
+    background-color: #212A3E;
+    color: var(--dark-gray);
+}
+.modServicios--title h1 {
+    width: 73%;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: max-content;
+    background-color: #212A3E;
+    color: var(--dark-gray);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.imgAdmin--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: 30px 20px;
+    font-family: 'Merriweather';
+}
+
+.imgAdmin--container img {
+    width: 100px;
+}
+
+.imgAdmin--container h2 {
+    display: flex;
+    justify-items: center;
+    margin: 30px 0px 40px 0px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.img--perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    border: 0.1px solid black;
+    height: 150px;
+    width: 150px;
+    background: var(--not-white);
+    box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
+    opacity: 60%;
+    cursor: pointer;
+    z-index: auto;
+}
+
+.options--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px 15px; 
+}
+
+.options--container a {
+    background-color: #212A3E;
+    color: white;
+    border: solid;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s
+}
+
+.options--container a:hover {
+    border-radius: 25px 25px 25px 25px;
+    background: #1C2B52;
+    color: #B8C2D5;
+    border:0.5px solid white;
+    transition: .3s;
+    padding: 2.5px 2.5px;
+}
+
+/*----- Cards de Cuentas -----*/
+.fondo--main {
+    width: 65%;
+    position: relative;
+    padding: 3%;
+}
+
+.card--modServicios {
+    width: 105%;
+    background-color: #1C2B52;
+    border-radius: 2rem;
+    margin-bottom: 35px;
+    border: solid;
+}
+
+.card--modServicios, #card--titles {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.card--modServicios:hover {
+    transform: scale(99%);
+    box-shadow: 10px 10px 10px #869DA6;
+    #img--modServicios {
+        filter: drop-shadow(5px 5px 10px #869DA6);
+    }
+}
+
+#card--titles {
+    display: flex;
+    flex-direction: row;
+}
+
+#img--modServicios {
+    width: 15%;
+    margin-left: 13%;
+    translate: -50%;
+    border-radius: 50%;
+}
+
+#container--modServicios {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.nombre--usuario {
+    width: fit-content;
+    color: #EFF0D5;
+    font-family: 'Merryweather';
+    font-size: clamp(12px, 2vw, 17px);
+    margin: 0%;
+}
+
+.nombre--tipoCuenta {
+    width: fit-content;
+    color: #EFF0D5;
+    font-family: 'Merryweather';
+    font-size: clamp(12px, 2vw, 17px);
+    margin: 0%;
+}
+
+.descripcion--cuenta {
+    width: 65%;
+    height: fit-content;
+    font-family: 'Comfortaa';
+    font-size: clamp(13px, 1vw, 22px);
+    color: #EFF0D5;
+    border: solid white 2px;
+    border-radius: 1rem;
+    padding: 5px 5px;
+    margin-left: 1%;
+    top: 0;
+}

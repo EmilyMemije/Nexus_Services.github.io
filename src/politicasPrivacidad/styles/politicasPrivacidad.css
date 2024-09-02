@@ -1,0 +1,149 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+    }
+
+    body {
+        height: 100vh;
+            
+    }
+
+#Container-principal
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0% 0%;
+ 
+}
+
+
+
+/* contenedor de la informacion*/
+#info {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Merriweather";
+    background-color: #212A3E;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 600px; /* Ajuste automático según el contenido */
+    width: 80%;
+    margin: 3% 0%;
+    border-radius: 2em;
+    overflow: auto; 
+    scrollbar-width: none;
+}
+
+/*Tanio de la fuente*/
+#info h2, p
+{
+    font-size: large;
+}
+
+
+/*imagen background*/
+
+.logoback{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+#logo--back{
+    display: flex;
+    opacity: 15%;
+    width: 400px;
+}
+
+
+/*contenedor aviso privacidad*/
+#container-avisoPrivacidad
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    color: #F2F2EB;
+    height: 50%;
+    width: 40%;
+}
+
+.prueba{
+    position: static;
+}
+
+
+
+/*inicia media query con configuracion para iphon*/
+@media(max-width:700px){
+   
+    #Container-principal{
+    flex-direction: column;
+    }
+
+    #info
+    {
+        width: 90%;
+    }
+    /*tamanio de letra*/
+    #info h2, p, li
+    {
+        font-size: small;
+
+    }
+
+    /*modificacion del logo*/
+    #logo--back{
+        display: flex;
+        opacity: 5%;
+        width: 100px;
+    }
+    .logoback{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+       opacity: 15%;
+    }
+
+    /*modificacion de botones*/
+    #botones 
+    {
+    
+      width: auto;
+    }
+
+    /*adaptacion del div infp*/
+    #info{
+        margin-top: 10%;
+    }
+    
+
+    #container-avisoPrivacidad
+    {
+        height: 90%;
+        width: 70%;
+    }
+
+}
+    
+@media (max-width: 450px){
+    #logo--back{
+        display: flex;
+        opacity: 95%;
+        width: 350px;
+    }
+
+}
+

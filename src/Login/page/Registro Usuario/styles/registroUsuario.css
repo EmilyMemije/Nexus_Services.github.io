@@ -1,0 +1,177 @@
+.container--registrarse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    margin: 0% 0%;
+    gap: 0%;
+
+}
+
+.container--registrarse h2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+
+}
+
+
+.container--registrarse input:not([type="checkbox"]) {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    padding-left: 15px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container--registrarse select{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 428px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.registrarse--boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registrarse {
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s;
+    margin-bottom: 50px;
+
+}
+
+#registrarse:hover {
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+#nombre--registroU,
+#correo--registroU,
+#contraseña--registroU,
+#conf-contraseña--registroU,
+#telefono--registroU,
+#registrarseUsuarioForm {
+    font-family: "Lato";
+}
+
+span {
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/*---------Mediaquery-----------*/
+
+@media only screen and (max-width: 570px) {
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+
+    }
+  
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+    .container--registrarse input:not([type="checkbox"]),
+    select {
+        width: 400px;
+        
+    }
+    #check{
+        margin-left: 60px;
+    }
+
+    #registrarse {
+        height: 60px;
+        width: 240px;
+
+        font-size: 20px;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .container--registrarse {
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .container--registrarse h2 {
+        font-size: 30px;
+        justify-content: center;
+
+    }
+
+    .container--registrarse input:not([type="checkbox"]),
+    select {
+        width: 65%;
+    }
+
+    .container--registrarse select {
+        width: 80%;
+    }
+    #registrarse {
+        justify-content: center;
+        height: 50px;
+        width: 230px;
+
+        font-size: 17px;
+    }
+}

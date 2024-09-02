@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+}
+
+.opiniones1, .opiniones2 {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    background: #1C2B52;
+    padding: 1rem;
+    max-width: 480px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: 8px 8px 30px rgba(.5,.5,.5,1);
+    top: 50%;
+    right: 50%;
+    transform: translate(90%, -50%);
+    margin-top: 300px;
+    text-align: center;
+}
+
+#user-icon {
+    width: 100px;
+    border-radius: 50px;
+}
+
+#user {
+    font-family:"lato";
+    font-size: 1.5rem;
+    font-weight:700;
+    margin-bottom: 1.5rem;
+    color: #869DA6;
+}
+
+#user h3 {
+    font-family: "Lato";
+}
+
+.boton.enviar, .boton.cancelar {
+    font-family: "Lato";
+}
+
+.calificacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid: .5rem;
+    font-size: 2rem;
+    color: #BAD895;
+    margin-bottom: 1rem;
+}
+.star {
+    cursor: pointer;
+}
+.star.active {
+    opacity:0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transdorm: scale(1);
+    }
+}
+
+.star:hover {
+    transform: scale(1.1);
+}
+textarea {
+    width: 100%;
+    background: #EFF0D5;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    grid: .5rem;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botones .boton {
+    margin: 0px 10px 10px 0px;
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
+}
+
+.botones .boton:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+@media (max-width:750px) {
+    .opiniones1, .opiniones2 {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 200px;
+        top: 50%;
+        right: 50%;
+        transform: translate(0%, -50%);
+    }
+    #user {
+        font-size: small;
+    }
+}

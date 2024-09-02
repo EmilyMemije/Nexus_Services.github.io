@@ -6,7 +6,11 @@ main
 main h2
 {
     font-size: 50px;
+    font-family: "Lato";
     margin: 0%;
+}
+h2 {
+    font-family: "Lato";
 }
 #Encabezado
 {
@@ -24,6 +28,7 @@ main h2
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Lato";
     background-color:#1C2B52;
     color: white;
     margin: 10px;
@@ -106,6 +111,7 @@ main h2
     width: 40%;
     border-radius: 2em;
     font-size: 30px;
+    font-family: "Lato";
     color: #212A3E;
     margin-bottom: 3%;
     transition-duration: .5s;
@@ -126,6 +132,7 @@ main h2
 {
     text-align: center;
     font-size: 25px;
+    font-family: "Lato";
     margin: 0%;
 }
 
@@ -165,6 +172,7 @@ main h2
     background-color:#1C2B52;
     width: 60%;
     font-size: 20px;
+    font-family: "Lato";
     border-radius: 2rem;
     color: white;
     padding: 3%;
@@ -194,7 +202,7 @@ main h2
     margin: 2% 0%;
 }
 
-#card-container
+.card-container
 {
     display: flex;
     align-items: center;
@@ -209,20 +217,24 @@ main h2
     border-radius: 2em;
     transition-duration: .3s;
 }
-#card-container:hover
+.card-container:hover
 {
     height: 650px;
     width: 525px;
     transition-duration: .3s;
 }
 
-#card-container img
+.card-container img
 {
     width: 100%;
     height: 80%;
 }
-#card-container a{
+.card-container a{
     text-decoration: none;
+    color: white;
+}
+.card-container p{
+    font-family: "Lato";
     color: white;
 }
 
@@ -242,6 +254,9 @@ main h2
 
 }
 
+#servicio-vete {
+    font-family: "Lato";
+}
 .vet-container
 {
     display: flex;
@@ -260,6 +275,7 @@ main h2
     align-items: center;
     flex-direction: column;
     font-size: 45px;
+    font-family: "Merriweather";
     text-align: center;
 }
 #text-veterinario button
@@ -436,7 +452,7 @@ main h2
 }
 /*Servicios*/
 
-#card-container
+.card-container
 {
     
     font-size: 15px;
@@ -446,7 +462,7 @@ main h2
     border-radius: 2em;
     transition-duration: .3s;
 }
-#card-container:hover
+.card-container:hover
 {
     height: 425px;
     width: 315px;
@@ -684,7 +700,7 @@ main
     margin-top: 20px;
     width: 400px;
 }
-#card-container
+.card-container
 {
     
     font-size: 15px;
@@ -694,7 +710,7 @@ main
     border-radius: 2em;
     transition-duration: .3s;
 }
-#card-container:hover
+.card-container:hover
 {
     height: 425px;
     width: 315px;

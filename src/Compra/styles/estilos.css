@@ -5,7 +5,6 @@
 }
 
 body {
-	background: #ddeefc;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -182,12 +181,12 @@ body {
 }
 
 .contenedor-btn .btn-abrir-formulario.active {
-	transform: rotate(45deg);
+	transform: rotate(0deg);
 }
 
 /* ---------- Formulario Tarjeta ----------*/
 .formulario-tarjeta {
-	background: #F2F2EB;
+	background: #1C2B52;
 	width: 100%;
 	max-width: 700px;
 	padding: 150px 30px 30px 30px;
@@ -202,18 +201,22 @@ body {
 .formulario-tarjeta.active {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+.noactive {
+	display: none;
+}
 
 .formulario-tarjeta label {
 	display: block;
-	color: #7d8994;
+	color: white;
 	margin-bottom: 5px;
-	font-size: 16px;
+	font-size: 17px;
+	font-weight: bold;
 }
 
 .formulario-tarjeta input,
 .formulario-tarjeta select,
 .btn-enviar {
-	border: 2px solid #CED6E0;
+	border: 2px solid #1C2B52;
 	font-size: 18px;
 	height: 50px;
 	width: 100%;
@@ -224,7 +227,7 @@ body {
 
 .formulario-tarjeta input:hover,
 .formulario-tarjeta select:hover {
-	border: 2px solid #93BDED;
+	border: 2px solid #2768B3;
 }
 
 .formulario-tarjeta input:focus,
@@ -261,6 +264,7 @@ body {
 	-webkit-appearance: none;
 }
 
+
 .formulario-tarjeta .grupo-select i {
 	position: absolute;
 	color: #CED6E0;
@@ -273,17 +277,22 @@ body {
 	color: #93bfed;
 }
 
-.formulario-tarjeta .btn-enviar {
+
+.btn-enviar {
+	display: flex;
+    justify-content: center;
+	text-decoration: none;
 	border: none;
 	padding: 10px;
 	font-size: 22px;
 	color: #1C2B52;
-	background: #BAD895;
+	background: white;
 	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
 	cursor: pointer;
 }
 
-.formulario-tarjeta .btn-enviar:hover {
+.btn-enviar:hover {
 	background: #1C2B52;
-	color: #fff;
+	border: solid white 2px;
+	color: white;	
 }

@@ -1,0 +1,300 @@
+/* Estilos generales */
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 150vh;
+    
+}
+
+/* Menú lateral */
+.sidebar {
+    background-color:var(--footer-blue);
+    color: white;
+    width: 25%;
+    padding: 20px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.profile h2 {
+    font-family: "Lato";
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.menu{
+    font-family: "Lato";
+    width: clamp(10px, 250px, 400px);
+}
+
+.menu-button {
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s;
+}
+
+
+.menu-button:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+
+/* Sección principal */
+.main-content {
+    width: 75%;
+    height: auto;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
+    padding-bottom: 7em;
+    position: relative;
+}
+
+.actualizar-btn
+{
+    border: none;
+    border-radius: 25%;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/update.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.eliminar-btn
+{
+    border: none;
+    border-radius: 25%;
+    height: 30px;
+    width: 30px;
+    background-image:url("/src/admiServicios/img/trash.png") ;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color:var(--footer-blue);
+    font-family: "lato";
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    font-family: "lato";
+    gap: 20px;
+}
+
+.service {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: #1C2B52;
+}
+
+.service-details {
+    flex-grow: 1;
+    width: 25%;
+    
+}
+
+.service-details h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color:var(--footer-blue);
+    font-family: "lato";
+}
+
+.service-details p {
+    margin: 5px 0;
+    color: var(--footer-blue);
+    text-align: justify;
+    font-family: "Merriweather";
+}
+
+.service-price {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--footer-blue);
+    width: 25%;
+    font-family: "Merriweather";
+    
+}
+
+.service-days {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: "lato";
+}
+
+.ContentDats
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width: 25%;
+}
+
+.day {
+    width: 25px;
+    height: 25px;
+    background-color: var(--footer-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.9em;
+}
+
+::-webkit-scrollbar
+{
+    background-color: none;
+    width: 5px;
+}
+
+/*autoresponsive*/
+@media (max-width: 1500px){
+
+    body{
+        height: 182vh;
+    }
+
+}
+
+
+@media (max-width:800px)
+{
+   
+    body
+    {
+        height: 180vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .sidebar
+    {
+        width: 100%;
+    }
+
+    .menu-button
+    {
+        height: 40px;
+    }
+
+    .main-content
+    {
+        width: 100%;
+        text-align: center;
+       
+    }
+    
+    .service
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-icon
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .service-details
+    {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .eliminar-btn
+    {
+        margin-top: 10px;
+    }
+
+    .actualizar-btn
+    {
+        margin-top: 10px;
+    }
+
+    footer
+    {
+        overflow: hidden;
+    }
+
+    header
+    {
+        overflow: hidden;
+    }
+
+
+
+}

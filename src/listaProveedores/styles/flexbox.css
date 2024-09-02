@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     text-align: center;
@@ -7,44 +8,89 @@
     gap: 20px;
 }
 
-.box{
+.box {
     background-color: #1C2B52;
     padding: 20px;
-    width: 40%;
+    width: 500px;
+    height: 420px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box.flipped .card-inner{
+    transform: rotateY(180deg); /* Rota toda la caja */
+    transition: transform 0.1s;
 }
 
 
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    top: 0;
+}
 
 .box .content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: aqua;
 }
 
 .box p {
     color: #F2F2EB;
     text-align: right;
+    font-family: "Merriweather";
+    margin-right: 25px;
+    font-size: 18px;
 }
 
-.box h2 
-{
-  color: white;
-  text-align: center;
+.box h2 {
+    color: white;
+    text-align: center;
+    font-family: "lato";
+    margin-bottom: 35px;
 }
 
 
 .box img {
-    max-width: 60%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    width: 220px;
+    height: 230px;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-left: 25px;
+    margin-bottom: 5px;
 }
 
 .box .text {
@@ -52,21 +98,62 @@
     color: #F2F2EB;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Ajusta el espacio entre los botones */
+}
 
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.masInfo {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.masInfo p {
+    display: flex;
+    font-family: "Merriweather";
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
+    text-align: justify;
+    position: relative; /* Necesario para posicionar el botón de cierre */
+    margin-bottom: 20px;
+}
+
+.flipped .masInfo {
+    display: flex; /* Mostrar cuando la tarjeta está volteada */
+}
 
 .box button {
-    background-color: #F2F2EB;
-    color: #1C2B52;
+    background-color: white;
+    color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
+    border-radius: 2rem;
     cursor: pointer;
-    border-radius: 40px;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+    transition-duration: 0.3s;
     flex: 1;
 }
 
 
 .box button:hover {
-    background-color: #296CD1;
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s
 }
 
 .category--list {
@@ -75,21 +162,6 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-.category--list a {
-    text-decoration: none;
-    color: #1C2B52;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-.category--list a:hover {
-    background-color: #1C2B52;
-    color: #F2F2EB;
 }
 
 
@@ -117,7 +189,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 740px) {
     .container {
         flex-direction: column;
         width: 90%;
@@ -129,10 +201,19 @@
     }
 
     .box img {
-        max-width: 80%;
+        max-width: 60%;
+        width: 45%;
     }
 
-    
+    .button-container {
+        flex-direction: row;
+        gap: 10px; /* Aumenta el espacio entre los botones en pantallas pequeñas */
+    }
+
+    .box button {
+        font-size: 14px;  /* Reduce el tamaño de la fuente de los botones en pantallas pequeñas */
+    }
+
     .category--letter {
         display: flex;
         gap: .09%;
@@ -145,11 +226,11 @@
         font-size: 50%;
     }
 
-    .category--list a{
+    .category--list a {
         font-size: 14px;
         padding: 8px 12px;
     }
-    
+
 }
 
 /* Media query para pantallas de 450px*/
@@ -173,15 +254,16 @@
 
     .box img {
         max-width: 100%;
+        width: 40%;
     }
 
-   
+
     .category--letter a {
         font-size: 12px;
         padding: 6px 10px;
     }
 
-    .category--list a{
+    .category--list a {
         font-size: 14px;
         padding: 8px 12px;
     }

@@ -1,0 +1,361 @@
+.container--principal{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    
+}
+/*Apartado de informacion*/
+.container--informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23.8vw;
+    height:100vh;
+    top: 2%;
+    position: sticky;
+    background-color: #212A3E;
+    margin-right: 250px;
+    
+}
+/*Foto de perfil*/
+.container--imagen{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.profile-picture{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cambiar--foto {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lato";
+    cursor: pointer;
+    background-color: #212A3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#cambiar--foto:hover {
+    background-color: #0056b3;
+    opacity: 50%;
+}
+input[type="file"] {
+    display: none;
+}
+
+/*Informacion de perfil*/
+.container--datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding: 25px;
+}
+
+#name{
+    font-family: "Lato";
+    font-size: 25px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+
+
+/*
+#email{
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+
+#telefono{
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+*/
+.modificar--datos{
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.modificar--datos:hover{
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+/*Servicios*/
+
+.title--servicios {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+}
+
+.container--card {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 681px;
+    flex-direction: column;
+}
+
+.servicio--card {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    height: 191px;
+    width: 681px;
+}
+
+.container--imagenServicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 211px;
+}
+
+.image--servicio{
+    width: 145px;
+    height: 145px;
+    margin: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #212A3E;
+    background-color: #212A3E;
+}
+
+.image--servicio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container--datosServicio{
+    width: 771px;
+    height: 211px;
+    color: #212A3E;
+    font-size: 20;
+    font-family: "Lato";
+}
+
+#servicio{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 36px;
+    margin: 0px;
+}
+
+
+.especialista{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#name--especialista{
+    padding-left: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha--hora{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#fecha--servicio{
+    padding-left: 10px;
+}
+
+.hora{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 40px;
+}
+
+#hora--servicio{
+    padding-left: 10px;
+}
+
+
+/*Apartado de actualizar datos*/
+.title--actualizar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+
+}
+
+.container--formActualizar {
+    display: grid;
+    grid-template-columns: 200px 250px minmax(100px, auto);
+    grid-gap: 10px;
+    width: 681px;
+    margin: auto;
+    font-family: "Lato";
+    border-radius: 2rem;
+    padding-bottom: 25px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    padding-top: 25px;
+ 
+}
+
+.container--formActualizar label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.container--formActualizar input {
+    width: 50%;
+    padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#boton--guardar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#updateButton.modificar--datos {
+    font-family: "Lato";
+}
+.guardar--datos{
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.guardar--datos:hover{
+    background-color:#212A3E;
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.servicio--card:hover{
+    border: 3px solid #212A3E;
+    transform: scale(1.05);
+    transition: .7ms;
+}
+
+
+
+
+
+/*
+
+.name--especialista{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.price-servicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha--hora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha--servicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hora--servicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    */

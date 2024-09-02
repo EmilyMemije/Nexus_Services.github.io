@@ -1,0 +1,226 @@
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.main--container {
+    margin: 0px 100px 0px 40px;
+    width: 60%;
+}
+
+.main--container h1 {
+    color: #F2F2EB;
+    font-family: "Lato";
+    font-weight: 400px;
+    font-style: normal;
+    text-align: center;
+    font-size: 40px;
+}
+
+#Fecha,
+#Autor {
+    text-align: center;
+    padding: 0%;
+    margin: 5px 5px 0px 0px;
+}
+
+#Botoncita {
+    font-family: "Lato";
+}
+
+.main--text p{
+    font-family: "Merriweather";
+    font-size: medium;
+    text-align: justify;
+}
+
+ul {
+    font-family: "Merriweather"; 
+    font-size: medium; 
+}
+
+.main--img {
+    width: 100%;
+}
+
+.main--container p {
+    font-family: "Merriweather";
+}
+
+.aside--container {
+    width: 40%;
+    margin-top: 120px;
+    position: sticky;
+}
+
+.aside--container h3{
+    font-family: "lato";
+}
+
+.card-mb-3{
+position: static;
+}
+
+.card-text1 {
+    text-align: justify;
+}
+
+.card-text2 {
+    text-align: right;
+}
+
+.mini-card {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: "Merriweather";
+    font-size: medium;
+    text-align: left;
+}
+
+.mini-card img {
+    margin-right: 20px;
+    max-width: 200px;
+    max-height: 180px;
+}
+
+.author-card{
+background-color:  #296CD1;
+border-radius: 20px;
+display: flex;
+flex-direction: row;
+margin: 10px;
+width: 100%;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.author-card img{
+    width: 42%;
+    height: 200px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.autho-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #EFF0D5;
+}
+
+.autho-card-info h5{
+font-family: "Lato";
+font-size: 20px;
+text-align: left;
+padding: 5px;
+}
+
+.autho-card-info p{
+    text-align: justify;
+    font-family: "Merriweather";
+    padding: 0px 15px 0px 0px;
+
+}
+
+.autho-card-info button{
+    margin: 0px 10px 10px 0px;
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    font-size: 15px;
+    transition-duration: 0.3s;
+    margin-bottom: 15px;
+}
+
+.autho-card-info button:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 1200px) {
+    .main--container {
+        margin: 0px 60px 0px 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main--container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .aside--container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .author-card {
+        flex-direction: column;
+    }
+
+    .author-card img {
+        width: 50%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .autho-card-info {
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main--container h1 {
+        font-size: 28px;
+    }
+
+    .mini-card img {
+        max-width: 150px;
+        max-height: 120px;
+    }
+
+    .autho-card-info button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main--container h1 {
+        font-size: 24px;
+    }
+
+    .main--text p {
+        font-size: small;
+    }
+}

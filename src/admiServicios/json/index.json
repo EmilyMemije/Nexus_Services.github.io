@@ -1,0 +1,58 @@
+[
+    {
+        "imagen": "img/Psychologist-pana.png",
+        "nombre": "Psicología",
+        "descripcion": "Atención psicológica profesional para ayudar a individuos a superar desafíos emocionales, mejorar su bienestar mental y desarrollar habilidades para manejar el estrés y las dificultades cotidianas. Se brindan sesiones de terapia personalizadas, tanto en persona como en línea, para tratar una variedad de problemas, desde ansiedad y depresión hasta problemas de relación y desarrollo personal. Proporcionando un espacio seguro y de apoyo para fomentar la salud mental y emocional de los clientes.",
+        "precio": "$100",
+        "dias": ["L", "M", "X", "J", "V"]
+    },
+    {
+        "imagen": "img/Pediatrician-rafiki.png",
+        "nombre": "Pediatría",
+        "descripcion": "Atención integral y especializada para la salud y el bienestar de niños y adolescentes. Pediatras altamente capacitados que brindan evaluaciones, diagnósticos y tratamientos para una amplia gama de condiciones médicas, desde chequeos rutinarios y vacunas hasta el manejo de enfermedades crónicas y emergencias. En un entorno amigable y acogedor, haciendo enfoque en el desarrollo físico, emocional y social de cada niño, colaborando estrechamente con los padres para asegurar el mejor cuidado posible para sus pequeños.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "S", "D"]
+    },
+    {
+        "imagen": "img/crea-un-dentista-atendiendo-a-un-pasiente-con-colo (1).png",
+        "nombre": "Odontología",
+        "descripcion": "Dentistas expertos que proporcionan una variedad de servicios, incluyendo chequeos regulares, limpiezas, tratamientos de caries, ortodoncia y procedimientos estéticos. Utilizando tecnología avanzada y técnicas innovadoras para garantizar diagnósticos precisos y tratamientos efectivos en un entorno cómodo y profesional. Así brindando cuidados personalizados y soluciones integrales para lograr una sonrisa saludable y radiante.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "V", "S"]
+    },
+    {
+        "imagen": "img/Veterinary-rafiki.png",
+        "nombre": "Veterinario",
+        "descripcion": "Cuidados especializados para asegurar la salud y el bienestar de las mascotas. Con un equipo de veterinarios altamente capacitados, desde consultas generales y vacunaciones hasta diagnósticos avanzados y tratamientos quirúrgicos. Utilizando tecnología de punta y prácticas modernas para proporcionar atención de calidad en un ambiente acogedor y profesional. Manteniendo a las mascotas saludables y felices, asegurando que reciban el mejor cuidado posible en cada etapa de su vida.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "J", "V", "S", "D"]
+    },
+    {
+        "imagen": "img/Psychologist-pana.png",
+        "nombre": "Psicología",
+        "descripcion": "Buscamos apoyar a las personas en su bienestar emocional y mental. Ofreciendo terapia individual y grupal para abordar una variedad de problemas como ansiedad, depresión y estrés. Utilizando enfoques basados en evidencia para ayudar a los pacientes a comprender y gestionar sus emociones, mejorar su calidad de vida y alcanzar sus metas personales. Con un enfoque empático y profesional, brindando un espacio seguro para el crecimiento personal y la resolución de conflictos internos.",
+        "precio": "$100",
+        "dias": ["L", "M", "X", "J", "V"]
+    },
+    {
+        "imagen": "img/Pediatrician-rafiki.png",
+        "nombre": "Pediatría",
+        "descripcion": "Encargados de realizar exámenes físicos regulares, diagnosticar y tratar enfermedades infantiles, y ofrecer orientación sobre el desarrollo y la nutrición. Asegurando un crecimiento saludable y en responder a las necesidades específicas de cada etapa de desarrollo. A través de una atención cálida y personalizada, buscan promover el bienestar físico y emocional de los niños.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "S", "D"]
+    },
+    {
+        "imagen": "img/crea-un-dentista-atendiendo-a-un-pasiente-con-colo (1).png",
+        "nombre": "Odontología",
+        "descripcion": "Realizamos desde limpiezas y chequeos regulares hasta tratamientos complejos como ortodoncia y cirugía oral. Utilizamos técnicas y herramientas modernas para asegurar una atención efectiva y cómoda. Prevenimos problemas dentales, tratamos afecciones existentes y educamos a los pacientes sobre las mejores prácticas para mantener una sonrisa saludable y radiante.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "V", "S"]
+    },
+    {
+        "imagen": "img/Veterinary-rafiki.png",
+        "nombre": "Veterinario",
+        "descripcion": "Brindamos una amplia gama de servicios, incluyendo consultas, vacunaciones, exámenes físicos y tratamientos quirúrgicos. Empleamos tecnología avanzada y métodos modernos para proporcionar la mejor atención posible. Aseguramos que las mascotas reciban un cuidado integral y personalizado, ayudándolas a mantener una vida saludable y feliz.",
+        "precio": "$200",
+        "dias": ["L", "M", "X", "J", "V", "S", "D"]
+    }
+]

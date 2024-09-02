@@ -1,0 +1,439 @@
+/* Estilos generales */
+
+:root {
+    --footer-blue: #1C2B52;
+    --ocean-blue: #296CD1;
+    --dark-gray: #869DA6;
+    --ivory: #EFF0D5;
+    --not-white: #F2F2EB;
+    --green-tea: #BAD895;
+    }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
+    padding-bottom: 7em;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    height: 120vh;
+}
+
+/* Menú lateral */
+.sidebar {
+    background-color:var(--footer-blue);
+    color: white;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile h2 {
+    font-family: "Lato";
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.menu{
+
+    width: clamp(10px, 200px, 400px);
+}
+
+#refserv{
+ width: 100%;
+ height: fit-content;
+}
+
+.menu-button {
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    font-family: "Lato";
+}
+
+.menu-button:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+    
+}
+/*main*/
+.main-content {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
+    padding-bottom: 7em;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar
+{
+    background-color: none;
+    width: 5px;
+}
+
+/*Contenedor del form*/
+.FormContainer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*contenedor de la primera seccion del form*/
+#Section1
+{
+    display: flex;
+    gap: 20px;
+
+}
+
+#Services
+{
+    border-radius: 2rem;
+    width: 50%;
+    height: 20%;
+}
+
+#price
+{
+    border-radius: 2rem;
+    width: 50%;
+    height: 20%;
+}
+
+.data
+{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#days button
+{
+    
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#days button:hover
+{
+    background-color: var(--green-tea);
+}
+/*contenedor de la segunda seccion del form*/
+
+#Section2
+{
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#Description
+{
+    height: 100px;
+    border-radius: 2rem;
+    vertical-align: auto;
+    text-align: left;
+    line-height: normal;
+    overflow-wrap: break-word;    
+    white-space: pre-wrap;
+}
+
+
+/*div fantasma*/
+.main-content {
+    background-color: #ecf0f1;
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color:var(--footer-blue);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.service {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    background-color: #1C2B52;
+    border-radius: 2rem;
+}
+
+.service-details {
+    flex-grow: 1;
+    width: 25%;
+    display: flex;
+    overflow-wrap: break-word;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.service-details h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--footer-blue);
+    font-size: 30px;
+}
+
+.service-details p {
+    margin: 5px 0;
+    color: var(--footer-blue);
+    width: 100%;
+    font-size: 17px;
+    font-family: "Merriweather";
+}
+
+.service-price {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--footer-blue);
+    width: 25%;
+    font-size: 25px;
+    
+}
+
+.ContentDays
+{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-day { 
+    align-items: center; /* Alinear verticalmente al centro */
+    gap: 2px;
+}
+
+.selected-day {
+    width: 30px;
+    height: 30px;
+    background-color: var(--footer-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+#days button.active {
+    background-color: var(--footer-blue); /* Color de fondo del botón activo */
+    color: white; /* Color del texto del botón activo */
+    border: 1px solid #ffffff; /* Borde del botón activo */
+}
+
+#Description
+{
+    font-size: 20px;
+    font-family: "Merriweather";
+}
+
+label
+{
+    font-family: "lato";
+}
+
+#Section3 h3
+{
+    font-family: "lato";
+}
+
+#upload
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    height: 40px;
+
+}
+
+#submit
+{
+    background-color: white;
+    border-radius: 2rem;
+    border: none;
+    height: 40px;
+   width: 200px;
+   color: var(--footer-blue);
+   transition: .3s;
+   font-size: 20px;
+   font-family: "Lato";
+}
+
+#upload button:hover
+{
+    background-color: var(--footer-blue);
+    border-radius: 2rem;
+   width: 200px;
+   color: white;
+   border: white 2px solid;
+   transition: .3s;
+}
+
+
+/*media */
+
+@media (max-width:1000px)
+{
+
+    body
+    {
+        height: 165vh;
+    }
+
+    .container {
+        display: flex;
+        height: 150vh;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .sidebar
+    {
+        width: 100%;
+    }
+
+    .menu-button
+    {
+        height: 40px;
+    }
+
+    .main-content
+    {
+        width: 100%;
+        text-align: center;
+        overflow-y: scroll;
+        flex-direction: column;
+
+    }
+    /*inputs*/
+        .FormContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #Section1
+    {
+        flex-direction: column;
+    }
+
+    .data
+    {
+        width: 100%;
+        display: flex;
+    }
+
+    .ContentDays
+    {
+        width: 100%;
+    }
+ 
+
+    /*tarjeta*/
+    .service
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .service-icon
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .service-details
+    {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .ContentDays
+    {
+        flex-direction: column;
+        width: 100%;
+           
+    }
+
+    /*actualizar-btn*/
+
+
+    /*footer y header*/
+    footer
+    {
+        overflow: hidden;
+        display:absolute;
+    }
+
+    header
+    {
+        overflow: hidden;
+    }
+
+
+
+}

@@ -1,0 +1,162 @@
+    body {
+    height: 150vh;
+    }
+.titulo {
+    display: flex;
+    border-radius: 15px;
+    background: #1C2B52;
+    height: 130px;
+    font-family: "Lato";
+    color: #D9D9D9;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#titulo{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+}
+.su-reciente {
+    margin-left: 80px;
+    display: flex;
+    width: 1200px;
+    top: 369px;
+    left: 22px;
+    font-family: "Lato", Helvetica;
+    font-weight: 700;
+    color: #1c2b52;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.gracias{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    top: 369px;
+    left: 22px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #1c2b52;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.lema {
+    
+    font-size: 25px;
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 530;
+}
+hr{
+    display: flex;
+    height: 5px;
+    width: auto;
+    background-color: #1C2B52;
+}
+
+.nodt {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: #1c2b52;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#transaction-number {
+    text-decoration: underline;
+    font-style: italic;
+}
+.overlap-2 {
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: #1c2b52;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+.ty {
+    background-image: url(../img/ty.png);
+    background-repeat: no-repeat;
+    background-size: 420px 420px;
+    background-position-y: 110px;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.boton2 {
+    margin-top: 30px;
+    background-color: white;
+    color: #1C2B52;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-family: "Lato";
+    
+}
+
+.boton2:hover {
+    background-color: #1C2B52;
+    color: white;
+    border: solid white 2px;
+    transition-duration: .2s
+}
+
+
+
+@media (max-width: 768px) {
+    table {
+        font-size: xx-large;
+        font-size: 18px;
+    }
+}

@@ -1,69 +1,139 @@
 [
   {
-    "id":"0001",
+    "id": "0001",
     "image": "./assets/public-service.png",
     "servicio": "Cuidado",
     "descripcion": "Cuidado de personas mayores de edad por día",
     "precio": 700
   },
   {
-    "id":"0002",
+    "id": "0002",
     "image": "./assets/public-service.png",
     "servicio": "Consulta general",
-    "descripcion": "Consulta general de cualquier enfermedad, se asesora (Solo se brinda receta)",
+    "descripcion": "Consulta general de cualquier enfermedad; se asesora (solo se brinda receta)",
     "precio": 150
   },
   {
-    "id":"0003",
+    "id": "0003",
     "image": "./assets/public-service.png",
     "servicio": "Consulta general",
-    "descripcion": "Consulta general de cualquier enfermedad, se asesora y se brinda medicamento",
+    "descripcion": "Consulta general de cualquier enfermedad; se asesora y se brinda medicamento",
     "precio": 250
   },
   {
-    "id":"0004",
+    "id": "0004",
     "image": "./assets/public-service.png",
     "servicio": "Consulta psicológica",
     "descripcion": "Se asesora por medio online o en oficina",
     "precio": 500
   },
   {
-    "id":"0005",
+    "id": "0005",
     "image": "./assets/public-service.png",
-    "servicio": "Consulta Especialista",
+    "servicio": "Consulta especialista",
     "descripcion": "Enfermedades especiales",
     "precio": 800
   },
   {
-    "id":"0006",
+    "id": "0006",
     "image": "./assets/public-service.png",
     "servicio": "Asesoramiento estudiantil",
-    "descripcion": "Se asesora en practicas o en estudio de un tema",
+    "descripcion": "Se asesora en prácticas o en estudio de un tema",
     "precio": 150
   },
   {
-    "id":"0007",
+    "id": "0007",
     "image": "./assets/public-service.png",
     "servicio": "Consejos para el trabajo",
     "descripcion": "Consulta online donde se practican consejos para el trabajo",
     "precio": 200
   },
   {
-    "id":"0008",
+    "id": "0008",
     "image": "./assets/public-service.png",
-    "servicio": "Analista de Sesiones",
-    "descripcion": "Se verifica el trabajo tomado y se crea un análisis especial",
+    "servicio": "Analista de sesiones",
+    "descripcion": "Se verifica el trabajo realizado y se crea un análisis especial",
     "precio": 1000
   },
   {
-    "id":"0009",
+    "id": "0009",
     "image": "./assets/public-service.png",
     "servicio": "Apoyo emocional",
     "descripcion": "Sesión de escucha al paciente",
     "precio": 600
   },
   {
-    "id":"0010",
+    "id": "0010",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta a mi criatura",
+    "descripcion": "Se brinda una consulta a tu animalito",
+    "precio": 250
+  },
+  {
+    "id": "0011",
+    "image": "./assets/public-service.png",
+    "servicio": "Cuidado",
+    "descripcion": "Cuidado de personas mayores de edad por día",
+    "precio": 700
+  },
+  {
+    "id": "0012",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta general",
+    "descripcion": "Consulta general de cualquier enfermedad; se asesora (solo se brinda receta)",
+    "precio": 150
+  },
+  {
+    "id": "0013",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta general",
+    "descripcion": "Consulta general de cualquier enfermedad; se asesora y se brinda medicamento",
+    "precio": 250
+  },
+  {
+    "id": "0014",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta psicológica",
+    "descripcion": "Se asesora por medio online o en oficina",
+    "precio": 500
+  },
+  {
+    "id": "0015",
+    "image": "./assets/public-service.png",
+    "servicio": "Consulta especialista",
+    "descripcion": "Enfermedades especiales",
+    "precio": 800
+  },
+  {
+    "id": "0016",
+    "image": "./assets/public-service.png",
+    "servicio": "Asesoramiento estudiantil",
+    "descripcion": "Se asesora en prácticas o en estudio de un tema",
+    "precio": 150
+  },
+  {
+    "id": "0017",
+    "image": "./assets/public-service.png",
+    "servicio": "Consejos para el trabajo",
+    "descripcion": "Consulta online donde se practican consejos para el trabajo",
+    "precio": 200
+  },
+  {
+    "id": "0018",
+    "image": "./assets/public-service.png",
+    "servicio": "Analista de sesiones",
+    "descripcion": "Se verifica el trabajo realizado y se crea un análisis especial",
+    "precio": 1000
+  },
+  {
+    "id": "0019",
+    "image": "./assets/public-service.png",
+    "servicio": "Apoyo emocional",
+    "descripcion": "Sesión de escucha al paciente",
+    "precio": 600
+  },
+  {
+    "id": "0020",
     "image": "./assets/public-service.png",
     "servicio": "Consulta a mi criatura",
     "descripcion": "Se brinda una consulta a tu animalito",

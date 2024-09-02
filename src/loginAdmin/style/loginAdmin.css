@@ -1,0 +1,148 @@
+.container--login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    margin: 0% 0%;
+    gap: 0%; 
+
+}
+
+.container--login h2  {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+
+}
+
+
+.formulario--login input{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.login--boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#login{
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s
+}
+
+#login:hover{
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+    opacity: 120%;
+}
+
+#login:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#registro{
+    height: 45px; 
+	width: 149px;   
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	background-color: #869DA6; 
+	border-color: white; 
+	border-style: solid; 
+	border-radius: 2em;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 24px;
+}
+
+#registro:hover{
+    color: white;
+    transition: 0.1s;
+    text-decoration: dotted;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 120%;
+}
+
+#seleccion p {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato";
+}
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width:700px) {
+    .container--login h2 {
+        font-size: 35px;
+    
+    }
+        
+}
+    #login{
+        height: 30px; 
+        width: 172px;   
+        padding-left: 5px;
+        padding-right: 5px; 	
+        margin-bottom: 20px; 
+        margin-top: 10px; 	
+        border-radius: 2em;	
+        font-size: 20px;
+    }
+    
+
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10em;
+    }
+
+
+@media (max-width: 450px){
+    body {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5em;
+    }
+
+    .container--login h2 {
+        font-size: 35px;
+        padding-top: 25px;
+    }
+}

@@ -1,0 +1,246 @@
+/* Menú de preferencias */
+
+.text {
+    color: #F2F2EB;
+    font-family: 'Comfortaa';
+}
+
+/* Checkbox 1 */
+.container--notificaciones {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 480px;
+    height: 90px;
+    background: #1C2B52;
+    top: 50%;
+    right: 50%;
+    transform: translate(80%, 20%);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.boton {
+    margin: 10px;
+}
+
+.label-switch {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #869DA6;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#boton-switch:checked~ .label-switch {
+    background: #296CD1;
+}
+
+.label-switch:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #F2F2EB;
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+#boton-switch:checked~ .label-switch:after {
+    left: 28px;
+}
+
+#boton-switch {
+    display: none;    
+}
+
+/* Checkbox 2 */
+.container--ubicacion {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 480px;
+    height: 90px;
+    background: #1C2B52;
+    top: 50%;
+    right: 50%;
+    transform: translate(80%, 20%);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.boton {
+    margin: 10px;
+}
+
+.labeltoo-switch {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #869DA6;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#button-switch:checked~ .labeltoo-switch {
+    background: #296CD1;
+}
+
+.labeltoo-switch:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #F2F2EB;
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+#button-switch:checked~ .labeltoo-switch:after {
+    left: 28px;
+}
+
+#button-switch {
+    display: none;    
+}
+
+/* Checkbox 3 */
+.container--pago {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 480px;
+    height: 90px;
+    background: #1C2B52;
+    top: 50%;
+    right: 50%;
+    transform: translate(80%, 20%);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.boton {
+    margin: 10px;
+}
+
+.otroLabel-switch {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #869DA6;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#otroBoton-switch:checked~ .otroLabel-switch {
+    background: #296CD1;
+}
+
+.otroLabel-switch:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #F2F2EB;
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+#otroBoton-switch:checked~ .otroLabel-switch:after {
+    left: 28px;
+}
+
+#otroBoton-switch {
+    display: none;    
+}
+
+/* Checkbox 4 */
+.container--recomendaciones {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 480px;
+    height: 90px;
+    background: #1C2B52;
+    top: 50%;
+    right: 50%;
+    transform: translate(80%, 20%);
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.boton {
+    margin: 10px;
+}
+
+.cuartoLabel-switch {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #869DA6;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#cuartoBoton-switch:checked~ .cuartoLabel-switch {
+    background: #296CD1;
+}
+
+.cuartoLabel-switch:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #F2F2EB;
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+#cuartoBoton-switch:checked~ .cuartoLabel-switch:after {
+    left: 28px;
+}
+
+#cuartoBoton-switch {
+    display: none;    
+}
+
+@media (max-width: 750px) {
+    .container--notificaciones {
+        width: 90%;
+        transform: translate(5%, 0%);
+    }
+    .container--ubicacion {
+        width: 90%;
+        transform: translate(5%, 0%);
+    }
+    .container--pago {
+        width: 90%;
+        transform: translate(5%, 0%);
+    }
+    .container--recomendaciones {
+        width: 90%;
+        transform: translate(5%, 0%);
+    }
+
+    /*.container {
+        flex-direction: column;
+        place-content: center;
+        align-items:center;
+        justify-content:center;
+        transform: translate(50%, 0%);
+    }*/
+}

@@ -1,72 +1,114 @@
-[
-    {
-        "Titulo": "Dra. Ana Martínez",
-        "Especialidad": "Médico General",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Luisa Olvera",
-        "Especialidad": "Pediatria",
-        "Ubicación": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★☆☆☆☆"
-    },
-    {
-        "Titulo": "Dra. Melissa Ramos",
-        "Especialidad": "Nutrición",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas": "★★★☆☆"
-    },
-    {
-        "Titulo": "Lic. Miguel Mendoza",
-        "Especialidad": "Odontología",
-        "Ubicación": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dr. Hugo Morales ",
-        "Especialidad": "Endocrinología",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Maria Rosas",
-        "Especialidad": "Endocrinología",
-        "Ubicación": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★☆☆"
-    },
-    {
-        "Titulo": "Dr. Guillermo Benitez",
-        "Especialidad": "Médico General",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★☆"
-    },
-    {
-        "Titulo": "Dra. Nelly Guzman",
-        "Especialidad": "Endocrinología",
-        "Ubicación": "Coyoacán, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    },
-    {
-        "Titulo": "Dra. Blanca Fernandez",
-        "Especialidad": "Veterinaria",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★☆☆☆"
-    },
-    {
-        "Titulo": "Dr. Marcos Lopez",
-        "Especialidad": "Médico General",
-        "Ubicación": "Gustavo A. Madero, CDMX.",
-        "Img":"assets/BLOG.jpg",
-        "Estrellas":"★★★★★"
-    }
+{
+    "cards": [
+        {
+            "Titulo": "Dra. Ana Martínez",
+            "Especialidad": "Psicología",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "./assets/AnaMartinez.jpg",
+            "Estrellas": "★★★★★",
+            "Descripcion": "Terapeuta con enfoque humanista, licenciada en psicología y maestría en Psicoterapia. Ofrece sesiones individuales y grupales, ayudando a sus pacientes a superar diversas dificultades emocionales.",
+            "Direccion": "Calle 5 de Febrero S/N, Villa Gustavo A. Madero, Gustavo A. Madero, 07050 Ciudad de México, CDMX.",
+            "Telefono": 5589076238,
+            "Email": "anamart@gmail.com"
+        },
+        {
+            "Titulo": "Dra. Luisa Olvera",
+            "Especialidad": "Pediatría",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "./assets/gine.jpg",
+            "Estrellas": "★☆☆☆☆",
+            "Descripcion": "Especialista en salud infantil con más de 10 años de experiencia en el diagnóstico y tratamiento de enfermedades pediátricas. Ofrece un enfoque integral para el cuidado de la salud de los niños, desde el nacimiento hasta la adolescencia.",
+            "Direccion": "Avenida Universidad 123, Coyoacán, 04310 Ciudad de México, CDMX.",
+            "Telefono": 5598765432,
+            "Email": "luisaolvera_ped@gmail.com"
+        },
+        {
+            "Titulo": "Dra. Melissa Ramos",
+            "Especialidad": "Nutrición",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "./assets/ENFERMERA.jpg",
+            "Estrellas": "★★★☆☆",
+            "Descripcion": "Nutrióloga con especialización en planes alimenticios personalizados y promoción de hábitos saludables. Trabaja de la mano con sus pacientes para mejorar su calidad de vida a través de la alimentación y la educación nutricional.",
+            "Direccion": "Calle Francisco Villa 45, Gustavo A. Madero, 07050 Ciudad de México, CDMX.",
+            "Telefono": 5587654321,
+            "Email": "melissaramos_nutri@gmail.com"
+        },
+        {
+            "Titulo": "Lic. Miguel Mendoza",
+            "Especialidad": "Odontología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "./assets/DR3.jpg",
+            "Estrellas": "★★★★★",
+            "Descripcion": "Odontólogo con amplia experiencia en odontología estética y salud bucal integral. Especializado en tratamientos que combinan estética y funcionalidad, brindando una atención personalizada para cada paciente.",
+            "Direccion": "Avenida México 200, Coyoacán, 04300 Ciudad de México, CDMX.",
+            "Telefono": 5590123456,
+            "Email": "miguelmendoza_odont@gmail.com"
+        },
+        {
+            "Titulo": "Dr. Hugo Morales",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Benito Juárez, CDMX.",
+            "Img": "./assets/DR2.jpg",
+            "Estrellas": "★★★★★",
+            "Descripcion": "Endocrinólogo especializado en trastornos hormonales, incluyendo diabetes y problemas tiroideos. Ofrece un enfoque integral y personalizado en el manejo de enfermedades endocrinas, mejorando la calidad de vida de sus pacientes.",
+            "Direccion": "Calle Genova 17, Benito Juárez, 03640 Ciudad de México, CDMX.",
+            "Telefono": 5589123456,
+            "Email": "hugomorales_endo@gmail.com"
+        },
+        {
+            "Titulo": "Dra. Maria Rosas",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "./assets/DRA2.jpg",
+            "Estrellas": "★★★☆☆",
+            "Descripcion": "Endocrinóloga con enfoque en el tratamiento de enfermedades metabólicas y hormonales. Apasionada por mejorar la salud de sus pacientes, trabaja en la prevención y tratamiento de enfermedades como la diabetes y disfunciones tiroideas.",
+            "Direccion": "Calle de Zapata 123, Coyoacán, 04330 Ciudad de México, CDMX.",
+            "Telefono": 5589234567,
+            "Email": "mariarosas_endo@gmail.com"
+        },
+        {
+            "Titulo": "Dr. Guillermo Benitez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "./assets/drr.jpg",
+            "Estrellas": "★★★★☆",
+            "Descripcion": "Médico general con experiencia en atención primaria y prevención de enfermedades. Ofrece un servicio integral para el diagnóstico y tratamiento de enfermedades comunes, enfocándose en la prevención y el cuidado de la salud a largo plazo.",
+            "Direccion": "Calle Manuel González 87, Gustavo A. Madero, 07000 Ciudad de México, CDMX.",
+            "Telefono": 5589345678,
+            "Email": "guillermobenitez_medgen@gmail.com"
+        },
+        {
+            "Titulo": "Dra. Nelly Guzman",
+            "Especialidad": "Endocrinología",
+            "Ubicacion": "Coyoacán, CDMX.",
+            "Img": "./assets/DRA3.jpg",
+            "Estrellas": "★★★★★",
+            "Descripcion": "Endocrinóloga experta en tratamientos para la diabetes y trastornos tiroideos. Con una amplia experiencia en el manejo de enfermedades endocrinas, se dedica a mejorar la calidad de vida de sus pacientes a través de un enfoque integral.",
+            "Direccion": "Calle 16 de Septiembre 89, Coyoacán, 04360 Ciudad de México, CDMX.",
+            "Telefono": 5589456789,
+            "Email": "nellyguzman_endo@gmail.com"
+        },
+        {
+            "Titulo": "Dra. Blanca Fernandez",
+            "Especialidad": "Veterinaria",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "./assets/VET.jpg",
+            "Estrellas": "★★☆☆☆",
+            "Descripcion": "Veterinaria especializada en el cuidado y tratamiento de mascotas, con enfoque en bienestar animal. Su pasión por los animales la ha llevado a ofrecer servicios veterinarios de alta calidad, priorizando la salud y felicidad de cada mascota.",
+            "Direccion": "Calle 6 de Enero 32, Gustavo A. Madero, 07060 Ciudad de México, CDMX.",
+            "Telefono": 5589567890,
+            "Email": "blancafernandez_vet@gmail.com"
+        },
+        {
+            "Titulo": "Dr. Marcos Lopez",
+            "Especialidad": "Médico General",
+            "Ubicacion": "Gustavo A. Madero, CDMX.",
+            "Img": "./assets/DR4.jpg",
+            "Estrellas": "★★★★★",
+            "Descripcion": "Médico general enfocado en el diagnóstico y tratamiento de enfermedades comunes. Proporciona atención médica de calidad con un enfoque preventivo, ayudando a sus pacientes a mantener una salud óptima a través de cuidados personalizados.",
+            "Direccion": "Calle de las Torres 54, Gustavo A. Madero, 07040 Ciudad de México, CDMX.",
+            "Telefono": 5589678901,
+            "Email": "marcoslopez_medgen@gmail.com"
+        }
     ]
+}

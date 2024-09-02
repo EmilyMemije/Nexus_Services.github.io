@@ -1,0 +1,76 @@
+/*Datos Médicos*/
+
+.title--medInfo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 40px;
+    color:#F2F2EB;
+}
+.container--formMedInfo {
+    display: grid;
+    grid-template-columns: 150px 250px minmax(100px, auto);
+    grid-gap: 10px;
+    width: 600px;
+    margin: auto; 
+    font-family: "Lato";
+    border-radius: 20px;
+    padding-bottom: 25px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+.container--formMedInfo label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.container--formMedInfo input {
+    width: 90%;
+    padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid #F2F2EB;
+}
+.guardar--datos {
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px; 
+	width: 252px; 	
+	margin-bottom: 40px; 
+	margin-top: 10px; 	
+	background-color: #1C2B52; 
+	color: #F2F2EB;
+	border: none;
+	border-radius: 2rem;	
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 20px;
+    top: 50%;
+    right: 50%;
+    transform: translate(202%, 18%);
+    transition-duration:0.3s;
+}
+.guardar--datos:hover {
+    background-color: #F2F2EB;
+	color: #1C2B52;
+    transition-duration: .3s;
+}
+
+@media (max-width: 700px) {
+    .container--datos .container--formMedInfo {
+        width: 90%;
+        grid-template-columns: 90px 200px minmax(50px, auto);
+    }
+    .container--datos button {
+        flex-direction: column;
+        place-content: center;
+        align-items:center;
+        justify-content:center;
+        transform: translate(50%, 0%);
+    }
+}

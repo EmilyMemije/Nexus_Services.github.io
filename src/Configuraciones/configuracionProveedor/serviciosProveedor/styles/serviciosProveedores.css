@@ -1,0 +1,137 @@
+/*Servicios*/
+
+.title--servicios {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+}
+
+.container--card {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content:center;
+    align-items: center;
+    width: 681px;
+    top: 50%;
+    right: 50%;
+    transform: translate(45%, 0%);
+}
+.product--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #B8C2D5;
+    margin: 30px;
+    width: 681px;
+}
+
+.container--imagenServicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 211px;
+}
+
+.image--servicio{
+    width: 145px;
+    height: 145px;
+    margin: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #212A3E;
+    background-color: #212A3E;
+}
+
+.image--servicio img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container--datosServicio{
+    width: 771px;
+    color: #212A3E;
+    font-size: 20;
+}
+
+#servicio{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 36px;
+    margin: 0px;
+}
+
+.especialista{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#name-especialista {
+    padding-left: 10px;
+}
+
+.cedula{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#name-cedula {
+    padding-left: 10px;
+}
+
+.concepto {
+    display: flex;
+    text-align: justify;
+}
+
+.precio{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .container--card .product--card {
+        width: 60%;
+        transform: translate(-94%, 0%);
+        margin: 20px;
+    }
+    .container--datosServicio {
+        transform: translate(-10%, 0%);
+    }
+    .container--imagenServicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        transform: translate(0%, -180%);
+    }
+    .container--imagenServicio .image--servicio {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        position: static;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 2px solid #212A3E;
+        background-color: #212A3E;
+    }
+    .container--imagenServicio .image--servicio img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Proveedor</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="../../../../assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
+    <link rel="stylesheet" href="../../../../styles/styles copy.css">
+    <link rel="stylesheet" href="./styles/perfilProveedor.css">
+    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel="stylesheet" href="./style/login.css">
+
+
+    <!--Conexcion a estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="nav--container">
+            <div class="container--menus">
+                <div class="nav--logo">
+                    <a id="container--logo" href="/src/paginaPrincipal/paginaPrincipal.html">
+                        <img id="logo--Ns" src="/assets/NS.png" alt="LogoNS">
+                    </a>
+                </div>
+
+                <!--Accesos de la nueva Navbar-->
+                <div class="container-list">
+                    <button class="abrir">
+                        <img id="img--menu" src="/assets/menu.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="ul-lis noactive" id="menu--desplegable">
+                <button class="cerrar">
+                    <img id="cerrarNS" src="/assets/NS.png" alt="">
+                </button>
+                <a href="/src/blog/blog.html" class="menu-link">Blog</a>
+                <a href="/src/listaProveedores/listaProveedores.html" class="menu-link">Lista Proveedores</a>
+                <a href="/src/Pagina sobre nosotros/Nosotros.html" class="menu-link">Contactanos</a>
+                <a href="/src/Pagina sobre nosotros/donar.html" class="menu-link">Donaciones</a>
+                <a href="/src/paginaPrincipal/paginaPrincipal.html" class="menu-link">Página principal</a>
+                <a href="/src/Login/login.html" class="menu-link">Login</a>
+            </div>
+
+            <!--Aquí empieza lo de Nexus Services-->
+
+            <div class="centro">
+                <a href="/index.html" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <button class="botton">
+                        <img src="/assets/lupa.png" alt="lupa" id="lupa">
+                    </button>
+                </div>
+                <div class="nav--menu">
+                    <a href="/src/blog/blog.html">Blog</a>
+                    <a href="/src/Asociados/Asociados.html">Lista de proveedores</a>
+                    <a href="/src/Pagina sobre nosotros/Nosotros.html">Donaciones</a>
+                    <a href="/src/Contactanos/contactanos.html">Contáctanos</a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a class="extras--serv" href="/src/SOS/sos.html" target="_blank">
+                    <img src="/assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a class="extras--serv" href="/src/login/login.html" target="_blank">
+                    <img src="/assets/User_01.png" alt="ingresar" id="login-image">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Perfil"-->
+    <div class="container--principal">
+        <div class="container--informacion">
+            <div class="container--imagen">
+                <div class="profile-picture">
+                    <img id="profileImage" src="../../../../assets/User_01.png" alt="Foto de Perfil">
+                </div>
+                <input type="file" id="fileInput" accept="image/*">
+                <button id="cambiar--foto">Cambiar Foto de Perfil</button>
+            </div>
+            <div class="container--datos">
+                <label id="name">Jorge Licea Jiménez</label>
+                <label id="cedula">Cedula: 112 22 5555 554 4444</label>
+                <label id="especialidad">Médico General</label>
+                <label id="email">liceajj@gmail.com</label>
+                <label id="telefono">5585473882</label>
+                
+            </div>
+            <button id="updateButton" class="modificar--datos">Actualizar datos</button>
+        </div>
+    
+
+        <!-- Servicios -->
+        <div id="container--servicios">
+            <h2 class="title--servicios">Servicios</h2>
+            <div class="container--card">
+                <div class="servicio--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medico General</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicio--card">
+                    <div class="container--imagenServicio">
+                        <div class="image--servicio">
+                            <img src="../../../../assets/doctor.png" alt="Foto de Perfil">
+                        </div>
+                    </div>
+                    <div class="container--datosServicio">
+                        <h2 id="servicio">Medico General</h2>
+                        <div class="especialista">
+                            <p>Nombre del especialista:</p>
+                            <p id="name--especialista">Antonio Hernandez Gonzalez</p>
+                        </div>
+                        <div class="price">
+                            <p>Precio: $</p>
+                            <p id="price-servicio">costo del servicio</p>
+                        </div>
+                        <div class="fecha--hora">
+                            <div class="fecha">
+                                <p>Fecha del servicio:</p>
+                                <p id="fecha--servicio">07/08/2024</p>
+                            </div>
+                            <div class="hora">
+                                <p>Hora del servicio:</p>
+                                <p id="hora--servicio">15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    
+        
+        <!--Actualizar Datos-->
+        <div id="container--actualizar" class="hidden">
+            <h2 class="title--actualizar">Actualizar datos del proveedor</h2>
+            <div class="container--formActualizar">
+                <label for="nameAct">Nombre </label>
+                <input type="text" id="nameAct" value="Jorge Licea Jiménez">
+                <span id="nombre-error" class="error-message"></span>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccionAct" value="Lomas de chapu">
+                <span id="direccion-error" class="error-message"></span>
+
+                <label for="especialidad">Especialidad</label>
+                <input type="text" id="especialidadAct" value="Medico General">
+                <span id="especialidad" class="error-message"></span>
+
+                <label for="correoElectronico">Correo electronico</label>
+                <input type="email" id="correoElectronicoAct" value="liceajj@gmail.com">
+                <span id="correo-error" class="error-message"></span>
+
+
+                <label for="celular">Celular</label>
+                <input type="text" id="celularAct" value="5585473882">
+                <span id="celular-error" class="error-message"></span>
+
+            </div>
+            <div id="boton--guardar">
+                <button id="guardar" class="guardar--datos">Guardar datos</button>
+            </div>
+
+        </div>
+
+    </div>
+   
+
+    <!--Footer-->
+    <footer>
+        <div class="primer--cont">
+            <div class="section-redes">
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="IG" src="/assets/IG.png" alt="Instagram">
+                </a>
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="Twitter" src="/assets/X.png" alt="X">
+                </a>
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="Face" src="/assets/FB.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="section">
+                <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
+                <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
+                <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
+            </div>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+
+    <!--scrip js-->
+    <script src="./scripts/botonFoto.js"></script>
+    <script src="./scripts/actualizarDatos.js"></script>
+    <script src="../../toggle-buttom.js"></script>
+
+
+</body>
+
+</html>

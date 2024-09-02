@@ -21,7 +21,7 @@
 }
 
 
-.container--registrarse input:not([type="checkbox"]), select{
+.container--registrarse input:not([type="checkbox"]){
     display: flex;
     flex-direction: column;
     background-color: #FFFF;
@@ -33,7 +33,24 @@
     border-color: #296CD1;
     margin-top: 15px;
     padding-left: 15px;
-    margin-bottom: 30px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.container--registrarse select{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 428px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    margin-top: 15px;
+    padding-left: 15px;
     font-family: "Lato";
     font-size: 15px;
     align-items: center;
@@ -47,36 +64,139 @@
 } 
 
 #registrarse{
-    height: 70px; 
-	width: 252px;   
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 40px; 	
-	background-color: #1C2B52; 
-	border-color: white; 
-	border-style: solid; 
-	border-radius: 2em;	
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
     font-family: "Lato";
-    font-size: 28px;
-    color: #FFFF;
+    transition-duration: 0.3s;
+    margin-bottom: 50px;
 }
 
 #registrarse:hover{
-    background-color: #86C0EA;
-    color: #1C2B52;
-    transition: 0.1s;
-    text-decoration: dotted;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 120%;
-    border-color: #1C2B52;
-}
-/*
-#login:disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
+    background-color: white;
+    color: #212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
 }
 
+#nombre--registro,
+#correo--registro,
+#contraseña--registro,
+#conf-contraseña--registro,
+#registrarseForm {
+    font-family: "Lato";
+}
+
+span{
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width: 570px) {
+    .container--registrarse {
+        width: 85%;
+    }
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .container--registrarse input:not([type="checkbox"]){
+        width: 85%;
+    }
+    .container--registrarse select {
+        width: 90%;
+    }
+
+    #registrarse{
+        height: 60px; 
+	    width: 240px; 
+        font-size: 20px;
+        justify-content: center;
+
+    }
+}
+
+
+
+
+/*---------Mediaquery-----------*/
+
+@media (max-width: 570px) {
+    .container--registrarse {
+        width: 85%;
+    }
+
+    .container--registrarse h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .container--registrarse input:not([type="checkbox"]){
+        width: 85%;
+    }
+    .container--registrarse select {
+        width: 90%;
+    }
+
+    #registrarse{
+        height: 60px; 
+	    width: 240px; 
+        font-size: 20px;
+        justify-content: center;
+
+    }
+    /*
+    #check {
+        font-size: 200px;
+    }
 */
+}
+
+@media (max-width: 510px) {
+    .container--registrarse {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+
+    .container--registrarse h2 {
+        font-size: 30px;
+        justify-content: center;
+
+    }
+
+    .container--registrarse input:not([type="checkbox"]) {
+        width: 75%;
+    }
+
+    .container--registrarse select {
+        width: 80%;
+    }
+
+
+    #registrarse{
+        justify-content: center;
+        height: 50px; 
+	    width: 230px; 
+        font-size: 17px;
+    }
+}

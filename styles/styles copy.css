@@ -430,6 +430,8 @@ footer {
     .nav--menu a {
         visibility: hidden;
     }
+
+   
 }
 
 @media (max-width: 550px){
@@ -479,6 +481,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     
     .section{
         display: flex;
@@ -496,6 +499,31 @@ footer {
         text-align: center;
         font-size: 12px;
         margin: 1%;
+    }
+    
+    #Face:hover{
+        width: 20px;
+    }
+    #Twitter:hover
+    {
+        width: 20px;
+    }
+    #IG:hover
+    {
+        width: 20px;
+    }
+
+    #aviso:hover
+    {
+        font-size: 13px;
+    }
+    #terminos:hover
+    {
+        font-size: 13px;
+    }
+    #acces:hover
+    {
+        font-size: 13px;
     }
     
 }

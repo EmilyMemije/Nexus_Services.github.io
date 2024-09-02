@@ -2,6 +2,11 @@
 const Bmission=document.getElementById('mis');
 const Bvission=document.getElementById('vis');
 
+const container = document.getElementById('container-team');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let scrollAmount = 0;
 
 // llamada de los contenedores
 const mission=document.getElementById('container-mision');
@@ -60,6 +65,18 @@ function Mostrar(Posicion)
 
     Global[Posicion].style.visibility='visible'
 }
+
+
+const cardWidth = document.querySelector('.integrante').offsetWidth;
+const scrollStep = cardWidth * 3.5 + 18; // Ajusta el desplazamiento para dos cards
+
+prevButton.addEventListener('click', () => {
+    container.scrollLeft -= scrollStep;
+});
+
+nextButton.addEventListener('click', () => {
+    container.scrollLeft += scrollStep;
+});
 
 /*function Autoplay()
 {

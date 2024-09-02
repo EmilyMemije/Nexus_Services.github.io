@@ -27,17 +27,35 @@
 
 .formulario h1, h2{
     color: white;
+    
+}
+
+.formulario{
+    
+    text-align:center ;
+
+}
+.comen, h3{
+    text-align: justify;
+    color: white;
+    font-family: "Lato";
+    font-size: 15px;
+    padding: 5%;
+
 }
 
 .escribenos {
     font-size: 25px;
     text-align: left;
     font-style: "lato";
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    
 }
 
 label {
     font-style: "lato";
+   
+    text-align: left;
     
 }
 
@@ -70,6 +88,7 @@ textarea {
     padding-top: 15px;
     font-family: "Lato";
     font-size: 15px;
+    
 }
 
 label{
@@ -79,22 +98,25 @@ label{
 }
 
 .contenedor--bton--env{
-    width: 85%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container--principal button{
+    display: flex;
 	background-color: white;
     color: var(--footer-blue);
     border: none;
-    padding: 10px 20px;
+    padding: 12px 100px;
     border-radius: 2rem;
     cursor: pointer;
+    justify-content: center;
     text-align: center;
+  
     width: 120px;
-    font-size: 20px;
+    font-size: 15px;
     transition-duration: 0.3s;
 }
 
@@ -178,6 +200,11 @@ span {
     display: flex;
     align-items: center;
     margin: 40px;
+    width: 1;
+}
+
+.redes-sociales img{
+    width: 75px;
 }
 
 /*---------Mediaquery-----------*/

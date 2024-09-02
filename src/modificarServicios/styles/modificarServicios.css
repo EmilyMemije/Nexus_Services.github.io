@@ -7,14 +7,14 @@
     --green-tea: #BAD895;
 }
 
-.modCuentas--title {
+.modServicios--title {
     display: flex;
     width: 100%;
     font-family: 'Lato';
     background-color: #212A3E;
     color: var(--dark-gray);
 }
-.modCuentas--title h1 {
+.modServicios--title h1 {
     width: 73%;
     padding: 10px;
     display: flex;
@@ -70,6 +70,7 @@
     box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
     opacity: 60%;
     cursor: pointer;
+    z-index: auto;
 }
 
 .options--container {
@@ -112,7 +113,7 @@
     padding: 3%;
 }
 
-.card--modCuentas {
+.card--modServicios {
     width: 105%;
     background-color: #1C2B52;
     border-radius: 2rem;
@@ -120,16 +121,16 @@
     border: solid;
 }
 
-.card--modCuentas, #card--titles {
+.card--modServicios, #card--titles {
     display: inline-block;
     justify-content: space-between;
     padding: 1%;
 }
 
-.card--modCuentas:hover {
+.card--modServicios:hover {
     transform: scale(99%);
     box-shadow: 10px 10px 10px #869DA6;
-    #img--modCuentas {
+    #img--modServicios {
         filter: drop-shadow(5px 5px 10px #869DA6);
     }
 }
@@ -139,14 +140,14 @@
     flex-direction: row;
 }
 
-#img--modCuentas {
+#img--modServicios {
     width: 15%;
     margin-left: 13%;
     translate: -50%;
     border-radius: 50%;
 }
 
-#container--modCuentas {
+#container--modServicios {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -171,7 +172,7 @@
 .descripcion--cuenta {
     width: 65%;
     height: fit-content;
-    font-family: 'Merriweather';
+    font-family: 'Comfortaa';
     font-size: clamp(13px, 1vw, 22px);
     color: #EFF0D5;
     border: solid white 2px;

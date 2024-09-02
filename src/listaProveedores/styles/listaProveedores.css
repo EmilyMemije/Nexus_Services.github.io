@@ -135,7 +135,7 @@ margin-top: 20px;
 }
 
 /*Medias Queries*/
-@media (max-width: 700px) {
+@media (max-width: 740px) {
     #Container-principal {
         flex-direction: column;
     }

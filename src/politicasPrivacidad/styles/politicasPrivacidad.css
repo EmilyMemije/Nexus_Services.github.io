@@ -7,6 +7,10 @@
     --green-tea: #BAD895;
     }
 
+    body {
+        height: 100vh;
+            
+    }
 
 #Container-principal
 {
@@ -22,21 +26,22 @@
 
 
 /* contenedor de la informacion*/
-#info
-{
-    position: relative;
+#info {
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Merriweather";
     background-color: #212A3E;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 500px;
+    height: 600px; /* Ajuste automático según el contenido */
     width: 80%;
     margin: 3% 0%;
     border-radius: 2em;
-
+    overflow: auto; 
+    scrollbar-width: none;
 }
 
 /*Tanio de la fuente*/
@@ -44,6 +49,7 @@
 {
     font-size: large;
 }
+
 
 /*imagen background*/
 

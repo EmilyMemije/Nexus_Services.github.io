@@ -1,8 +1,5 @@
-@media (max-width: 768px) {
-
     body {
-    font-size: 16px;
-    }
+    height: 150vh;
     }
 .titulo {
     display: flex;
@@ -13,6 +10,7 @@
     color: #D9D9D9;
     flex-direction: column;
     justify-content: center;
+
 }
 
 #titulo{

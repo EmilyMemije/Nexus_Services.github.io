@@ -11,6 +11,7 @@ body {
     background-color: #3683f79f;
 }
 
+/* Estilos del contenedor principal de donación */
 .contenedor-donacion {
     display: flex;
     justify-content: space-between;
@@ -223,6 +224,133 @@ h2 {
 
 
 
+/* Estilos para el formulario */
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.formulario_label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Formulario_grupo_input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: 0.3s ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+    color: #bb2929;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position:absolute ;
+    right: 15px;
+    width: 10px;
+    bottom: 50px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+/* Estilos para los iconos de tarjetas */
+.icono-tarjeta {
+    position: relative;
+    left: 620px;
+    right: 10px;
+    bottom: 48px;
+    font-size: 20px;
+    
+}
+
+.posicion_tarjVisa {
+    
+    left: 510px;
+    right: 10px;
+    bottom: 48px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
+    
+}
+
+.posicion_tarjMasrter {
+    position: absolute;
+    left: 530px;
+    right: 10px;
+    bottom: 48px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
+}
+
+.posicion_tarjamex {
+    position: absolute;
+    left: 550px;
+    right: 10px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
+}
+
+.icons{
+    position:relative;
+    right: 15px;
+    width: 10px;
+    bottom: 50px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+
+}
+
+.Formulario_grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+    bottom: 48px;
+}
+
+.Formulario_grupo-incorrecto .formulario_label {
+    color: red;
+    bottom: 48px;
+}
+
+.Formulario_grupo-incorrecto .formulario__validacion-estado {
+    color: red;
+    opacity: 1;
+}
+
+.Formulario_grupo-incorrecto .formulario__input {
+    border: 3px solid red;
+}
+
 /* Estilos para la alerta personalizada */
 .alerta {
     position: fixed;
@@ -240,8 +368,6 @@ h2 {
 .oculto {
     display: none;
 }
-
-
 
 /* Media Queries */
 @media screen and (min-width: 1024px) {
@@ -286,7 +412,7 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
-    /* Media query para pantallas muy muuy pequeñas  */
+    /* Media query para pantallas muy muy pequeñas */
     .contenedor-donacion {
         padding: 1rem;
     }

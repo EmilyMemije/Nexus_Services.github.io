@@ -1,3 +1,126 @@
+const formulario = document.getElementById('formulario');
+const inputs = document.querySelectorAll('#formulario input');
+const botonDonar = document.getElementById('donate-btn');
+const checkboxTerminos = document.getElementById('terms-checkbox');
+const alertaPersonalizada = document.getElementById('customAlert');
+const subtotalSpan = document.getElementById('subtotal');
+const totalSpan = document.getElementById('total');
+
+
+
+
+
+
+
+
+
+// Expresiones regulares
+const expresiones = {
+    nombreCompleto: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    tarjeta: /^(4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13})$/,
+    nombreTitular: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    fechaVen: /^(0[1-9]|1[0-2])\/([0-9]{2})$/,
+    cvv: /^[0-9]{3}$/
+};
+
+// Objeto para controlar la validación de campos
+const campos = {
+    NombreCompleto: false,
+    Correo: false,
+    tarjeta: false,
+    NombreTitular: false,
+    fechaVen: false,
+    CVV: false
+};
+
+// Función para validar el formulario
+const validarFormulario = (e) => {
+    switch (e.target.name) {
+        case "NombreCompleto":
+        case "NombreTitular":
+            validarCampo(expresiones.nombreCompleto, e.target, e.target.name);
+            break;
+        case "Correo":
+            validarCampo(expresiones.correo, e.target, 'Correo');
+            break;
+        case "tarjeta":
+            validarCampo(expresiones.tarjeta, e.target, 'tarjeta');
+            mostrarIconoTarjeta(e.target.value);
+            break;
+        case "fechaVen":
+            validarCampo(expresiones.fechaVen, e.target, 'fechaVen');
+            break;
+        case "CVV":
+            validarCampo(expresiones.cvv, e.target, 'CVV');
+            break;
+    }
+};
+
+// Función para validar un campo
+const validarCampo = (expresion, input, campo) => {
+    if (expresion.test(input.value)) {
+        document.getElementById(`grupo__${campo}`).classList.remove('Formulario_grupo-incorrecto');
+        document.getElementById(`grupo__${campo}`).classList.add('Formulario_grupo-correcto');
+        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-xmark');
+        document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-check');
+        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        campos[campo] = true;
+    } else {
+        document.getElementById(`grupo__${campo}`).classList.add('Formulario_grupo-incorrecto');
+        document.getElementById(`grupo__${campo}`).classList.remove('Formulario_grupo-correcto');
+        document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-xmark');
+        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-check');
+        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        campos[campo] = false;
+    }
+};
+
+
+// Función para mostrar el icono de la tarjeta
+const mostrarIconoTarjeta = (numeroTarjeta) => {
+    const iconoVisa = document.getElementById('visaRegex');
+    const iconoMastercard = document.getElementById('mastercardRegex');
+    const iconoAmex = document.getElementById('amexRegex');
+
+    iconoVisa.style.display = 'none';
+    iconoMastercard.style.display = 'none';
+    iconoAmex.style.display = 'none';
+
+    if (numeroTarjeta.startsWith('4')) {
+        iconoVisa.style.display = 'block';
+    } else if (numeroTarjeta.startsWith('5')) {
+        iconoMastercard.style.display = 'block';
+    } else if (numeroTarjeta.startsWith('3')) {
+        iconoAmex.style.display = 'block';
+    }
+};
+
+inputs.forEach((input) => {
+    input.addEventListener('keyup', validarFormulario);
+    input.addEventListener('blur', validarFormulario);
+});
+
+checkboxTerminos.addEventListener('change', () => {
+    botonDonar.disabled = !checkboxTerminos.checked;
+});
+
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (campos.NombreCompleto && campos.Correo && campos.tarjeta && campos.NombreTitular && campos.fechaVen && campos.CVV && checkboxTerminos.checked) {
+        formulario.reset();
+
+        document.querySelectorAll('.Formulario_grupo-correcto').forEach((icono) => {
+            icono.classList.remove('Formulario_grupo-correcto');
+        });
+    }
+
+});
+
+
+
+
 // Obtener el valor guardado en el almacenamiento local
 const valorBoton = localStorage.getItem('valorBoton');
 
@@ -130,9 +253,6 @@ if (montoDonacion) {
 });
 
 // Habilitar el botón de donación si los términos están aceptados
-const checkboxTerminos = document.getElementById('terms-checkbox');
-const botonDonar = document.getElementById('donate-btn');
-
 checkboxTerminos.addEventListener('change', function() {
     botonDonar.disabled = !checkboxTerminos.checked;
 });

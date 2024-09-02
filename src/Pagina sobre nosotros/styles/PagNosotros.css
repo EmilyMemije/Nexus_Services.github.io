@@ -64,6 +64,7 @@
     width: 80%;
     margin: 3% 0%;
     border-radius: 2em;
+    z-index: -2;
 
 }
 
@@ -178,13 +179,23 @@ h4 {
     width: 700px;
     margin: 3% 0 3% 3%; 
 }
-#imgDona {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+#imgDona {   
+    margin: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    
+    .dona{
+    display: flex;
+    flex-direction: column; 
+    min-height: 6px;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    
+  
+ 
+
+
 }
 
 .container--Donaciones {
@@ -322,52 +333,77 @@ h4 {
     background-color: #0056b3; /* Azul más oscuro en hover */
 }
 
-/*Seccion de integrantes*/
-#team
-{
+/*Seccion de integrantes*/#team {
     text-align: center;
     margin-top: 5%;
 }
 
-#container-team
-{
+#carousel-team {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 1%;
+    position: relative;
+}
+
+#container-team {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
     gap: 1%;
 }
 
-.integrante
-{ 
+.integrante {
     display: flex;
     flex-direction: column;
     background-color: #212A3E;
     color: antiquewhite;
-    min-height: 600px;
-    width: 450px;
-    margin: 2%;
+    min-height: 650px; /* Ajusta la altura según tu preferencia */
+    width: 30%; /* Ajustado para mostrar 3 cards */
+    margin: 1%;
     align-items: center;
     justify-content: center;
     border-radius: 2em;
     padding: 2%;
     gap: 20px;
-    padding: 1%;
 }
-.integrante img
-{
-    padding: 0%;
+
+.integrante img {
     background-color: #F2F2EB;
-    height: 60%;
-    width: 60%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    width: 200px; /* Ajusta el ancho de la imagen */
     border-radius: 50%;
     margin: 0%;
 }
-.integrante p
-{
-    text-align: center;
+
+.integrante p {
+    text-align:start;
 }
 
+.carousel-button {
+    background-color: #F2F2EB;
+    border: none;
+    border-radius: 50%;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: #ccc;
+}
+
+.carousel-button:active {
+    transform: scale(0.95);
+}
+
+.carousel-button:active {
+    transform: scale(0.95);
+}
 /*inicia media query con configuracion para iphon*/
 @media(max-width:700px){
    

@@ -84,6 +84,7 @@
     </nav>
 </header>
 
+<<<<<<< HEAD
 
 <main>
     <div class="contenedor-donacion">
@@ -219,6 +220,132 @@
 
                 </form>
             </div>
+=======
+
+    <main>
+        <div class="contenedor-donacion">
+            <div class="container">
+                <h2>Nexus Services</h2>
+                <p>Tu donativo ayudará a mejorar la calidad de los servicios y que siga siendo gratuito.</p>
+                
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment" value="credit-card">
+                    <label for="credit-card">Tarjeta de Crédito/Débito</label>
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="oxxo" name="payment" value="oxxo">
+                    <label for="oxxo">Pago en OXXO</label>
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="transfer" name="payment" value="transfer">
+                    <label for="transfer">Transferencia Interbancaria</label>
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                
+ <!--input Nombre-->
+                <div id="credit-card-details" class="payment-details">
+                    <form action ="" class="formulario" id="formulario">
+                        <div class="Formulario_grupo" id ="grupo __nombreCompleto">
+                            <label for="NombreCompleto" class="formulario_label">Nombre completo</label>
+                            <div class="Formulario_grupo_input" >
+                                <input type="text" name="NombreCompleto"class="formulario__input" id="NombreCompleto" placeholder="Jose Cadenas">
+                                <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">ingrese solo letras</p>
+                            </div>
+ <!--input Correo electronico-->
+                     <form action ="" class="formulario" id="formulario">
+                         <div class="Formulario_grupo" id ="grupo__Correo">
+                            <label for="Correo" class="formulario_label">Correo electronico</label>
+                             <div class="Formulario_grupo_input" >
+                                 <input type="email" name="Correo"class="formulario__input"  id="Correo" placeholder="bobert@gmail.com">
+                                 <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                                 </div>
+                                <p class="formulario__input-error">ingrese una direccion de correo electronico valida</p>
+                            </div>
+ <!--input numero de tarjeta -->
+                    <form action ="" class="formulario" id="formulario">
+                        <div class="Formulario_grupo" id ="grupo__tarjeta">
+                             <label for="tarjeta" class="formulario_label">Tarjeta debito/Credito</label>
+                            <div class="Formulario_grupo_input" >
+                                <input type="text" name="tarjeta"class="formulario__input"  id="tarjeta" placeholder="3231 2315 4162 2252">
+                                <i class="formulario__validacion_estado fa-regular fa-circle-xmark" ></i>
+                               <!--icono visade tarjeta --> <i class="posicion_tarjVisa fa-brands fa-cc-visa " id="visaRegex"></i>
+                                <!--icono mastercard tarjeta --> <i class=" posicion_tarjMasrter fa-brands fa-cc-mastercard" id="mastercardRegex"></i>
+                                <!--icono amex tarjeta --><i class="posicion_tarjamex fa-brands fa-cc-amex"id=" amexRegex" ></i>
+                                </div>
+                                <p class="formulario__input-error">Debe ingresar 16 digitos.</p>
+                                                               
+                                </div>
+<!--input nombre del titular-->
+                <form action ="" class="formulario" id="formulario">
+                        <div class="Formulario_grupo" id ="grupo__NombreTitular">
+                          <label for="NombreTitular" class="formulario_label">Nombre del Titular </label>
+                          <div class="Formulario_grupo_input" >
+                          <input type="text" name="NombreTitular"class="formulario__input"  id="NombreTitular" placeholder="JOSE PEREZ BOLIVAR">
+                           <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                           </div>
+                          <p class="formulario__input-error">ingrese solo letras y espacios</p>
+                           </div>
+
+
+<!--fecha  de vencimiento-->
+            <form action ="" class="formulario" id="formulario">
+                   <div class="Formulario_grupo" id ="grupo__fechaVen">
+                    <label for="fechaVen" class="formulario_label">Fecha de vencimiento</label>
+                     <div class="Formulario_grupo_input" >
+                     <input type="email" name="fechaVen"class="formulario__input"  id="fechaVen" placeholder="MM/AA">
+                       <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                          </div>
+                     <p class="formulario__input-error">Ingrese una fecha valida</p>
+                     </div>
+
+
+<!--Código Valor de Verificación-->
+            <form action ="" class="formulario" id="formulario">
+                 <div class="Formulario_grupo" id ="grupo__CVV">
+                   <label for="CVV" class="formulario_label">CVV / CVC</label>
+                   <div class="Formulario_grupo_input" >
+                       <input type="password" name="CVV" class="formulario__input"  id="CVV" placeholder="***">
+                        <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                        </div>
+                    <p class="formulario__input-error">el CVV consta de 3 numeros</p>
+                   </div>
+                    </form>
+                </div>
+
+
+                <div id="other-payment-details" class="payment-details">
+  <!--input Nombre-->
+                  <form action ="" class="formulario" id="formulario">
+                      <!--remover clase que no -->
+                        <div class="Formulario_grupo Formulario_grupo-incorrecto" id ="grupo __nombreCompleto">
+                            <label for="NombreCompleto" class="formulario_label">Nombre completo</label>
+                            <div class="Formulario_grupo_input" >
+                                <input type="text" name="NombreCompleto" class="formulario__input"  id="NombreCompleto" placeholder="Jose Cadenas">
+                                <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">ingrese solo letras</p>
+                            </div>
+ <!--input Correo electronico-->
+                     <form action ="" class="formulario" id="formulario">
+                         <div class="Formulario_grupo " id ="grupo__Correo">
+                            <label for="Correo" class="formulario_label">Correo electronico</label>
+                             <div class="Formulario_grupo_input" >
+                                 <input type="email" name="Correo" class="formulario__input"  id="Correo" placeholder="bobert@gmail.com">
+                                <i class="formulario__validacion_estado fa-regular fa-circle-xmark"></i>
+                                 </div>
+                                <p class="formulario__input-error">Ingrese una direccion de correo electronico valida</p>
+                              </form>
+                    </div>
+                </div>
+>>>>>>> afb3b328051e2f2e3bfd4c65e2e3915b7475d4f2
                 
 
 
@@ -251,6 +378,7 @@
             </div>
         </div>
     </main>
+<<<<<<< HEAD
     <!--Footer-->
 <footer>
     <div class="primer--cont">
@@ -275,6 +403,8 @@
         <p>&copy; Derechos reservados. 2024</p>
     </div>
 </footer>
+=======
+>>>>>>> afb3b328051e2f2e3bfd4c65e2e3915b7475d4f2
 
     <!--bostrap scrip-->
     

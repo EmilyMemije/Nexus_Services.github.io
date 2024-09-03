@@ -21,9 +21,11 @@ const Serch=document.querySelector('.search--imput');
 const SerchButtom=document.querySelector('.botton');
 
 SerchButtom.addEventListener('Click',()=>{
+    
+    const compara=Serch.textContent;
     const Buscado="";
-
-    if(Serch.textContent==="Psicologia")
+    console.log(compara);
+    if(compara==="Psicologia")
     {
         console.log("ingrese")
         Buscado="Psicología";

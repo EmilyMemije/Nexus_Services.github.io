@@ -14,6 +14,7 @@
     background-color: #212A3E;
     color: var(--dark-gray);
 }
+
 .modServicios--title h1 {
     width: 73%;
     padding: 10px;
@@ -24,6 +25,7 @@
 .container {
     display: flex;
     flex-direction: row;
+    z-index: -5;
 }
 
 .admin--section {
@@ -31,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     width: 25%;
-    height: max-content;
+    height: 600px;
     background-color: #212A3E;
     color: var(--dark-gray);
     border-radius: 0px 0px 25px 25px;
@@ -68,9 +70,6 @@
     width: 150px;
     background: var(--not-white);
     box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
-    opacity: 60%;
-    cursor: pointer;
-    z-index: auto;
 }
 
 .options--container {
@@ -78,13 +77,13 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 10px 15px; 
+    margin: 10px 15px;
 }
 
 .options--container a {
-    background-color: #212A3E;
-    color: white;
-    border: solid;
+    background-color: white;
+    color: #212A3E;
+    border: 0.5px solid black;
     padding: 10px;
     margin: 10px 0px;
     border-radius: 2rem;
@@ -100,16 +99,16 @@
 .options--container a:hover {
     border-radius: 25px 25px 25px 25px;
     background: #1C2B52;
-    color: #B8C2D5;
-    border:0.5px solid white;
+    color: white;
+    border: 0.3px solid white;
     transition: .3s;
-    padding: 2.5px 2.5px;
+    padding: 8px;
+    margin: 12px 0px;
 }
 
 /*----- Cards de Cuentas -----*/
 .fondo--main {
     width: 65%;
-    position: relative;
     padding: 3%;
 }
 
@@ -130,7 +129,7 @@
 .card--modServicios:hover {
     transform: scale(99%);
     box-shadow: 10px 10px 10px #869DA6;
-    #img--modServicios {
+    #img--modCuentas {
         filter: drop-shadow(5px 5px 10px #869DA6);
     }
 }
@@ -142,8 +141,8 @@
 
 #img--modServicios {
     width: 15%;
-    margin-left: 13%;
-    translate: -50%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 50%;
 }
 
@@ -172,7 +171,7 @@
 .descripcion--cuenta {
     width: 65%;
     height: fit-content;
-    font-family: 'Comfortaa';
+    font-family: 'Merriweather';
     font-size: clamp(13px, 1vw, 22px);
     color: #EFF0D5;
     border: solid white 2px;
@@ -180,4 +179,49 @@
     padding: 5px 5px;
     margin-left: 1%;
     top: 0;
+}
+
+/* ----- Media query ----- */
+@media (max-width: 1200px) {
+    .options--container a {
+        width: 215px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .modServicios--title h1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .admin--section {
+        width: 100%;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    .nav--ingresar {
+        visibility: hidden;
+    }
+
+    .fondo--main {
+        width: 87%;
+    }
+}
+
+@media (max-width: 660px) {
+    .modServicios--title h1 {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .options--container a {
+        width: 180px;
+    }
 }

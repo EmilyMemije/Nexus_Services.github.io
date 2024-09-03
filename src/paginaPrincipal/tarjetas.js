@@ -76,6 +76,6 @@ servicio9.addEventListener('click',()=>{
 
 BTNvet.addEventListener('click',()=>{
     console.log(valorBtn);
-    localStorage.setItem('ServiCard', seselecciono);
+    localStorage.setItem('ServiCard', valorBtn);
 })
 

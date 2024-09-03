@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    localStorage.removeItem('ServiCard');
+    localStorage.removeItem('idBuscado');
     const option = document.querySelector('#Servicio');
     const optionStar = document.querySelector('#review');
     const optionUbicacion = document.querySelector('#place');

@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 TarjetaMain();
                 
             }
-            if (existeSerch)
+            else if (existeSerch)
             {
                 Serch();
                 

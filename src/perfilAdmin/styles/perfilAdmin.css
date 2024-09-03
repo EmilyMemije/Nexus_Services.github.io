@@ -54,7 +54,7 @@ hr {
     background: radial-gradient(40% 40% at 50% 50%, #7373 30%, #D9D9D9 100%);
     box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
     opacity: 60%;
-    cursor: pointer;
+    z-index: -1;
 }
 
 .options--container {
@@ -69,27 +69,35 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Lato';
-    font-size: x-large;
+    font-size: 20px;
+    font-family: "Lato";
     text-decoration: none;
+    text-align: center;
     color: black;
-    margin: 30px 60px;
+    margin: 10px;
+    padding: 10px;
     width: 80%;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 25px;
     border: 0.5px solid black;
     background: #B8C2D5;
     box-shadow: 4px 8px 10px 1px rgb(143, 138, 138, 35%);
+    background-color: #212A3E;
+    color: white;
     cursor: pointer;
+    transition-duration: 0.3s
 }
 
 .options--container a:hover {
-    border-radius: 25px 25px 25px 25px;
-    background: #1C2B52;
-    color: #B8C2D5;
-    border:0.5px solid white;
-    transition: .3s;
-    padding: 2.5px 2.5px;
+    border-radius: 24px;
+    background: white;
+    color: #1C2B52;
+    border: 0.5px solid black;
+    transition: 0.3s;
+    padding: 5px;
+    margin: 14.82px;
+    width: 79%;
+    height: 51px;
 }
 
 
@@ -134,6 +142,18 @@ hr {
         width: 464px;
         height: 50px;
     }
+
+    .options--container a:hover {
+        border-radius: 24px;
+        background: white;
+        color: #1C2B52;
+        border: 0.5px solid black;
+        transition: 0.3s;
+        padding: 7px;
+        margin: 28.5px;
+        width: 460px;
+        height: 49px;
+    }
 }
 
 
@@ -152,6 +172,18 @@ hr {
         height: 30px;
         margin: 20px;
     }
+
+    .options--container a:hover {
+        border-radius: 24px;
+        background: white;
+        color: #1C2B52;
+        border: 0.5px solid black;
+        transition: 0.3s;
+        padding: 7px;
+        margin: 23.52px;
+        width: 417px;
+        height: 29px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -168,20 +200,32 @@ hr {
         font-size: 19px;
     }
 
+    .img--perfil {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .img--perfil img {
+        width: 50%;
+    }
+
     .options--container a {
         font-size: 16px;
         width: 320px;
         height: 30px;
         margin: 15px;
     }
-
-    .img--perfil {
-        width: 100px;
-        height: 100px;
-    }
-
-    .img--perfil img {
-        width: 50%;
+    
+    .options--container a:hover {
+        border-radius: 24px;
+        background: white;
+        color: #1C2B52;
+        border: 0.5px solid black;
+        transition: 0.3s;
+        padding: 7px;
+        margin: 18.5px;
+        width: 315px;
+        height: 29px;
     }
 }
 

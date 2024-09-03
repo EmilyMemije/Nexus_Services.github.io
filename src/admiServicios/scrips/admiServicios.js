@@ -1,4 +1,4 @@
-const apiUrl = '../index.json';
+const apiUrl = 'index.json';
 document.addEventListener("DOMContentLoaded", function () {
 
     function crearTarjetaServicio(servicio) {

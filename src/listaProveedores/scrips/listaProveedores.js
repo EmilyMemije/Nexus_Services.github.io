@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const all=document.querySelector(".filter-link");
 
     all.addEventListener('click',()=>{
+        console.log("Puchaste todos");
         localStorage.removeItem('ServiCard');
         localStorage.removeItem('idBuscado');
     })

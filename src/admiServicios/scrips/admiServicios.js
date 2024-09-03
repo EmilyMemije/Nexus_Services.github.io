@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    //const apiUrl = 'index.json'; 
+    const apiUrl = '../src/admiServicios/index.json'; 
 
     function crearTarjetaServicio(servicio) {
         const servicioDiv = document.createElement('div');
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function obtenerDatosYGuardarEnLocalStorage() {
-        fetch('index.json')
+        fetch('apiUrl')
             .then(response => response.json())
             .then(data => {
                 let i = 0;  // Usar un contador si los IDs no son únicos

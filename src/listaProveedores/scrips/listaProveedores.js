@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    localStorage.removeItem('ServiCard');
-    localStorage.removeItem('idBuscado');
     const option = document.querySelector('#Servicio');
     const optionStar = document.querySelector('#review');
     const optionUbicacion = document.querySelector('#place');
     const container = document.querySelector(".container");
     const BotonCargarMas = document.querySelector("#boton-cargarMas");
     const BotonAtras = document.querySelector("#Atras");
+    const all=document.querySelector(".filter-link");
+
+    all.addEventListener('click',()=>{
+        localStorage.removeItem('ServiCard');
+        localStorage.removeItem('idBuscado');
+    })
 
     let paginaActual = 0;
     const cardsPorPag = 4; // Número de tarjetas que queramos visualizar por página

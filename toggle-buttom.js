@@ -17,11 +17,10 @@ cerrarMenu.addEventListener("click", (e)=>{
 
 
 /// funcion del apartado de buscar
-const Buscado="";
+let Buscado="";
 const SerchButtom=document.querySelector('#BotonSarch');
 SerchButtom.addEventListener('click',()=>{
     let compara=document.querySelector('#Sarch').value;
-  
     console.log(compara);
    if(compara==="Psicologia")
     {

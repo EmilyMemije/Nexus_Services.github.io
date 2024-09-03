@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 TarjetaMain();
                 localStorage.removeItem('ServiCard');
             }
-            else if (existeSerch)
+            if (existeSerch)
             {
                 Serch();
                 localStorage.removeItem('idBuscado');

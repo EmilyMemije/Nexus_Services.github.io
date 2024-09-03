@@ -269,6 +269,6 @@ botonDonar.addEventListener('click', function() {
     // Esperar 5 segundos y redirigir a la página principal
     setTimeout(function() {
         cajaAlerta.classList.add('oculto');
-        window.location.href = "EmilyMemije/Nexus_Services.github.io/index.html";// Cambia esta ruta
+        window.location.href = "index.html";// Cambia esta ruta
     }, 5000);
 });

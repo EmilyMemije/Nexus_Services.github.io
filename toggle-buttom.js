@@ -22,13 +22,13 @@ SerchButtom.addEventListener('click',()=>{
     const compara=document.querySelector('#Sarch').value;
     const Buscado="";
     console.log(compara);
-   if(compara==="Psicologia")
+   if(compara=="Psicologia")
     {
         console.log("ingrese")
         Buscado="Psicología";
         localStorage.setItem('Busqueda', Buscado);
     }
-    if(Serch.textContent==="Psicología")
+    else if(compara=="Psicología")
     {
         console.log("ingrese")
          Buscado="Psicología";

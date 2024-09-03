@@ -34,8 +34,7 @@ SerchButtom.addEventListener('click',()=>{
     }
     localStorage.setItem('idBuscado',Buscado);
 
-    e.stopPropagation();
-    window.location.href = '../src/listaProveedores/listaProveedores.html';
+    window.location.href = '../../src/listaProveedores/listaProveedores.html';
 })
 
    

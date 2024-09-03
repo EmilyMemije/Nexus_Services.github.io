@@ -18,14 +18,14 @@ cerrarMenu.addEventListener("click", (e)=>{
 
 /// funcion del apartado de buscar
 const Serch=document.querySelector('.search--imput');
-const SerchButtom=document.querySelector('.botton');
+const SerchButtom=document.querySelector('#lupa');
 
 SerchButtom.addEventListener('Click',()=>{
     
     const compara=Serch.textContent;
     const Buscado="";
     console.log(compara);
-    if(compara==="Psicologia")
+   /* if(compara==="Psicologia")
     {
         console.log("ingrese")
         Buscado="Psicología";
@@ -37,7 +37,7 @@ SerchButtom.addEventListener('Click',()=>{
          Buscado="Psicología";
          localStorage.setItem('Busqueda', Buscado);
     }
-
+*/
 })
 
    

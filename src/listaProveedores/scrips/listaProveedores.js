@@ -195,13 +195,12 @@ document.addEventListener("DOMContentLoaded", function () {
             let existeSerch=localStorage.getItem('idBuscado');
             if(existe)
             {
+                console.log("Entre al if existente")
                 TarjetaMain();
-                
             }
             else if (existeSerch)
             {
                 Serch();
-                
             }
             else
             {

@@ -26,14 +26,14 @@ SerchButtom.addEventListener('click',()=>{
     {
         console.log("ingrese")
         Buscado="Psicología";
-        localStorage.setItem('idBuscado',Buscado);
     }
     else if(compara==="Psicología")
     {
         console.log("ingrese")
         Buscado="Psicología";
-        localStorage.setItem('idBuscado',Buscado);
     }
+    
+    localStorage.setItem('idBuscado',Buscado);
 })
 
    

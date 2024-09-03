@@ -16,7 +16,8 @@ const title5=document.querySelector('#Pedi');
 const title6=document.querySelector('#Endo');
 const title7=document.querySelector('#Gine');
 const title8=document.querySelector('#Derma');
-const Veterinario=document.querySelector('#servicio-vete');
+const BTNvet=document.querySelector('#servicio-vete');
+const valorBtn=document.querySelector('#servicio-vete').value;
 
 
 servicio1.addEventListener('click',()=>{
@@ -73,8 +74,8 @@ servicio9.addEventListener('click',()=>{
     localStorage.setItem('ServiCard', seselecciono);
 })
 
-Veterinario.addEventListener('click',()=>{
-    const seselecciono=title8.Veterinario.value;
+BTNvet.addEventListener('click',()=>{
+    const seselecciono=valorBtn;
     console.log(seselecciono);
     localStorage.setItem('ServiCard', seselecciono);
 })

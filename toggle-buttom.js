@@ -32,8 +32,8 @@ SerchButtom.addEventListener('click',()=>{
         console.log("ingrese")
         Buscado="Psicología";
     }
-    
-    localStorage.setItem('idBuscado',Buscado);
+
+    localStorage.setItem("idBuscado",Buscado);
 })
 
    

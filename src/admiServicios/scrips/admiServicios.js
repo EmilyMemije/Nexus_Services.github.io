@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiUrl = 'EmilyMemije/Nexus_Services.github.io/src/admiServicios/index.json'; 
+    const apiUrl = 'src/admiServicios/index.json'; 
 
     function crearTarjetaServicio(servicio) {
         const servicioDiv = document.createElement('div');

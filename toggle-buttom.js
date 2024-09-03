@@ -32,8 +32,10 @@ SerchButtom.addEventListener('click',()=>{
         console.log("ingrese")
         Buscado="Psicología";
     }
-
     localStorage.setItem('idBuscado',Buscado);
+
+    e.stopPropagation();
+    window.location.href = '../src/listaProveedores/listaProveedores.html';
 })
 
    

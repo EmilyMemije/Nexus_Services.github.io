@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (e.target.classList.contains('agendarCita-btn')) {
                 // Evita que el evento de clic también dispare la rotación de la tarjeta
                 e.stopPropagation();
-                window.location.href = '../../servicios/servicios.html';
+                window.location.href = '/src/servicios/servicios.html';
             }
         });
     }

@@ -22,7 +22,7 @@ const SerchButtom=document.getElementsByClassName('Button');
 
 SerchButtom.addEventListener('Click',()=>{
     
-    const compara=Serch.value;
+    const compara=Serch.value();
     const Buscado="";
     console.log(compara);
    /* if(compara==="Psicologia")

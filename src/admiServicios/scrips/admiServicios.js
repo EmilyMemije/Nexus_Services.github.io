@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const apiUrl = 'index.json'; 
+const apiUrl = 'index.json';
+document.addEventListener("DOMContentLoaded", function () {
 
     function crearTarjetaServicio(servicio) {
         const servicioDiv = document.createElement('div');
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         eliminarBtn.className = 'eliminar-btn';
         eliminarBtn.style.display = 'none'; // Oculto por defecto
 
-        eliminarBtn.addEventListener('click', function(e) {
+        eliminarBtn.addEventListener('click', function (e) {
             e.stopPropagation(); // Evitar que el evento se propague al contenedor
             eliminarServicio(servicioDiv, servicio.id);
         });
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
         actualizarBtn.className = 'actualizar-btn';
         actualizarBtn.style.display = 'none'; // Oculto por defecto
 
-        actualizarBtn.addEventListener('click', function(e) {
+        actualizarBtn.addEventListener('click', function (e) {
             e.stopPropagation(); // Evitar que el evento se propague al contenedor
             const id = servicioDiv.dataset.id; // Obtener el ID del dataset del servicio
             window.location.href = `ActualizarSer.html?${id}`;
@@ -81,14 +81,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function obtenerDatosYGuardarEnLocalStorage() {
-        fetch('apiUrl')
+        fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
                 let i = 0;  // Usar un contador si los IDs no son únicos
                 data.forEach(servicio => {
                     // Generar un ID único si no existe o se basa en el índice
                     const servicioId = servicio.id ? servicio.id : `servicio-${i}`;
-                    
+
                     // Verificación en consola
                     console.log(`Guardando servicio con ID: ${servicioId}`);
 
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     // Crear la tarjeta del servicio
                     crearTarjetaServicio(servicio);
-                    
+
                     i++;  // Incrementar el contador
                 });
             })
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let modoEliminar = false;
     let modoActualizar = false;
 
-    document.querySelector('.menu-button:nth-child(3)').addEventListener('click', function() {
+    document.querySelector('.menu-button:nth-child(3)').addEventListener('click', function () {
         modoEliminar = !modoEliminar;
         modoActualizar = false;
         document.querySelectorAll('.eliminar-btn').forEach(btn => {
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.querySelector('.menu-button:nth-child(4)').addEventListener('click', function() {
+    document.querySelector('.menu-button:nth-child(4)').addEventListener('click', function () {
         modoActualizar = !modoActualizar;
         modoEliminar = false;
         document.querySelectorAll('.actualizar-btn').forEach(btn => {

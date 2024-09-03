@@ -17,11 +17,11 @@ cerrarMenu.addEventListener("click", (e)=>{
 
 
 /// funcion del apartado de buscar
-const Serch=document.getElementsByClassName('search--imput');
+const Serch=document.getElementsByClassName('search--imput').value;
 const SerchButtom=document.getElementsByClassName('Button');
 
-SerchButtom.addEventListener('Click',(e)=>{
-    const compara=Serch.value();
+SerchButtom.addEventListener('click',()=>{
+    const compara=Serch;
     const Buscado="";
     console.log(compara);
    /* if(compara==="Psicologia")

@@ -25,11 +25,13 @@ SerchButtom.addEventListener('Click',()=>{
 
     if(Serch.textContent==="Psicologia")
     {
+        console.log("ingrese")
         Buscado="Psicología";
         localStorage.setItem('Busqueda', Buscado);
     }
     if(Serch.textContent==="Psicología")
     {
+        console.log("ingrese")
          Buscado="Psicología";
          localStorage.setItem('Busqueda', Buscado);
     }

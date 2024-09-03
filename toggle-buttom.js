@@ -17,8 +17,8 @@ cerrarMenu.addEventListener("click", (e)=>{
 
 
 /// funcion del apartado de buscar
-const Serch=document.getElementsByClassName('search--imput').value;
-const SerchButtom=document.querySelector('#BotonBuscar');
+const Serch=document.querySelector('#Sarch').value;
+const SerchButtom=document.querySelector('#BotonSarch');
 
 SerchButtom.addEventListener('click',()=>{
     const compara=Serch;

@@ -269,6 +269,6 @@ botonDonar.addEventListener('click', function() {
     // Esperar 5 segundos y redirigir a la página principal
     setTimeout(function() {
         cajaAlerta.classList.add('oculto');
-        window.location.href = "/src/paginaPrincipal/paginaPrincipal.html";// Cambia esta ruta
+        window.location.href = "../../paginaPrincipal/paginaPrincipal.html";// Cambia esta ruta
     }, 5000);
 });

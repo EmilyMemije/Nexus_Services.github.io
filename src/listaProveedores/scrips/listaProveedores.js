@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
         let tarjetasFiltradas = allCards;
         console.log("Entre a tarjeta main")
-        let Tarjeta=localStorage.getItem('Busqueda')
+        let Tarjeta=localStorage.getItem('idBuscado')
         console.log(Tarjeta);
         tarjetasFiltradas = tarjetasFiltradas.filter(servicio => servicio.Especialidad === Tarjeta);
         displayCards(tarjetasFiltradas);
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = await response.json();
             allCards = data.cards; // Aquí almacenamos todas las tarjetas
             let existe=localStorage.getItem('ServiCard');
-            let existeSerch=localStorage.getItem('Busqueda');
+            let existeSerch=localStorage.getItem('idBuscado');
             if(existe)
             {
                 TarjetaMain();
@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             else if (existeSerch)
             {
-                TarjetaMain();
-                localStorage.removeItem('Busqueda');
+                Serch();
+                localStorage.removeItem('idBuscado');
             }
             else
             {

@@ -196,12 +196,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if(existe)
             {
                 TarjetaMain();
-                localStorage.removeItem('ServiCard');
+                
             }
             if (existeSerch)
             {
                 Serch();
-                localStorage.removeItem('idBuscado');
+                
             }
             else
             {
@@ -212,6 +212,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Filtro Especialidad
             option.addEventListener("change", e => {
+                localStorage.removeItem('ServiCard');
+                localStorage.removeItem('idBuscado');
                 filtroEspecialidad = e.target.value === "Especialidad" ? "" : e.target.value;
                 console.log("Filtro de especialidad aplicado:", filtroEspecialidad);
                 paginaActual = 0;
@@ -220,6 +222,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Filtro Calificación
             optionStar.addEventListener("change", e => {
+                localStorage.removeItem('ServiCard');
+                localStorage.removeItem('idBuscado');
                 filtroCalificacion = e.target.value === "Por Calificación" ? "" : e.target.value;
                 console.log("Filtro de calificación aplicado:", filtroCalificacion);
                 paginaActual = 0;
@@ -228,6 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Filtro Ubicación
             optionUbicacion.addEventListener("change", e => {
+                localStorage.removeItem('ServiCard');
+                localStorage.removeItem('idBuscado');
                 filtroUbicacion = e.target.value === "Ubicación" ? "" : e.target.value;
                 console.log("Filtro de ubicación aplicado:", filtroUbicacion);
                 paginaActual = 0;

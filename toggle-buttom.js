@@ -14,3 +14,28 @@ cerrarMenu.addEventListener("click", (e)=>{
     menuCerrado.classList.toggle('noactive');
     menuPags.classList.toggle('noactive');
 })
+
+
+/// funcion del apartado de buscar
+const Serch=document.querySelector('.search--imput');
+const SerchButtom=document.querySelector('.botton');
+
+SerchButtom.addEventListener('Click',()=>{
+    const Buscado="";
+
+    if(Serch.textContent==="Psicologia")
+    {
+        Buscado="Psicología";
+        localStorage.setItem('Busqueda', Buscado);
+    }
+    if(Serch.textContent==="Psicología")
+    {
+         Buscado="Psicología";
+         localStorage.setItem('Busqueda', Buscado);
+    }
+
+})
+
+   
+
+

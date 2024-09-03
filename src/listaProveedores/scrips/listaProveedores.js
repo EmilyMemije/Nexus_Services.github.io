@@ -176,16 +176,32 @@ document.addEventListener("DOMContentLoaded", function () {
         displayCards(tarjetasFiltradas);
     }
 
+    function Serch()
+    {
+        let tarjetasFiltradas = allCards;
+        console.log("Entre a tarjeta main")
+        let Tarjeta=localStorage.getItem('Busqueda')
+        console.log(Tarjeta);
+        tarjetasFiltradas = tarjetasFiltradas.filter(servicio => servicio.Especialidad === Tarjeta);
+        displayCards(tarjetasFiltradas);
+    }
+
     async function obtenerServicios() {
         try {
             const response = await fetch('listaProveedores.json');
             const data = await response.json();
             allCards = data.cards; // Aquí almacenamos todas las tarjetas
-            let existe=localStorage.getItem('ServiCard')
+            let existe=localStorage.getItem('ServiCard');
+            let existeSerch=localStorage.getItem('Busqueda');
             if(existe)
             {
                 TarjetaMain();
                 localStorage.removeItem('ServiCard');
+            }
+            else if (existeSerch)
+            {
+                TarjetaMain();
+                localStorage.removeItem('Busqueda');
             }
             else
             {

@@ -23,7 +23,7 @@ SerchButtom.addEventListener('click',()=>{
     const compara=document.querySelector('#Sarch').value;
   
     console.log(compara);
-   if(compara==="Psicologia")
+   /*if(compara==="Psicologia")
     {
         console.log("ingrese")
         Buscado="Psicología";
@@ -32,9 +32,9 @@ SerchButtom.addEventListener('click',()=>{
     {
         console.log("ingrese")
         Buscado="Psicología";
-    }
+    }*/
 
-    localStorage.setItem("idBuscado",Buscado);
+    localStorage.setItem('idBuscado',compara);
 })
 
    

@@ -20,8 +20,7 @@ cerrarMenu.addEventListener("click", (e)=>{
 const Serch=document.getElementsByClassName('search--imput');
 const SerchButtom=document.getElementsByClassName('Button');
 
-SerchButtom.addEventListener('Click',()=>{
-    
+SerchButtom.addEventListener('Click',(e)=>{
     const compara=Serch.value();
     const Buscado="";
     console.log(compara);

@@ -29,13 +29,13 @@ function crearTarjetaServicio() {
         nombre.textContent = e.target.value;
         if (e.target.value=="Psicologia")
             {
-            img.src = '../img/Psychologist-pana.png';
+            img.src = 'img/Psychologist-pana.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }
        else if (e.target.value=="Ginecologia")
             {
-            img.src = '../img/Gynecology consultation-rafiki.png';
+            img.src = 'img/Gynecology consultation-rafiki.png';
             img.alt = 'Psicologo';
             img.className = 'service-icon';
             }

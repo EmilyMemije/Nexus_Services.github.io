@@ -7,7 +7,7 @@
     --green-tea: #BAD895;
 }
 
-.modServicios--title {
+.modCuentas--title {
     display: flex;
     width: 100%;
     font-family: 'Lato';
@@ -15,7 +15,7 @@
     color: var(--dark-gray);
 }
 
-.modServicios--title h1 {
+.modCuentas--title h1 {
     width: 73%;
     padding: 10px;
     display: flex;
@@ -112,7 +112,7 @@
     padding: 3%;
 }
 
-.card--modServicios {
+.card--modCuentas {
     width: 105%;
     background-color: #1C2B52;
     border-radius: 2rem;
@@ -120,13 +120,13 @@
     border: solid;
 }
 
-.card--modServicios, #card--titles {
+.card--modCuentas, #card--titles {
     display: inline-block;
     justify-content: space-between;
     padding: 1%;
 }
 
-.card--modServicios:hover {
+.card--modCuentas:hover {
     transform: scale(99%);
     box-shadow: 10px 10px 10px #869DA6;
     #img--modCuentas {
@@ -139,14 +139,14 @@
     flex-direction: row;
 }
 
-#img--modServicios {
+#img--modCuentas {
     width: 15%;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 50%;
 }
 
-#container--modServicios {
+#container--modCuentas {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -193,7 +193,7 @@
         flex-direction: column;
     }
 
-    .modServicios--title h1 {
+    .modCuentas--title h1 {
         width: 100%;
         justify-content: center;
     }
@@ -222,7 +222,7 @@
 }
 
 @media (max-width: 660px) {
-    .modServicios--title h1 {
+    .modCuentas--title h1 {
         width: 100%;
         justify-content: center;
     }
@@ -236,7 +236,7 @@
 
 /* ----- Media Query movil ----- */
 @media (max-width: 460px) {
-    .modServicios--title h1 {
+    .modCuentas--title h1 {
         font-size: 22px;
     }
 

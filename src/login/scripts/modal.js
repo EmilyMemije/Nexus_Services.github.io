@@ -13,7 +13,7 @@ const modal = document.querySelector("#miModal")
 btnAbrirModal.addEventListener("click", () => {
     if(modal){
         modal.style.display = 'block'
-        modal.showModal();
+        //modal.showModal();
     }
 });
 

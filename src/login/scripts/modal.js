@@ -12,8 +12,7 @@ const modal = document.querySelector("#miModal")
 
 btnAbrirModal.addEventListener("click", () => {
     if(modal){
-        modal.style.display = 'block'
-        //modal.showModal();
+        modal.showModal();
     }
 });
 
@@ -21,12 +20,16 @@ btnAbrirModal.addEventListener("click", () => {
 //     modal.close();
 // })
 
-document.getElementById('btnUsuario').addEventListener('submit', function (event) {
+//document.getElementById('btnUsuario').addEventListener('submit', function (event) {
+btnUsuario.addEventListener('submit', function (event) {
     event.preventDefault();
     event.target.submit();
+    modal.close();
 });
 
-document.getElementById('btnProveedor').addEventListener('submit', function (event) {
+//document.getElementById('btnProveedor').addEventListener('submit', function (event) {
+btnEspecialista.addEventListener('submit', function (event) {
     event.preventDefault();
     event.target.submit();
+    modal.close();
 });

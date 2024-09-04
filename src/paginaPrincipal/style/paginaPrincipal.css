@@ -108,7 +108,7 @@ h2 {
 {
     margin-top: 5%;
     height: 80px;
-    width: 40%;
+    width: 100%;
     border-radius: 2em;
     font-size: 30px;
     font-family: "Lato";
@@ -120,7 +120,7 @@ h2 {
 {
     margin-top: 5%;
     height: 90px;
-    width: 45%;
+    width: 105%;
     border-radius: 2em;
     font-size: 30px;
     transition-duration: .5s;

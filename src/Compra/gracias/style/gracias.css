@@ -1,5 +1,5 @@
     body {
-    height: 150vh;
+    height: 100vh;
     }
 .titulo {
     display: flex;
@@ -10,7 +10,6 @@
     color: #D9D9D9;
     flex-direction: column;
     justify-content: center;
-
 }
 
 #titulo{

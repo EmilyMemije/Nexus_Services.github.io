@@ -170,6 +170,7 @@
 #btnUsuario {
     padding-right: 20px;
     padding-left: 20px;
+    
 }
 
 #btnProveedor {
@@ -179,8 +180,16 @@
 }
 
 #seleccion--usuario {
-    width: 245px;
+    width: 250px;
+    height: 250px;
 }
+
+#seleccion--especialista{
+    width: 250px;
+    height: 250px;
+}
+
+
 
 .container--seleccion {
     display: flex;
@@ -260,60 +269,99 @@
 
     }
 
-    /*
-    .modal {
-        width: 80%;
-    }*/
-    /*
-    #btnUsuario {
-        width: 80%;
+    #seleccion--usuario {
+        width: 190px;
+        height: 190px;
     }
 
-    #btnProveedor {
-        padding-left: 20px;
-        padding-right: 20px;
+    
+    #seleccion--especialista{
+        width: 190px;
+        height: 190px;
     }
 
-    .seleccion{
-        width: 90%;
-       
-    }*/
+    .seleccion img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    
+    .seleccion p {
+        font-size: 25px;
+    }
+
+    #logo-Admin {
+        height: 50px;
+        width: 40px;
+    }
+
+    #login,  #registro {
+        width: 135px;
+        font-size: 15px;
+      
+    }
+    
+    #login:hover, #registro:hover {
+        width: 135px;
+        font-size: 15px;
+    }
+    
+  
+
+
 
 }
 
 @media only screen and (max-width: 450px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0.5em;
-    }
-
     .container--login h2 {
-        font-size: 35px;
-        padding-top: 25px;
+        font-size: 25px;
+
     }
 
-    /*----------Modal---------*/
-
-    .modal {
-        width: 100vw;
+    #logo--google {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
     }
 
-    #seleccion--usuario {
-        width: 145px;
+    #logo--facebook {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
     }
 
-    .container--seleccion {
-        height: 30vh;
+    #logo--mac {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
     }
 
-    .seleccion img {
-        width: 75px;
-        height: 75px;
+    .error-message {
+        width: 250px;
     }
 
-    .seleccion p {
-        font-size: 22px;
+    .formulario--login input {
+        width: 250px;
+        height: 20px;
+        font-size: 10px;
+
     }
+    #logo-Admin {
+        height: 40px;
+        width: 30px;
+    }
+
+    #login,  #registro {
+        width: 125px;
+        height: 30px;
+        padding: 7px 7px;
+        font-size: 12px;
+      
+    }
+    
+    #login:hover, #registro:hover {
+        width: 125px;
+        height: 30px;
+        padding: 7px 7px;
+        font-size: 12px;
+    }
+
 
 }

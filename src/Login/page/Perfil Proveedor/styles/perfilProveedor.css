@@ -11,11 +11,12 @@
     align-items: center;
     justify-content: center;
     width: 23.8vw;
-    height:100vh;
+    height: 100vh;
     top: 2%;
     position: sticky;
     background-color: #212A3E;
-    margin-right: 250px;
+    padding-top: 35px;
+    padding-bottom: 2rem;
     
 }
 /*Foto de perfil*/
@@ -122,6 +123,10 @@ input[type="file"] {
 }
 
 /*Servicios*/
+.container--servicios{
+    width: 76.2vw;
+    margin-bottom: 2rem;
+}
 
 .title--servicios {
     display: flex;
@@ -136,8 +141,7 @@ input[type="file"] {
 .container--card {
     display: flex;
     justify-content: start;
-    align-items: start;
-    width: 681px;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -145,9 +149,10 @@ input[type="file"] {
     display: flex;
     align-items: start;
     justify-content: start;
-    border-radius: 8px;
+    border-radius: 2rem;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-left: 10vw;
     background-color: #B8C2D5;
     margin-bottom: 10px;
     height: 191px;
@@ -267,7 +272,8 @@ input[type="file"] {
     background-color: #B8C2D5;
     margin-bottom: 10px;
     padding-top: 25px;
- 
+    margin-left: 15vw;
+    
 }
 
 .container--formActualizar label {
@@ -359,3 +365,382 @@ input[type="file"] {
     justify-content: center;
 }
     */
+
+
+
+/* Medias Query */
+@media only screen and (max-width: 1110px) {
+    .modificar--datos {
+        height: 29.85px;
+        width: 150px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .profile-picture {
+        width: 90%;
+        height: 90%;
+    }
+
+    #name{
+        font-size: 20px;;
+    }
+    #email, #telefono, #dire, #cedula, #especialidad, #cambiar--foto{
+        font-size: 13px;
+    }
+
+    .container--boton {
+        margin-bottom: 10px;
+    }
+
+    /*Apartado servicios*/
+    .title--servicios {
+        font-size: 35px;
+    }
+
+    .servicio--card {
+        height: 191px;
+        width: 555px;
+    }
+
+    .container--imagenServicio {
+        width: 160px;
+        height: 211px;
+    }
+
+    .image--servicio {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container--datosServicio {
+        width: 395px;
+        font-size: 13px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 76.2vw;
+    }
+
+    .title--actualizar {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        font-family: "Lato";
+        font-size: 38px;
+        color: #fbfbfb;
+
+    }
+
+    .container--formActualizar {
+        width: 470px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+
+    #cambiar--foto {
+        font-size: 11px;
+        width: 143px;
+    }
+
+  
+
+    /*Informacion de perfil*/
+    .container--datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #cedula {
+        font-size: 13px;
+    }
+
+    #email {
+        font-size: 13px;
+    }
+
+    #telefono {
+        font-size: 13px;
+    }
+
+    #especialidad {
+        font-size: 13px;
+    }
+
+
+    .updateButton {
+        height: 29.85px;
+        width: 143px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+ 
+    /*Apartado servicios*/
+    .title--servicios {
+        font-size: 28px;
+    }
+
+    .servicio--card {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .container--imagenServicio {
+        width: 105px;
+        height: 211px;
+    }
+
+    .image--servicio {
+        width: 75px;
+        height: 75px;
+    }
+
+    .container--datosServicio {
+        width: 345px;
+        font-size: 12px;
+    }
+
+    #servicio {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 76.2vw;
+    }
+
+    .title--actualizar {
+      
+        font-size: 28px;
+
+    }
+
+    .container--formActualizar {
+        grid-template-columns: 90px 200px minmax(50px, auto);
+        width: 350px;
+        font-family: "Lato";
+        font-size: 12px;
+
+    }
+
+    .container--formActualizar label {
+        text-align: center;
+        padding-right: 0px;
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .container--formActualizar input {
+        width: 150px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .guardar--datos {
+        height: 29.85px;
+        width: 143px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container--principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Apartado de informacion*/
+    .container--informacion {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        top: 2%;
+        position: static;
+        padding-top: 15px;
+    }
+
+    .datosPerfil {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    /*Apartado de servicios*/
+
+    .servicio--card {
+        height: 121px;
+        width: 300px;
+    }
+
+    /*Foto de perfil*/
+    .container--imagen {
+        align-items: center;
+        width: 35%;
+        height: auto;
+    }
+
+    .imagen--perfil {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    #cambiar--foto {
+        font-size: 10px;
+    }
+
+    #cerrarSesion {
+        font-size: 10px;
+        width: 173px;
+    }
+
+    /*Informacion de perfil*/
+    .container--datos {
+        padding: 0px;
+    }
+
+    #name {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    #email {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #telefono {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #cedula {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #especialidad{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+   
+
+    .updateButton {
+        height: 29.85px;
+        width: 150px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    /*Apartado de servicios*/
+    #container--servicios {
+        width: 100%;
+    }
+
+    .title--servicios {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .servicio--card {
+        height: 121px;
+        width: 80%;
+    }
+
+    .container--imagenServicio {
+        width: 30%;
+        height: 121px;
+    }
+
+    .image--servicio {
+        width: 70px;
+        height: 70px;
+    }
+
+    .container--datosServicio {
+        width: 65%;
+        height: 121px;
+        color: #212A3E;
+        font-size: 9px;
+    }
+
+    #servicio {
+        font-size: 22px;
+        margin: 0px;
+    }
+
+    #fecha--servicio {
+        padding-left: 05px;
+    }
+
+    .hora {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+    #hora--servicio {
+        padding-left: 05px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 100vw;
+    }
+
+    .title--actualizar {
+        font-size: 25px;
+
+    }
+
+    .container--formActualizar {
+        grid-template-columns: 80px 180px minmax(50px, auto);
+        width: 80%;
+    }
+
+    .container--formActualizar label {
+        text-align: center;
+        padding-right: 0px;
+        font-size: 12px;
+    }
+
+    .container--formActualizar input {
+        width: 95%;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .guardar--datos {
+        height: 39.85px;
+        width: 120px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background-color: #F2F2EB;
+        color: #1C2B52;
+        font-size: 12px;
+    }
+
+}

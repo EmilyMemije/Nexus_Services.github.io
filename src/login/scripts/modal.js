@@ -13,6 +13,8 @@ const modal = document.querySelector("#miModal")
 btnAbrirModal.addEventListener("click", () => {
     if(modal){
         modal.showModal();
+        modal.open();
+        modal.outerHTML();
     }
 });
 

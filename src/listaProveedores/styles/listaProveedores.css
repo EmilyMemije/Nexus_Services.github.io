@@ -140,10 +140,6 @@ margin-top: 20px;
         flex-direction: column;
     }
 
-    #profesionales {
-        font-size: 10px;
-
-    }
 
     #info {
         width: 90%;
@@ -192,5 +188,10 @@ margin-top: 20px;
         display: flex;
         opacity: 95%;
         width: 350px;
+    }
+
+    #profesionales {
+        text-align: center;
+        align-items: center;
     }
 }

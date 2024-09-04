@@ -10,7 +10,7 @@
 
     <!--Conexion a estilos CSS-->
     <link rel="stylesheet" href="../../styles/styles copy.css">
-    <link rel=" stylesheet" href="./style/login.css" />
+    <link rel="stylesheet" href="./style/login.css" />
 
     <!--Conexcion a estilos de letras-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,7 +87,7 @@
         </nav>
     </header>
     <!--Login-->
-    <a href="/src/loginAdmin/loginAdmin.html">
+    <a href="../loginAdmin/loginAdmin.html">
         <img id="logo-Admin" src="./../../assets/accesoAdmin.png" alt="loginAdmins">
     </a>
 
@@ -128,7 +128,7 @@
     <dialog id="miModal" class="modal">
         <div class="container--seleccion">
             <div class="botonUsuario">
-                <form action="./page/Registro Usuario/registroUsuario.html" id="btnUsuario">
+                <form action="../page/Registro Usuario/registroUsuario.html" id="btnUsuario">
                     <button id="seleccion--usuario" class="seleccion">
                         <img src="../../assets/paciente.png" alt="Soy Paciente">
                         <p>Soy Paciente</p>
@@ -161,9 +161,12 @@
                 </a>
             </div>
             <div class="section">
-                <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
-                <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
-                <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
+                <div class="section">
+                    <a class="palabras--footer" href="../politicasPrivacidad/politicasPrivacidad.html" id="aviso">Aviso de
+                        privacidad</a>
+                    <a class="palabras--footer" href="../T&C/T&C.html" id="terminos">Términos y condiciones</a>
+                    <a class="palabras--footer" href="../T&C/T&C.html" id="acces">Accesibilidad</a>
+                </div>
             </div>
         </div>
         <div class="derechos-copi">

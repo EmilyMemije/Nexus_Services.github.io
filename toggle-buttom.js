@@ -22,12 +22,12 @@ const SerchButtom=document.querySelector('#BotonSarch');
 SerchButtom.addEventListener('click',()=>{
     let compara=document.querySelector('#Sarch').value.toLowerCase();
     console.log(compara);
-   if(compara==="Psicologia")
+   if(compara==="psicologia")
     {
         console.log("ingrese")
         Buscado="Psicología";
     }
-    else if(compara==="Psicología")
+    else if(compara==="psicología")
     {
         console.log("ingrese")
         Buscado="Psicología";

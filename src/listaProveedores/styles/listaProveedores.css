@@ -140,7 +140,10 @@ margin-top: 20px;
         flex-direction: column;
     }
 
-
+    #profesionales {
+        margin-left: 150px;
+    }
+    
     #info {
         width: 90%;
     }
@@ -191,7 +194,6 @@ margin-top: 20px;
     }
 
     #profesionales {
-        text-align: center;
-        align-items: center;
+        margin-left: 100px;
     }
 }

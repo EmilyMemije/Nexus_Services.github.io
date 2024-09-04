@@ -211,6 +211,14 @@
     .fondo--main {
         width: 87%;
     }
+
+    #SOS-image {
+        visibility: visible;
+    }
+
+    #login-image {
+        visibility: visible;
+    }
 }
 
 @media (max-width: 660px) {

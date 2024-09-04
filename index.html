@@ -106,7 +106,7 @@
                 </div>
                 <div class="boton-text-container">
 
-                    <a href="#Servicios"><button id="agendar">Nuestros Servicios</button></a>
+                    <button onclick="location.href='./src/listaProveedores/listaProveedores.html'" id="agendar">Nuestros Servicios</button>
                     <p>Conoce nuestros servicios</p>
                     <p>para mantenerte más saludable e </p>
                     <p>informado</p>
@@ -143,7 +143,7 @@
             </div>
         </section>
         <!--servicios -->
-        <Div class="Container-Servicios" >
+        <Div class="Container-Servicios">
             <h2>Nuestros servicios</h2>
             <Section id="Servicios">
                 <div class="card-container" id="MG">
@@ -268,15 +268,6 @@
 
     <script src="../Nexus_Services.github.io/src/admiServicios/scrips/admiServicios.js"></script>
 <script src="./src/paginaPrincipal/tarjetas.js"></script>
-<script>
-    document.querySelector('a[href="#Servicios"]').addEventListener('click', function(e) {
-        e.preventDefault(); // Evitar el comportamiento predeterminado
-        document.querySelector('#Servicios').scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-</script>
-
 </body>
 
 </html>

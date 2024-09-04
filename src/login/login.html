@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Icono de la página-->
+    <link rel="icon" href="../../assets/NS.png">
+
+    <!--Conexion a estilos CSS-->
+    <link rel="stylesheet" href="../../styles/styles copy.css">
+    <link rel=" stylesheet" href="./src/style/login.css" />
+
+    <!--Conexcion a estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav--container">
+            <div class="container--menus">
+                <div class="nav--logo">
+                    <a id="container--logo" href="../../src/paginaPrincipal/paginaPrincipal.html">
+                        <img id="logo--Ns" src="../../assets/NS.png" alt="LogoNS">
+                    </a>
+                </div>
+
+                <!--Accesos de la nueva Navbar-->
+                <div class="container-list">
+                    <button class="abrir">
+                        <img id="img--menu" src="../../assets/menu.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="ul-lis noactive" id="menu--desplegable">
+                <button class="cerrar">
+                    <img id="cerrarNS" src="../../assets/NS.png" alt="">
+                </button>
+                <a href="../blog/blog.html" class="menu-link">Blog</a>
+                <a href="../listaProveedores/listaProveedores.html" class="menu-link">Proveedores</a>
+                <a href="../Pagina sobre nosotros/Nosotros.html" class="menu-link">Contactanos</a>
+                <a href="../Pagina sobre nosotros/Nosotros.html" class="menu-link">Donaciones</a>
+                <a href="../paginaPrincipal/paginaPrincipal.html" class="menu-link">Página principal</a>
+                <a href="../Login/login.html" class="menu-link">Login</a>
+            </div>
+
+            <!--Aquí empieza lo de Nexus Services-->
+
+            <div class="centro">
+                <a href="../paginaPrincipal/paginaPrincipal.html" id="NS--title">
+                    <h1 id="nav--title">Nexus Services</h1>
+                </a>
+                <div class="nav--search">
+                    <input class="search--imput" type="text" name="search" placeholder="Buscar...">
+                    <button class="botton">
+                        <img src="../../assets/lupa.png" alt="lupa" id="lupa">
+                    </button>
+                </div>
+                <div class="nav--menu">
+                    <a href="../blog/blog.html">Blog</a>
+                    <a href="../listaProveedores/listaProveedores.html">Proveedores</a>
+                    <a href="../Pagina sobre nosotros/Nosotros.html"> Donaciones </a>
+                    <a href="../Contactanos/contactanos.html"> Contáctanos </a>
+                </div>
+            </div>
+            <div class="nav--ingresar">
+                <a class="extras--serv" href="../SOS/sos.html" target="_blank">
+                    <img src="../../assets/sos.png" alt="SOS" id="SOS-image">
+                </a>
+                <a class="extras--serv" href="../login/login.html" target="_blank">
+                    <img src="../../assets/User_01.png" alt="ingresar" id="login-image">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Login-->
+    <a href="/src/loginAdmin/loginAdmin.html">
+        <img id="logo-Admin" src="./../../assets/accesoAdmin.png" alt="loginAdmins">
+    </a>
+
+    
+    <div class="container--login">
+        <h2 id="title-login">Iniciar Sesión</h2>
+        <div class="container--inicioSocial">
+            <a href="">
+                <img id="logo--google" src="../../assets/google.png" alt="Google">
+            </a>
+            <a href="">
+                <img id="logo--facebook" src="../../assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="">
+                <img id="logo--mac" src="../../assets/mac.png" alt="Mac">
+            </a>
+        </div>
+        <div class="formulario--login">
+            <form action="../Login/page/Perfil Usuario/perfilUsuario.html" id="form--login">
+                <span id="login--error" class="error-message"></span>
+                <input type="email" id="email-login" placeholder="Correo Electrónico*">
+                <span id="email-error" class="error-message"></span>
+                <input type="password" id="password--login" placeholder="Contraseña*">
+                <span id="password-error" class="error-message"></span>
+                <div class="login--boton">
+                    <button id="login">
+                        Iniciar Sesión
+                    </button>
+                </div>
+            </form>
+        </div>
+        <button id="registro">
+            Registrarse
+        </button>
+    </div>
+
+  <!--Modal-->
+    <dialog id="miModal" class="modal">
+        <div class="container--seleccion">
+            <div class="botonUsuario">
+                <form action="./page/Registro Usuario/registroUsuario.html" id="btnUsuario">
+                    <button id="seleccion--usuario" class="seleccion">
+                        <img src="../../assets/paciente.png" alt="Soy Paciente">
+                        <p>Soy Paciente</p>
+                    </button>
+                </form>
+            </div>
+            <div class="botonProveedor">
+                <form action="./page/Registro Proveedor/registroProveedor.html" id="btnProveedor">
+                    <button id="seleccion--especialista" class="seleccion">
+                        <img src="../../assets/doctor.png" alt="Soy Espacialista">
+                        <p>Soy Especialista</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!--Footer-->
+   <footer>
+        <div class="primer--cont">
+            <div class="section-redes">
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="IG" src="../../assets/IG.png" alt="Instagram">
+                </a>
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="Twitter" src="../../assets/X.png" alt="X">
+                </a>
+                <a class="contt--immgg" href="">
+                    <img class="img-redes" id="Face" src="../../assets/FB.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="section">
+                <a class="palabras--footer" href="" id="aviso">Aviso de privacidad</a>
+                <a class="palabras--footer" href="" id="terminos">Términos y condiciones</a>
+                <a class="palabras--footer" href="" id="acces">Accesibilidad</a>
+            </div>
+        </div>
+        <div class="derechos-copi">
+            <p>&copy; Derechos reservados. 2024</p>
+        </div>
+    </footer>
+
+
+     <!--scrip js-->
+     <script src="../../toggle-buttom.js"></script>
+     <script src="./src/scripts/login.js"></script>
+     <script src="./src/scripts/modal.js"></script>
+
+</body>
+
+</html>

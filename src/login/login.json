@@ -1,0 +1,47 @@
+[
+    {
+      "correo": "cesar.cholo10@gmail.com",
+      "contraseña":"12345678"
+    },
+    {   "nombre": "Roberto Venegas",
+        "correo": "bobert@gmail.com",
+        "contraseña":"12345678",
+        "telefono": "5585473883",
+        "direccion": "Azcapotzalco,CDMX"
+    },
+    {   "nombre": "David Hernández",
+        "correo": "david1@gmail.com",
+        "contraseña":"12345678",
+        "telefono": "5585473880"
+      },
+      {   
+          "nombre": "Alexis Hernández",
+          "correo": "alexix10@gmail.com",
+          "contraseña":"12345678",
+          "telefono": "5585473881"
+      }, 
+      {
+        "correo": "emilyma@gmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "lizpinky1@hotmail.com",
+          "contraseña":"12345678"
+      }, 
+      {
+        "correo": "oscar123@hotmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "cris123pormi@gmail.com",
+          "contraseña":"12345678"
+      }, 
+      {
+        "correo": "jorge.11@hotmail.com",
+        "contraseña":"12345678"
+      },
+      {
+          "correo": "juanito_perez@gmail.com",
+          "contraseña":"12345678"
+      }
+  ]

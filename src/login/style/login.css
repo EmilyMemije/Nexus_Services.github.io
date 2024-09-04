@@ -1,0 +1,367 @@
+.container--login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 0% 0%;
+    gap: 0%;
+
+}
+
+
+.container--login h2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 48px;
+    color: #fbfbfb;
+    padding-top: 25px;
+    padding-bottom: 15px;
+
+}
+
+.container--inicioSocial {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+#logo-Admin {
+    width: 70px;
+    float: right;
+    /* Ajusta la imagen a la derecha */
+    opacity: 0.5;
+    /* Ajusta el nivel de transparencia (0 es completamente transparente, 1 es opaco) */
+    margin-left: 10px;
+}
+
+#logo--google {
+    width: 75px;
+    padding: 0px 10px 10px 10px;
+
+}
+
+#logo--facebook {
+    width: 75px;
+    padding: 0px 10px 10px 10px;
+}
+
+#logo--mac {
+    width: 75px;
+    padding: 0px 10px 10px 10px;
+}
+
+#form--login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario--login input {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    width: 408px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 1px;
+    border-color: #296CD1;
+    padding-left: 15px;
+    font-family: "Lato";
+    font-size: 15px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo normal cuando la contraseña cumple la regex */
+#password--login.valid {
+    background-color: #FFFF;
+    border-color: #296CD1;
+    opacity: 1;
+}
+
+/* Estilo tenue cuando la contraseña no cumple la regex */
+#password--login.invalid {
+    background-color: #e0e0e0;
+    /* Un gris más claro para indicar que está deshabilitado */
+    border-color: #999999;
+    /* Borde gris tenue */
+    opacity: 0.6;
+}
+
+.login--boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato";
+}
+
+#login {
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s
+}
+
+#login:hover {
+    background-color: white;
+    color: #212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+#registro {
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    font-size: 20px;
+    font-family: "Lato";
+    transition-duration: 0.3s
+}
+
+#registro:hover {
+    background-color: white;
+    color: #212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+.error-message {
+    display: flex;
+    width: 408px;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/*----------Modal---------*/
+
+.modal {
+    background-color: #5977B3;
+    border-radius: 10px;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, .70);
+}
+
+#btnUsuario {
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+#btnProveedor {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#seleccion--usuario {
+    width: 250px;
+    height: 250px;
+}
+
+#seleccion--especialista{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.container--seleccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    background-color: #5977B3;
+
+}
+
+.seleccion {
+    background-color: #5977B3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.seleccion img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.seleccion p {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato";
+}
+
+#seleccion--usuario:hover,
+#seleccion--especialista:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Agranda un poco el botón */
+    transition: 1s
+}
+
+
+/*---------Mediaquery-----------*/
+
+@media only screen and (max-width:700px) {
+    .container--login h2 {
+        font-size: 35px;
+
+    }
+
+    #logo--google {
+        width: 45px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    #logo--facebook {
+        width: 45px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    #logo--mac {
+        width: 45px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    .error-message {
+        width: 300px;
+    }
+
+    .formulario--login input {
+        width: 300px;
+        height: 25px;
+        font-size: 12px;
+
+    }
+
+    #seleccion--usuario {
+        width: 190px;
+        height: 190px;
+    }
+
+    
+    #seleccion--especialista{
+        width: 190px;
+        height: 190px;
+    }
+
+    .seleccion img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    
+    .seleccion p {
+        font-size: 25px;
+    }
+
+    #logo-Admin {
+        height: 50px;
+        width: 40px;
+    }
+
+    #login,  #registro {
+        width: 135px;
+        font-size: 15px;
+      
+    }
+    
+    #login:hover, #registro:hover {
+        width: 135px;
+        font-size: 15px;
+    }
+    
+  
+
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .container--login h2 {
+        font-size: 25px;
+
+    }
+
+    #logo--google {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    #logo--facebook {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    #logo--mac {
+        width: 35px;
+        padding: 0px 05px 05px 05px;
+    }
+
+    .error-message {
+        width: 250px;
+    }
+
+    .formulario--login input {
+        width: 250px;
+        height: 20px;
+        font-size: 10px;
+
+    }
+    #logo-Admin {
+        height: 40px;
+        width: 30px;
+    }
+
+    #login,  #registro {
+        width: 125px;
+        height: 30px;
+        padding: 7px 7px;
+        font-size: 12px;
+      
+    }
+    
+    #login:hover, #registro:hover {
+        width: 125px;
+        height: 30px;
+        padding: 7px 7px;
+        font-size: 12px;
+    }
+
+
+}

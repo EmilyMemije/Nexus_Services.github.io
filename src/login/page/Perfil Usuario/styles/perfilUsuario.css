@@ -1,0 +1,724 @@
+.container--principal {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+}
+
+/*Apartado de informacion*/
+.container--informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23.8vw;
+    height: auto;
+    top: 2%;
+    position: sticky;
+    background-color: #212A3E;
+    padding-top: 35px;
+    padding-bottom: 2rem;
+}
+
+/*Foto de perfil*/
+.container--imagen {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.imagen--perfil {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.imagen--perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cambiar--foto {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Lato";
+    cursor: pointer;
+    background-color: #212A3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#cambiar--foto:hover {
+    background-color: #0056b3;
+    opacity: 50%;
+}
+
+#cerrarSesion {
+    font-size: 14px;
+    font-family: "Lato";
+    cursor: pointer;
+    background-color: #212A3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+    text-decoration: none;
+    text-align: center;
+    width: 173px;
+}
+
+#cerrarSesion:hover {
+    background-color: #ff0b0b;
+    opacity: 70%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/*Informacion de perfil*/
+.container--datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#name {
+    font-family: "Lato";
+    font-size: 25px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#email {
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+
+#telefono {
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+
+#dire {
+    font-family: "Lato";
+    font-size: 15px;
+    color: #fbfbfb;
+    padding-bottom: 25px;
+}
+
+.container--boton button {
+    background-color: white;
+    color: var(--footer-blue);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 95%;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.container--boton button:hover {
+    background-color:var(--footer-blue);
+    color: white;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+.container--boton a {
+    text-decoration: none;
+}
+
+/*Apartado de historial de servicios*/
+#container--historial {
+    width: 76.2vw;
+    margin-bottom: 2rem;
+}
+
+.title--historial {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 38px;
+    color: #fbfbfb;
+}
+
+.container--card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product--card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 2rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    height: 191px;
+    width: 641px;
+}
+
+.container--imagenServicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 211px;
+}
+
+.image--servicio {
+    width: 145px;
+    height: 145px;
+    margin: 20px;
+    position: static;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #212A3E;
+    background-color: #212A3E;
+}
+
+.image--servicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container--datosServicio {
+    width: 461px;
+    height: 211px;
+    color: #212A3E;
+    font-family: "Lato";
+    font-size: 14px;
+}
+
+#servicio {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 28px;
+    margin: 0px;
+}
+
+.especialista {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#name--especialista {
+    padding-left: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha--hora {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.fecha {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+#fecha--servicio {
+    padding-left: 10px;
+}
+
+.hora {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 40px;
+}
+
+#hora--servicio {
+    padding-left: 10px;
+}
+
+/*Apartado de actualizar datos*/
+#container--actualizar {
+    width: 76.2vw;
+}
+
+#actualizar.modificar--datos { 
+    font-family: "Lato";
+}
+
+#configuracion.modificar--datos {
+    font-family: "Lato";
+}
+.title--actualizar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 38px;
+    color: #fbfbfb;
+
+}
+
+.container--formActualizar {
+    display: grid;
+    grid-template-columns: 200px 250px minmax(100px, auto);
+    grid-gap: 10px;
+    width: 681px;
+    margin: auto;
+    font-family: "Lato";
+    border-radius: 2rem;
+    padding-bottom: 25px;
+    background-color: #B8C2D5;
+    margin-bottom: 10px;
+    padding-top: 25px;
+}
+
+.container--formActualizar label {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #000000;
+    place-content: center;
+}
+
+.container--formActualizar input {
+    width: 95%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#boton--guardar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guardar--datos {
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    width: 35%;
+    font-size: 20px;
+    transition-duration: 0.3s
+}
+
+.guardar--datos:hover {
+    background-color:white;
+    color:#212A3E;
+    border: solid white 2px;
+    transition-duration: .3s;
+}
+
+.hidden {
+    display: none !important;
+    width: 76.2vw;
+}
+
+/* Medias Query */
+@media only screen and (max-width: 1110px) {
+    .container--boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container--boton button {
+        height: 29.85px;
+        width: 150px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .container--boton {
+        margin-bottom: 10px;
+    }
+
+    /*Apartado de historial de servicios*/
+    .title--historial {
+        font-size: 35px;
+    }
+
+    .product--card {
+        height: 191px;
+        width: 555px;
+    }
+
+    .container--imagenServicio {
+        width: 160px;
+        height: 211px;
+    }
+
+    .image--servicio {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container--datosServicio {
+        width: 395px;
+        font-size: 13px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 76.2vw;
+    }
+
+    .title--actualizar {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        font-family: "Lato";
+        font-size: 38px;
+        color: #fbfbfb;
+
+    }
+
+    .container--formActualizar {
+        width: 555px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imagen--perfil {
+        width: 140px;
+        height: 140px;
+    }
+
+    #cambiar--foto {
+        font-size: 11px;
+        width: 143px;
+    }
+
+    #cerrarSesion {
+        font-size: 11px;
+        width: 143px;
+    }
+
+    /*Informacion de perfil*/
+    .container--datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #email {
+        font-size: 13px;
+    }
+
+    #telefono {
+        font-size: 13px;
+    }
+
+    #dire {
+        font-size: 13px;
+    }
+
+    .container--boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container--boton button {
+        height: 29.85px;
+        width: 143px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    .container--boton {
+        margin-bottom: 10px;
+    }
+
+    /*Apartado de historial de servicios*/
+    .title--historial {
+        font-size: 28px;
+    }
+
+    .product--card {
+        height: 191px;
+        width: 450px;
+    }
+
+    .container--imagenServicio {
+        width: 105px;
+        height: 211px;
+    }
+
+    .image--servicio {
+        width: 75px;
+        height: 75px;
+    }
+
+    .container--datosServicio {
+        width: 345px;
+        font-size: 12px;
+    }
+
+    #servicio {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 76.2vw;
+    }
+
+    .title--actualizar {
+        color: #fbfbfb;
+
+    }
+
+    .container--formActualizar {
+        grid-template-columns: 90px 200px minmax(50px, auto);
+        width: 450px;
+        font-family: "Lato";
+        font-size: 12px;
+
+    }
+
+    .container--formActualizar label {
+        text-align: center;
+        padding-right: 0px;
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .container--formActualizar input {
+        width: 150px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .guardar--datos {
+        height: 29.85px;
+        width: 143px;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container--principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Apartado de informacion*/
+    .container--informacion {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        top: 2%;
+        position: static;
+        padding-top: 15px;
+    }
+
+    .datosPerfil {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    /*Foto de perfil*/
+    .container--imagen {
+        align-items: center;
+        width: 35%;
+        height: auto;
+    }
+
+    .imagen--perfil {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    #cambiar--foto {
+        font-size: 10px;
+    }
+
+    #cerrarSesion {
+        font-size: 10px;
+        width: 173px;
+    }
+
+    /*Informacion de perfil*/
+    .container--datos {
+        padding: 0px;
+    }
+
+    #name {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    #email {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #telefono {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    #dire {
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container--boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container--boton button {
+        height: 29.85px;
+        width: 150px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    /*Apartado de historial de servicios*/
+    #container--historial {
+        width: 100%;
+    }
+
+    .title--historial {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .product--card {
+        height: 121px;
+        width: 95%;
+    }
+
+    .container--imagenServicio {
+        width: 30%;
+        height: 121px;
+    }
+
+    .image--servicio {
+        width: 70px;
+        height: 70px;
+    }
+
+    .container--datosServicio {
+        width: 65%;
+        height: 121px;
+        color: #212A3E;
+        font-size: 9px;
+    }
+
+    #servicio {
+        font-size: 22px;
+        margin: 0px;
+    }
+
+    #fecha--servicio {
+        padding-left: 05px;
+    }
+
+    .hora {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+    #hora--servicio {
+        padding-left: 05px;
+    }
+
+    /*Apartado de actualizar datos*/
+    #container--actualizar {
+        width: 100vw;
+    }
+
+    .title--actualizar {
+        font-size: 30px;
+
+    }
+
+    .container--formActualizar {
+        grid-template-columns: 80px 180px minmax(50px, auto);
+        width: 100vw;
+    }
+
+    .container--formActualizar label {
+        text-align: center;
+        padding-right: 0px;
+        font-size: 12px;
+    }
+
+    .container--formActualizar input {
+        width: 95%;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .guardar--datos {
+        height: 39.85px;
+        width: 100px;
+        background-color: #F2F2EB;
+        color: #1C2B52;
+        font-size: 12px;
+    }
+
+}

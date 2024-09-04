@@ -140,6 +140,11 @@ margin-top: 20px;
         flex-direction: column;
     }
 
+    #profesionales {
+        text-align: center;
+        
+    }
+
     #info {
         width: 90%;
     }

@@ -102,8 +102,7 @@
     color: white;
     border: 0.3px solid white;
     transition: .3s;
-    padding: 8px;
-    margin: 12px 0px;
+    width: 77%;
 }
 
 /*----- Cards de Cuentas -----*/
@@ -186,6 +185,10 @@
     .options--container a {
         width: 215px;
     }
+
+    .options--container a:hover {
+        width: 213px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -232,6 +235,10 @@
     .options--container a {
         width: 180px;
     }
+
+    .options--container a:hover {
+        width: 178px;
+    }
 }
 
 /* ----- Media Query movil ----- */
@@ -258,6 +265,7 @@
         font-size: 14px;
         text-align: center;
         margin-bottom: 0px;
+        margin: 30px 10px 0px 10px;
     }
     
     .img--perfil {
@@ -277,7 +285,6 @@
     }
 
     .options--container a:hover {
-        padding: 4px;
-        margin: 11px 0px;
+        width: 147px;
     }
 }

@@ -6,14 +6,6 @@ const alertaPersonalizada = document.getElementById('customAlert');
 const subtotalSpan = document.getElementById('subtotal');
 const totalSpan = document.getElementById('total');
 
-
-
-
-
-
-
-
-
 // Expresiones regulares
 const expresiones = {
     nombreCompleto: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.

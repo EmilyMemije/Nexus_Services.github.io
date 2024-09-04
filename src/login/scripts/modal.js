@@ -11,8 +11,7 @@ const modal = document.querySelector("#miModal")
 /*Ahora agrego el evento listener para que al dar click abra o cierre el modal con una funcion flecha */
 
 btnAbrirModal.addEventListener("click", () => {
-    if(modal){
-        modal.style.visibility = 'visible'
+    if(!modal){
         modal.showModal();
     }
 });

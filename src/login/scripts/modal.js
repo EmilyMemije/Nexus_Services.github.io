@@ -12,6 +12,7 @@ const modal = document.querySelector("#miModal")
 
 btnAbrirModal.addEventListener("click", () => {
     if(modal){
+        modal.style.visibility = 'visible'
         modal.showModal();
     }
 });

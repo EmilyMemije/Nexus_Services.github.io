@@ -20,7 +20,7 @@ cerrarMenu.addEventListener("click", (e)=>{
 let Buscado="";
 const SerchButtom=document.querySelector('#BotonSarch');
 SerchButtom.addEventListener('click',()=>{
-    let compara=document.querySelector('#Sarch').value;
+    let compara=document.querySelector('#Sarch').value.toLowerCase();
     console.log(compara);
    if(compara==="Psicologia")
     {

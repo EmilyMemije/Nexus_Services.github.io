@@ -103,6 +103,7 @@ body {
     background-image: url("../img/update.png");
     background-size: 25px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .eliminar-btn
@@ -114,7 +115,7 @@ body {
     background-image:url("../img/trash.png") ;
     background-size: 25px;
     background-repeat: no-repeat;
-    
+    cursor: pointer;
 }
 
 header h1 {

@@ -294,6 +294,7 @@ input[type="file"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 70px;
 }
 
 #updateButton.modificar--datos {
@@ -308,7 +309,7 @@ input[type="file"] {
     border-radius: 2rem;
     cursor: pointer;
     text-align: center;
-    width: 50%;
+    width: 100%;
     font-size: 20px;
     transition-duration: 0.3s;
 }

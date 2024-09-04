@@ -268,6 +268,15 @@
 
     <script src="../Nexus_Services.github.io/src/admiServicios/scrips/admiServicios.js"></script>
 <script src="./src/paginaPrincipal/tarjetas.js"></script>
+<script>
+    document.querySelector('a[href="#Servicios"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Evitar el comportamiento predeterminado
+        document.querySelector('#Servicios').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>
+
 </body>
 
 </html>

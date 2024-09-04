@@ -1,6 +1,6 @@
 [
     {
-        "imagen": "./img/Psychologist-pana.png",
+        "imagen": "/img/Psychologist-pana.png",
         "nombre": "Psicología",
         "descripcion": "Atención psicológica profesional para ayudar a individuos a superar desafíos emocionales, mejorar su bienestar mental y desarrollar habilidades para manejar el estrés y las dificultades cotidianas. Se brindan sesiones de terapia personalizadas, tanto en persona como en línea, para tratar una variedad de problemas, desde ansiedad y depresión hasta problemas de relación y desarrollo personal. Proporcionando un espacio seguro y de apoyo para fomentar la salud mental y emocional de los clientes.",
         "precio": "$100",

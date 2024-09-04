@@ -1,44 +1,44 @@
 [
     {
         "imagen":"../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Psicología",
+        "cuenta": "Servicio",
+        "descripcion": "Servicios de evaluación y tratamiento psicológico para individuos y grupos, incluyendo terapia cognitivo-conductual, terapia familiar y de pareja, y programas de manejo del estrés y la ansiedad."
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Nutrición",
+        "cuenta": "Servicio",
+        "descripcion": "Consultas nutricionales personalizadas para la creación de planes alimenticios específicos, asesoramiento en dietas para condiciones médicas como diabetes y enfermedades cardiovasculares, y programas de educación nutricional.."
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Cardiología",
+        "cuenta": "Servicio",
+        "descripcion": "Diagnóstico y tratamiento de enfermedades cardíacas, incluyendo pruebas de esfuerzo, ecocardiogramas, angioplastias y manejo de pacientes con insuficiencia cardíaca y arritmias."
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Pediatría",
+        "cuenta": "Servicio",
+        "descripcion": "Atención médica integral para niños y adolescentes, incluyendo chequeos de desarrollo, vacunaciones, tratamiento de enfermedades infantiles y asesoramiento en nutrición y crecimiento"
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Odontología",
+        "cuenta": "Servicio",
+        "descripcion": "Servicios de salud bucal que incluyen limpiezas dentales, tratamientos de caries, ortodoncia, implantes dentales y procedimientos estéticos como blanqueamiento dental."
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Ginecología",
+        "cuenta": "Servicio",
+        "descripcion": "Servicios de salud reproductiva para mujeres, incluyendo exámenes ginecológicos de rutina, manejo de embarazos, tratamientos de fertilidad y cirugías ginecológicas."
     },
     {
         "imagen": "../../assets/doctor.png",
-        "usuario": "Nombre de la cuenta",
-        "cuenta": "Tipo de cuenta",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     Mollitia eius officiis placeat nostrum, dignissimos quia harum explicabo eos  temporibus incidunt! Illum odio deleniti ea iure fugiat facere iste consequuntur voluptatum."
+        "usuario": "Oncología",
+        "cuenta": "Servicio",
+        "descripcion": "Diagnóstico y tratamiento del cáncer, incluyendo quimioterapia, radioterapia, terapias dirigidas y cuidados paliativos, además de participación en ensayos clínicos y programas de investigación."
     }
 ]

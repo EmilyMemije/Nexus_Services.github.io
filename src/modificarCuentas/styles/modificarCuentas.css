@@ -7,7 +7,7 @@
     --green-tea: #BAD895;
 }
 
-.modCuentas--title {
+.modServicios--title {
     display: flex;
     width: 100%;
     font-family: 'Lato';
@@ -15,7 +15,7 @@
     color: var(--dark-gray);
 }
 
-.modCuentas--title h1 {
+.modServicios--title h1 {
     width: 73%;
     padding: 10px;
     display: flex;
@@ -112,7 +112,7 @@
     padding: 3%;
 }
 
-.card--modCuentas {
+.card--modServicios {
     width: 105%;
     background-color: #1C2B52;
     border-radius: 2rem;
@@ -120,13 +120,13 @@
     border: solid;
 }
 
-.card--modCuentas, #card--titles {
+.card--modServicios, #card--titles {
     display: inline-block;
     justify-content: space-between;
     padding: 1%;
 }
 
-.card--modCuentas:hover {
+.card--modServicios:hover {
     transform: scale(99%);
     box-shadow: 10px 10px 10px #869DA6;
     #img--modCuentas {
@@ -139,14 +139,14 @@
     flex-direction: row;
 }
 
-#img--modCuentas {
+#img--modServicios {
     width: 15%;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 50%;
 }
 
-#container--modCuentas {
+#container--modServicios {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -193,7 +193,7 @@
         flex-direction: column;
     }
 
-    .modCuenta--title h1 {
+    .modServicios--title h1 {
         width: 100%;
         justify-content: center;
     }
@@ -214,7 +214,7 @@
 }
 
 @media (max-width: 660px) {
-    .modCuentas--title h1 {
+    .modServicios--title h1 {
         width: 100%;
         justify-content: center;
     }
@@ -223,5 +223,53 @@
 @media (max-width: 500px) {
     .options--container a {
         width: 180px;
+    }
+}
+
+/* ----- Media Query movil ----- */
+@media (max-width: 460px) {
+    .modServicios--title h1 {
+        font-size: 22px;
+    }
+
+    .admin--section {
+        height: 170px;
+    }
+
+    .imgAdmin--container {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .imgAdmin--container img {
+        width: 50px;
+    }
+    
+    .imgAdmin--container h2 {
+        justify-items: center;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .img--perfil {
+        height: 70px;
+        width: 70px;
+    }
+
+    .options--container {
+        margin: 10px 15px;
+    }
+
+    .options--container a {
+        width: 150px;
+        height: 15px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .options--container a:hover {
+        padding: 4px;
+        margin: 11px 0px;
     }
 }

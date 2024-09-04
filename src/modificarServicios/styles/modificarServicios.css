@@ -225,3 +225,51 @@
         width: 180px;
     }
 }
+
+/* ----- Media Query movil ----- */
+@media (max-width: 460px) {
+    .modServicios--title h1 {
+        font-size: 22px;
+    }
+
+    .admin--section {
+        height: 170px;
+    }
+
+    .imgAdmin--container {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .imgAdmin--container img {
+        width: 50px;
+    }
+    
+    .imgAdmin--container h2 {
+        justify-items: center;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .img--perfil {
+        height: 70px;
+        width: 70px;
+    }
+
+    .options--container {
+        margin: 10px 15px;
+    }
+
+    .options--container a {
+        width: 150px;
+        height: 15px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .options--container a:hover {
+        padding: 4px;
+        margin: 11px 0px;
+    }
+}

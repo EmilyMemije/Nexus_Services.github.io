@@ -24,6 +24,7 @@ hr {
 .container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 150px;
 }
 
 .imgAdmin--container {
@@ -53,16 +54,15 @@ hr {
     width: 150px;
     background: radial-gradient(40% 40% at 50% 50%, #7373 30%, #D9D9D9 100%);
     box-shadow: 10px 6px 15px 1px rgb(143, 138, 138, 35%);
-    opacity: 60%;
-    z-index: -1;
 }
 
 .options--container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 70%;
-    margin: 60px 30px; 
+    margin: 0px 30px; 
 }
 
 .options--container a {
@@ -95,7 +95,7 @@ hr {
     border: 0.5px solid black;
     transition: 0.3s;
     padding: 5px;
-    margin: 14.82px;
+    margin: 14.5px;
     width: 79%;
     height: 51px;
 }
@@ -125,7 +125,7 @@ hr {
     }
 
     .imgAdmin--container h2 {
-        font-size: 19px;
+        font-size: 22px;
     }
 
     .options--container {
@@ -163,7 +163,7 @@ hr {
     }
 
     .imgAdmin--container h2 {
-        font-size: 19px;
+        font-size: 22px;
     }
 
     .options--container a {
@@ -241,8 +241,12 @@ hr {
         font-size: 9px;
     }
 
+    .imgAdmin--container {
+        width: 100%;
+    }
+
     .imgAdmin--container h2 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .img--perfil {
@@ -254,6 +258,9 @@ hr {
         width: 50%;
     }
 
+    .options--container {
+        margin: 0px 30px;
+    }
     .options--container a {
         font-size: 13px;
         width: 90%;
@@ -262,5 +269,17 @@ hr {
     .options--container a {
         width: 250px;
         height: 20px;
+    }
+
+    .options--container a:hover {
+        border-radius: 24px;
+        background: white;
+        color: #1C2B52;
+        border: 0.5px solid black;
+        transition: 0.3s;
+        padding: 7px;
+        margin: 18.5px;
+        width: 240px;
+        height: 19px;
     }
 }

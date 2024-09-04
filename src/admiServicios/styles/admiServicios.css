@@ -111,7 +111,7 @@ body {
     border-radius: 25%;
     height: 30px;
     width: 30px;
-    background-image:url("/src/admiServicios/img/trash.png") ;
+    background-image:url("../img/trash.png") ;
     background-size: 25px;
     background-repeat: no-repeat;
     

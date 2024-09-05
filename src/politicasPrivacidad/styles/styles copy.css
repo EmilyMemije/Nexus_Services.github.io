@@ -1,5 +1,7 @@
 body {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     padding-bottom: 7em;
@@ -130,6 +132,7 @@ footer {
     height: 6em;
     font-family: "Comfortaa";
     font-size: 18px;
+    margin-top: auto;
 }
 
 .section-redes {

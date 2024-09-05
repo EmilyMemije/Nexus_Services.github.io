@@ -323,7 +323,7 @@
 }
 
 .contenido-masinfo{
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 0;
 }
 
@@ -386,9 +386,8 @@
     }
 
     .container--masinfo {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 5px;
-        margin: 10px;
         box-sizing: border-box;
         margin-left: 0;
     }

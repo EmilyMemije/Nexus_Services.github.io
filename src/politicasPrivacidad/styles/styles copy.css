@@ -131,7 +131,7 @@ footer {
     padding: 20px;
     bottom: 0;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
 }
 
 .section-redes {

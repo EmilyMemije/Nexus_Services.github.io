@@ -11,6 +11,7 @@
 #Container-principal
 {
     display:flex;
+    position: relative;
     align-items: center;
     justify-content:right;
     flex-direction: column;

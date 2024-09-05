@@ -123,12 +123,12 @@ body {
 
 footer {
     background-color: #1C2B52;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     bottom: 0;
     width: 100%;
     height: fit-content;

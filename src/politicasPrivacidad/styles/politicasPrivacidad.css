@@ -82,6 +82,12 @@
     flex: 1;
 }
 
+footer {
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+}
+
 .prueba{
     position: static;
 }

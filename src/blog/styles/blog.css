@@ -330,6 +330,14 @@
 .contenido-masinfo img{
     width: 120px;
 }
+.contactanos{
+    font-size: 18px;
+}
+
+.contenedor--red--soc img{
+    width: 25px;
+    height: 27px;
+}
 }
 
 @media (max-width: 480px) {
@@ -386,7 +394,7 @@
     }
 
     .contenido-masinfo {
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 5px;
         box-sizing: border-box;
         margin-left: 0;

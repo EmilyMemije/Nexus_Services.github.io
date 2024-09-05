@@ -69,7 +69,7 @@
 /*contenedor aviso privacidad*/
 #container-avisoPrivacidad
 {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -18,6 +18,8 @@
     margin: 0% 0%;
     height: 100vh;
     margin-bottom: 15px;
+    min-height: 100vh;
+    padding-bottom: 6em;
 }
 
 

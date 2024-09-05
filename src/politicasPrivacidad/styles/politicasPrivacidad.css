@@ -79,6 +79,7 @@
     height: 50%;
     width: 40%;
     min-height: 100vh;
+    flex: 1;
 }
 
 .prueba{

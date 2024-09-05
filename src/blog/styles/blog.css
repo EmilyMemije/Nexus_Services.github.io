@@ -9,6 +9,8 @@
 
     * {
         box-sizing: border-box;
+        overflow-x: hidden;
+        
     }
 
 .Principal-banner{
@@ -327,7 +329,7 @@
 }
 
 .contenido-masinfo img{
-    width: 150px;
+    width: 120px;
 }
 }
 
@@ -343,7 +345,7 @@
         font-size: 18px;
     }
     .boton-mas {
-        width: 90px;
+        width: 120px;
         height: auto;
         font-size: 14px;
         margin-left: auto;
@@ -378,7 +380,7 @@
 
 @media (max-width: 480px) {
     .boton-mas {
-        width: 100px;
+        width: 120px;
         height: 35px;
         margin-right: 10px;
         font-size: 14px;
@@ -392,6 +394,6 @@
     }
 
     .contenido-masinfo img {
-        width: 120px;
-    }
+        width: 110px;
+    } 
 }

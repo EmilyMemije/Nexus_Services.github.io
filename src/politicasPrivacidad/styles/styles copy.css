@@ -121,7 +121,7 @@ body {
 }
 
 
-footer {
+/*footer {
     background-color: #1C2B52;
     position: absolute;
     display: inline-block;
@@ -137,7 +137,7 @@ footer {
     font-family: "Comfortaa";
     font-size: 18px;
     height: 100vh;
-}
+}*/
 
 .section-redes {
     display: inline;

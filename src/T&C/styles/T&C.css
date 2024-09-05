@@ -11,13 +11,13 @@
 #Container-principal
 {
     display:flex;
-    position: relative;
+ /*  position: relative;*/
     align-items: center;
     justify-content:center;
     flex-direction: column;
     width: 80%;
     margin: 0% auto;
-    flex: 1;
+   /* flex: 1;*/
    z-index: 1;
 
  

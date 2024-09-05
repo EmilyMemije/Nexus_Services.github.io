@@ -311,6 +311,8 @@
     }
     .boton-mas {
         font-size: 16px;
+        padding: 8px 16px;
+        width: 120px;
         margin-right: 10px;
         margin-left: auto;
         display: block;
@@ -322,10 +324,6 @@
 
 .contenido-masinfo{
     font-size: 18px;
-}
-
-.container--masinfo li{
-    font-size: "lato";
 }
 
 .contenido-masinfo img{
@@ -345,12 +343,12 @@
         font-size: 18px;
     }
     .boton-mas {
-        font-size: 16px;
-        padding: 8px 16px;
-        width: 120px;
-        margin-right: 10px;
+        width: 90px;
+        height: auto;
+        font-size: 14px;
         margin-left: auto;
-        display: block;
+        display: block; 
+        padding: 6px 12px;
     }
 }
 
@@ -380,17 +378,17 @@
 
 @media (max-width: 480px) {
     .boton-mas {
-        width: 90px;
-        height: auto;
+        width: 100px;
+        height: 35px;
+        margin-right: 10px;
         font-size: 14px;
-        margin-left: auto;
-        display: block; 
-        padding: 6px 12px;
     }
 
     .container--masinfo {
         font-size: 16px;
+        padding-top: 5px;
         margin: 10px;
+        box-sizing: border-box;
     }
 
     .contenido-masinfo img {

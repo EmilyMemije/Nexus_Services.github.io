@@ -7,10 +7,6 @@
     --green-tea: #BAD895;
     }
 
-    body {
-        height: 100vh;
-            
-    }
 
 #Container-principal
 {
@@ -20,7 +16,6 @@
     flex-direction: column;
     width: 100%;
     margin: 0% 0%;
- 
 }
 
 

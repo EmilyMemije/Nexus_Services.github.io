@@ -310,9 +310,33 @@
         font-size: 20px;
     }
     .boton-mas {
-        margin-right: 0;
+        font-size: 16px;
+        padding: 8px 16px;
+        width: 120px;
+        margin-right: 10px;
         margin-left: auto;
         display: block;
+}
+
+.container--masinfo h3{
+    font-size: 25px;
+}
+
+.contenido-masinfo{
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.contenido-masinfo img{
+    width: 120px;
+}
+.contactanos{
+    font-size: 18px;
+}
+
+.contenedor--red--soc img{
+    width: 25px;
+    height: 27px;
 }
 }
 
@@ -328,11 +352,12 @@
         font-size: 18px;
     }
     .boton-mas {
-        width: 80px;
-        height: 35px;
+        width: 120px;
+        height: auto;
         font-size: 14px;
         margin-left: auto;
         display: block; 
+        padding: 6px 12px;
     }
 }
 
@@ -362,17 +387,20 @@
 
 @media (max-width: 480px) {
     .boton-mas {
-        width: 80px;
+        width: 120px;
         height: 35px;
+        margin-right: 10px;
         font-size: 14px;
     }
-
-    .container--masinfo {
-        font-size: 20px;
-        margin: 10px;
+/*Información adicional*/
+    .contenido-masinfo {
+        font-size: 16px;
+        padding-top: 5px;
+        box-sizing: border-box;
+        margin-left: 0;
     }
 
     .contenido-masinfo img {
-        width: 150px;
-    }
+        width: 110px;
+    } 
 }

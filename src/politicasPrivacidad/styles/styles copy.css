@@ -1,9 +1,9 @@
 body {
-    min-height: 100vh;
     margin: 0;
     background: linear-gradient(359deg, rgba(134, 192, 234, 0.54) 33.75%, #296CD1 120.54%);
     padding-bottom: 7em;
     position: relative;
+    
     background-color: red;
 
 }
@@ -125,7 +125,7 @@ footer {
     background-color: #1C2B52;
     position: absolute;
     display: inline-block;
-    bottom: 0;
+    margin-bottom: 0;
     width: 100%;
     height: 6em;
     font-family: "Comfortaa";

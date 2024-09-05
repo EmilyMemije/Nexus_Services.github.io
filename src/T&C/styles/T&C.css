@@ -5,7 +5,7 @@
     --ivory: #EFF0D5;
     --not-white: #F2F2EB;
     --green-tea: #BAD895;
-    }
+}
 
 
 #Container-principal
@@ -18,9 +18,9 @@
     width: 80%;
     margin: 0% auto;
    /* flex: 1;*/
-   z-index: 1;
+    z-index: 1;
 
- 
+
 }
 
 /* contenedor de la informacion*/
@@ -34,17 +34,19 @@
     background-color: #212A3E;
     background-repeat: no-repeat;
     background-position: 50%;
-    height: 600px; /* Ajuste automático según el contenido */
+    height: 600px;
+    /* Ajuste automático según el contenido */
     width: 80%;
     margin: 3% 0%;
     border-radius: 2em;
-    overflow: auto; 
+    overflow: auto;
     scrollbar-width: none;
 }
 
 #info h1 {
     text-align: center;
 }
+
 #info p {
     padding: 50px;
 }
@@ -53,13 +55,13 @@
 
 /*imagen background*/
 
-.logoback{
+.logoback {
     display: flex;
     position: center;
     justify-content: center;
 }
 
-#logo--back{
+#logo--back {
     display: flex;
     opacity: 15%;
     width: 400px;
@@ -67,8 +69,7 @@
 
 
 /*contenedor aviso privacidad*/
-#container-TYC
-{
+#container-TYC {
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -77,63 +78,67 @@
     color: #F2F2EB;
     height: 50%;
 
-   
+
 }
 
 
 
 /*inicia media query con configuracion para iphon*/
-@media(max-width:700px){
-   
-    #Container-principal{
-    flex-direction: column;
+@media(max-width:700px) {
+
+    #Container-principal {
+        flex-direction: column;
     }
 
     #info {
         width: 90%;
         margin-top: 10%;
-        height: auto; /* Asegura que el contenedor se ajuste al contenido en pantallas pequeñas */
-        
+        height: auto;
+        /* Asegura que el contenedor se ajuste al contenido en pantallas pequeñas */
+
     }
 
-    #info h2, p, li {
-        font-size: small; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    #info h2,
+    p,
+    li {
+        font-size: small;
+        /* Ajusta el tamaño de la fuente en pantallas pequeñas */
     }
 
     /*modificacion del logo*/
     #logo--back {
-        width: 100px; /* Ajusta el tamaño del logo */
+        width: 100px;
+        /* Ajusta el tamaño del logo */
     }
-    .logoback{
+
+    .logoback {
         display: flex;
         position: absolute;
         justify-content: center;
-       opacity: 15%;
+        opacity: 15%;
     }
 
     /*modificacion de botones*/
-    #botones 
-    {
-    
-      width: auto;
+    #botones {
+
+        width: auto;
     }
 
     /*adaptacion del div infp*/
-    #info{
+    #info {
         margin-top: 10%;
     }
-    
 
-    #container-avisoPrivacidad
-    {
+
+    #container-avisoPrivacidad {
         height: 90%;
         width: 70%;
     }
 
 }
-    
-@media (max-width: 450px){
-    #logo--back{
+
+@media (max-width: 450px) {
+    #logo--back {
         display: flex;
         opacity: 95%;
         width: 350px;

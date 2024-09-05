@@ -78,6 +78,7 @@
     color: #F2F2EB;
     height: 50%;
     width: 40%;
+    min-height: 100vh;
 }
 
 .prueba{

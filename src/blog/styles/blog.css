@@ -9,8 +9,6 @@
 
     * {
         box-sizing: border-box;
-        overflow-x: hidden;
-        
     }
 
 .Principal-banner{
@@ -326,6 +324,7 @@
 
 .contenido-masinfo{
     font-size: 18px;
+    margin-left: 0;
 }
 
 .contenido-masinfo img{
@@ -391,6 +390,7 @@
         padding-top: 5px;
         margin: 10px;
         box-sizing: border-box;
+        margin-left: 0;
     }
 
     .contenido-masinfo img {

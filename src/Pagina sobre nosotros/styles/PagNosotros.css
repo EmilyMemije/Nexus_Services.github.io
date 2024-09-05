@@ -333,9 +333,10 @@ h4 {
     background-color: #0056b3; /* Azul más oscuro en hover */
 }
 
-/*Seccion de integrantes*/#team {
+/*Seccion de integrantes*/
+#team {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #carousel-team {
@@ -352,7 +353,8 @@ h4 {
     justify-content: flex-start;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    width: 80%;
+    width: 90%;
+    height: 80%;
     gap: 1%;
 }
 
@@ -361,23 +363,28 @@ h4 {
     flex-direction: column;
     background-color: #212A3E;
     color: antiquewhite;
-    min-height: 650px; /* Ajusta la altura según tu preferencia */
-    width: 30%; /* Ajustado para mostrar 3 cards */
+    min-height: 800px; /* Ajusta la altura según tu preferencia */
+    width: 90%; /* Ajustado para mostrar 3 cards */
     margin: 1%;
     align-items: center;
     justify-content: center;
     border-radius: 2em;
     padding: 2%;
-    gap: 20px;
+    gap: 2px;
 }
 
 .integrante img {
     background-color: #F2F2EB;
     height: 200px; /* Ajusta la altura de la imagen */
     width: 200px; /* Ajusta el ancho de la imagen */
-    border-radius: 50%;
-    margin: 0%;
+    border-radius: 60%;
+    margin: 20%;
+    object-fit: cover;
+ 
 }
+
+
+
 
 .integrante p {
     text-align:start;
@@ -657,6 +664,76 @@ h4 {
 }
 
 /* Media Queries */
+
+/* Escritorio (1024px y más) */
+@media screen and (min-width: 1024px) {
+    #container-team {
+        width: 90%;
+    }
+
+    .integrante {
+        width: 28%;
+        min-height: 600px;
+    }
+}
+
+/* Tablet (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #carousel-team {
+        flex-direction: column;
+    }
+
+    #container-team {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .integrante {
+        width: 45%;
+        min-height: 550px;
+    }
+
+    .carousel-button {
+        margin-top: 20px;
+    }
+}
+
+/* Celular (hasta 767px) */
+@media screen and (max-width: 767px) {
+    #team {
+        margin-top: 10%;
+    }
+
+    #carousel-team {
+        flex-direction: column;
+    }
+
+    #container-team {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integrante {
+        width: 90%;
+        min-height: 500px;
+        margin: 5% 0;
+    }
+
+    .integrante img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .carousel-button {
+        margin-top: 15px;
+        font-size: 1.2em;
+    }
+}
+
+
+
 
 /* Escritorio */
 @media screen and (min-width: 1024px) {

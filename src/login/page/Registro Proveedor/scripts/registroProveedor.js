@@ -12,6 +12,7 @@ const passwordInput = document.getElementById('contraseña--registro');
 const passwordConfInput = document.getElementById('conf-contraseña--registro');
 const nombreInput = document.getElementById('nombre--registro');
 const nuevoEspecialidad = document.getElementById('especialidad');
+//
 
 nombreInput.addEventListener('input', function () {
     const nombre = this.value;

@@ -1,4 +1,3 @@
-/* Reset para asegurar que todos los elementos usen el mismo modelo de caja */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +15,6 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 1200px; /* Incrementa el ancho máximo */
-    width: 90vw; /* El contenedor ocupará el 90% del ancho de la ventana */
     min-width: 320px; /* Tamaño mínimo para que no se encoja demasiado */
     margin: 2rem auto;
     background-color: #3683f79f;
@@ -27,23 +25,28 @@ body {
 
 .formulario-donacion, .resumen-donacion {
     width: 48%;
+    
 }
 
 .metodos-pago {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    
 }
 
 .metodos-pago label {
     margin-bottom: 0.5rem;
+   
 }
 
 form input, .payment-details input[type="text"], .payment-details input[type="email"] {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
+   
 }
+
 
 #botonDonar, .submit-btn {
     background-color: #007bff;
@@ -54,36 +57,44 @@ form input, .payment-details input[type="text"], .payment-details input[type="em
     border-radius: 5px;
     width: auto;
     margin-top: 2%;
+    
+
 }
 
 #botonDonar:disabled, .submit-btn:disabled {
     background-color: #fff;
     cursor: not-allowed;
+   
 }
 
 .terminos {
     margin-top: 1rem;
+    
 }
 
 .resumen-donacion {
     background-color: #f9f9faa1;
     padding: 1rem;
     border-radius: 8px;
+    
 }
 
 .monto, .total {
     text-align: right;
     font-size: 1.5rem;
     font-weight: bold;
+
 }
 
 .detalles-tarjeta {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .detalles-tarjeta input {
     width: 48%;
+    
 }
 
 .container {
@@ -94,6 +105,7 @@ form input, .payment-details input[type="text"], .payment-details input[type="em
     width: 100%;
     margin-right: 200px;
     max-width: 300px;
+    
 }
 
 h2 {
@@ -103,16 +115,19 @@ h2 {
 
 .payment-option {
     margin-bottom: 10px;
+  
 }
 
 .payment-details {
     display: none;
     margin-top: 10px;
+    
 }
 .formulario{
     display:grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  
 
 }
 .formulario_label{
@@ -120,7 +135,7 @@ h2 {
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
-
+   
 }
 
 .Formulario_grupo_input{
@@ -178,7 +193,7 @@ h2 {
     
     
 }
-.posicion_tarjMasrter{
+.posicion_tarjMaster{
     position:absolute;
     left: 570px;
     right: 10px;
@@ -207,19 +222,41 @@ h2 {
 .Formulario_grupo-correcto .formulario__validacion_estado{
     color: #1ed12d;
     opacity: 1;
+    position:absolute;
+    left: 590px;
+    right: 10px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
 
 }
 .Formulario_grupo-incorrecto .formulario_label{
     color:red;
+    position:absolute;
+    left: 590px;
+    right: 10px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
 
 }
 .Formulario_grupo-incorrecto .formulario__validacion_estado{
     color: red;
     opacity: 1;
+    position:absolute;
+    left: 590px;
+    right: 10px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
 
 }
 .Formulario_grupo-incorrecto .formulario__input{
     border:3px solid red;
+   
 }
 
 
@@ -335,6 +372,13 @@ h2 {
     color: #1ed12d;
     opacity: 1;
     bottom: 48px;
+    position:absolute;
+    left: 590px;
+    right: 10px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    align-items: center;
 }
 
 .Formulario_grupo-incorrecto .formulario_label {

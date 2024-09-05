@@ -68,7 +68,7 @@ function Mostrar(Posicion)
 
 
 const cardWidth = document.querySelector('.integrante').offsetWidth;
-const scrollStep = cardWidth * 3.5 + 18; // Ajusta el desplazamiento para dos cards
+const scrollStep = cardWidth * 5 + 15; // Ajusta el desplazamiento para dos cards
 
 prevButton.addEventListener('click', () => {
     container.scrollLeft -= scrollStep;

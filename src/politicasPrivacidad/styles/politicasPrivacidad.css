@@ -17,6 +17,8 @@
     width: 100%;
     margin: 0% 0%;
     height: 150vh;
+    border: solid yellow;
+    margin-bottom: 15px;
 }
 
 

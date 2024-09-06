@@ -11,7 +11,7 @@ const emailGmailRegex = /^[a-zA-Z0-9._\*\-]+@gmail\.com$/;
 const emailHotmailRegex = /^[a-zA-Z0-9._\*\-]+@hotmail\.com$/;
 const telefonoRegex = /^[0-9]{10}$/;
 const nombreRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$/;
-const direccionRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ0-9\s.,#\-\/]+$/;
+const direccionRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ0-9\s,.#-]+$/;
 
 // Llamados de los id de los inputs
 const nombreActualizacion = document.getElementById('nombre');

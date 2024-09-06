@@ -164,7 +164,7 @@ input[type="file"] {
     justify-content: center;
     align-items: center;
     width: 180px;
-    height: 211px;
+    height: 191px;
 }
 
 .image--servicio{
@@ -187,7 +187,7 @@ input[type="file"] {
 
 .container--datosServicio{
     width: 771px;
-    height: 211px;
+    height: 191px;
     color: #212A3E;
     font-size: 20;
     font-family: "Lato";
@@ -407,7 +407,7 @@ input[type="file"] {
 
     .container--imagenServicio {
         width: 160px;
-        height: 211px;
+        height: 191px;
     }
 
     .image--servicio {
@@ -417,6 +417,7 @@ input[type="file"] {
 
     .container--datosServicio {
         width: 395px;
+        height: 191px;
         font-size: 13px;
     }
 

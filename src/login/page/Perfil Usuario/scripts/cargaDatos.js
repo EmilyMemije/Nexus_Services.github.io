@@ -6,13 +6,12 @@ async function cargarDatosPerfil() {
         }
 
         // Verificar si ya hay datos en localStorage
-        const nombreGuardado = localStorage.getItem('nombreActualizado');
+        const nombreGuardado = localStorage.getItem('usuarioLogueado');
         const emailGuardado = localStorage.getItem('emailActualizado');
         const telefonoGuardado = localStorage.getItem('telefonoActualizado');
         const direccionGuardado = localStorage.getItem('direccionActualizado');
 
-        if (nombreGuardado && emailGuardado && telefonoGuardado) {
-            // Si los datos ya están en localStorage, usarlos
+        if (nombreGuardado && emailGuardado && telefonoGuardado && direccionGuardado) {
             document.getElementById('name').textContent = nombreGuardado;
             document.getElementById('email').textContent = emailGuardado;
             document.getElementById('telefono').textContent = telefonoGuardado;
@@ -22,36 +21,22 @@ async function cargarDatosPerfil() {
             document.getElementById('correoElectronico').value = emailGuardado;
             document.getElementById('celular').value = telefonoGuardado;
             document.getElementById('direccion').value = direccionGuardado;
-        } else {
-            // Si no están en localStorage, cargar desde el JSON
-            const response = await fetch('../../login.json'); // Ajusta la ruta según tu estructura de proyecto
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            const datos = await response.json();
+        } else if(nombreGuardado && emailGuardado && telefonoGuardado){
+            document.getElementById('name').textContent = nombreGuardado;
+            document.getElementById('email').textContent = emailGuardado;
+            document.getElementById('telefono').textContent = telefonoGuardado;
+            document.getElementById('dire').textContent = direccionGuardado;
+            document.getElementById('dire').textContent = 'Dirección no disponible';
 
-            const usuario = datos.find(u => u.correo === correoUsuario);
-            if (!usuario) {
-                throw new Error('Usuario no encontrado');
-            }
+            document.getElementById('nombre').value = nombreGuardado;
+            document.getElementById('correoElectronico').value = emailGuardado;
+            document.getElementById('celular').value = telefonoGuardado;
+            document.getElementById('direccion').value = direccionGuardado;
 
-            // Actualiza los elementos del perfil con los datos del JSON
-            document.getElementById('name').textContent = usuario.nombre || 'Nombre no disponible';
-            document.getElementById('email').textContent = usuario.correo || 'Correo no disponible';
-            document.getElementById('telefono').textContent = usuario.telefono || 'Teléfono no disponible';
-            document.getElementById('dire').textContent = usuario.direccion || 'Dirección no disponible';
-
-            // Guarda los datos en localStorage
-            localStorage.setItem('nombreActualizado', usuario.nombre);
-            localStorage.setItem('emailActualizado', usuario.correo);
-            localStorage.setItem('telefonoActualizado', usuario.telefono);
-            localStorage.setItem('direccionActualizado', usuario.direccion);
-
-            // Asigna los valores a los inputs del formulario de actualización
-            document.getElementById('nombre').value = usuario.nombre || '';
-            document.getElementById('correoElectronico').value = usuario.correo || '';
-            document.getElementById('celular').value = usuario.telefono || '';
-            document.getElementById('direccion').value = usuario.direccion || '';
+            document.getElementById('nombre').value = nombreGuardado;
+            document.getElementById('correoElectronico').value = emailGuardado;
+            document.getElementById('celular').value = telefonoGuardado;
+            document.getElementById('direccion').value = '';
         }
     } catch (error) {
         console.error('Error cargando los datos del perfil:', error);

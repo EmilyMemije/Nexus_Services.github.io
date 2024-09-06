@@ -88,52 +88,44 @@ const registroFormulario = document.querySelector('#registrarseForm');
 
 //Se crea evento en formulario para Registrar nuevos Usuarios
 registroFormulario.addEventListener('submit', () => {
-   //se guarda el registro en localStorage
-    localStorage.setItem("nombre--registro", nombreInput.value);
-    localStorage.setItem("especialidad", nuevoEspecialidad.value);
-    localStorage.setItem("correo--registro", emailInput.value);
-    localStorage.setItem("contraseña--registro", passwordInput.value);
-    localStorage.setItem("conf-contraseña--registro", passwordConfInput.value);
+    const telefono = "2";
+    const idRoll = 3; // 1 admin, 2 cliente, 3 proveedor
+    const user = {
+        username: nombreInput.value,
+        telefono: telefono,
+        email: emailInput.value,
+        password: passwordInput.value,
+        passwordconfirm: passwordConfInput.value,
+        idrol: idRoll
+    };
 
-    alert('¡Registro exitoso!');
-
-    registroFormulario.reset();
-/*
-    const datosUsuario = { 
-        nombre : nuevoNombre,
-        apellidos : nuevoApellido,
-        especialidad : nuevoEspecialidad,
-        correo : nuevoEmail,
-        contraseña : nuevoPassword
-    }
-
-    //--- Creando el fetch para enviar (POST) datos a una API
-fetch(`registro.json`, {
-    // Indicar el tipo de método HTTP
-    method: 'POST',
-    // Definir los headers
-    headers: {'Content-type': 'application/json; charset=UTF-8'},
-    // Definir el cuerpo del Objeto que se va a enviar a la API
-    body: JSON.stringify(datosUsuario)
-})
-    .then(response => response.json())
-    .then(response => {
-        console.log(response);
+    fetch('http://localhost:8081/api/v1', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
     })
-    .catch(error => console.error(error))*/
+        .then(response => response.json())
+        .then(data => {
+            console.log('El usuario se ha registrado con éxito', data);
+        })
+        .catch(error => {
+            console.error('Error en el registro:', error);
+        });
 
 
 });
 
-const procesaTodo = (event)=>{
-    event.preventDefault();
-    const datos = new FormData(event.target);
+// const procesaTodo = (event)=>{
+//     event.preventDefault();
+//     const datos = new FormData(event.target);
     
-    const datosCompletos = Object.fromEntries(datos.entries());
-    console.log(JSON.stringify(datosCompletos));
-}
+//     const datosCompletos = Object.fromEntries(datos.entries());
+//     console.log(JSON.stringify(datosCompletos));
+// }
 
-registrarseForm.addEventListener('submit', procesaTodo);
+// registrarseForm.addEventListener('submit', procesaTodo);
 
 
 

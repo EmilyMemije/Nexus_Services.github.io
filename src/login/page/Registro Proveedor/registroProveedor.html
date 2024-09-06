@@ -23,6 +23,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+US+Modern:wght@100..400&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +68,7 @@
                 </a>
                 <div class="nav--search">
                     <input class="search--imput" type="text" name="search" placeholder="Buscar...">
-                    <button class="botton">
+                    <button class="botton" id="BotonSarch">
                         <img src="../../../../assets/lupa.png" alt="lupa" id="lupa">
                     </button>
                 </div>
@@ -90,7 +95,7 @@
     <div class="container--registrarse">
         <h2 id="title--registro">Registro de Especialista</h2>
         <div class="formulario--registrarse">
-            <form action="../../login.html"  id="registrarseForm">
+            <form action="./../../login.html" id="registrarseForm">
                 <input type="text" name="nombre--registro" id="nombre--registro" required placeholder="Nombre Completo*"
                     autocomplete="off">
                 <span id="nombre-error" class="error-message"></span>
@@ -156,9 +161,9 @@
 
 
     <!--scrip js-->
-   
-      <script src="./scripts/registroProveedor.js"></script>
-    <script src="./scripts/registroScripts.js"></script>
+
+    <script src="./scripts/registroProveedor.js"></script>
+    <!-- <script src="./scripts/registroScripts.js"></script> -->
     <script src="../../toggle-buttom.js"></script>
 
 
